@@ -1,0 +1,486 @@
+Script started on 2020-08-27 11:20:35-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="229" LINES="51"]
+bestus1@remote20:~/tmp/lab0$ ls/.ssh /.ssh~/.ssh
+ls: cannot access '/home/bestus1/.ssh': No such file or directory
+bestus1@remote20:~/tmp/lab0$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/bestus1/.ssh/id_rsa): 
+Created directory '/home/bestus1/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/bestus1/.ssh/id_rsa.
+Your public key has been saved in /home/bestus1/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:o6xX/OadTfbKOy4ChhLYXN4/0aAJP2NODo0bJSBK4pQ bestus1@remote20
+The key's randomart image is:
++---[RSA 2048]----+
+|.oo ..           |
+|=E .  + . .      |
+|.. + o O o o     |
+|  . + = @ . .    |
+|     . @S+ .     |
+|    ..o.B.o      |
+|     .oo o .  o  |
+|     ..   +..*.. |
+|    ..   o..oo*+.|
++----[SHA256]-----+
+bestus1@remote20:~/tmp/lab0$ ssh-copy-id user@[K[K[K[K[Kbestus1@remote
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/bestus1/.ssh/id_rsa.pub"
+The authenticity of host 'remote (128.226.114.199)' can't be established.
+ECDSA key fingerprint is SHA256:UEIh1TASIC96TC1hhxVbkVS0DrddNKHk7Q2nzgDCt+Y.
+Are you sure you want to continue connecting (yes/no)? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+bestus1@remote's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'bestus1@remote'"
+and check to make sure that only the key(s) you wanted were added.
+
+bestus1@remote20:~/tmp/lab0$ ssh://bestus1@remote.cs.binghamton.,e[K[Kedu/~umrigar/git-repos/cs220.git
+bash: ssh://bestus1@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git: No such file or directory
+bestus1@remote20:~/tmp/lab0$ exit
+exit
+
+Script done on 2020-08-27 11:28:24-04:00 [COMMAND_EXIT_CODE="127"]
+Script started on 2020-08-27 11:33:29-04:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="229" LINES="51"]
+bestus1@remote03:~/tmp/lab0$ ls ~/.ssh
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+bestus1@remote03:~/tmp/lab0$ ssh-copy-id bestus1~[K@remote
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/bestus1/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: WARNING: All keys were skipped because they already exist on the remote system.
+		(if you think this is a mistake, you may want to use -f option)
+
+bestus1@remote03:~/tmp/lab0$ [Kbestus1@remote03:~/tmp/lab0$ [Kbestus1@remote03:~/tmp/lab0$ mkrdir -p ~p[K/projects
+bash: mkrdir: command not found
+bestus1@remote03:~/tmp/lab0$ mkrdir -p ~/projects[C[C[C[C[C[C[C[C[C[C[C[1P
+bestus1@remote03:~/tmp/lab0$ cd ~/projects
+bestus1@remote03:~/projects$ git clone ssh://bestus1@remote.cs.binghamton.edu/~ump[Krigar/git-repos/cs220.git
+Cloning into 'cs220'...
+The authenticity of host 'remote.cs.binghamton.edu (128.226.114.203)' can't be established.
+ECDSA key fingerprint is SHA256:UEIh1TASIC96TC1hhxVbkVS0DrddNKHk7Q2nzgDCt+Y.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'remote.cs.binghamton.edu' (ECDSA) to the list of known hosts.
+remote: Enumerating objects: 261, done.[K
+remote: Counting objects:   0% (1/261)   [Kremote: Counting objects:   1% (3/261)   [Kremote: Counting objects:   2% (6/261)   [Kremote: Counting objects:   3% (8/261)   [Kremote: Counting objects:   4% (11/261)   [Kremote: Counting objects:   5% (14/261)   [Kremote: Counting objects:   6% (16/261)   [Kremote: Counting objects:   7% (19/261)   [Kremote: Counting objects:   8% (21/261)   [Kremote: Counting objects:   9% (24/261)   [Kremote: Counting objects:  10% (27/261)   [Kremote: Counting objects:  11% (29/261)   [Kremote: Counting objects:  12% (32/261)   [Kremote: Counting objects:  13% (34/261)   [Kremote: Counting objects:  14% (37/261)   [Kremote: Counting objects:  15% (40/261)   [Kremote: Counting objects:  16% (42/261)   [Kremote: Counting objects:  17% (45/261)   [Kremote: Counting objects:  18% (47/261)   [Kremote: Counting objects:  19% (50/261)   [Kremote: Counting objects:  20% (53/261)   [Kremote: Counting objects:  21% (55/261)   [Kremote: Counting objects:  22% (58/261)   [Kremote: Counting objects:  23% (61/261)   [Kremote: Counting objects:  24% (63/261)   [Kremote: Counting objects:  25% (66/261)   [Kremote: Counting objects:  26% (68/261)   [Kremote: Counting objects:  27% (71/261)   [Kremote: Counting objects:  28% (74/261)   [Kremote: Counting objects:  29% (76/261)   [Kremote: Counting objects:  30% (79/261)   [Kremote: Counting objects:  31% (81/261)   [Kremote: Counting objects:  32% (84/261)   [Kremote: Counting objects:  33% (87/261)   [Kremote: Counting objects:  34% (89/261)   [Kremote: Counting objects:  35% (92/261)   [Kremote: Counting objects:  36% (94/261)   [Kremote: Counting objects:  37% (97/261)   [Kremote: Counting objects:  38% (100/261)   [Kremote: Counting objects:  39% (102/261)   [Kremote: Counting objects:  40% (105/261)   [Kremote: Counting objects:  41% (108/261)   [Kremote: Counting objects:  42% (110/261)   [Kremote: Counting objects:  43% (113/261)   [Kremote: Counting objects:  44% (115/261)   [Kremote: Counting objects:  45% (118/261)   [Kremote: Counting objects:  46% (121/261)   [Kremote: Counting objects:  47% (123/261)   [Kremote: Counting objects:  48% (126/261)   [Kremote: Counting objects:  49% (128/261)   [Kremote: Counting objects:  50% (131/261)   [Kremote: Counting objects:  51% (134/261)   [Kremote: Counting objects:  52% (136/261)   [Kremote: Counting objects:  53% (139/261)   [Kremote: Counting objects:  54% (141/261)   [Kremote: Counting objects:  55% (144/261)   [Kremote: Counting objects:  56% (147/261)   [Kremote: Counting objects:  57% (149/261)   [Kremote: Counting objects:  58% (152/261)   [Kremote: Counting objects:  59% (154/261)   [Kremote: Counting objects:  60% (157/261)   [Kremote: Counting objects:  61% (160/261)   [Kremote: Counting objects:  62% (162/261)   [Kremote: Counting objects:  63% (165/261)   [Kremote: Counting objects:  64% (168/261)   [Kremote: Counting objects:  65% (170/261)   [Kremote: Counting objects:  66% (173/261)   [Kremote: Counting objects:  67% (175/261)   [Kremote: Counting objects:  68% (178/261)   [Kremote: Counting objects:  69% (181/261)   [Kremote: Counting objects:  70% (183/261)   [Kremote: Counting objects:  71% (186/261)   [Kremote: Counting objects:  72% (188/261)   [Kremote: Counting objects:  73% (191/261)   [Kremote: Counting objects:  74% (194/261)   [Kremote: Counting objects:  75% (196/261)   [Kremote: Counting objects:  76% (199/261)   [Kremote: Counting objects:  77% (201/261)   [Kremote: Counting objects:  78% (204/261)   [Kremote: Counting objects:  79% (207/261)   [Kremote: Counting objects:  80% (209/261)   [Kremote: Counting objects:  81% (212/261)   [Kremote: Counting objects:  82% (215/261)   [Kremote: Counting objects:  83% (217/261)   [Kremote: Counting objects:  84% (220/261)   [Kremote: Counting objects:  85% (222/261)   [Kremote: Counting objects:  86% (225/261)   [Kremote: Counting objects:  87% (228/261)   [Kremote: Counting objects:  88% (230/261)   [Kremote: Counting objects:  89% (233/261)   [Kremote: Counting objects:  90% (235/261)   [Kremote: Counting objects:  91% (238/261)   [Kremote: Counting objects:  92% (241/261)   [Kremote: Counting objects:  93% (243/261)   [Kremote: Counting objects:  94% (246/261)   [Kremote: Counting objects:  95% (248/261)   [Kremote: Counting objects:  96% (251/261)   [Kremote: Counting objects:  97% (254/261)   [Kremote: Counting objects:  98% (256/261)   [Kremote: Counting objects:  99% (259/261)   [Kremote: Counting objects: 100% (261/261)   [Kremote: Counting objects: 100% (261/261), done.[K
+remote: Compressing objects:   0% (1/224)   [Kremote: Compressing objects:   1% (3/224)   [Kremote: Compressing objects:   2% (5/224)   [Kremote: Compressing objects:   3% (7/224)   [Kremote: Compressing objects:   4% (9/224)   [Kremote: Compressing objects:   5% (12/224)   [Kremote: Compressing objects:   6% (14/224)   [Kremote: Compressing objects:   7% (16/224)   [Kremote: Compressing objects:   8% (18/224)   [Kremote: Compressing objects:   9% (21/224)   [Kremote: Compressing objects:  10% (23/224)   [Kremote: Compressing objects:  11% (25/224)   [Kremote: Compressing objects:  12% (27/224)   [Kremote: Compressing objects:  13% (30/224)   [Kremote: Compressing objects:  14% (32/224)   [Kremote: Compressing objects:  15% (34/224)   [Kremote: Compressing objects:  16% (36/224)   [Kremote: Compressing objects:  17% (39/224)   [Kremote: Compressing objects:  18% (41/224)   [Kremote: Compressing objects:  19% (43/224)   [Kremote: Compressing objects:  20% (45/224)   [Kremote: Compressing objects:  21% (48/224)   [Kremote: Compressing objects:  22% (50/224)   [Kremote: Compressing objects:  23% (52/224)   [Kremote: Compressing objects:  24% (54/224)   [Kremote: Compressing objects:  25% (56/224)   [Kremote: Compressing objects:  26% (59/224)   [Kremote: Compressing objects:  27% (61/224)   [Kremote: Compressing objects:  28% (63/224)   [Kremote: Compressing objects:  29% (65/224)   [Kremote: Compressing objects:  30% (68/224)   [Kremote: Compressing objects:  31% (70/224)   [Kremote: Compressing objects:  32% (72/224)   [Kremote: Compressing objects:  33% (74/224)   [Kremote: Compressing objects:  34% (77/224)   [Kremote: Compressing objects:  35% (79/224)   [Kremote: Compressing objects:  36% (81/224)   [Kremote: Compressing objects:  37% (83/224)   [Kremote: Compressing objects:  38% (86/224)   [Kremote: Compressing objects:  39% (88/224)   [Kremote: Compressing objects:  40% (90/224)   [Kremote: Compressing objects:  41% (92/224)   [Kremote: Compressing objects:  42% (95/224)   [Kremote: Compressing objects:  43% (97/224)   [Kremote: Compressing objects:  44% (99/224)   [Kremote: Compressing objects:  45% (101/224)   [Kremote: Compressing objects:  46% (104/224)   [Kremote: Compressing objects:  47% (106/224)   [Kremote: Compressing objects:  48% (108/224)   [Kremote: Compressing objects:  49% (110/224)   [Kremote: Compressing objects:  50% (112/224)   [Kremote: Compressing objects:  51% (115/224)   [Kremote: Compressing objects:  52% (117/224)   [Kremote: Compressing objects:  53% (119/224)   [Kremote: Compressing objects:  54% (121/224)   [Kremote: Compressing objects:  55% (124/224)   [Kremote: Compressing objects:  56% (126/224)   [Kremote: Compressing objects:  57% (128/224)   [Kremote: Compressing objects:  58% (130/224)   [Kremote: Compressing objects:  59% (133/224)   [Kremote: Compressing objects:  60% (135/224)   [Kremote: Compressing objects:  61% (137/224)   [Kremote: Compressing objects:  62% (139/224)   [Kremote: Compressing objects:  63% (142/224)   [Kremote: Compressing objects:  64% (144/224)   [Kremote: Compressing objects:  65% (146/224)   [Kremote: Compressing objects:  66% (148/224)   [Kremote: Compressing objects:  67% (151/224)   [Kremote: Compressing objects:  68% (153/224)   [Kremote: Compressing objects:  69% (155/224)   [Kremote: Compressing objects:  70% (157/224)   [Kremote: Compressing objects:  71% (160/224)   [Kremote: Compressing objects:  72% (162/224)   [Kremote: Compressing objects:  73% (164/224)   [Kremote: Compressing objects:  74% (166/224)   [Kremote: Compressing objects:  75% (168/224)   [Kremote: Compressing objects:  76% (171/224)   [Kremote: Compressing objects:  77% (173/224)   [Kremote: Compressing objects:  78% (175/224)   [Kremote: Compressing objects:  79% (177/224)   [Kremote: Compressing objects:  80% (180/224)   [Kremote: Compressing objects:  81% (182/224)   [Kremote: Compressing objects:  82% (184/224)   [Kremote: Compressing objects:  83% (186/224)   [Kremote: Compressing objects:  84% (189/224)   [Kremote: Compressing objects:  85% (191/224)   [Kremote: Compressing objects:  86% (193/224)   [Kremote: Compressing objects:  87% (195/224)   [Kremote: Compressing objects:  88% (198/224)   [Kremote: Compressing objects:  89% (200/224)   [Kremote: Compressing objects:  90% (202/224)   [Kremote: Compressing objects:  91% (204/224)   [Kremote: Compressing objects:  92% (207/224)   [Kremote: Compressing objects:  93% (209/224)   [Kremote: Compressing objects:  94% (211/224)   [Kremote: Compressing objects:  95% (213/224)   [Kremote: Compressing objects:  96% (216/224)   [Kremote: Compressing objects:  97% (218/224)   [Kremote: Compressing objects:  98% (220/224)   [Kremote: Compressing objects:  99% (222/224)   [Kremote: Compressing objects: 100% (224/224)   [Kremote: Compressing objects: 100% (224/224), done.[K
+Receiving objects:   0% (1/261)   Receiving objects:   1% (3/261)   Receiving objects:   2% (6/261)   Receiving objects:   3% (8/261)   Receiving objects:   4% (11/261)   Receiving objects:   5% (14/261)   Receiving objects:   6% (16/261)   Receiving objects:   7% (19/261)   Receiving objects:   8% (21/261)   Receiving objects:   9% (24/261)   Receiving objects:  10% (27/261)   Receiving objects:  11% (29/261)   Receiving objects:  12% (32/261)   Receiving objects:  13% (34/261)   Receiving objects:  14% (37/261)   Receiving objects:  15% (40/261)   Receiving objects:  16% (42/261)   Receiving objects:  17% (45/261)   Receiving objects:  18% (47/261)   Receiving objects:  19% (50/261)   Receiving objects:  20% (53/261)   Receiving objects:  21% (55/261)   Receiving objects:  22% (58/261)   Receiving objects:  23% (61/261)   Receiving objects:  24% (63/261)   Receiving objects:  25% (66/261)   Receiving objects:  26% (68/261)   Receiving objects:  27% (71/261)   Receiving objects:  28% (74/261)   Receiving objects:  29% (76/261)   Receiving objects:  30% (79/261)   Receiving objects:  31% (81/261)   Receiving objects:  32% (84/261)   Receiving objects:  33% (87/261)   Receiving objects:  34% (89/261)   Receiving objects:  35% (92/261)   Receiving objects:  36% (94/261)   Receiving objects:  37% (97/261)   Receiving objects:  38% (100/261)   Receiving objects:  39% (102/261)   Receiving objects:  40% (105/261)   Receiving objects:  41% (108/261)   Receiving objects:  42% (110/261)   Receiving objects:  43% (113/261)   Receiving objects:  44% (115/261)   Receiving objects:  45% (118/261)   Receiving objects:  46% (121/261)   Receiving objects:  47% (123/261)   Receiving objects:  48% (126/261)   Receiving objects:  49% (128/261)   Receiving objects:  50% (131/261)   Receiving objects:  51% (134/261)   Receiving objects:  52% (136/261)   Receiving objects:  53% (139/261)   Receiving objects:  54% (141/261)   Receiving objects:  55% (144/261)   Receiving objects:  56% (147/261)   Receiving objects:  57% (149/261)   Receiving objects:  58% (152/261)   Receiving objects:  59% (154/261)   Receiving objects:  60% (157/261)   Receiving objects:  61% (160/261)   Receiving objects:  62% (162/261)   Receiving objects:  63% (165/261)   Receiving objects:  64% (168/261)   Receiving objects:  65% (170/261)   Receiving objects:  66% (173/261)   Receiving objects:  67% (175/261)   Receiving objects:  68% (178/261)   Receiving objects:  69% (181/261)   Receiving objects:  70% (183/261)   Receiving objects:  71% (186/261)   Receiving objects:  72% (188/261)   Receiving objects:  73% (191/261)   Receiving objects:  74% (194/261)   Receiving objects:  75% (196/261)   Receiving objects:  76% (199/261)   Receiving objects:  77% (201/261)   Receiving objects:  78% (204/261)   Receiving objects:  79% (207/261)   Receiving objects:  80% (209/261)   Receiving objects:  81% (212/261)   Receiving objects:  82% (215/261)   Receiving objects:  83% (217/261)   Receiving objects:  84% (220/261)   Receiving objects:  85% (222/261)   Receiving objects:  86% (225/261)   Receiving objects:  87% (228/261)   Receiving objects:  88% (230/261)   Receiving objects:  89% (233/261)   Receiving objects:  90% (235/261)   Receiving objects:  91% (238/261)   Receiving objects:  92% (241/261)   Receiving objects:  93% (243/261)   Receiving objects:  94% (246/261)   Receiving objects:  95% (248/261)   Receiving objects:  96% (251/261)   remote: Total 261 (delta 70), reused 153 (delta 25)[K
+Receiving objects:  97% (254/261)   Receiving objects:  98% (256/261)   Receiving objects:  99% (259/261)   Receiving objects: 100% (261/261)   Receiving objects: 100% (261/261), 1.62 MiB | 25.55 MiB/s, done.
+Resolving deltas:   0% (0/70)   Resolving deltas:   8% (6/70)   Resolving deltas:  11% (8/70)   Resolving deltas:  12% (9/70)   Resolving deltas:  14% (10/70)   Resolving deltas:  17% (12/70)   Resolving deltas:  18% (13/70)   Resolving deltas:  20% (14/70)   Resolving deltas:  24% (17/70)   Resolving deltas:  31% (22/70)   Resolving deltas:  34% (24/70)   Resolving deltas:  37% (26/70)   Resolving deltas:  38% (27/70)   Resolving deltas:  40% (28/70)   Resolving deltas:  41% (29/70)   Resolving deltas:  42% (30/70)   Resolving deltas:  44% (31/70)   Resolving deltas:  45% (32/70)   Resolving deltas:  47% (33/70)   Resolving deltas:  51% (36/70)   Resolving deltas:  52% (37/70)   Resolving deltas:  54% (38/70)   Resolving deltas:  55% (39/70)   Resolving deltas:  60% (42/70)   Resolving deltas:  64% (45/70)   Resolving deltas:  71% (50/70)   Resolving deltas:  80% (56/70)   Resolving deltas:  81% (57/70)   Resolving deltas:  82% (58/70)   Resolving deltas:  84% (59/70)   Resolving deltas:  85% (60/70)   Resolving deltas:  90% (63/70)   Resolving deltas:  97% (68/70)   Resolving deltas: 100% (70/70)   Resolving deltas: 100% (70/70), done.
+bestus1@remote03:~/projects$ cd ~
+bestus1@remote03:~$ ln -s projects.[K/cs220 .
+bestus1Script started on 2020-08-27 12:26:09-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="113" LINES="50"]
+bash: /home/umrigar/cs220/bin/student.rc: No such file or directory
+bestus1@remote00:~/tmp/lab0$ ~ls ~/.ssh
+bash: ~ls: command not found
+bestus1@remote00:~/tmp/lab0$ ls ~//.[K[K.ssh
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+bestus1@remote00:~/tmp/lab0$ mkdir -p ~/projects
+bestus1@remote00:~/tmp/lab0$ cd ~/projkec[K[K[Kects
+bestus1@remote00:~/projects$ git clone bestus1`[K@remote.e[K=c[K[Kcs.binghamton.edu/~umrigar/git/[K-repos/cs220.git
+fatal: repository 'bestus1@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.git' does not exist
+bestus1@remote00:~/projects$ git clone ssh://bestus1@remote.cs.binghamton.edu/~umrigar/git-repos/cs220.ti[K[Kgit
+fatal: destination path 'cs220' already exists and is not an empty directory.
+bestus1@remote00:~/projects$ git [K[K[K[Kcd ~/git-repos?[K/
+bash: cd: /home/bestus1/git-repos/: No such file or directory
+bestus1@remote00:~/projects$ cs[Kd/cs220[K[K[K[K[K[K ~/cs220/
+bestus1@remote00:~/cs220$ git pull
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.200' to the list of known hosts.
+/home/bestus1/.bashrc: line 1: /home/umrigar/cs220/bin/student.rc: No such file or directory
+Already up to date.
+bestus1@remote00:~/cs220$ git log -5
+[?1h=[33mcommit 286ad21f5007ce034c6f61a6b63af13208c1df43[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Aug 26 18:22:09 2020 -0400[m
+[m
+    minor addition[m
+[m
+[33mcommit 31361defeb26a162a674fae11ced0676aa018d2d[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Aug 26 15:51:33 2020 -0400[m
+[m
+    rm extraneous links[m
+[m
+[33mcommit 453106f62a39ee0ee87fcd2ba0e3c0268facefc5[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Aug 26 15:45:58 2020 -0400[m
+[m
+    class corrections[m
+[m
+[33mcommit 930607349019be282816dbfaaaa598017763c3b6[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Aug 26 12:53:25 2020 -0400[m
+[m
+    zoom class conduct[m
+[m
+[33mcommit 21c45128155536bb53912487e899ec9fdf4ad254[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Aug 26 10:11:32 2020 -0400[m
+[m
+    updates[m
+[K[?1l>bestus1@remote00:~/cs220$ git log -3 labs/lab0/lab0.umt
+[?1h=[33mcommit 453106f62a39ee0ee87fcd2ba0e3c0268facefc5[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Aug 26 15:45:58 2020 -0400[m
+[m
+    class corrections[m
+[m
+[33mcommit f2c12a4278386c3a0f76882c6866e56ce170ac49[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Aug 26 02:06:54 2020 -0400[m
+[m
+    course set up?[m
+[m
+[33mcommit ceb395a4f5eeabcb02d537d8aefd88e80f6ed526[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Tue Aug 25 23:07:48 2020 -0400[m
+[m
+    mention login updates course repo[m
+[K[?1l>bestus1@remote00:~/cs220$ git diff -r ceb395 labs/lab0/lab0.umt
+[?1h=[1mdiff --git a/labs/lab0/lab0.umt b/labs/lab0/lab0.umt[m[m
+[1mindex 8a9d593..09d4920 100644[m[m
+[1m--- a/labs/lab0/lab0.umt[m[m
+[1m+++ b/labs/lab0/lab0.umt[m[m
+[36m@@ -12,6 +12,8 @@[m [mcourse.  The specific steps include the following:[m[m
+   # Including course-specific initialization in the session[m[m
+     initialization files for your CS account.[m[m
+ [m[m
+[32m+[m[32m  # Mirror the course git repository.[m[m
+[32m+[m[m
+   # Creating a github account for submitting your labs and[m[m
+     projects.[m[m
+ [m[m
+[36m@@ -339,7 +341,7 @@[m [mThe following sub-sections explain each of the above steps in detail.[m[m
+ .=github= Each student needs to set up a *private* git repository[m[m
+ called `i220a` or `i220b` (depending on the section you are registered[m[m
+ for) on github.  It will be referred to as "i220X" in the sequel.[m[m
+[31m-This repository provides access to both CS 220 TAs and will be used[m[m
+[32m+[m[32mThis repository provides access to the CS 220 TAs and will be used[m[m
+ for submitting projects and labs for grading.[m[m
+ [m[m
+   # Go to .<https://github.com> github.com.[m[m
+[36m@@ -363,7 +365,8 @@[m [mfor submitting projects and labs for grading.[m[m
+ [m[m
+     On your `remote.cs` terminal `cat ~/.ssh/id_rsa.pub` and then[m[m
+     copy-and-paste the output of that command into the provided *Key*[m[m
+[31m-    box.  Submit the form to set up your new key.[m[m
+[32m+[m[32m    box.  Set up a suitable title like `remote.cs`.  Submit the form[m[m
+[32m+[m[32m    to set up your new key.[m[m
+ [m[m
+   # To set up a repository for the course, click on the green *New*[m[m
+     button on your .<https://github.com> "github home page".[m[m
+[36m@@ -382,9 +385,10 @@[m [mfor submitting projects and labs for grading.[m[m
+     Hit the *Create repository* button.[m[m
+ [m[m
+   # Go to your repository using the link you will now find on your[m[m
+[31m-    github homepage. Go to `Settings->Collaborators` from the[m[m
+[31m-    left-hand side navigation.  Add TAs as collaborators[m[m
+[31m-    using their github user-ids:[m[m
+[32m+[m[32m    github homepage. Go to `Settings->Manage Access"->Collaborators`[m[m
+[32m+[m[32m    from the navigation.  Depending on your lab section, add the[m[m
+[32m+[m[32m    following TAs as collaborators using the following github[m[m
+[32m+[m[32m    user-ids:[m[m
+ [m[m
+       : *Lab Section A51 Thu 10::05-11::30a* :[m[m
+         Github ID: `TBA`.[m[m
+[K[?1l>bestus1@remote00:~/cs220$ emacs ~/.profile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[50d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[50d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[50;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[50;54H[?25ldone[H
+[?12l[?25h[?12;25h[50;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[50;59H[?25ldone[H
+[?12l[?25h[?12;25h[50;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[50;58H[?25ldone[H
+[?12l[?25h[?12;25h[50;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[50;60H[?25ldone[H
+[?12l[?25h[?12;25h[50;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[50;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[50;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[50;77H[?25ldone[H
+[?12l[?25h[?12;25h[50;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[50;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[50;75H[?25ldone[H
+[?12l[?25h[?12;25h[50;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[50;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[50;61H[?25ldone[H
+[?12l[?25h[?12;25h[50;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[50;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[50;96H[?25ldone[H
+[?12l[?25h[?12;25h[50;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[50;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[50;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[50;75H[?25ldone[H
+[?12l[?25h[?12;25h[50;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[50;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[50;64H[?25ldone[H
+[?12l[?25h[?12;25h[50;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[50;54H[?25ldone[H
+[?12l[?25h[?12;25h[50;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[50;65H[?25ldone[H
+[?12l[?25h[?12;25h[50;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[50;54H[?25ldone[H
+[?12l[?25h[?12;25h[50;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[50;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[50d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) -------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h]11;?\[50d[K[2d[>4;1m[?2004h[50d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[H
+[?12l[?25h[?12;25h[50d[?25lSetting up indent for shell type sh[K[H
+[?12l[?25h[?12;25h[50d[?25lIndentation variables are now local.[H
+[?12l[?25h[?12;25h[50;13H[?25lsetup for shell type sh[K[H
+[?12l[?25h[?12;25h[50d[?25lIndentation setup for shell type sh[K[H[7mFile Edit Options Buffers Tools Sh-Script Help                                                                   [0m[39;49m[27m
+[A
+. ~umrigar/cs220/bin/student.profile[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250m.profile    [0m[39;49m[30m[48;5;250m   All L1     (Shell-script[sh]) -------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[50d[K[2d[50d[?25l[38;5;20mRun script: [39;49m/home/bestus1/.profile[1;33H[7mMinibuf Help  [0m[39;49m[27m[50;35H[?12l[?25h[?12;25h[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[?25lText is read-only[?12l[?25h[?12;25h[?25l[38;5;20mRun script: [39;49m[K[?12l[?25h[?12;25h[?25lText is read-only[?12l[?25h[?12;25h[?25l[38;5;20mRun script: [39;49m[K[?12l[?25h[?12;25h[K[?2004l[>4m[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote00:~/cs220$ emacs ~/.bashrc
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[50d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[49d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[50d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[50;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[50;54H[?25ldone[H
+[?12l[?25h[?12;25h[50;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[50;59H[?25ldone[H
+[?12l[?25h[?12;25h[50;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[50;58H[?25ldone[H
+[?12l[?25h[?12;25h[50;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[50;60H[?25ldone[H
+[?12l[?25h[?12;25h[50;35H[?25ldictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[50;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[50;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[50;77H[?25ldone[H
+[?12l[?25h[?12;25h[50;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[50;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[50;75H[?25ldone[H
+[?12l[?25h[?12;25h[50;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[50;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[50;61H[?25ldone[H
+[?12l[?25h[?12;25h[50;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[50;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[50;96H[?25ldone[H
+[?12l[?25h[?12;25h[50;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[50;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[50;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[50;75H[?25ldone[H
+[?12l[?25h[?12;25h[50;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[50;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[50;64H[?25ldone[H
+[?12l[?25h[?12;25h[50;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[50;54H[?25ldone[H
+[?12l[?25h[?12;25h[50;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[50;65H[?25ldone[H
+[?12l[?25h[?12;25h[50;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[50;54H[?25ldone[H
+[?12l[?25h[?12;25h[50;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[50;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[50d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) -------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h]11;?\[50d[K[2d[>4;1m[?2004h[50d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[H
+[?12l[?25h[?12;25h[50d[?25lSetting up indent for shell type bash[K[H
+[?12l[?25h[?12;25h[50d[?25lIndentation variables are now local.[K[H
+[?12l[?25h[?12;25h[50;13H[?25lsetup for shell type bash[H
+[?12l[?25h[?12;25h[50d[?25lIndentation setup for shell type bash[K[H[7mFile Edit Options Buffers Tools Sh-Script Help                                                                   [0m[39;49m[27m
+[A
+[38;5;60m.[39;49m ~umrigar/cs220/bin/student.rc[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250m.bashrc     [0m[39;49m[30m[48;5;250m   All L1     (Shell-script[bash]) -----------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[50d[K[2d[50d[K[?2004l[>4m[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote00:~/cs220$ cat ~/.ssh [Kid[K[K/id-[K_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKqK8vsRa9BNpmzmmbzucq2k2cPdURY3p+gnO/dzUa6ZGmFyF8USLoVTC7xNqvcoWz50YgRvlZnP9Yclxa8m1v3LdzViRBJpLWeXlO7doFWnjcqCfVVs/IMfD7lH8h18l6j38q4MBpKGui1267INqQpCDtGSj+syNlHzi41/M1Mjgoa+yDG8Ygs/zepzFYmzAEb6FMPN5WXCQ2uxJkze/Vck6dwWbuzG2P66PX+/0sANFjBiRnaWedZ71ddVwS4NaapKNaQt/AoizrsQ8A4nYgQPkQW0l/5oklnOTMK6F4SofkKyTvweSho52/l4T3HvREwKBWXfeY39YRWrB73/Wl bestus1@remote20
+bestus1@remote00:~/cs220$ git clone https://github.com/UnderscoreBrad/i220a.git
+Cloning into 'i220a'...
+Username for 'https://github.com': failthis  Ididit              UsedWrongDirectory,B abotrt   rt
+Password for 'https://UsedWrongDirectory,abort@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/UnderscoreBrad/i220a.git/'
+bestus1@remote00:~/cs220$ ~mk[K[K[Kmkri[K[Kdor[K[Kir -[p[K[Kp ~/projects
+bestus1@remote00:~/cs220$ cd ~/projects
+bestus1@remote00:~/projects$ git clone https://github.com/UnderscoreBrad/i220a.git
+fatal: destination path 'i220a' already exists and is not an empty directory.
+bestus1@remote00:~/projects$ cd ~ [K
