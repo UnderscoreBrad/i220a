@@ -1,4 +1,5 @@
 # i220a - Bradley Estus
 
-Note that for lab0, some log outputs may not match the expected results,
-I had to effectively redo the lab, as I did not properly set up the log file at first.
+PROJECT 1 NOT COMPLETE AS OF 25/09/2020 @ 11:27PM
+
+It's been a busy week, I aim to have the project submitted Saturday, with Sunday being the latest possible day.
