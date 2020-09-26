@@ -1,10 +1,10 @@
 #include "hamming.h"
 
+#include <math.h>
 #include <assert.h>
 
 /**
   All bitIndex'es are numbered starting at the LSB which is given index 1
-
   ** denotes exponentiation; note that 2**n == (1 << n)
 */
 
@@ -53,7 +53,7 @@ is_parity_position(int bitIndex)
 {
   assert(bitIndex > 0);
   int x = (bitIndex!=0)&&(bitIndex&(bitIndex-1))==0;
-  return 0;
+  return x;
 }
 
 /** Return the parity over the data bits in word specified by the
@@ -65,7 +65,20 @@ static int
 compute_parity(HammingWord word, int bitIndex, unsigned nBits)
 {
   assert(bitIndex > 0);
-  
+    if(is_parity_position(bitIndex)){
+      int numBitsToPar = 0;
+      unsigned bitVals[57];
+      for(unsigned i=0u;i<nBits;i++){
+        if(!(is_parity_position(i))&&i!=bitIndex){
+          numBitsToPar++;
+          bitVals[i]= word >>i;
+        }else{
+          bitVals[i] = 0u;
+        }
+        for(unsigned i=0u; i<nBits; i++){
+
+        }
+      }
   return 0;
 }
 
