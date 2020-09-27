@@ -12,9 +12,9 @@
 static inline unsigned
 get_bit (HammingWord word, int bitIndex)
 {
-    assert(bitIndex>=0); //line had to be changed due to implementation
-    unsigned rtn = (word & ( 1 << bitIndex-1 )) >> bitIndex-1;
-    return rtn;
+  assert (bitIndex >= 0);	//line had to be changed due to implementation
+  unsigned rtn = (word & (1 << bitIndex - 1)) >> bitIndex - 1;
+  return rtn;
 }
 
 /** Return word with bit at bitIndex in word set to bitValue. */
@@ -68,11 +68,10 @@ compute_parity (HammingWord word, int bitIndex, unsigned nBits)
 {
   assert (bitIndex > 0);
   unsigned currentParityVal = 0;
-  unsigned newParityVal = 0;
-  unsigned wordLength = get_n_encoded_bits(nBits);
+  unsigned wordLength = get_n_encoded_bits (nBits);
   for (unsigned i = 1u; i <= wordLength; i++)
     {
-      if (!(is_parity_position (i)) && (i & bitIndex))
+      if ((is_parity_position (i) == 0) && (i & bitIndex) != 0)
 	{
 	  unsigned currBit = get_bit (word, i);
 	  currentParityVal = currentParityVal ^ currBit;
@@ -99,9 +98,9 @@ hamming_encode (HammingWord data, unsigned nParityBits)
 	  tempData >>= i;
 	  tempData <<= i + 1;
 	  tempData += addIn;
-	  if (i > 3 && get_bit (tempData, i+1) == 1
+	  if (i > 3 && get_bit (tempData, i + 1) == 1
 	      && !get_bit (tempData, i) == 0
-	      && is_parity_position (i-1) == 0)
+	      && is_parity_position (i - 1) == 0)
 	    {
 	      tempData = set_bit (tempData, i - 1, 1);
 	      tempData = set_bit (tempData, i, 0);
@@ -111,12 +110,12 @@ hamming_encode (HammingWord data, unsigned nParityBits)
   for (unsigned i = 0; i < nParityBits; i++)
     {
       int j = (1 << i);
-	  int x = compute_parity (tempData, j, wordLength);
-	  if (x == 1)
-	    {
-	      tempData = set_bit (tempData, j, x);
-	    }
-	
+      int x = compute_parity (tempData, j, wordLength);
+      if (x == 1)
+	{
+	  tempData = set_bit (tempData, j, x);
+	}
+
     }
   return tempData;
 }
@@ -140,6 +139,9 @@ hamming_decode (HammingWord encoded, unsigned nParityBits,
       if (expected != get_bit (tempData, j))
 	{
 	  parityErrors[i] = j;
+	  if (*hasError==0){
+	      *hasError=1;
+	  }
 	}
       else
 	{
@@ -154,7 +156,9 @@ hamming_decode (HammingWord encoded, unsigned nParityBits,
     if(get_bit(tempData, errorPlace)==0){
         x = 1;
     }
-    tempData = set_bit(tempData, errorPlace, x);
+        printf("%d\n",tempData);
+    tempData = set_bit(tempData, errorPlace+1, x);
+        printf("%d\n",tempData);
     
         //break here plz
     for (unsigned i = 1u; i <= wordLength; i++)
@@ -164,13 +168,15 @@ hamming_decode (HammingWord encoded, unsigned nParityBits,
 	  tempData = set_bit(tempData,i,0);
     }
     }
-    for(unsigned i = 1u; i <= wordLength; i++){
-        if(is_parity_position){
-            HammingWord addIn = tempData % (1<<(i+1));
-            tempData >>= i;
-            tempData <<= i-1;
-            tempData += addIn;
+    
+    HammingWord rtn = 0;
+    unsigned rtnBitCt = 0;
+    for(unsigned i = 1u; i < 64; i++){
+        if(!is_parity_position(i+1)){
+        unsigned val = (tempData>>i)&1;
+        rtn += (val<<rtnBitCt);
+        rtnBitCt++;
         }
     }
-  return tempData;
+  return rtn;
 }
