@@ -1,12 +1,12 @@
 #include "hamming.h"
 
-#include <string.h>
+#include <assert.h>
 #include <errno.h>
 #include <limits.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
+#include <string.h>
 
 
 /** Read whitespace-separated HammingWord's from stream in.  If

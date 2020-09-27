@@ -17,7 +17,6 @@ HammingWord hamming_encode(HammingWord data, unsigned nParityBits);
  *  Assumes that data is within range of values which can be decoded
  *  using nParityBits.
  */
-HammingWord hamming_decode(HammingWord encoded, unsigned nParityBits,
-                           int *hasError);
+HammingWord hamming_decode(HammingWord encoded, unsigned nParityBits,int *hasError);
 
 #endif //ifndef HAMMING_H_
