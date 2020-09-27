@@ -1,0 +1,1651 @@
+Script started on 2020-09-27 13:42:40-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="136" LINES="72"]
+bestus1@remote04:~/i220a/submit/lab4$ cd exercises
+bestus1@remote04:~/i220a/submit/lab4/exercises$ cd 1-pointers
+bestus1@remote04:~/i220a/submit/lab4/exercises/1-pointers$ emacs 1-pointers
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 1:43PM 0.22 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[72d[?25l(New file)[K[H[7mFile Edit Options Buffers Tools Help                                                                                                    [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m1-pointers  [0m[39;49m[30m[48;5;250m   All L1     (Fundamental) 1:43PM 0.22 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[?25lC-c[H
+[?12l[?25h[?12;25h[72;4H[?25l-[H
+[?12l[?25h[?12;25h[72;4H[?25l C-c[H
+[?12l[?25h[?12;25h[72;9H[?25lis undefined[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[?25lC-x[H
+[?12l[?25h[?12;25h[72;4H[?25l-[H
+[?12l[?25h[?12;25h[72;4H[?25l C-c[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote04:~/i220a/submit/lab4/exercises/1-pointers$ emacs pointers.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 1:43PM 0.19 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[K
+[38;5;28mint[39;49m [38;5;21mmain[39;49m() {[K
+  [38;5;28mchar[39;49m [38;5;130mchars[39;49m[] = { [38;5;89m'a'[39;49m, [38;5;89m'b'[39;49m, [38;5;89m'c'[39;49m, [38;5;89m'd'[39;49m, [38;5;89m'e'[39;49m };[K
+  [38;5;28mchar[39;49m *[38;5;130mcp[39;49m = chars;[K
+  [38;5;129mfor[39;49m ([38;5;28munsigned[39;49m [38;5;130mi[39;49m = 0; i < [38;5;129msizeof[39;49m(chars)/[38;5;129msizeof[39;49m(chars[0]); i++) {[K
+    printf([38;5;89m"char pointer cp = %p, pointing at char %c\n"[39;49m, cp, *cp);[K
+    cp++;[K
+  }[K
+[K
+  [38;5;28mint[39;49m [38;5;130mints[39;49m[] = { 1, 2, 3, 4, 5 };[K
+  [38;5;28mint[39;49m *[38;5;130mip[39;49m = ints;[K
+  [38;5;129mfor[39;49m ([38;5;28munsigned[39;49m [38;5;130mi[39;49m = 0; i < [38;5;129msizeof[39;49m(ints)/[38;5;129msizeof[39;49m(ints[0]); i++) {[K
+    printf([38;5;89m"int pointer ip = %p, pointing at int %d\n"[39;49m, ip, *ip);[K
+    ip++;[K
+  }[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mpointers.c  [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 1:43PM 0.19 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m4PM 0.15[39;49m[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote04:~/i220a/submit/lab4/exercises/1-pointers$ -f ../Makefile
+bash: -f: command not found
+bestus1@remote04:~/i220a/submit/lab4/exercises/1-pointers$ make -f ../Makefile
+gcc  -g -Wall -Wextra -Wno-unused-parameter -std=c11 -lm  pointers.c   -o pointers
+bestus1@remote04:~/i220a/submit/lab4/exercises/1-pointers$ /./[K[K[K./pointers
+char pointer cp = 0x7ffc18480cdf, pointing at char a
+char pointer cp = 0x7ffc18480ce0, pointing at char b
+char pointer cp = 0x7ffc18480ce1, pointing at char c
+char pointer cp = 0x7ffc18480ce2, pointing at char d
+char pointer cp = 0x7ffc18480ce3, pointing at char e
+int pointer ip = 0x7ffc18480cc0, pointing at int 1
+int pointer ip = 0x7ffc18480cc4, pointing at int 2
+int pointer ip = 0x7ffc18480cc8, pointing at int 3
+int pointer ip = 0x7ffc18480ccc, pointing at int 4
+int pointer ip = 0x7ffc18480cd0, pointing at int 5
+bestus1@remote04:~/i220a/submit/lab4/exercises/1-pointers$ ./pointers
+char pointer cp = 0x7ffe1a6d6fdf, pointing at char a
+char pointer cp = 0x7ffe1a6d6fe0, pointing at char b
+char pointer cp = 0x7ffe1a6d6fe1, pointing at char c
+char pointer cp = 0x7ffe1a6d6fe2, pointing at char d
+char pointer cp = 0x7ffe1a6d6fe3, pointing at char e
+int pointer ip = 0x7ffe1a6d6fc0, pointing at int 1
+int pointer ip = 0x7ffe1a6d6fc4, pointing at int 2
+int pointer ip = 0x7ffe1a6d6fc8, pointing at int 3
+int pointer ip = 0x7ffe1a6d6fcc, pointing at int 4
+int pointer ip = 0x7ffe1a6d6fd0, pointing at int 5
+bestus1@remote04:~/i220a/submit/lab4/exercises/1-pointers$ cd ~/i220a/submit/lab4/2-poin[K[K[K[K[K[Kexercises/2-in-pointers
+bestus1@remote04:~/i220a/submit/lab4/exercises/2-in-pointers$ emacs in-pointers.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 1:46PM 0.31 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdbool.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[K
+[38;5;28mint[39;49m [38;5;21mmain[39;49m() {[K
+  [38;5;129menum[39;49m { [38;5;130mN[39;49m = 5 };[K
+  [38;5;129menum[39;49m { [38;5;130mMIN_OK_RUN[39;49m = 3 };[K
+[K
+  [38;5;28mint[39;49m [38;5;130mints[39;49m[N];[K
+  [38;5;28mint[39;49m [38;5;130mnOk[39;49m = 0;[K
+  [38;5;28mint[39;49m [38;5;130mnErr[39;49m = 0;[K
+  [38;5;28mint[39;49m [38;5;130mnRun[39;49m = 0;[K
+  printf([38;5;89m"Given the base address of an int[] array you need to\n"[39;49m[K
+         [38;5;89m"provide the address of a specified element.\n"[39;49m[K
+         [38;5;89m"An int occupies %zu bytes.\n\n"[39;49m[K
+         [38;5;89m"Please provide addresses in hex without any leading 0x\n"[39;49m[K
+         [38;5;89m"You will need %d correct responses in succession in order\n"[39;49m[K
+         [38;5;89m"to complete this exercise.\n"[39;49m, [38;5;129msizeof[39;49m([38;5;28mint[39;49m), MIN_OK_RUN);[K
+  [38;5;129mwhile[39;49m (nRun < MIN_OK_RUN) {[K
+    [38;5;28mint[39;49m [38;5;130mindex[39;49m = rand()%N;[K
+    printf([38;5;89m"base of ints[] is at %p\n"[39;49m, ints);[K
+    printf([38;5;89m"enter pointer to ints[%d]: "[39;49m, index);[K
+    fflush(stdout);[K
+    [38;5;28mint[39;49m *[38;5;130mp[39;49m;[K
+    [38;5;129mif[39;49m (scanf([38;5;89m"%p"[39;49m, &p) != 1) {[K
+      printf([38;5;89m"bad input: enter hex pointer value without leading 0x or 0X\n"[39;49m);[K
+    }[K
+    [38;5;129melse[39;49m {[K
+      [38;5;28mbool[39;49m [38;5;130misOk[39;49m = (p == &ints[index]);[K
+      [38;5;28mint[39;49m [38;5;130mval[39;49m [38;5;129m__attribute__[39;49m((unused)) = *p;[K
+      printf([38;5;89m"%s\n"[39;49m, isOk ? [38;5;89m"ok"[39;49m : [38;5;89m"not ok"[39;49m);[K
+      [38;5;129mif[39;49m (isOk) {[K
+        nOk++;[K
+        nRun++;[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        nErr++;[K
+        nRun = 0;[K
+      }[K
+    }[K
+    [38;5;28mint[39;49m [38;5;130mc[39;49m = getchar();[K
+    [38;5;129mwhile[39;49m (c != [38;5;89m'\n'[39;49m && c != EOF) { [38;5;124m//waste line                                                                                        [39;49m
+[A
+      c = getchar();[K
+    }[K
+  }[K
+  printf([38;5;89m"# ok = %d; # errors = %d\n"[39;49m, nOk, nErr);[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250min-pointers.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 1:46PM 0.31 ----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[71;58H[?25l[30m[48;5;250m7[39;49m[H
+[?12l[?25h[?12;25h[71;58H[?25l[30m[48;5;250m8PM 0.40[39;49m[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote04:~/i220a/submit/lab4/exercises/2-in-pointers$ make -f ../Makefile
+gcc  -g -Wall -Wextra -Wno-unused-parameter -std=c11 -lm  in-pointers.c   -o in-pointers
+bestus1@remote04:~/i220a/submit/lab4/exercises/2-in-pointers$ ./in-pointers
+Given the base address of an int[] array you need to
+provide the address of a specified element.
+An int occupies 4 bytes.
+
+Please provide addresses in hex without any leading 0x
+You will need 3 correct responses in succession in order
+to complete this exercise.
+base of ints[] is at 0x7ffcd1d718f0
+enter pointer to ints[3]: 7ffcd1d71910
+ok
+base of ints[] is at 0x7ffcd1d718f0
+enter pointer to ints[1]: ^[[A^[[B        7ffcd1d718ef
+not ok
+base of ints[] is at 0x7ffcd1d718f0
+enter pointer to ints[2]: ^[[A^[[B        7ffcd1d718f8
+ok
+base of ints[] is at 0x7ffcd1d718f0
+enter pointer to ints[0]: 7ffcd1d718f0
+ok
+base of ints[] is at 0x7ffcd1d718f0
+enter pointer to ints[3]: 7ffcd1d718ee
+not ok
+base of ints[] is at 0x7ffcd1d718f0
+enter pointer to ints[0]: ^C
+bestus1@remote04:~/i220a/submit/lab4/exercises/2-in-pointers$ cd ~/i220a/submit/lab3[K4/3-bad-types
+bash: cd: /home/bestus1/i220a/submit/lab4/3-bad-types: No such file or directory
+bestus1@remote04:~/i220a/submit/lab4/exercises/2-in-pointers$ cd ~/i220a/submit/lab4/3-bad-typese3-bad-typesx3-bad-typese3-bad-typesr3-bad-typesc3-bad-typesi3-bad-typess3-bad-typese3-bad-typess3-bad-types/3-bad-types
+bestus1@remote04:~/i220a/submit/lab4/exercises/3-bad-types$ emacs 3-bad--[K[Kt[K-types
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 1:54PM 0.66 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[72d[?25l(New file)[K[H[7mFile Edit Options Buffers Tools Help                                                                                                    [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m3-bad-types [0m[39;49m[30m[48;5;250m   All L1     (Fundamental) 1:54PM 0.66 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote04:~/i220a/submit/lab4/exercises/3-bad-types$ emacs 3-bad-types[K[K[K[K[K[K[K[K[K[K[Kbad-types.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 1:54PM 0.57 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[K
+[38;5;28mint[39;49m [38;5;21mmain[39;49m() {[K
+  [38;5;28mchar[39;49m [38;5;130mcs[39;49m[] = { [38;5;89m'a'[39;49m, [38;5;89m'b'[39;49m, [38;5;89m'c'[39;49m, [38;5;89m'd'[39;49m, [38;5;89m'e'[39;49m };[K
+  [38;5;28mint[39;49m [38;5;130mints[39;49m[] = { 1, 2, 3, 4, 5 };[K
+  [38;5;28mchar[39;49m *[38;5;130mcp[39;49m = ints;  [38;5;124m//expect warning                                                                                                    [39;49m
+[A
+  [38;5;28mint[39;49m *[38;5;130mip[39;49m = cs;     [38;5;124m//expect warning                                                                                                    [39;49m
+[A
+  [38;5;129mfor[39;49m ([38;5;28munsigned[39;49m [38;5;130mi[39;49m = 0; i < [38;5;129msizeof[39;49m(cs)/[38;5;129msizeof[39;49m(cs[0]); i++) {[K
+    printf([38;5;89m"char pointer cp = %p, pointing at char '%c' (0x%x)\n"[39;49m,[K
+           cp, *cp, *cp);[K
+    cp++;[K
+  }[K
+  [38;5;129mfor[39;49m ([38;5;28munsigned[39;49m [38;5;130mi[39;49m = 0; i < [38;5;129msizeof[39;49m(ints)/[38;5;129msizeof[39;49m(ints[0]); i++) {[K
+    printf([38;5;89m"int pointer ip = %p, pointing at int %d (0x%x)\n"[39;49m, ip, *ip, *ip);[K
+    ip++;[K
+  }[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mbad-types.c [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 1:54PM 0.57 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[?25lC-x[H
+[?12l[?25h[?12;25h[72;4H[?25l-[H
+[?12l[?25h[?12;25h[72;4H[?25l C-c[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote04:~/i220a/submit/lab4/exercises/3-bad-types$ -f [K[K[Kmake -f ../Makefile
+gcc  -g -Wall -Wextra -Wno-unused-parameter -std=c11 -lm  bad-types.c   -o bad-types
+[01m[Kbad-types.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kbad-types.c:6:14:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kchar *[m[K’ from incompatible pointer type ‘[01m[Kint *[m[K’ [[01;35m[K-Wincompatible-pointer-types[m[K]
+   char *cp = [01;35m[Kints[m[K;  //expect warning
+              [01;35m[K^~~~[m[K
+[01m[Kbad-types.c:7:13:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kint *[m[K’ from incompatible pointer type ‘[01m[Kchar *[m[K’ [[01;35m[K-Wincompatible-pointer-types[m[K]
+   int *ip = [01;35m[Kcs[m[K;     //expect warning
+             [01;35m[K^~[m[K
+bestus1@remote04:~/i220a/submit/lab4/exercises/3-bad-types$ ./bad-types
+char pointer cp = 0x7ffc48611c70, pointing at char '' (0x1)
+char pointer cp = 0x7ffc48611c71, pointing at char ' ' (0x0)
+char pointer cp = 0x7ffc48611c72, pointing at char ' ' (0x0)
+char pointer cp = 0x7ffc48611c73, pointing at char ' ' (0x0)
+char pointer cp = 0x7ffc48611c74, pointing at char '' (0x2)
+int pointer ip = 0x7ffc48611c93, pointing at int 1684234849 (0x64636261)
+int pointer ip = 0x7ffc48611c97, pointing at int 357 (0x165)
+int pointer ip = 0x7ffc48611c9b, pointing at int 1280 (0x500)
+int pointer ip = 0x7ffc48611c9f, pointing at int 1629265664 (0x611c9f00)
+int pointer ip = 0x7ffc48611ca3, pointing at int 8387656 (0x7ffc48)
+bestus1@remote04:~/i220a/submit/lab4/exercises/3-bad-types$ ~/[K[Kcd ~/i220a/la[K[Ksubmit/.[Klab4/er[Kxercie[Kses/4-cast-types
+bestus1@remote04:~/i220a/submit/lab4/exercises/4-cast-types$ run[K[K[Krunawa[K[K[K[K[K[Kemacs cast-types.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 1:59PM 0.43 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[K
+[38;5;28mint[39;49m [38;5;21mmain[39;49m() {[K
+  [38;5;28mchar[39;49m [38;5;130mchars[39;49m[] = { [38;5;89m'a'[39;49m, [38;5;89m'b'[39;49m, [38;5;89m'c'[39;49m, [38;5;89m'd'[39;49m, [38;5;89m'e'[39;49m };[K
+  [38;5;28mint[39;49m [38;5;130mints[39;49m[] = { 1, 2, 3, 4, 5 };[K
+  [38;5;28mchar[39;49m *[38;5;130mcp[39;49m = ([38;5;28mchar[39;49m *)ints;[K
+  [38;5;28mint[39;49m *[38;5;130mip[39;49m = ([38;5;28mint[39;49m *)chars;[K
+  [38;5;129mfor[39;49m ([38;5;28munsigned[39;49m [38;5;130mi[39;49m = 0; i < [38;5;129msizeof[39;49m(chars)/[38;5;129msizeof[39;49m(chars[0]); i++) {[K
+    printf([38;5;89m"char pointer cp = %p, pointing at int %d (0x%x)\n"[39;49m,[K
+           cp, *cp, *cp);[K
+    cp = ([38;5;28mchar[39;49m *)((([38;5;28mint[39;49m *)cp) + 1);[K
+  }[K
+  [38;5;129mfor[39;49m ([38;5;28munsigned[39;49m [38;5;130mi[39;49m = 0; i < [38;5;129msizeof[39;49m(ints)/[38;5;129msizeof[39;49m(ints[0]); i++) {[K
+    printf([38;5;89m"int pointer ip = %p, pointing at char '%c' (0x%x)\n"[39;49m, ip, *ip, *ip);[K
+    ip = ([38;5;28mint[39;49m *)((([38;5;28mchar[39;49m *)ip) + 1);[K
+  }[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mcast-types.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 2:00PM 0.43 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m1PM 0.48[39;49m[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote04:~/i220a/submit/lab4/exercises/4-cast-types$ make -f ../Makefile
+gcc  -g -Wall -Wextra -Wno-unused-parameter -std=c11 -lm  cast-types.c   -o cast-types
+bestus1@remote04:~/i220a/submit/lab4/exercises/4-cast-types$ ./cast-types
+char pointer cp = 0x7ffdd7832f70, pointing at int 1 (0x1)
+char pointer cp = 0x7ffdd7832f74, pointing at int 2 (0x2)
+char pointer cp = 0x7ffdd7832f78, pointing at int 3 (0x3)
+char pointer cp = 0x7ffdd7832f7c, pointing at int 4 (0x4)
+char pointer cp = 0x7ffdd7832f80, pointing at int 5 (0x5)
+int pointer ip = 0x7ffdd7832f93, pointing at char 'a' (0x64636261)
+int pointer ip = 0x7ffdd7832f94, pointing at char 'b' (0x65646362)
+int pointer ip = 0x7ffdd7832f95, pointing at char 'c' (0x2656463)
+int pointer ip = 0x7ffdd7832f96, pointing at char 'd' (0x36564)
+int pointer ip = 0x7ffdd7832f97, pointing at char 'e' (0x465)
+bestus1@remote04:~/i220a/submit/lab4/exercises/4-cast-types$ cd ~/i220a/S[Ksubmit/lab4/exercises./[K[K.5-void[K[K[K[K[K[K[K/5-void/[K-pointers
+bestus1@remote04:~/i220a/submit/lab4/exercises/5-void-pointers$ emacs voic[Kd-pointers.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 2:04PM 0.36 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[K
+[38;5;28mint[39;49m [38;5;21mmain[39;49m() {[K
+  [38;5;28mchar[39;49m [38;5;130mchars[39;49m[] = { [38;5;89m'a'[39;49m, [38;5;89m'b'[39;49m, [38;5;89m'c'[39;49m, [38;5;89m'd'[39;49m, [38;5;89m'e'[39;49m };[K
+  [38;5;28mint[39;49m [38;5;130mints[39;49m[] = { 1, 2, 3, 4, 5 };[K
+  [38;5;28mvoid[39;49m *[38;5;130mp[39;49m = chars;[K
+  [38;5;129mfor[39;49m ([38;5;28munsigned[39;49m [38;5;130mi[39;49m = 0; i < [38;5;129msizeof[39;49m(chars)/[38;5;129msizeof[39;49m(chars[0]); i++) {[K
+    printf([38;5;89m"void pointer p = %p, pointing at char %c\n"[39;49m, p, *([38;5;28mchar[39;49m *)p);[K
+    p = ([38;5;28mchar[39;49m *)p + 1;[K
+  }[K
+  p = ints;[K
+  [38;5;129mfor[39;49m ([38;5;28munsigned[39;49m [38;5;130mi[39;49m = 0; i < [38;5;129msizeof[39;49m(ints)/[38;5;129msizeof[39;49m(ints[0]); i++) {[K
+    printf([38;5;89m"void pointer p = %p, pointing at int %d\n"[39;49m, p, *([38;5;28mint[39;49m *)p);[K
+    p = ([38;5;28mint[39;49m *)p + 1;[K
+  }[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mvoid-pointers.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 2:04PM 0.36 --------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[?25lC-c[H
+[?12l[?25h[?12;25h[72;4H[?25l-[H
+[?12l[?25h[?12;25h[72;4H[?25l C-c[H
+[?12l[?25h[?12;25h[72d[?25lThe mark is not set now, so there is no region[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[?25lC-x[H
+[?12l[?25h[?12;25h[72;4H[?25l-[H
+[?12l[?25h[?12;25h[72;4H[?25l C-c[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote04:~/i220a/submit/lab4/exercises/5-void-pointers$ make -f ../Makefile
+gcc  -g -Wall -Wextra -Wno-unused-parameter -std=c11 -lm  void-pointers.c   -o void-pointers
+bestus1@remote04:~/i220a/submit/lab4/exercises/5-void-pointers$ ./void-pointers
+void pointer p = 0x7fffaae499bb, pointing at char a
+void pointer p = 0x7fffaae499bc, pointing at char b
+void pointer p = 0x7fffaae499bd, pointing at char c
+void pointer p = 0x7fffaae499be, pointing at char d
+void pointer p = 0x7fffaae499bf, pointing at char e
+void pointer p = 0x7fffaae499a0, pointing at int 1
+void pointer p = 0x7fffaae499a4, pointing at int 2
+void pointer p = 0x7fffaae499a8, pointing at int 3
+void pointer p = 0x7fffaae499ac, pointing at int 4
+void pointer p = 0x7fffaae499b0, pointing at int 5
+bestus1@remote04:~/i220a/submit/lab4/exercises/5-void-pointers$ cd /[K~/i220a/submit/lab4/exercises/6-in-voids
+bestus1@remote04:~/i220a/submit/lab4/exercises/6-in-voids$ emacs in-voids.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 2:06PM 0.46 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[K
+[38;5;129mtypedef[39;49m [38;5;129mstruct[39;49m {[K
+  [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mexp[39;49m;[K
+  [38;5;28mvoid[39;49m *[38;5;130mp[39;49m;[K
+} [38;5;28mExpPointer[39;49m;[K
+[K
+[38;5;28mint[39;49m [38;5;21mmain[39;49m() {[K
+[K
+  [38;5;28mchar[39;49m [38;5;130mchars[39;49m[] = { [38;5;89m'a'[39;49m, [38;5;89m'b'[39;49m, [38;5;89m'c'[39;49m, [38;5;89m'd'[39;49m, [38;5;89m'e'[39;49m };[K
+  [38;5;28mint[39;49m [38;5;130mints[39;49m[] = { 1, 2, 3, 4, 5 };[K
+  [38;5;28mExpPointer[39;49m [38;5;130mquestions[39;49m[] = {[K
+    { [38;5;89m"ints[2]"[39;49m, &ints[2] },[K
+    { [38;5;89m"chars[3]"[39;49m, &chars[3] },[K
+    { [38;5;89m"ints[4]"[39;49m, &ints[4] },[K
+    { [38;5;89m"chars[1]"[39;49m, &chars[1] },[K
+    { [38;5;89m"chars[4]"[39;49m, &chars[4] },[K
+    { [38;5;89m"ints[1]"[39;49m, &ints[1] },[K
+  };[K
+  [38;5;129mfor[39;49m ([38;5;28munsigned[39;49m [38;5;130mi[39;49m = 0;[K
+       !feof(stdin) && i < [38;5;129msizeof[39;49m(questions)/[38;5;129msizeof[39;49m(questions[0]);[K
+       i++) {[K
+    [38;5;28mExpPointer[39;49m [38;5;130mq[39;49m = questions[i];[K
+    [38;5;28mint[39;49m [38;5;130misOk[39;49m = 0;[K
+    [38;5;129mdo[39;49m {[K
+      printf([38;5;89m"chars[] is at %p; ints[] ints at %p\n"[39;49m, chars, ints);[K
+      printf([38;5;89m"enter pointer to %s: "[39;49m, q.exp);[K
+      fflush(stdout);[K
+      [38;5;28mvoid[39;49m *[38;5;130mp[39;49m;[K
+      [38;5;28mint[39;49m [38;5;130mnOk[39;49m = scanf([38;5;89m"%p"[39;49m, &p);[K
+      [38;5;129mif[39;49m (nOk == 1) {[K
+        isOk = (p == q.p);[K
+        printf([38;5;89m"%s\n"[39;49m, isOk ? [38;5;89m"ok"[39;49m : [38;5;89m"not ok"[39;49m);[K
+      }[K
+      [38;5;129melse[39;49m [38;5;129mif[39;49m (nOk == EOF) {[K
+        [38;5;129mbreak[39;49m;[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        printf([38;5;89m"bad input: enter hex pointer value\n"[39;49m);[K
+      }[K
+      [38;5;28mint[39;49m [38;5;130mc[39;49m = getchar();[K
+      [38;5;129mwhile[39;49m (c != [38;5;89m'\n'[39;49m && c != EOF) { [38;5;124m//waste line                                                                                      [39;49m
+[A
+        c = getchar();[K
+      }[K
+    } [38;5;129mwhile[39;49m (!isOk);[K
+  }[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250min-voids.c  [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 2:06PM 0.46 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m7PM 0.42[39;49m[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote04:~/i220a/submit/lab4/exercises/6-in-voids$ -f ../Makefile
+bash: -f: command not found
+bestus1@remote04:~/i220a/submit/lab4/exercises/6-in-voids$ -f ../Makefile[1@M[1@a[1@k[1@e[1@ 
+bash: Make: command not found
+bestus1@remote04:~/i220a/submit/lab4/exercises/6-in-voids$ Make -f ../Makefile[C[1P[1@m
+gcc  -g -Wall -Wextra -Wno-unused-parameter -std=c11 -lm  in-voids.c   -o in-voids
+bestus1@remote04:~/i220a/submit/lab4/exercises/6-in-voids$ ./in-voids
+chars[] is at 0x7ffdcf2fe9ab; ints[] ints at 0x7ffdcf2fe990
+enter pointer to ints[2]: 7ffdcf2fe990  88
+not ok
+chars[] is at 0x7ffdcf2fe9ab; ints[] ints at 0x7ffdcf2fe990
+enter pointer to ints[2]: ^[[A^[[B        7ffdcf2de998
+not ok
+chars[] is at 0x7ffdcf2fe9ab; ints[] ints at 0x7ffdcf2fe990
+enter pointer to ints[2]: 7ffdcf2fe9A2
+not ok
+chars[] is at 0x7ffdcf2fe9ab; ints[] ints at 0x7ffdcf2fe990
+enter pointer to ints[2]: ^[[A    7ffdcf2fe992
+not ok
+chars[] is at 0x7ffdcf2fe9ab; ints[] ints at 0x7ffdcf2fe990
+enter pointer to ints[2]: ^C
+bestus1@remote04:~/i220a/submit/lab4/exercises/6-in-voids$ ^C
+bestus1@remote04:~/i220a/submit/lab4/exercises/6-in-voids$ ^C
+bestus1@remote04:~/i220a/submit/lab4/exercises/6-in-voids$ exit
+
+Script done on 2020-09-27 14:37:56-04:00 [COMMAND_EXIT_CODE="130"]
