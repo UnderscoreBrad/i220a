@@ -139,9 +139,7 @@ hamming_decode (HammingWord encoded, unsigned nParityBits,
       if (expected != get_bit (tempData, j))
 	{
 	  parityErrors[i] = j;
-	  if (*hasError==0){
 	      *hasError=1;
-	  }
 	}
       else
 	{
@@ -156,9 +154,7 @@ hamming_decode (HammingWord encoded, unsigned nParityBits,
     if(get_bit(tempData, errorPlace)==0){
         x = 1;
     }
-        printf("%d\n",tempData);
     tempData = set_bit(tempData, errorPlace+1, x);
-        printf("%d\n",tempData);
     
         //break here plz
     for (unsigned i = 1u; i <= wordLength; i++)
