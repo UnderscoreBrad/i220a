@@ -4,6 +4,8 @@
 #include <ctype.h>
 #include <limits.h>
 #include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
 
 
 /** Return BCD encoding of binary (which has normal binary representation).
@@ -27,12 +29,10 @@ binary_to_bcd(Binary value, BcdError *error)
     n = value;
     Binary rtn = 0;
     Binary arr[length];
-    for(int i = 0; i < length; i++){
+    for(unsigned i = 0; i < length; i++){
     arr[i] = value % (unsigned)(pow(10,i+1));
     value -= arr[i];
     arr[i] /= pow(10,i);
-  }
-  for(int i = 0; i < length; i++){
     arr[i] <<= (4*i);
     rtn += arr[i];
   }
@@ -55,8 +55,26 @@ binary_to_bcd(Binary value, BcdError *error)
 Binary
 bcd_to_binary(Bcd bcd, BcdError *error)
 {
-  return bcd - 6 * (bcd >> 4);
-  return 0;
+  Binary n = bcd;
+  int length = 1;
+    if (n < 0) n = (n == INT_MIN) ? INT_MAX: -n;
+    while (n > 9) {
+        n /= 10;
+        length++;
+    }
+    n = bcd;
+    Binary rtn = 0;
+    Binary arr[length];
+    for(unsigned i = 0; i < length; i++){
+    arr[i] = bcd >> (4*i);
+    arr[i] %= 16;
+    if(*error == NULL && arr[i] > 9){
+      *error = BAD_VALUE_ERR;
+    }
+    bcd -= arr[i];
+    rtn += arr[i]*(pow(10,i));
+  }
+  return rtn;
 }
 
 /** Return BCD encoding of decimal number corresponding to string s.
@@ -70,8 +88,11 @@ bcd_to_binary(Bcd bcd, BcdError *error)
 Bcd
 str_to_bcd(const char *s, const char **p, BcdError *error)
 {
-  //@TODO
-  return 0;
+  char *ptr;
+  Bcd rtn = strtol(s, &ptr, 10);
+  rtn = binary_to_bcd(rtn, error);
+  *p = ptr;
+  return rtn;
 }
 
 /** Convert bcd to a NUL-terminated string in buf[] without any
@@ -99,8 +120,11 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
 Bcd
 bcd_add(Bcd x, Bcd y, BcdError *error)
 {
-  //@TODO
-  return 0;
+  Binary xb = bcd_to_binary(x, error);
+  Binary yb = bcd_to_binary(y, error);
+  Binary add = x + y;
+  Bcd rtn = binary_to_bcd(add, error);
+  return rtn;
 }
 
 /** Return the BCD representation of the product of BCD int's x and y.
@@ -112,6 +136,9 @@ bcd_add(Bcd x, Bcd y, BcdError *error)
 Bcd
 bcd_multiply(Bcd x, Bcd y, BcdError *error)
 {
-  //@TODO
-  return 0;
+  Binary xb = bcd_to_binary(x, error);
+  Binary yb = bcd_to_binary(y, error);
+  Binary mult = x * y;
+  Bcd rtn = binary_to_bcd(mult, error);
+  return rtn;
 }
