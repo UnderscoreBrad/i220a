@@ -107,8 +107,30 @@ str_to_bcd(const char *s, const char **p, BcdError *error)
 int
 bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
 {
-  //@TODO
-  return 0;
+  if(*error == NULL && bufSize < BCD_BUF_SIZE){
+    *error = OVERFLOW_ERR;
+  }
+  Binary n = bcd;
+  int length = 1;
+    if (n < 0) n = (n == INT_MIN) ? INT_MAX: -n;
+    while (n > 9) {
+        n /= 10;
+        length++;
+    }
+    n = bcd;
+    Binary rtn = 0;
+    Binary arr[length];
+    for(unsigned i = 0; i < length; i++){
+    arr[i] = bcd >> (4*i);
+    arr[i] %= 16;
+    if(*error == NULL && arr[i] > 9){
+      *error = BAD_VALUE_ERR;
+    }
+  }
+  for(unsigned long long i = 0; i < length; i++){
+    buf[i] = arr[i];
+  }
+  return length;
 }
 
 /** Return the BCD representation of the sum of BCD int's x and y.
@@ -122,7 +144,7 @@ bcd_add(Bcd x, Bcd y, BcdError *error)
 {
   Binary xb = bcd_to_binary(x, error);
   Binary yb = bcd_to_binary(y, error);
-  Binary add = x + y;
+  Binary add = xb + yb;
   Bcd rtn = binary_to_bcd(add, error);
   return rtn;
 }
@@ -138,7 +160,7 @@ bcd_multiply(Bcd x, Bcd y, BcdError *error)
 {
   Binary xb = bcd_to_binary(x, error);
   Binary yb = bcd_to_binary(y, error);
-  Binary mult = x * y;
+  Binary mult = xb * yb;
   Bcd rtn = binary_to_bcd(mult, error);
   return rtn;
 }
