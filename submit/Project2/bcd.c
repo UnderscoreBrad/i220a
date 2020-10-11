@@ -20,18 +20,17 @@ Bcd
 binary_to_bcd(Binary value, BcdError *error)
 {
 	//compute maximum value this BCD can represent
-	Binary maxVal=0;
-	for(int i = 0; i < MAX_BCD_DIGITS; i++){
-		maxVal+=9;
+	Binary maxVal=9;
+	for(int i = 1; i < MAX_BCD_DIGITS; i++){
 		maxVal*=10;
+		maxVal+=9;
 	}
 
-	/*//Preliminary overflow check
+	//Preliminary overflow check
 	if(value > maxVal){
 		*error = OVERFLOW_ERR;
-		printf("we have a goddamn error here");
 		return 0;		
-	}*/
+	}
 
 	//Find length of value
   Binary n = value;
@@ -53,7 +52,7 @@ binary_to_bcd(Binary value, BcdError *error)
     rtn += temp;	
     }
 	
-	//secondary overlow check, catch-all
+	//secondary overflow check, catch-all
   if(n > rtn){
     *error = OVERFLOW_ERR;
 		return 0;
@@ -83,7 +82,6 @@ bcd_to_binary(Bcd bcd, BcdError *error)
 		
 		n = bcd; //set n to bcd for later stop check
     Binary rtn = 0;
-		BcdError *e = 0;
     for(unsigned i = 0; i < length; i++){
    	Binary temp = bcd >> (4*i);	//Shift to correct 4-bit segment
     temp %= 16; //remove larger 4 bit segments
@@ -95,7 +93,7 @@ bcd_to_binary(Bcd bcd, BcdError *error)
     rtn += temp*(pow(10,i));	//add digit in correct place of rtn
 
 		//awful, terrible, horrible solution, "technical debt" if you will.
-		if(n == binary_to_bcd(rtn, e)){
+		if(n == binary_to_bcd(rtn, error)){
 		//This takes more time but was the only easy solution
 		//to a problem that made the program keep adding
 		//past finding the right value of the BCD
@@ -122,9 +120,7 @@ str_to_bcd(const char *s, const char **p, BcdError *error)
 	//and it's portable!
 	char *p2;
   Bcd rtn = strtoll(s, &p2, 10);
-	printf("rtn1: %llu\n", (unsigned long long)rtn);
   rtn = binary_to_bcd(rtn, error);
-	printf("rtn2: %llu\n", (unsigned long long)rtn);
 	*p = p2;
   return rtn;
 }
