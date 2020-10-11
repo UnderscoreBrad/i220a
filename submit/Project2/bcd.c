@@ -76,31 +76,24 @@ bcd_to_binary(Bcd bcd, BcdError *error)
   Bcd n = bcd;
   unsigned length = 1;
     while (n > 9) {
-        n /= 10;
+        n /= 16;
         length++;
     }
 		
 		n = bcd; //set n to bcd for later stop check
     Binary rtn = 0;
+		printf("Run loop for bcd %llu\n", bcd);
     for(unsigned i = 0; i < length; i++){
    	Binary temp = bcd >> (4*i);	//Shift to correct 4-bit segment
     temp %= 16; //remove larger 4 bit segments
     if(temp > 9){ //error check to make sure the digit isn't > 9
       *error = BAD_VALUE_ERR;
+			printf("BAD VAL ERROR RTN 0\n");
 			return 0;
     }
+		printf("bcd = %llu, rtn = %llu, temp = %llu\n", bcd, rtn, temp);
     bcd -= temp;	//not strictly necessary
     rtn += temp*(pow(10,i));	//add digit in correct place of rtn
-
-		//awful, terrible, horrible solution, "technical debt" if you will.
-		if(n == binary_to_bcd(rtn, error)){
-		//This takes more time but was the only easy solution
-		//to a problem that made the program keep adding
-		//past finding the right value of the BCD
-		//With more time I could likely narrow down the true cause
-		//but this works, sue me.
-		return rtn;
-	}
   }
   return rtn;
 }
