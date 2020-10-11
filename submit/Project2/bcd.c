@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#include <string.h>
 
 
 /** Return BCD encoding of binary (which has normal binary representation).
@@ -80,20 +81,16 @@ bcd_to_binary(Bcd bcd, BcdError *error)
         length++;
     }
 		
-		n = bcd; //set n to bcd for later stop check
     Binary rtn = 0;
-		printf("Run loop for bcd %llu\n", bcd);
     for(unsigned i = 0; i < length; i++){
-   	Binary temp = bcd >> (4*i);	//Shift to correct 4-bit segment
+   	Binary temp = bcd >> (BCD_BITS*i);	//Shift to correct 4-bit segment
     temp %= 16; //remove larger 4 bit segments
     if(temp > 9){ //error check to make sure the digit isn't > 9
       *error = BAD_VALUE_ERR;
-			printf("BAD VAL ERROR RTN 0\n");
 			return 0;
     }
-		printf("bcd = %llu, rtn = %llu, temp = %llu\n", bcd, rtn, temp);
     bcd -= temp;	//not strictly necessary
-    rtn += temp*(pow(10,i));	//add digit in correct place of rtn
+    rtn += temp*(Binary)(pow(10,i));	//add digit in correct place of rtn
   }
   return rtn;
 }
@@ -166,9 +163,7 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
 		buf[i] = '\0';
   }
 	
-	//This gives a weird failure in the testers if I don't do this
-	//This still fails certain tests though :/
-  return (length-1);
+  return (strlen(buf));
 }
 
 /** Return the BCD representation of the sum of BCD int's x and y.
