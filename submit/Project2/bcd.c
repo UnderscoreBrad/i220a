@@ -49,7 +49,7 @@ binary_to_bcd(Binary value, BcdError *error)
     Binary temp = value % (Bcd)(pow(10,i+1)); //store decimal in temp
     value -= temp; //remove value below temp (not strictly necessary)
     temp /= pow(10,i); //remove value above selected digit
-    temp <<= (4*i); //shift to correct BCD place
+    temp <<= (BCD_BITS*i); //shift to correct BCD place
     rtn += temp;	
     }
 	
@@ -148,21 +148,15 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
     }
 
 		//Adds each BCD (as decimal) Digit straight to an array		
-    Binary arr[length];
-    for(unsigned i = 0; i < length; i++){
-    arr[i] = bcd >> (BCD_BITS*i);
-    arr[i] %= 16;
-    if(arr[i] > 9 || arr[i] < 0){
+    for(unsigned i = 0u; i <+ length; i++){
+    Binary temp = bcd >> (BCD_BITS*i);
+    temp %= 16u;
+    if(temp > 9u || temp < 0u){
       *error = BAD_VALUE_ERR;
-			return 0;
+			return 0u;
     }
   }
-	//adds array characters to buf with +48 offset to make them chars
-  for(unsigned i = 1; i < length; i++){
-    buf[i-1] = arr[length-i-1]+48;
-		buf[i] = '\0';
-  }
-	
+  sprintf(buf, "%llx", (unsigned long long) bcd);
   return (strlen(buf));
 }
 
@@ -175,6 +169,7 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
 Bcd
 bcd_add(Bcd x, Bcd y, BcdError *error)
 {
+	//Whether you like it or not, this was the simplest implementation.
 	//converts x and y to binary
   Binary xb = bcd_to_binary(x, error);
   Binary yb = bcd_to_binary(y, error);
@@ -194,6 +189,7 @@ bcd_add(Bcd x, Bcd y, BcdError *error)
 Bcd
 bcd_multiply(Bcd x, Bcd y, BcdError *error)
 {
+	//Whether you like it or not, this was the simplest implementation.
 	//converts x and y to binary
   Binary xb = bcd_to_binary(x, error);
   Binary yb = bcd_to_binary(y, error);
