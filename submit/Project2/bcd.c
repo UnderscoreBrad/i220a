@@ -20,8 +20,7 @@ Bcd
 binary_to_bcd(Binary value, BcdError *error)
 {
   Binary n = value;
-  int length = 1;
-    if (n < 0) n = (n == INT_MIN) ? INT_MAX: -n;
+  unsigned length = 1;
     while (n > 9) {
         n /= 10;
         length++;
@@ -30,7 +29,7 @@ binary_to_bcd(Binary value, BcdError *error)
     Binary rtn = 0;
     Binary arr[length];
     for(unsigned i = 0; i < length; i++){
-    arr[i] = value % (unsigned)(pow(10,i+1));
+    arr[i] = value % (Bcd)(pow(10,i+1));
     value -= arr[i];
     arr[i] /= pow(10,i);
     arr[i] <<= (4*i);
@@ -57,8 +56,7 @@ Binary
 bcd_to_binary(Bcd bcd, BcdError *error)
 {
   Binary n = bcd;
-  int length = 1;
-    if (n < 0) n = (n == INT_MIN) ? INT_MAX: -n;
+  unsigned length = 1;
     while (n > 9) {
         n /= 10;
         length++;
@@ -90,10 +88,10 @@ bcd_to_binary(Bcd bcd, BcdError *error)
 Bcd
 str_to_bcd(const char *s, const char **p, BcdError *error)
 {
-  char *ptr;
+	char *ptr;
   Bcd rtn = strtol(s, &ptr, 10);
   rtn = binary_to_bcd(rtn, error);
-  *p = ptr;
+	*p = ptr;
   return rtn;
 }
 
@@ -119,8 +117,7 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
 		return 1;
 	}
   Binary n = bcd;
-  int length = 1;
-    if (n < 0) n = (n == INT_MIN) ? INT_MAX: -n;
+  unsigned length = 1;
     while (n > 9) {
         n /= 10;
         length++;
@@ -130,24 +127,25 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
     for(unsigned i = 0; i < length; i++){
     arr[i] = bcd >> (4*i);
     arr[i] %= 16;
-    if(arr[i] > 9){
+    if(arr[i] > 9 || arr[i] < 0){
       *error = BAD_VALUE_ERR;
 			return 0;
     }
   }
-  for(unsigned long long i = 1; i < length; i++){
+  for(unsigned i = 1; i < length; i++){
+		//COME BACK HERE THIS IS MEGA SKETCH
     buf[i-1] = arr[length-i-1]+48;
   }
 	buf[length] = '\0';
 	if(length==1){
 		return 1;
 	}		
-  return length-1;
+  return (length-1);
 }
 
 /** Return the BCD representation of the sum of BCD int's x and y.
  *
- *  If error is not NULL, sets *error to to BAD_VALUE_ERR is x or y
+ *  If error is not NULL, sets *error to to BAD_VALUE_ERR if x or y
  *  contains a BCD digit which is greater than 9, OVERFLOW_ERR on
  *  overflow, otherwise *error is unchanged.
  */
