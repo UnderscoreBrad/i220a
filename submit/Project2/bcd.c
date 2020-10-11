@@ -39,6 +39,7 @@ binary_to_bcd(Binary value, BcdError *error)
   if(n > rtn){
     printf("ERROR");
     *error = OVERFLOW_ERR;
+		return 0;
   }
   return rtn;
 }
@@ -68,8 +69,9 @@ bcd_to_binary(Bcd bcd, BcdError *error)
     for(unsigned i = 0; i < length; i++){
     arr[i] = bcd >> (4*i);
     arr[i] %= 16;
-    if(*error == NULL && arr[i] > 9){
+    if(arr[i] > 9){
       *error = BAD_VALUE_ERR;
+			return 0;
     }
     bcd -= arr[i];
     rtn += arr[i]*(pow(10,i));
@@ -107,9 +109,15 @@ str_to_bcd(const char *s, const char **p, BcdError *error)
 int
 bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
 {
-  if(*error == NULL && bufSize < BCD_BUF_SIZE){
+  if(bufSize < BCD_BUF_SIZE){
     *error = OVERFLOW_ERR;
+		return 0;
   }
+	if(bcd==0){
+		buf[0] = '0';
+		buf[1] = '\0';
+		return 1;
+	}
   Binary n = bcd;
   int length = 1;
     if (n < 0) n = (n == INT_MIN) ? INT_MAX: -n;
@@ -118,19 +126,23 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
         length++;
     }
     n = bcd;
-    Binary rtn = 0;
     Binary arr[length];
     for(unsigned i = 0; i < length; i++){
     arr[i] = bcd >> (4*i);
     arr[i] %= 16;
-    if(*error == NULL && arr[i] > 9){
+    if(arr[i] > 9){
       *error = BAD_VALUE_ERR;
+			return 0;
     }
   }
-  for(unsigned long long i = 0; i < length; i++){
-    buf[i] = arr[i];
+  for(unsigned long long i = 1; i < length; i++){
+    buf[i-1] = arr[length-i-1]+48;
   }
-  return length;
+	buf[length] = '\0';
+	if(length==1){
+		return 1;
+	}		
+  return length-1;
 }
 
 /** Return the BCD representation of the sum of BCD int's x and y.
