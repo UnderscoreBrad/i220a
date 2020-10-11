@@ -37,8 +37,8 @@ binary_to_bcd(Binary value, BcdError *error)
   Binary n = value;
   unsigned length = 1;
     while (n > 9) {
-        n /= 10;
-        length++;
+		n /= 10;
+		length++;
     }
 		
     n = value; //reset n to value for second overlow check
@@ -46,17 +46,17 @@ binary_to_bcd(Binary value, BcdError *error)
 		//Convert value to BCD, per decimal column
     Binary rtn = 0;
     for(unsigned i = 0; i < length; i++){
-    Binary temp = value % (Bcd)(pow(10,i+1)); //store decimal in temp
-    value -= temp; //remove value below temp (not strictly necessary)
-    temp /= pow(10,i); //remove value above selected digit
-    temp <<= (BCD_BITS*i); //shift to correct BCD place
-    rtn += temp;	
+		Binary temp = value % (Bcd)(pow(10,i+1)); //store decimal in temp
+		value -= temp; //remove value below temp (not strictly necessary)
+		temp /= pow(10,i); //remove value above selected digit
+		temp <<= (BCD_BITS*i); //shift to correct BCD place
+		rtn += temp;	
     }
 	
 	//secondary overflow check, catch-all
   if(n > rtn){
-    *error = OVERFLOW_ERR;
-		return 0;
+	*error = OVERFLOW_ERR;
+	return 0;
   }
   return rtn;
 }
@@ -74,24 +74,24 @@ Binary
 bcd_to_binary(Bcd bcd, BcdError *error)
 {
 	//determine length of bcd for the loop
-  Bcd n = bcd;
-  unsigned length = 1;
-    while (n > 9) {
-        n /= 16;
-        length++;
+	Bcd n = bcd;
+	unsigned length = 1;
+	while (n > 9) {
+		n /= 16;
+		length++;
     }
 		
     Binary rtn = 0;
     for(unsigned i = 0; i < length; i++){
-   	Binary temp = bcd >> (BCD_BITS*i);	//Shift to correct 4-bit segment
-    temp %= 16; //remove larger 4 bit segments
-    if(temp > 9){ //error check to make sure the digit isn't > 9
-      *error = BAD_VALUE_ERR;
-			return 0;
-    }
-    bcd -= temp;	//not strictly necessary
-    rtn += temp*(Binary)(pow(10,i));	//add digit in correct place of rtn
-  }
+		Binary temp = bcd >> (BCD_BITS*i);	//Shift to correct 4-bit segment
+		temp %= 16; //remove larger 4 bit segments
+		if(temp > 9){ //error check to make sure the digit isn't > 9
+		  *error = BAD_VALUE_ERR;
+				return 0;
+		}
+		bcd -= temp; //not strictly necessary
+		rtn += temp*(Binary)(pow(10,i));	//add digit in correct place of rtn
+	}
   return rtn;
 }
 
@@ -109,10 +109,10 @@ str_to_bcd(const char *s, const char **p, BcdError *error)
 	//this was the simplest solution
 	//and it's portable!
 	char *p2;
-  Bcd rtn = strtoll(s, &p2, 10);
-  rtn = binary_to_bcd(rtn, error);
+	Bcd rtn = strtoll(s, &p2, 10);
+	rtn = binary_to_bcd(rtn, error);
 	*p = p2;
-  return rtn;
+	return rtn;
 }
 
 /** Convert bcd to a NUL-terminated string in buf[] without any
@@ -128,10 +128,10 @@ int
 bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
 {
 	//check for buffer overflow
-  if(bufSize < BCD_BUF_SIZE){
-    *error = OVERFLOW_ERR;
+	if(bufSize < BCD_BUF_SIZE){
+		*error = OVERFLOW_ERR;
 		return 0;
-  }
+	}
 	//quick, easy zero case
 	//also fixes error where bcd 0 returns ""
 	if(bcd==0){
@@ -140,20 +140,20 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
 		return 1;
 	}
 	//find length of bcd
-  Binary n = bcd;
-  unsigned length = 1;
+	Binary n = bcd;
+	unsigned length = 1;
     while (n > 9) {
         n /= 10;
         length++;
     }
 
-		//Adds each BCD (as decimal) Digit straight to an array		
+	//Adds each BCD (as decimal) Digit straight to an array		
     for(unsigned i = 0u; i <+ length; i++){
     Binary temp = bcd >> (BCD_BITS*i);
     temp %= 16u;
     if(temp > 9u || temp < 0u){
-      *error = BAD_VALUE_ERR;
-			return 0u;
+		*error = BAD_VALUE_ERR;
+		return 0u;
     }
   }
   sprintf(buf, "%llx", (unsigned long long) bcd);
@@ -171,13 +171,13 @@ bcd_add(Bcd x, Bcd y, BcdError *error)
 {
 	//Whether you like it or not, this was the simplest implementation.
 	//converts x and y to binary
-  Binary xb = bcd_to_binary(x, error);
-  Binary yb = bcd_to_binary(y, error);
+	Binary xb = bcd_to_binary(x, error);
+	Binary yb = bcd_to_binary(y, error);
 	//adds as binary
-  Binary add = xb + yb;
+	Binary add = xb + yb;
 	//reconverts to BCD
-  Bcd rtn = binary_to_bcd(add, error);
-  return rtn;
+	Bcd rtn = binary_to_bcd(add, error);
+	return rtn;
 }
 
 /** Return the BCD representation of the product of BCD int's x and y.
@@ -191,11 +191,11 @@ bcd_multiply(Bcd x, Bcd y, BcdError *error)
 {
 	//Whether you like it or not, this was the simplest implementation.
 	//converts x and y to binary
-  Binary xb = bcd_to_binary(x, error);
-  Binary yb = bcd_to_binary(y, error);
+	Binary xb = bcd_to_binary(x, error);
+	Binary yb = bcd_to_binary(y, error);
 	//multiplies as binary
-  Binary mult = xb * yb;
+	Binary mult = xb * yb;
 	//reconverts to BCD
-  Bcd rtn = binary_to_bcd(mult, error);
-  return rtn;
+	Bcd rtn = binary_to_bcd(mult, error);
+	return rtn;
 }
