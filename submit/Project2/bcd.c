@@ -19,6 +19,15 @@
 Bcd
 binary_to_bcd(Binary value, BcdError *error)
 {
+	Binary maxVal=0;
+	for(int i = 0; i < MAX_BCD_DIGITS; i++){
+		maxVal+=9;
+		maxVal*=10;
+	}
+	if(value > maxVal){
+		*error = OVERFLOW_ERR;
+		return 0;		
+	}
   Binary n = value;
   unsigned length = 1;
     while (n > 9) {
@@ -36,7 +45,6 @@ binary_to_bcd(Binary value, BcdError *error)
     rtn += arr[i];
   }
   if(n > rtn){
-    printf("ERROR");
     *error = OVERFLOW_ERR;
 		return 0;
   }
@@ -55,24 +63,30 @@ binary_to_bcd(Binary value, BcdError *error)
 Binary
 bcd_to_binary(Bcd bcd, BcdError *error)
 {
-  Binary n = bcd;
+  Bcd n = bcd;
   unsigned length = 1;
     while (n > 9) {
         n /= 10;
         length++;
     }
-    n = bcd;
+		n = bcd;
     Binary rtn = 0;
-    Binary arr[length];
+		BcdError *e = 0;
     for(unsigned i = 0; i < length; i++){
-    arr[i] = bcd >> (4*i);
-    arr[i] %= 16;
-    if(arr[i] > 9){
+   	Binary temp = bcd >> (4*i);
+    temp %= 16;
+    if(temp > 9){
       *error = BAD_VALUE_ERR;
 			return 0;
     }
-    bcd -= arr[i];
-    rtn += arr[i]*(pow(10,i));
+    bcd -= temp;
+    rtn += temp*(pow(10,i));
+		if(n == binary_to_bcd(rtn, e)){
+		//This takes more time but was the only easy solution
+		//to a problem that made the program keep adding
+		//past finding the right value of the BCD
+		return rtn;
+	}
   }
   return rtn;
 }
@@ -125,7 +139,7 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
     n = bcd;
     Binary arr[length];
     for(unsigned i = 0; i < length; i++){
-    arr[i] = bcd >> (4*i);
+    arr[i] = bcd >> (BCD_BITS*i);
     arr[i] %= 16;
     if(arr[i] > 9 || arr[i] < 0){
       *error = BAD_VALUE_ERR;
@@ -133,13 +147,13 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
     }
   }
   for(unsigned i = 1; i < length; i++){
-		//COME BACK HERE THIS IS MEGA SKETCH
     buf[i-1] = arr[length-i-1]+48;
   }
 	buf[length] = '\0';
 	if(length==1){
 		return 1;
 	}		
+	//This gives a weird failure in the testers
   return (length-1);
 }
 
