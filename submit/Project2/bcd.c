@@ -26,11 +26,12 @@ binary_to_bcd(Binary value, BcdError *error)
 		maxVal*=10;
 	}
 
-	//Preliminary overflow check
+	/*//Preliminary overflow check
 	if(value > maxVal){
 		*error = OVERFLOW_ERR;
+		printf("we have a goddamn error here");
 		return 0;		
-	}
+	}*/
 
 	//Find length of value
   Binary n = value;
@@ -50,7 +51,7 @@ binary_to_bcd(Binary value, BcdError *error)
     temp /= pow(10,i); //remove value above selected digit
     temp <<= (4*i); //shift to correct BCD place
     rtn += temp;	
-  }
+    }
 	
 	//secondary overlow check, catch-all
   if(n > rtn){
@@ -120,8 +121,10 @@ str_to_bcd(const char *s, const char **p, BcdError *error)
 	//this was the simplest solution
 	//and it's portable!
 	char *p2;
-  Bcd rtn = strtol(s, &p2, 10);
+  Bcd rtn = strtoll(s, &p2, 10);
+	printf("rtn1: %llu\n", (unsigned long long)rtn);
   rtn = binary_to_bcd(rtn, error);
+	printf("rtn2: %llu\n", (unsigned long long)rtn);
 	*p = p2;
   return rtn;
 }
@@ -173,11 +176,7 @@ bcd_to_str(Bcd bcd, char buf[], size_t bufSize, BcdError *error)
     buf[i-1] = arr[length-i-1]+48;
 		buf[i] = '\0';
   }
-
-	if(length==1){	//no, I don't know why I added this, but now I'm afraid to touch it.
-		return 1;
-	}		
-
+	
 	//This gives a weird failure in the testers if I don't do this
 	//This still fails certain tests though :/
   return (length-1);
