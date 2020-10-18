@@ -1,0 +1,2798 @@
+Script started on 2020-10-18 14:25:11-04:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="136" LINES="72"]
+bestus1@remote01:~/i220a/submit/lab7/exercises$ emacs hello.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 2:25PM 0.41 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[K
+[38;5;124m/** Say hello to who on stream out. */[39;49m[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21mhello[39;49m([38;5;28mFILE[39;49m *[38;5;130mout[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130mwho[39;49m)[K
+{[K
+  fprintf(out, [38;5;89m"hello %s\n"[39;49m, who);[K
+}[K
+[K
+[K
+[38;5;124m/** Say hello to 1-or-more command-line arguments. */[39;49m[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;129mif[39;49m (argc == 1) {[K
+    fprintf(stderr, [38;5;89m"usage: %s NAME...\n"[39;49m, argv[0]);[K
+    exit(0xdeadbeef);[K
+  }[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 1; i < argc; i++) {[K
+    hello(stdout, argv[i]);[K
+  }[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mhello.c     [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 2:25PM 0.41 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m6PM 0.57[39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m7PM 0.43[39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m8PM 0.41[39;49m[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab7/exercises$ make
+cc -g -Wall  -std=c11    hello.c   -o hello
+cc -g -Wall  -std=c11 -S hello.c
+bestus1@remote01:~/i220a/submit/lab7/exercises$ ./hello
+usage: ./hello NAME...
+bestus1@remote01:~/i220a/submit/lab7/exercises$ ./ he[K[K[Khello bro
+hello bro
+bestus1@remote01:~/i220a/submit/lab7/exercises$ size hello
+   text	   data	    bss	    dec	    hex	filename
+   1874	    592	     48	   2514	    9d2	hello
+bestus1@remote01:~/i220a/submit/lab7/exercises$ h[Ksize -A hello
+hello  :
+section              size    addr
+.interp                28     680
+.note.ABI-tag          32     708
+.note.gnu.build-id     36     740
+.gnu.hash              48     776
+.dynsym               240     824
+.dynstr               152    1064
+.gnu.version           20    1216
+.gnu.version_r         32    1240
+.rela.dyn             240    1272
+.rela.plt              48    1512
+.init                  23    4096
+.plt                   48    4128
+.plt.got                8    4176
+.text                 513    4192
+.fini                   9    4708
+.rodata                33    8192
+.eh_frame_hdr          68    8228
+.eh_frame             296    8296
+.init_array             8   15848
+.fini_array             8   15856
+.dynamic              480   15864
+.got                   40   16344
+.got.plt               40   16384
+.data                  16   16424
+.bss                   48   16448
+.comment               28       0
+.debug_aranges         48       0
+.debug_info           860       0
+.debug_abbrev         287       0
+.debug_line           308       0
+.debug_str            597       0
+Total                4642
+
+
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump - d[Kd [K[K[Kd hello > hello.objdump
+bestus1@remote01:~/i220a/submit/lab7/exercises$ emacs hello.objdump
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 2:29PM 0.35 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                                                                                    [0m[39;49m[27m
+[A
+[K
+hello:     file format elf64-x86-64[K
+[K
+[K
+Disassembly of section .init:[K
+[K
+0000000000001000 <_init>:[K
+    1000:       48 83 ec 08             sub    $0x8,%rsp[K
+    1004:       48 8b 05 dd 2f 00 00    mov    0x2fdd(%rip),%rax        # 3fe8 <__gmon_start__>[K
+    100b:       48 85 c0                test   %rax,%rax[K
+    100e:       74 02                   je     1012 <_init+0x12>[K
+    1010:       ff d0                   callq  *%rax[K
+    1012:       48 83 c4 08             add    $0x8,%rsp[K
+    1016:       c3                      retq[K
+[K
+Disassembly of section .plt:[K
+[K
+0000000000001020 <.plt>:[K
+    1020:       ff 35 e2 2f 00 00       pushq  0x2fe2(%rip)        # 4008 <_GLOBAL_OFFSET_TABLE_+0x8>[K
+    1026:       ff 25 e4 2f 00 00       jmpq   *0x2fe4(%rip)        # 4010 <_GLOBAL_OFFSET_TABLE_+0x10>[K
+    102c:       0f 1f 40 00             nopl   0x0(%rax)[K
+[K
+0000000000001030 <fprintf@plt>:[K
+    1030:       ff 25 e2 2f 00 00       jmpq   *0x2fe2(%rip)        # 4018 <fprintf@GLIBC_2.2.5>[K
+    1036:       68 00 00 00 00          pushq  $0x0[K
+    103b:       e9 e0 ff ff ff          jmpq   1020 <.plt>[K
+[K
+0000000000001040 <exit@plt>:[K
+    1040:       ff 25 da 2f 00 00       jmpq   *0x2fda(%rip)        # 4020 <exit@GLIBC_2.2.5>[K
+    1046:       68 01 00 00 00          pushq  $0x1[K
+    104b:       e9 d0 ff ff ff          jmpq   1020 <.plt>[K
+[K
+Disassembly of section .plt.got:[K
+[K
+0000000000001050 <__cxa_finalize@plt>:[K
+    1050:       ff 25 a2 2f 00 00       jmpq   *0x2fa2(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>[K
+    1056:       66 90                   xchg   %ax,%ax[K
+[K
+Disassembly of section .text:[K
+[K
+0000000000001060 <_start>:[K
+    1060:       31 ed                   xor    %ebp,%ebp[K
+    1062:       49 89 d1                mov    %rdx,%r9[K
+    1065:       5e                      pop    %rsi[K
+    1066:       48 89 e2                mov    %rsp,%rdx[K
+    1069:       48 83 e4 f0             and    $0xfffffffffffffff0,%rsp[K
+    106d:       50                      push   %rax[K
+    106e:       54                      push   %rsp[K
+    106f:       4c 8d 05 ea 01 00 00    lea    0x1ea(%rip),%r8        # 1260 <__libc_csu_fini>[K
+    1076:       48 8d 0d 83 01 00 00    lea    0x183(%rip),%rcx        # 1200 <__libc_csu_init>[K
+    107d:       48 8d 3d f0 00 00 00    lea    0xf0(%rip),%rdi        # 1174 <main>[K
+    1084:       ff 15 56 2f 00 00       callq  *0x2f56(%rip)        # 3fe0 <__libc_start_main@GLIBC_2.2.5>[K
+    108a:       f4                      hlt[K
+    108b:       0f 1f 44 00 00          nopl   0x0(%rax,%rax,1)[K
+[K
+0000000000001090 <deregister_tm_clones>:[K
+    1090:       48 8d 3d a1 2f 00 00    lea    0x2fa1(%rip),%rdi        # 4038 <__TMC_END__>[K
+    1097:       48 8d 05 9a 2f 00 00    lea    0x2f9a(%rip),%rax        # 4038 <__TMC_END__>[K
+    109e:       48 39 f8                cmp    %rdi,%rax[K
+    10a1:       74 15                   je     10b8 <deregister_tm_clones+0x28>[K
+    10a3:       48 8b 05 2e 2f 00 00    mov    0x2f2e(%rip),%rax        # 3fd8 <_ITM_deregisterTMCloneTable>[K
+    10aa:       48 85 c0                test   %rax,%rax[K
+    10ad:       74 09                   je     10b8 <deregister_tm_clones+0x28>[K
+    10af:       ff e0                   jmpq   *%rax[K
+    10b1:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[K
+    10b8:       c3                      retq[K
+    10b9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[K
+[K
+00000000000010c0 <register_tm_clones>:[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mhello.objdump[0m[39;49m[30m[48;5;250m   Top L1     (Fundamental) 2:29PM 0.35 ----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[3d[?25l00000000000010c0 <register_tm_clones>:[4;5H10c0:       48 8d 3d 71 2f 00 00    lea    0x2f71(%rip),%rdi        # 4038 <__TMC_END__>[5;5H10c7:       48 8d 35 6a 2f 00 00    lea    0x2f6a(%rip),%rsi        # 4038 <__TMC_END__>
+    10ce:       48 29 fe                sub    %rdi,%rsi[7;5H10d1:       48 c1 fe 03             sar    $0x3,%rsi
+    10d5:       48 89 f0                mov    %rsi,%rax[9;7Hd8:       48 c1 e8 3f             shr    $0x3f,%rax[10;7Hdc:       48 01 c6                add    %rax,%rsi[K[11;7Hdf:       48 d1 fe                sar    %rsi[K[12;7He2:       74 14                   je     10f8 <register_tm_clones+0x38>[13;7He4:       48 8b 05 05 2f 00 00    mov    0x2f05(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable>[14;7Heb:       48 85 c0                test   %rax,%rax[15;7Hee:       74 08                   je     10f8 <register_tm_clones+0x38>[16;5H10f0:       ff e0                   jmpq   *%rax
+    10f2:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)[18;5H10f8:       c3                      retq
+    10f9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+[K
+0000000000001100 <__do_global_dtors_aux>:[K[22;6H100:       80 3d 61 2f 00 00 00    cmpb   $0x0,0x2f61(%rip)        # 4068 <completed.7325>[23;5H1107:       75 2f                   jne    1138 <__do_global_dtors_aux+0x38>
+    1109:       55                      push   %rbp[25;6H10a:       48 83 3d e6 2e 00 00    cmpq   $0x0,0x2ee6(%rip)        # 3ff8 <__c[11@xa_finalize[26;6H111:       00[K[27;6H112:       48 89 e5                mov    %rsp,%rbp[K[28;5H1115:       74 0c                   je     1123 <__do_global_dtors_aux+0x23>
+    1117:       48 8b 3d 12 2f 00 00    mov    0x2f12(%rip),%rdi        # 4030 <__dso_handle>[30;6H11e:       e8 2d ff ff ff          callq  1050 <__cxa_finalize@plt>[K[31;6H123:       e8 68 ff ff ff          callq  1090 <deregister_tm_clones>[32;6H128:       c6 05 39 2f 00 00 01    movb   $0x1,0x2f39(%rip)        # 4068 <completed.7325>[33;5H112f:       5d                      pop    %rbp
+    1130:       c3                      retq[35;5H1131:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+    1138:       c3                      retq[37;6H139:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[K
+[K
+0000000000001140 <frame_dummy>:
+    1140:       e9 7b ff ff ff          jmpq   10c0 <register_tm_clones>[42;14H145 <hello>:[K[43;6H145:       55                      push   %rbp[K[44;6H146:       48 89 e5                mov    %rsp,%rbp[45;6H149:       48 83 ec 10             sub    $0x10,%rsp[46;6H14d:       48 89 7d f8             mov    %rdi,-0x8(%rbp)[47;6H151:       48 89 75 f0             mov    %rsi,-0x10(%rbp)[K[48;6H155:       48 8b 55 f0             mov    -0x10(%rbp),%rdx[49;6H159:       48 8b 45 f8             mov    -0x8(%rbp),%rax[50;6H15d:       48 8d 35 a0 0e 00 00    lea    0xea0(%rip),%rsi        # 2004 <_IO_stdin_used+0x4>[51;6H164:       48 89 c7                mov    %rax,%rdi[K[52;6H167:       b8 00 00 00 00          mov    $0x0,%eax[K[53;6H16c:       e8 bf fe ff ff          callq  1030 <fprintf@plt>[K[54;6H171:       90                      nop[55;6H172:       c9                      leaveq[K[56;5H1173:       c3                      retq
+[K
+0000000000001174 <main>:[K[59;6H174:       55                      push   %rbp[K[60;6H175:       48 89 e5                mov    %rsp,%rbp[61;6H178:       48 83 ec 20             sub    $0x20,%rsp[K[62;6H17c:       89 7d ec                mov    %edi,-0x14(%rbp)[K[63;6H17f:       48 89 75 e0             mov    %rsi,-0x20(%rbp)[64;6H183:       83 7d ec 01             cmpl   $0x1,-0x14(%rbp)[K[65;6H187:       75 2c                   jne    11b5 <main+0x41>[66;6H189:       48 8b 45 e0             mov    -0x20(%rbp),%rax[67;6H18d:       48 8b 10                mov    (%rax),%rdx[68;6H190:       48 8b 05 c9 2e 00 00    mov    0x2ec9(%rip),%rax        # 4060 <stderr@@GLIBC_2.2.5>[69;5H1197:       48 8d 35 70 0e 00 00    lea    0xe70(%rip),%rsi        # 200e <_IO_stdin_used+0xe>
+    119e:       48 89 c7                mov    %rax,%rdi[71;30H[30m[48;5;250m31% L68[39;49m[H
+[?12l[?25h[?12;25h[2;5H[?25l1197:       48 8d 35 70 0e 00 00    lea    0xe70(%rip),%rsi        # 200e <_IO_stdin_used+0xe>
+    119e:       48 89 c7                mov    %rax,%rdi[4;6H1a1:       b8 00 00 00 00          mov    $0x0,%eax[K[5;6H1a6:       e8 85 fe ff ff          callq  1030 <fprintf@plt>[K[6;6H1ab:       bf ef be ad de          mov    $0xdeadbeef,%edi[7;6H1b0:       e8 8b fe ff ff          callq  1040 <exit@plt>[8;6H1b5:       c7 45 fc 01 00 00 00    movl   $0x1,-0x4(%rbp)[9;6H1bc:       eb 2d                   jmp    11eb <main+0x77>[10;6H1be:       8b 45 fc                mov    -0x4(%rbp),%eax[11;6H1c1:       48 98                   cltq[K[12;6H1c3:       48 8d 14 c5 00 00 00    lea    0x0(,%rax,8),%rdx[K[13;6H1ca:       00[K[14;6H1cb:       48 8b 45 e0             mov    -0x20(%rbp),%rax[15;6H1cf:       48 01 d0                add    %rdx,%rax[K[16;6H1d2:       48 8b 10                mov    (%rax),%rdx[17;6H1d5:       48 8b 05 64 2e 00 00    mov    0x2e64(%rip),%rax        # 4040 <stdout@@GLIBC_2.2.5>[18;6H1dc:       48 89 d6                mov    %rdx,%rsi[19;6H1df:       48 89 c7                mov    %rax,%rdi[20;5H11e2:       e8 5e ff ff ff          callq  1145 <hello>
+    11e7:       83 45 fc 01             addl   $0x1,-0x4(%rbp)[22;7Heb:       8b 45 fc                mov    -0x4(%rbp),%eax[K[23;7Hee:       3b 45 ec                cmp    -0x14(%rbp),%eax[K[24;7Hf1:       7c cb                   jl     11be <main+0x4a>[25;7Hf3:       b8 00 00 00 00          mov    $0x0,%eax[K[26;7Hf8:       c9                      leaveq[27;7Hf9:       c3                      retq[K[28;7Hfa:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)[K
+[K
+0000000000001200 <__libc_csu_init>:[K[31;6H200:       41 57                   push   %r15[K[32;6H202:       49 89 d7                mov    %rdx,%r15[K[33;6H205:       41 56                   push   %r14[34;6H207:       49 89 f6                mov    %rsi,%r14[35;6H20a:       41 55                   push   %r13[K[36;6H20c:       41 89 fd                mov    %edi,%r13d[37;6H20f:       41 54                   push   %r12[K[38;5H1211:       4c 8d 25 d0 2b 00 00    lea    0x2bd0(%rip),%r12        # 3de8 <__frame_dummy_init_array_entry>
+    1218:       55                      push   %rbp[40;6H219:       48 8d 2d d0 2b 00 00    lea    0x2bd0(%rip),%rbp        # 3df0 <__init_array_end>[41;5H1220:       53                      push   %rbx
+    1221:       4c 29 e5                sub    %r12,%rbp[43;6H224:       48 83 ec 08             sub    $0x8,%rsp[44;6H228:       e8 d3 fd ff ff          callq  1000 <_init>[45;6H22d:       48 c1 fd 03             sar    $0x3,%rbp[K[46;6H231:       74 1b                   je     124e <__libc_csu_init+0x4e>[47;6H233:       31 db                   xor    %ebx,%ebx[K[48;6H235:       0f 1f 00                nopl   (%rax)[K[49;6H238:       4c 89 fa                mov    %r15,%rdx[K[50;6H23b:       4c 89 f6                mov    %r14,%rsi[K[51;6H23e:       44 89 ef                mov    %r13d,%edi[52;6H241:       41 ff 14 dc             callq  *(%r12,%rbx,8)[53;6H245:       48 83 c3 01             add    $0x1,%rbx[K[54;6H249:       48 39 dd                cmp    %rbx,%rbp[55;6H24c:       75 ea                   jne    1238 <__libc_csu_init+0x38>[56;6H24e:       48 83 c4 08             add    $0x8,%rsp[57;5H1252:       5b                      pop    %rbx
+    1253:       5d                      pop    %rbp[59;6H254:       41 5c                   pop    %r12[60;6H256:       41 5d                   pop    %r13[K[61;6H258:       41 5e                   pop    %r14[K[62;6H25a:       41 5f                   pop    %r15[K[63;6H25c:       c3                      retq[K[64;6H25d:       0f 1f 00                nopl   (%rax)[K
+[K
+0000000000001260 <__libc_csu_fini>:[K[67;6H260:       c3                      retq[K
+[K
+Disassembly of section .fini:[K
+[K[71;30H[30m[48;5;250m65% L135[39;49m[H
+[?12l[?25h[?12;25h[?25lDisassembly of section .fini:[K
+[K
+0000000000001264 <_fini>:[K[5;6H264:       48 83 ec 08             sub    $0x8,%rsp[K[6;6H268:       48 83 c4 08             add    $0x8,%rsp[K[7;6H26c:       c3                      retq[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+
+[K
+[K
+
+[K[71;30H[30m[48;5;250mBot L202[39;49m[H
+[?12l[?25h[?12;25h[?25l    1197:       48 8d 35 70 0e 00 00    lea    0xe70(%rip),%rsi        # 200e <_IO_stdin_used+0xe>[3;5H119e:       48 89 c7                mov    %rax,%rdi
+    11a1:       b8 00 00 00 00          mov    $0x0,%eax[5;6H1a6:       e8 85 fe ff ff          callq  1030 <fprintf@plt>[6;6H1ab:       bf ef be ad de          mov    $0xdeadbeef,%edi[7;6H1b0:       e8 8b fe ff ff          callq  1040 <exit@plt>[8;5H11b5:       c7 45 fc 01 00 00 00    movl   $0x1,-0x4(%rbp)[9;5H11bc:       eb 2d                   jmp    11eb <main+0x77>[10;5H11be:       8b 45 fc                mov    -0x4(%rbp),%eax[11;5H11c1:       48 98                   cltq[12;5H11c3:       48 8d 14 c5 00 00 00    lea    0x0(,%rax,8),%rdx[13;5H11ca:       00[14;5H11cb:       48 8b 45 e0             mov    -0x20(%rbp),%rax[15;5H11cf:       48 01 d0                add    %rdx,%rax[16;5H11d2:       48 8b 10                mov    (%rax),%rdx[17;5H11d5:       48 8b 05 64 2e 00 00    mov    0x2e64(%rip),%rax        # 4040 <stdout@@GLIBC_2.2.5>[18;5H11dc:       48 89 d6                mov    %rdx,%rsi[19;5H11df:       48 89 c7                mov    %rax,%rdi[20;5H11e2:       e8 5e ff ff ff          callq  1145 <hello>[21;5H11e7:       83 45 fc 01             addl   $0x1,-0x4(%rbp)[22;5H11eb:       8b 45 fc                mov    -0x4(%rbp),%eax[23;5H11ee:       3b 45 ec                cmp    -0x14(%rbp),%eax[24;5H11f1:       7c cb                   jl     11be <main+0x4a>[25;5H11f3:       b8 00 00 00 00          mov    $0x0,%eax[26;5H11f8:       c9                      leaveq[27;5H11f9:       c3                      retq[28;5H11fa:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)
+
+0000000000001200 <__libc_csu_init>:[31;5H1200:       41 57                   push   %r15[32;5H1202:       49 89 d7                mov    %rdx,%r15[33;5H1205:       41 56                   push   %r14[34;5H1207:       49 89 f6                mov    %rsi,%r14[35;5H120a:       41 55                   push   %r13[36;5H120c:       41 89 fd                mov    %edi,%r13d[37;5H120f:       41 54                   push   %r12[38;5H1211:       4c 8d 25 d0 2b 00 00    lea    0x2bd0(%rip),%r12        # 3de8 <__frame_dummy_init_array_entry>[39;5H1218:       55                      push   %rbp[40;5H1219:       48 8d 2d d0 2b 00 00    lea    0x2bd0(%rip),%rbp        # 3df0 <__init_array_end>[41;5H1220:       53                      push   %rbx[42;5H1221:       4c 29 e5                sub    %r12,%rbp[43;5H1224:       48 83 ec 08             sub    $0x8,%rsp[44;5H1228:       e8 d3 fd ff ff          callq  1000 <_init>[45;5H122d:       48 c1 fd 03             sar    $0x3,%rbp[46;5H1231:       74 1b                   je     124e <__libc_csu_init+0x4e>[47;5H1233:       31 db                   xor    %ebx,%ebx[48;5H1235:       0f 1f 00                nopl   (%rax)[49;5H1238:       4c 89 fa                mov    %r15,%rdx[50;5H123b:       4c 89 f6                mov    %r14,%rsi[51;5H123e:       44 89 ef                mov    %r13d,%edi[52;5H1241:       41 ff 14 dc             callq  *(%r12,%rbx,8)[53;5H1245:       48 83 c3 01             add    $0x1,%rbx[54;5H1249:       48 39 dd                cmp    %rbx,%rbp[55;5H124c:       75 ea                   jne    1238 <__libc_csu_init+0x38>[56;5H124e:       48 83 c4 08             add    $0x8,%rsp[57;5H1252:       5b                      pop    %rbx[58;5H1253:       5d                      pop    %rbp[59;5H1254:       41 5c                   pop    %r12[60;5H1256:       41 5d                   pop    %r13[61;5H1258:       41 5e                   pop    %r14[62;5H125a:       41 5f                   pop    %r15[63;5H125c:       c3                      retq[64;5H125d:       0f 1f 00                nopl   (%rax)
+
+0000000000001260 <__libc_csu_fini>:[67;5H1260:       c3                      retq
+
+Disassembly of section .fini:
+
+[30m[48;5;250m65%[39;49m[69;1H[?12l[?25h[?12;25h[2d[K
+[?25l00000000000010c0 <register_tm_clones>:[K[4;6H0c0:       48 8d 3d 71 2f 00 00    lea    0x2f71(%rip),%rdi        # 4038 <__TMC_END__>[5;6H0c7:       48 8d 35 6a 2f 00 00    lea    0x2f6a(%rip),%rsi        # 4038 <__TMC_END__>[6;6H0ce:       48 29 fe                sub    %rdi,%rsi[K[7;6H0d1:       48 c1 fe 03             sar    $0x3,%rsi[K[8;6H0d5:       48 89 f0                mov    %rsi,%rax[K[9;6H0d8:       48 c1 e8 3f             shr    $0x3f,%rax[K[10;6H0dc:       48 01 c6                add    %rax,%rsi[K[11;6H0df:       48 d1 fe                sar    %rsi[12;6H0e2:       74 14                   je     10f8 <register_tm_clones+0x38>[13;6H0e4:       48 8b 05 05 2f 00 00    mov    0x2f05(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable>[14;6H0eb:       48 85 c0                test   %rax,%rax[K[15;6H0ee:       74 08                   je     10f8 <register_tm_clones+0x38>[16;6H0f0:       ff e0                   jmpq   *%rax[K[17;6H0f2:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)[K[18;6H0f8:       c3                      retq[K[19;6H0f9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+[K
+0000000000001100 <__do_global_dtors_aux>:[K[22;7H00:       80 3d 61 2f 00 00 00    cmpb   $0x0,0x2f61(%rip)        # 4068 <completed.7325>[23;7H07:       75 2f                   jne    1138 <__do_global_dtors_aux+0x38>[24;7H09:       55                      push   %rbp[K[25;7H0a:       48 83 3d e6 2e 00 00    cmpq   $0x0,0x2ee6(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>[26;7H11:       00[K[27;7H12:       48 89 e5                mov    %rsp,%rbp[28;7H15:       74 0c                   je     1123 <__do_global_dtors_aux+0x23>[29;5H1117:       48 8b 3d 12 2f 00 00    mov    0x2f12(%rip),%rdi        # 4030 <__dso_handle>
+    111e:       e8 2d ff ff ff          callq  1050 <__cxa_finalize@plt>[31;6H123:       e8 68 ff ff ff          callq  1090 <deregister_tm_clones>[32;6H128:       c6 05 39 2f 00 00 01    movb   $0x1,0x2f39(%rip)        # 4068 <completed.7325>[33;6H12f:       5d                      pop    %rbp[34;6H130:       c3                      retq[K[35;6H131:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[36;6H138:       c3                      retq[K[37;6H139:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+[K
+0000000000001140 <frame_dummy>:[K[40;6H140:       e9 7b ff ff ff          jmpq   10c0 <register_tm_clones>[K
+[K
+0000000000001145 <hello>:[K[43;6H145:       55                      push   %rbp[K[44;6H146:       48 89 e5                mov    %rsp,%rbp[K[45;6H149:       48 83 ec 10             sub    $0x10,%rsp[46;6H14d:       48 89 7d f8             mov    %rdi,-0x8(%rbp)[K[47;6H151:       48 89 75 f0             mov    %rsi,-0x10(%rbp)[48;6H155:       48 8b 55 f0             mov    -0x10(%rbp),%rdx[49;6H159:       48 8b 45 f8             mov    -0x8(%rbp),%rax[50;6H15d:       48 8d 35 a0 0e 00 00    lea    0xea0(%rip),%rsi        # 2004 <_IO_stdin_used+0x4>[51;6H164:       48 89 c7                mov    %rax,%rdi[K[52;6H167:       b8 00 00 00 00          mov    $0x0,%eax[K[53;6H16c:       e8 bf fe ff ff          callq  1030 <fprintf@plt>[54;6H171:       90                      nop[K[55;6H172:       c9                      leaveq[K[56;6H173:       c3                      retq[K
+[K
+0000000000001174 <main>:[K[59;6H174:       55                      push   %rbp[60;6H175:       48 89 e5                mov    %rsp,%rbp[61;6H178:       48 83 ec 20             sub    $0x20,%rsp[62;6H17c:       89 7d ec                mov    %edi,-0x14(%rbp)[63;6H17f:       48 89 75 e0             mov    %rsi,-0x20(%rbp)[64;6H183:       83 7d ec 01             cmpl   $0x1,-0x14(%rbp)[65;5H1187:       75 2c                   jne    11b5 <main+0x41>
+    1189:       48 8b 45 e0             mov    -0x20(%rbp),%rax[67;6H18d:       48 8b 10                mov    (%rax),%rdx[68;5H1190:       48 8b 05 c9 2e 00 00    mov    0x2ec9(%rip),%rax        # 4060 <stderr@@GLIBC_2.2.5>
+    1197:       48 8d 35 70 0e 00 00    lea    0xe70(%rip),%rsi        # 200e <_IO_stdin_used+0xe>[70;5H119e:       48 89 c7                mov    %rax,%rdi[71;30H[30m[48;5;250m31% L136[39;49m[A[?12l[?25h[?12;25h[3d[?25lhello:     file format elf64-x86-64[K
+[K
+[K
+Disassembly of section .init:[K
+[K
+0000000000001000 <_init>:[K[9;7H00:       48 83 ec 08             sub    $0x8,%rsp[K[10;7H04:       48 8b 05 dd 2f 00 00    mov    0x2fdd(%rip),%rax        # 3fe8 <__gmon_start__>[11;7H0b:       48 85 c0                test   %rax,%rax[12;7H0e:       74 02                   je     1012 <_init+0x12>[K[13;7H10:       ff d0                   callq  *%rax[K[14;7H12:       48 83 c4 08             add    $0x8,%rsp[15;7H16:       c3                      retq[K
+[K
+Disassembly of section .plt:[K
+[K
+0000000000001020 <.plt>:[K[20;5H1020:       ff 35 e2 2f 00 00       pushq  0x2fe2(%rip)        # 4008 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:       ff 25 e4 2f 00 00       jmpq   *0x2fe4(%rip)        # 4010 <_GLOBAL_OFFSET_TABLE_+0x10>[22;6H02c:       0f 1f 40 00             nopl   0x0(%rax)[K
+[K
+0000000000001030 <fprintf@plt>:[K[25;6H030:       ff 25 e2 2f 00 00       jmpq   *0x2fe2(%rip)        # 4018 <fprintf[11P[26;6H036:       68 00 00 00 00          pushq  $0x0[27;6H03b:       e9 e0 ff ff ff          jmpq   1020 <.plt>
+[K
+0000000000001040 <exit@plt>:[K[30;6H040:       ff 25 da 2f 00 00       jmpq   *0x2fda(%rip)        # 4020 <exit@GLIBC_2.2.5>[31;6H046:       68 01 00 00 00          pushq  $0x1[K[32;6H04b:       e9 d0 ff ff ff          jmpq   1020 <.plt>[K
+[K
+Disassembly of section .plt.got:[K
+[K
+0000000000001050 <__cxa_finalize@plt>:[K[37;6H050:       ff 25 a2 2f 00 00       jmpq   *0x2fa2(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>[38;5H1056:       66 90                   xchg   %ax,%ax
+[K
+Disassembly of section .text:[K[42;14H060 <_start>:[43;6H060:       31 ed                   xor    %ebp,%ebp[44;6H062:       49 89 d1                mov    %rdx,%r9[K[45;6H065:       5e                      pop    %rsi[K[46;6H066:       48 89 e2                mov    %rsp,%rdx[K[47;6H069:       48 83 e4 f0             and    $0xfffffffffffffff0,%rsp[48;6H06d:       50                      push   %rax[K[49;6H06e:       54                      push   %rsp[K[50;6H06f:       4c 8d 05 ea 01 00 00    lea    0x1ea(%rip),%r8        # 1260 <__libc_csu_fini>[K[51;6H076:       48 8d 0d 83 01 00 00    lea    0x183(%rip),%rcx        # 1200 <__libc_csu_init>[52;6H07d:       48 8d 3d f0 00 00 00    lea    0xf0(%rip),%rdi        # 1174 <main>[53;6H084:       ff 15 56 2f 00 00       callq  *0x2f56(%rip)        # 3fe0 <__libc_start_main@GLIBC_2.2.5>[54;6H08a:       f4                      hlt[55;6H08b:       0f 1f 44 00 00          nopl   0x0(%rax,%rax,1)
+[K
+0000000000001090 <deregister_tm_clones>:
+    1090:       48 8d 3d a1 2f 00 00    lea    0x2fa1(%rip),%rdi        # 4038 <__TMC_END__>[59;6H097:       48 8d 05 9a 2f 00 00    lea    0x2f9a(%rip),%rax        # 4038 <__TMC_END__>[60;6H09e:       48 39 f8                cmp    %rdi,%rax[61;6H0a1:       74 15                   je     10b8 <deregister_tm_clones+0x28>[62;6H0a3:       48 8b 05 2e 2f 00 00    mov    0x2f2e(%rip),%rax        # 3fd8 <_ITM_deregisterTMCloneTable>[63;6H0aa:       48 85 c0                test   %rax,%rax[K[64;6H0ad:       74 09                   je     10b8 <deregister_tm_clones+0x28>[65;6H0af:       ff e0                   jmpq   *%rax[K[66;6H0b1:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[K[67;6H0b8:       c3                      retq[K[68;6H0b9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[K
+[K
+00000000000010c0 <register_tm_clones>:[K[71;30H[30m[48;5;250mTop L69 [39;49m[A[?12l[?25h[?12;25h
+
+[?25lBeginning of buffer[70;1H[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m30PM 0.28[39;49m[A[?12l[?25h[?12;25h[71;58H[?25l[30m[48;5;250m1PM 0.24[39;49m[A[?12l[?25h[?12;25h
+
+[K[70d
+
+[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab7/exercises$ obs[Kjdump -d -s -x hhel[K[K[Kello.[K > hello.objdump
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump -d -s -x hello > hello.objdump[19Pemacs[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 2:41PM 0.53 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                                                                                    [0m[39;49m[27m
+[A
+[K
+hello:     file format elf64-x86-64[K
+hello[K
+architecture: i386:x86-64, flags 0x00000150:[K
+HAS_SYMS, DYNAMIC, D_PAGED[K
+start address 0x0000000000001060[K
+[K
+Program Header:[K
+    PHDR off    0x0000000000000040 vaddr 0x0000000000000040 paddr 0x0000000000000040 align 2**3[K
+         filesz 0x0000000000000268 memsz 0x0000000000000268 flags r--[K
+  INTERP off    0x00000000000002a8 vaddr 0x00000000000002a8 paddr 0x00000000000002a8 align 2**0[K
+         filesz 0x000000000000001c memsz 0x000000000000001c flags r--[K
+    LOAD off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**12[K
+         filesz 0x0000000000000618 memsz 0x0000000000000618 flags r--[K
+    LOAD off    0x0000000000001000 vaddr 0x0000000000001000 paddr 0x0000000000001000 align 2**12[K
+         filesz 0x000000000000026d memsz 0x000000000000026d flags r-x[K
+    LOAD off    0x0000000000002000 vaddr 0x0000000000002000 paddr 0x0000000000002000 align 2**12[K
+         filesz 0x0000000000000190 memsz 0x0000000000000190 flags r--[K
+    LOAD off    0x0000000000002de8 vaddr 0x0000000000003de8 paddr 0x0000000000003de8 align 2**12[K
+         filesz 0x0000000000000250 memsz 0x0000000000000288 flags rw-[K
+ DYNAMIC off    0x0000000000002df8 vaddr 0x0000000000003df8 paddr 0x0000000000003df8 align 2**3[K
+         filesz 0x00000000000001e0 memsz 0x00000000000001e0 flags rw-[K
+    NOTE off    0x00000000000002c4 vaddr 0x00000000000002c4 paddr 0x00000000000002c4 align 2**2[K
+         filesz 0x0000000000000044 memsz 0x0000000000000044 flags r--[K
+EH_FRAME off    0x0000000000002024 vaddr 0x0000000000002024 paddr 0x0000000000002024 align 2**2[K
+         filesz 0x0000000000000044 memsz 0x0000000000000044 flags r--[K
+   STACK off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**4[K
+         filesz 0x0000000000000000 memsz 0x0000000000000000 flags rw-[K
+   RELRO off    0x0000000000002de8 vaddr 0x0000000000003de8 paddr 0x0000000000003de8 align 2**0[K
+         filesz 0x0000000000000218 memsz 0x0000000000000218 flags r--[K
+[K
+Dynamic Section:[K
+  NEEDED               libc.so.6[K
+  INIT                 0x0000000000001000[K
+  FINI                 0x0000000000001264[K
+  INIT_ARRAY           0x0000000000003de8[K
+  INIT_ARRAYSZ         0x0000000000000008[K
+  FINI_ARRAY           0x0000000000003df0[K
+  FINI_ARRAYSZ         0x0000000000000008[K
+  GNU_HASH             0x0000000000000308[K
+  STRTAB               0x0000000000000428[K
+  SYMTAB               0x0000000000000338[K
+  STRSZ                0x0000000000000098[K
+  SYMENT               0x0000000000000018[K
+  DEBUG                0x0000000000000000[K
+  PLTGOT               0x0000000000004000[K
+  PLTRELSZ             0x0000000000000030[K
+  PLTREL               0x0000000000000007[K
+  JMPREL               0x00000000000005e8[K
+  RELA                 0x00000000000004f8[K
+  RELASZ               0x00000000000000f0[K
+  RELAENT              0x0000000000000018[K
+  FLAGS_1              0x0000000008000000[K
+  VERNEED              0x00000000000004d8[K
+  VERNEEDNUM           0x0000000000000001[K
+  VERSYM               0x00000000000004c0[K
+  RELACOUNT            0x0000000000000003[K
+[K
+Version References:[K
+  required from libc.so.6:[K
+    0x09691a75 0x00 02 GLIBC_2.2.5[K
+[K
+Sections:[K
+Idx Name          Size      VMA               LMA               File off  Algn[K
+  0 .interp       0000001c  00000000000002a8  00000000000002a8  000002a8  2**0[K
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  1 .note.ABI-tag 00000020  00000000000002c4  00000000000002c4  000002c4  2**2[K
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  2 .note.gnu.build-id 00000024  00000000000002e4  00000000000002e4  000002e4  2**2[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mhello.objdump[0m[39;49m[30m[48;5;250m   Top L1     (Fundamental) 2:41PM 0.53 ----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2;19H[?25lCONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .note.gnu.build-id 00000024  00000000000002e4  00000000000002e4  000002e4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .gnu.hash     00000030  0000000000000308  0000000000000308  00000308  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .dynsym       000000f0  0000000000000338  0000000000000338  00000338  2**3[8;19HCONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .dynstr       00000098  0000000000000428  0000000000000428  00000428  2**0[10;5H              CONTENTS, ALLOC, LOAD, READONLY, DATA[K[11;3H6 .gnu.version  00000014  00000000000004c0  00000000000004c0  000004c0  2**1[12;3H                CONTENTS, ALLOC, LOAD, READONLY, DATA[K[13;3H7 .gnu.version_r 00000020  00000000000004d8  00000000000004d8  000004d8  2**3[14;5H              CONTENTS, ALLOC, LOAD, READONLY, DATA[K[15;3H8 .rela.dyn     000000f0  00000000000004f8  00000000000004f8  000004f8  2**3[16;5H              CONTENTS, ALLOC, LOAD, READONLY, DATA[K[17;3H9 .rela.plt     00000030  00000000000005e8  00000000000005e8  000005e8  2**3[18;5H              CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+[C10 .init         00000017  0000000000001000  0000000000001000  00001000  2**2[20;5H              CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+[C11 .plt          00000030  0000000000001020  0000000000001020  00001020  2**4
+[C                 CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+[C12 .plt.got      00000008  0000000000001050  0000000000001050  00001050  2**3[24;5H              CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+[C13 .text         00000201  0000000000001060  0000000000001060  00001060  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+[C14 .fini         00000009  0000000000001264  0000000000001264  00001264  2**2[28;4H               CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+[C15 .rodata       00000021  0000000000002000  0000000000002000  00002000  2**2[30;4H               CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+[C16 .eh_frame_hdr 00000044  0000000000002024  0000000000002024  00002024  2**2[32;19HCONTENTS, ALLOC, LOAD, READONLY, DATA
+ 17 .eh_frame     00000128  0000000000002068  0000000000002068  00002068  2**3[34;3H                CONTENTS, ALLOC, LOAD, READONLY, DATA
+[C18 .init_array   00000008  0000000000003de8  0000000000003de8  00002de8  2**3[36;3H                CONTENTS, ALLOC, LOAD, DATA
+[C19 .fini_array   00000008  0000000000003df0  0000000000003df0  00002df0  2**3[38;3H                CONTENTS, ALLOC, LOAD, DATA
+[C20 .dynamic      000001e0  0000000000003df8  0000000000003df8  00002df8  2**3[40;3H                CONTENTS, ALLOC, LOAD, DATA
+[C21 .got          00000028  0000000000003fd8  0000000000003fd8  00002fd8  2**3[42;3H                CONTENTS, ALLOC, LOAD, DATA
+[C22 .got.plt      00000028  0000000000004000  0000000000004000  00003000  2**3[44;3H                CONTENTS, ALLOC, LOAD, DATA
+[C23 .data         00000010  0000000000004028  0000000000004028  00003028  2**3[46;3H                CONTENTS, ALLOC, LOAD, DATA
+[C24 .bss          00000030  0000000000004040  0000000000004040  00003038  2**5[48;3H                ALLOC[K
+[C25 .comment      0000001c  0000000000000000  0000000000000000  00003038  2**0[50;3H                CONTENTS, READONLY[K
+[C26 .debug_aranges 00000030  0000000000000000  0000000000000000  00003054  2**0[52;3H                CONTENTS, READONLY, DEBUGGING
+[C27 .debug_info   0000035c  0000000000000000  0000000000000000  00003084  2**0[54;3H                CONTENTS, READONLY, DEBUGGING
+[C28 .debug_abbrev 0000011f  0000000000000000  0000000000000000  000033e0  2**0[56;3H                CONTENTS, READONLY, DEBUGGING
+[C29 .debug_line   00000134  0000000000000000  0000000000000000  000034ff  2**0[58;3H                CONTENTS, READONLY, DEBUGGING
+[C30 .debug_str    00000255  0000000000000000  0000000000000000  00003633  2**0
+                  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:[K
+00000000000002a8 l    d  .interp        0000000000000000              .interp
+00000000000002c4 l    d  .note.ABI-tag  0000000000000000              .note.ABI-tag
+00000000000002e4 l    d  .note.gnu.build-id     0000000000000000              .note.gnu.build-id
+0000000000000308 l    d  .gnu.hash      0000000000000000              .gnu.hash
+0000000000000338 l    d  .dynsym        0000000000000000              .dynsym[K
+0000000000000428 l    d  .dynstr        0000000000000000              .dynstr
+00000000000004c0 l    d  .gnu.version   0000000000000000              .gnu.version
+00000000000004d8 l    d  .gnu.version_r 0000000000000000              .gnu.version_r
+00000000000004f8 l    d  .rela.dyn      0000000000000000              .rela.dyn[K[71;30H[30m[48;5;250m 9% L68[39;49m[H
+[?12l[?25h[?12;25h[?25l00000000000004d8 l    d  .gnu.version_r 0000000000000000              .gnu.version_r
+00000000000004f8 l    d  .rela.dyn      0000000000000000              .rela.dyn[K
+00000000000005e8 l    d  .rela.plt      0000000000000000              .rela.plt
+0000000000001000 l    d  .init  0000000000000000              .init[K
+0000000000001020 l    d  .plt   0000000000000000              .plt
+0000000000001050 l    d  .plt.got       0000000000000000              .plt.got
+0000000000001060 l    d  .text  0000000000000000              .text
+0000000000001264 l    d  .fini  0000000000000000              .fini[K
+0000000000002000 l    d  .rodata        0000000000000000              .rodata
+0000000000002024 l    d  .eh_frame_hdr  0000000000000000              .eh_frame_hdr
+0000000000002068 l    d  .eh_frame      0000000000000000              .eh_frame
+0000000000003de8 l    d  .init_array    0000000000000000              .init_array
+0000000000003df0 l    d  .fini_array    0000000000000000              .fini_array
+0000000000003df8 l    d  .dynamic       0000000000000000              .dynamic
+0000000000003fd8 l    d  .got   0000000000000000              .got
+0000000000004000 l    d  .got.plt       0000000000000000              .got.plt
+0000000000004028 l    d  .data  0000000000000000              .data
+0000000000004040 l    d  .bss   0000000000000000              .bss[K
+0000000000000000 l    d  .comment       0000000000000000              .comment
+0000000000000000 l    d  .debug_aranges 0000000000000000              .debug_aranges
+0000000000000000 l    d  .debug_info    0000000000000000              .debug_info
+0000000000000000 l    d  .debug_abbrev  0000000000000000              .debug_abbrev
+0000000000000000 l    d  .debug_line    0000000000000000              .debug_line
+0000000000000000 l    d  .debug_str     0000000000000000              .debug_str
+0000000000000000 l    df *ABS*  0000000000000000              crtstuff.c
+0000000000001090 l     F .text  0000000000000000              deregister_tm_clones
+00000000000010c0 l     F .text  0000000000000000              register_tm_clones
+0000000000001100 l     F .text  0000000000000000              __do_global_dtors_aux
+0000000000004068 l     O .bss   0000000000000001              completed.7325
+0000000000003df0 l     O .fini_array    0000000000000000              __do_global_dtors_aux_fini_array_entry
+0000000000001140 l     F .text  0000000000000000              frame_dummy
+0000000000003de8 l     O .init_array    0000000000000000              __frame_dummy_init_array_entry
+0000000000000000 l    df *ABS*  0000000000000000              hello.c
+0000000000001145 l     F .text  000000000000002f              hello[K
+0000000000000000 l    df *ABS*  0000000000000000              crtstuff.c
+000000000000218c l     O .eh_frame      0000000000000000              __FRAME_END__
+0000000000000000 l    df *ABS*  0000000000000000
+0000000000003df0 l       .init_array    0000000000000000              __init_array_end
+0000000000003df8 l     O .dynamic       0000000000000000              _DYNAMIC
+0000000000003de8 l       .init_array    0000000000000000              __init_array_start
+0000000000002024 l       .eh_frame_hdr  0000000000000000              __GNU_EH_FRAME_HDR
+0000000000004000 l     O .got.plt       0000000000000000              _GLOBAL_OFFSET_TABLE_
+0000000000001000 l     F .init  0000000000000000              _init
+0000000000001260 g     F .text  0000000000000001              __libc_csu_fini[K
+0000000000000000  w      *UND*  0000000000000000              _ITM_deregisterTMCloneTable
+0000000000004040 g     O .bss   0000000000000008              stdout@@GLIBC_2.2.5
+0000000000004028  w      .data  0000000000000000              data_start
+0000000000004038 g       .data  0000000000000000              _edata[K
+0000000000001264 g     F .fini  0000000000000000              .hidden _fini
+0000000000000000       F *UND*  0000000000000000              __libc_start_main@@GLIBC_2.2.5
+0000000000004028 g       .data  0000000000000000              __data_start
+0000000000000000       F *UND*  0000000000000000              fprintf@@GLIBC_2.2.5
+0000000000000000  w      *UND*  0000000000000000              __gmon_start__
+0000000000004030 g     O .data  0000000000000000              .hidden __dso_handle
+0000000000002000 g     O .rodata        0000000000000004              _IO_stdin_used
+0000000000001200 g     F .text  000000000000005d              __libc_csu_init[K
+0000000000004070 g       .bss   0000000000000000              _end
+0000000000001060 g     F .text  000000000000002b              _start[K
+0000000000004038 g       .bss   0000000000000000              __bss_start
+0000000000001174 g     F .text  0000000000000086              main[62;14H000       F *UND*  0000000000000000              exit@@GLIBC_2.2.5[63;13H4038 g     O .data  0000000000000000              .hidden __TMC_END__[K[64;14H000  w      *UND*  0000000000000000              _ITM_registerTMCloneTable[K[65;14H000  w    F *UND*  0000000000000000              __cxa_finalize@@GLIBC_2.2.5[66;13H4060 g     O .bss   0000000000000008              stderr@@GLIBC_2.2.5
+[K
+[K
+Contents of section .interp:[K
+ 02a8 2f6c6962 36342f6c 642d6c69 6e75782d  /lib64/ld-linux-[K[71;30H[30m[48;5;250m19% L135[39;49m[H
+[?12l[?25h[?12;25h[?25lContents of section .interp:[K
+ 02a8 2f6c6962 36342f6c 642d6c69 6e75782d  /lib64/ld-linux-[K
+ 02b8 7838362d 36342e73 6f2e3200           x86-64.so.2.[K
+Contents of section .note.ABI-tag:[K
+ 02c4 04000000 10000000 01000000 474e5500  ............GNU.[K
+ 02d4 00000000 03000000 02000000 00000000  ................[K
+Contents of section .note.gnu.build-id:[K
+ 02e4 04000000 14000000 03000000 474e5500  ............GNU.[K
+ 02f4 0d3bbc9c 2a550958 be82d2e0 df215202  .;..*U.X.....!R.[K
+ 0304 ae5bd791                             .[..[K
+Contents of section .gnu.hash:[K
+ 0308 03000000 07000000 01000000 06000000  ................[K
+ 0318 00018100 00011002 07000000 09000000  ................[K
+ 0328 00000000 281d8c1c d165ce6d 39f28b1c  ....(....e.m9...[K
+Contents of section .dynsym:[K
+ 0338 00000000 00000000 00000000 00000000  ................[K
+ 0348 00000000 00000000 53000000 20000000  ........S... ...[K
+ 0358 00000000 00000000 00000000 00000000  ................[K
+ 0368 35000000 12000000 00000000 00000000  5...............[K
+ 0378 00000000 00000000 1e000000 12000000  ................[K
+ 0388 00000000 00000000 00000000 00000000  ................[K
+ 0398 6f000000 20000000 00000000 00000000  o... ...........[K
+ 03a8 00000000 00000000 0b000000 12000000  ................[K
+ 03b8 00000000 00000000 00000000 00000000  ................[K
+ 03c8 7e000000 20000000 00000000 00000000  ~... ...........[K
+ 03d8 00000000 00000000 10000000 11001900  ................[K
+ 03e8 40400000 00000000 08000000 00000000  @@..............[K
+ 03f8 26000000 22000000 00000000 00000000  &..."...........[K
+ 0408 00000000 00000000 17000000 11001900  ................[K
+ 0418 60400000 00000000 08000000 00000000  `@..............[K
+Contents of section .dynstr:[K
+ 0428 006c6962 632e736f 2e360065 78697400  .libc.so.6.exit.[K
+ 0438 7374646f 75740073 74646572 72006670  stdout.stderr.fp[K
+ 0448 72696e74 66005f5f 6378615f 66696e61  rintf.__cxa_fina[K
+ 0458 6c697a65 005f5f6c 6962635f 73746172  lize.__libc_star[K
+ 0468 745f6d61 696e0047 4c494243 5f322e32  t_main.GLIBC_2.2[K
+ 0478 2e35005f 49544d5f 64657265 67697374  .5._ITM_deregist
+ 0488 6572544d 436c6f6e 65546162 6c65005f  erTMCloneTable._[K
+ 0498 5f676d6f 6e5f7374 6172745f 5f005f49  _gmon_start__._I[K
+ 04a8 544d5f72 65676973 74657254 4d436c6f  TM_registerTMClo[K
+ 04b8 6e655461 626c6500                    neTable.[K
+Contents of section .gnu.version:[K
+ 04c0 00000000 02000200 00000200 00000200  ................[K
+ 04d0 02000200                             ....[K
+Contents of section .gnu.version_r:[K
+ 04d8 01000100 01000000 10000000 00000000  ................[K
+ 04e8 751a6909 00000200 47000000 00000000  u.i.....G.......[K
+Contents of section .rela.dyn:[K
+ 04f8 e83d0000 00000000 08000000 00000000  .=..............[K
+ 0508 40110000 00000000 f03d0000 00000000  @........=......[K
+ 0518 08000000 00000000 00110000 00000000  ................[K
+ 0528 30400000 00000000 08000000 00000000  0@..............[K
+ 0538 30400000 00000000 d83f0000 00000000  0@.......?......[K
+ 0548 06000000 01000000 00000000 00000000  ................[K
+ 0558 e03f0000 00000000 06000000 02000000  .?..............[K
+ 0568 00000000 00000000 e83f0000 00000000  .........?......[K
+ 0578 06000000 04000000 00000000 00000000  ................[K
+ 0588 f03f0000 00000000 06000000 06000000  .?..............[K
+ 0598 00000000 00000000 f83f0000 00000000  .........?......[K
+ 05a8 06000000 08000000 00000000 00000000  ................[K
+ 05b8 40400000 00000000 05000000 07000000  @@..............[K
+ 05c8 00000000 00000000 60400000 00000000  ........`@......[K
+ 05d8 05000000 09000000 00000000 00000000  ................[K
+Contents of section .rela.plt:[K
+ 05e8 18400000 00000000 07000000 03000000  .@..............[K
+[C05f8 00000000 00000000 20400000 00000000  ........ @......
+[C0608 07000000 05000000 00000000 00000000  ................
+			it:[K
+[C1000 4883ec08 488b05dd 2f000048 85c07402  H...H.../..H..t.[71;30H[30m[48;5;250m31% L202[39;49m[H
+[?12l[?25h[?12;25h			[?25lit:[K
+[C1000 4883ec08 488b05dd 2f000048 85c07402  H...H.../..H..t.
+[C1010 ffd04883 c408c3                      ..H....[K[5;22Hplt:[K
+[C1020 ff35e22f 0000ff25 e42f0000 0f1f4000  .5./...%./....@
+[C1030 ff25e22f 00006800 000000e9 e0ffffff  .%./..h
+ 1040 ff25da2f 00006801 000000e9 d0ffffff  .%./..h.........
+Contents of section .plt.got:[K
+[C1050 ff25a22f 00006690                    .%./..f.[K
+Contents of section .text:[K
+ 1060 31ed4989 d15e4889 e24883e4 f050544c  1.I..^H..H...PTL
+[C1070 8d05ea01 0000488d 0d830100 00488d3d  ......H......H.=
+[C1080 f0000000 ff15562f 0000f40f 1f440000  ......V/.....D
+[C1090 488d3da1 2f000048 8d059a2f 00004839  H.=./..H.../..H9
+ 10a0 f8741548 8b052e2f 00004885 c07409ff  .t.H.../..H..t..
+[C10b0 e00f1f80 00000000 c30f1f8
+[C10c0 488d3d71 2f000048 8d356a2f 00004829  H.=q/..H.5j/..H)
+[C10d0 fe48c1fe 034889f0 48c1e83f 4801c648  .H...H..H..?H..H
+[C10e0 d1fe7414 488b0505 2f000048 85c07408  ..t.H.../..H..t
+[C10f0 ffe0660f 1f440000 c30f1f80 00000000  ..f..D
+[C1100 803d612f 00000075 2f554883 3de62e00  .=a/...u/UH.=
+[C1110 00004889 e5740c48 8b3d122f 0000e82d  ..H..t.H.=./...-
+[C1120 ffffffe8 68ffffff c605392f 0000015d  ....h.....9/...]
+[C1130 c30f1f80 00000000 c30f1f8
+[C1140 e97bffff ff554889 e54883ec 1048897d  .{...UH..H...H.}
+[C1150 f8488975 f0488b55 f0488b45 f8488d35  .H.u.H.U.H.E.H.5
+[C1160 a00e0000 4889c7b8 00000000 e8bffeff  ....H
+[C1170 ff90c9c3 554889e5 4883ec20 897dec48  ....UH..H.. .}.H
+[C1180 8975e083 7dec0175 2c488b45 e0488b10  .u..}..u,H.E.H
+[C1190 488b05c9 2e000048 8d35700e 00004889  H......H.5p...H
+ 11a0 c7b80000 0000e885 feffffbf efbeadde  ................
+[C11b0 e88bfeff ffc745fc 01000000 eb2d8b45  ......E......-.E
+[C11c0 fc489848 8d14c500 00000048 8b45e048  .H.H.......H.E.H
+[C11d0 01d0488b 10488b05 642e0000 4889d648  ..H..H..d...H..H
+[C11e0 89c7e85e ffffff83 45fc018b 45fc3b45  ...^....E...E.;E
+[C11f0 ec7ccbb8 00000000 c9c3660f 1f440000  .|........f..D..
+[C1200 41574989 d7415649 89f64155 4189fd41  AWI..AVI..AUA..A
+[C1210 544c8d25 d02b0000 55488d2d d02b0000  TL.%.+..UH.-.+..
+[C1220 534c29e5 4883ec08 e8d3fdff ff48c1fd  SL).H........H..
+[C1230 03741b31 db0f1f00 4c89fa4c 89f64489  .t.1....L..L..D.
+[C1240 ef41ff14 dc4883c3 014839dd 75ea4883  .A...H...H9.u.H.
+ 1250 c4085b5d 415c415d 415e415f c30f1f00  ..[]A\A]A^A_....
+[C1260 c3                                   .[K
+Contents of section .fini:[K
+ 1264 4883ec08 4883c408 c3                 H...H....
+Contents of section .rodata:[K
+[C2000 01000200 68656c6c 6f202573 0a007573  ....hello %s..us
+ 2010 6167653a 20257320 4e414d45 2e2e2e0a  age: %s NAME....
+[C2020 00                                   .[K
+Contents of section .eh_frame_hdr:[K
+[C2024 011b033b 40000000 07000000 fcefffff  ...;@
+[C2034 8c000000 2cf0ffff b4000000 3cf0ffff  ....,.......<
+[C2044 5c000000 21f1ffff cc000000 50f1ffff  \...!.......P
+[C2054 ec000000 dcf1ffff 0c010000 3cf2ffff  ............<
+[C2064 54010000                             T...[K
+Contents of section .eh_frame:[K
+[C2068 14000000 00000000 017a5200 01781001  .........zR..x
+[C2078 1b0c0708 90010710 14000000 1c000000  ..
+[C2088 d8efffff 2b000000 00000000 00000000  ....+.....
+[C2098 14000000 00000000 017a5200 01781001  .........zR..x
+[C20a8 1b0c0708 90010000 24000000 1c000000  ........$
+[C20b8 68efffff 30000000 000e1046 0e184a0f  h...0......F..J
+[C20c8 0b770880 003f1a3b 2a332422 00000000  .w...?.;*3$"
+ 20d8 14000000 44000000 70efffff 08000000  ....D...p.......
+[C20e8 00000000 00000000 1c000000 5c000000  ............\
+[C20f8 4df0ffff 2f000000 00410e10 8602430d  M.../....A....C
+[C2108 066a0c07 08000000 1c000000 7c000000  .j..........|
+ 2118 5cf0ffff 86000000 00410e10 8602430d  \........A....C.
+[C2128 0602810c 07080000 44000000 9c000000  ........D......[71;30H[30m[48;5;250m40% L269[39;49m[H
+[?12l[?25h[?12;25h[?25l 2118 5cf0ffff 86000000 00410e10 8602430d  \........A....C.
+[C2128 0602810c 07080000 44000000 9c000000  ........D......
+[C2138 c8f0ffff 5d000000 00420e10 8f02450e  ....]....B....E.
+ 2148 188e0345 0e208d04 450e288c 05480e30  ...E. ..E.(..H.0
+[C2158 8606480e 38830747 0e406a0e 38410e30  ..H.8..G.@j.8A.0
+[C2168 410e2842 0e20420e 18420e10 420e0800  A.(B. B..B..B
+[C2178 10000000 e4000000 e0f0ffff 01000000  .......
+ 2188 00000000 00000000                    ........
+Contents of section .init_array:[K
+ 3de8 40110000 00000000                    @.......
+Contents of section .fini_array:[K
+[C3df0 00110000 00000000                    ........[K
+Contents of section .dynamic:[K
+[C3df8 01000000 00000000 01000000 00000000  ................
+[C3e08 0c000000 00000000 00100000 00000000  ..............
+[C3e18 0d000000 00000000 64120000 00000000  ........d
+[C3e28 19000000 00000000 e83d0000 00000000  .........=......
+[C3e38 1b000000 00000000 08000000 00000000  ................
+[C3e48 1a000000 00000000 f03d0000 00000000  .........=.....
+[C3e58 1c000000 00000000 08000000 00000000  ......
+[C3e68 f5feff6f 00000000 08030000 00000000  ...o.........
+[C3e78 05000000 00000000 28040000 00000000  ........(.......
+[C3e88 06000000 00000000 38030000 00000000  ........8.......
+[C3e98 0a000000 00000000 9800000
+[C3ea8 0b000000 00000000 18000000 00000000  ................
+[C3eb8 15000000 00000000 00000000 00000000  ................
+[C3ec8 03000000 00000000 00400000 00000000  .........@
+[C3ed8 02000000 00000000 30000000 00000000  ........0.......
+[C3ee8 14000000 00000000 07000000 00000000  ..............
+[C3ef8 17000000 00000000 e8050000 00000000  ...............
+[C3f08 07000000 00000000 f8040000 00000000
+[C3f18 08000000 00000000 f0000000 00000000  ................
+[C3f28 09000000 00000000 18000000 00000000  ................
+[C3f38 fbffff6f 00000000 00000008 00000000  ...o............
+[C3f48 feffff6f 00000000 d8040000 00000000  ...o............
+[C3f58 ffffff6f 00000000 01000000 00000000  ...o..........
+[C3f68 f0ffff6f 00000000 c0040000 00000000  ...o............
+[C3f78 f9ffff6f 00000000 03000000 00000000  ...o..........
+[C3f88 00000000 00000000 00000000 00000000  ..............
+[C3f98 00000000 00000000 00000000 00000000  ...............
+[C3fa8 00000000 00000000 00000000 00000000  ...............
+[C3fb8 00000000 00000000 00000000 00000000  ............
+[C3fc8 00000000 00000000 00000000 00000000  ................[45;22Hgot:[K
+[C3fd8 00000000 00000000 00000000 00000000  ................
+ 3fe8 00000000 00000000 00000000 00000000  ................
+[C3ff8 00000000 00000000                    ........[K
+Contents of section .got.plt:[K
+[C4000 f83d0000 00000000 00000000 00000000  .=..............
+ 4010 00000000 00000000 36100000 00000000  ........6.......
+[C4020 46100000 00000000                    F.......[K
+Contents of section .data:[K
+[C4028 00000000 00000000 30400000 00000000  ........0@...
+Contents of section .comment:[K
+[C0000 4743433a 20284465 6269616e 20382e33  GCC: (Debian 8.3
+ 0010 2e302d36 2920382e 332e3000           .0-6) 8.3.0.
+Contents of section .debug_aranges:[K
+[C0000 2c000000 02000000 00000800 00000000  ,
+[C0010 45110000 00000000 b5000000 00000000  E....
+[C0020 00000000 00000000 00000000 00000000  ..............
+Contents of section .debug_info:[K
+[C0000 58030000 04000000 00000801 e0000000  X..............
+[C0010 0c3b0200 00a80000 00451100 00000000  .;.......E..
+[C0020 00b50000 00000000 00000000 00022f00  ............../
+[C0030 000002d8 17390000 00030807 9d010000  .....9.......
+[C0040 030407a2 01000004 08030108 17010000  ...............
+[C0050 03020764 01000003 01061901 00000302  ...d.........
+[C0060 05250000 00050405 696e7400 03080599  .%......int....
+[C0070 00000002 c7010000 0396196c 00000002  ...........l[71;31H[30m[48;5;250m9% L336[39;49m[H
+[?12l[?25h[?12;25h[C[?25l0060 05250000 00050405 696e7400 03080599  .%......int....
+[C0070 00000002 c7010000 0396196c 00000002  ...........l
+[C0080 bd010000 03971b6c 00000006 08910000  .......l.......
+[C0090 00030106 20010000 07910000 0008d700  .... ...........
+[C00a0 0000d804 31082402 00000944 00000004  ....1.$....D....
+[C00b0 33076500 00000009 57010000 0436098b  3.e.....W....6
+[C00c0 00000008 09610000 00043709 8b000000  .....a....7
+[C00d0 10090802 00000438 098b0000 0018093f  .......8.......?
+ 00e0 01000004 39098b00 00002009 36000000  ....9..... .6...
+[C00f0 043a098b 00000028 09af0100 00043b09  .:.....(......;.
+ 0100 8b000000 30094b00 0000043c 098b0000  ....0.K....<....
+[C0110 00380900 00000004 3d098b00 00004009  .8......=.....@.
+ 0120 25020000 0440098b 00000048 09e40100  %....@.....H....
+[C0130 00044109 8b000000 50091800 00000442  ..A.....P......B
+[C0140 098b0000 00580958 00000004 44163d02  .....X.X....D.=
+[C0150 00006009 cf010000 04461443 02000068  ..`......F.C...h
+[C0160 09330200 00044807 65000000 7009fa01  .3....H.e...p
+[C0170 00000449 07650000 0074090c 00000004  ...I.e...t
+[C0180 4a0b7300 00007809 81000000 044d1250  J.s...x......M.P
+[C0190 00000080 09160200 00044e0f 57000000  ..........N.W
+[C01a0 82093501 0000044f 08490200 008309a2  ..5....O.I
+[C01b0 00000004 510f5902 00008809 10000000  ....Q.Y..
+[C01c0 04590d7f 00000090 09940100 00045b17  .Y............[
+[C01d0 64020000 9809d901 0000045c 196f0200  d..........\.o
+[C01e0 00a0097c 01000004 5d144302 0000a809  ...|....].C
+[C01f0 6e000000 045e0947 000000b0 098a0100  n....^.G
+[C0200 00045f0a 2d000000 b8090202 00000460  .._.-..........`
+[C0210 07650000 00c0094e 01000004 62087502  .e.....N....b.u
+[C0220 0000c400 02db0000 00050719 9d
+[C0230 0a4a0200 00042b0e 0b2a0100 00060838  .J....+..*.....8
+[C0240 02000006 089d0000 000c9100 00005902  ..............Y
+[C0250 00000d39 00000000 00060830 0200000b  ...9.......0
+[C0260 91010000 06085f02 00000bd6 01000006  ......_
+[C0270 086a0200 000c9100 00008502 00000d39  .j.............9
+[C0280 00000013 000ef401 00000689 0e910200  ....
+[C0290 00060824 0200000e 43020000 068a0e91  ...$....C
+[C02a0 0200000e 8d000000 068b0e91 02000003  ....
+[C02b0 08059400 00000f77 01000001 0e016500  .......w......e
+[C02c0 00007411 00000000 00008600 00000000  ..t
+[C02d0 0000019c 16030000 10250100 00010e0a  .........%
+[C02e0 65000000 02915c10 d2000000 010e1c16  e.....\
+[C02f0 03000002 915011b5 11000000 0000003e  .....P.........>
+[C0300 00000000 00000012 69000114 0c650000  ........i....e
+ 0310 0002916c 00000608 1c030000 06089800  ...l............
+[C0320 0000137b 00000001 06014511 00000000  ...{......E
+[C0330 00002f00 00000000 0000019c 146f7574  ../..........out
+[C0340 0001060d 91020000 02916814 77686f00  ..........h.who.
+ 0350 01061e1c 03000002 91600000           .........`..
+Contents of section .debug_abbrev:[K
+[C0000 01110125 0e130b03 0e1b0e11 01120710  ...%.....
+[C0010 17000002 1600030e 3a0b3b0b 390b4913  ........:.;.9.I.
+ 0020 00000324 000b0b3e 0b030e00 00040f00  ...$...>........
+[C0030 0b0b0000 0524000b 0b3e0b03 08000006  .....$...>
+ 0040 0f000b0b 49130000 07260049 13000008  ....I....&.I....[56;4H50 1301030e 0b0b3a0b 3b0b390b 01130000  ......:.;.9.....[57;4H60 090d0003 0e3a0b3b 0b390b49 13380b00  .....:.;.9.I.8..
+ 0070 000a1600 030e3a0b 3b0b390b 00000b13  ......:.;.9.....[59;4H80 00030e3c 1900000c 01014913 01130000  ...<......I[60;4H90 0d210049 132f0b00 000e3400 030e3a0b  .!.I./....4...:[61;4Ha0 3b0b390b 49133f19 3c190000 0f2e013f  ;.9.I.?.<......?
+ 00b0 19030e3a 0b3b0b39 0b271949 13110112  ...:.;.9.'.I....[63;4Hc0 07401896 42190113 00001005 00030e3a  .@..B..........:[64;4Hd0 0b3b0b39 0b491302 18000011 0b011101  .;.9.I....[65;4He0 12070000 12340003 083a0b3b 0b390b49  .....4...:.;.9.I[66;4Hf0 13021800 00132e01 030e3a0b 3b0b390b  ..........:.;.9[67;3H100 27191101 12074018 96421900 00140500  '.....@..B[68;3H110 03083a0b 3b0b390b 49130218 000000    ..:.;.9.I......[K
+Contents of section .debug_line:[K[70;4H00 30010000 0200dc00 00000101 fb0e0d00  0...........[71;30H[30m[48;5;250m59% L403[39;49m[H
+[?12l[?25h[?12;25h[?25lContents of section .debug_line:[K[3;4H00 30010000 0200dc00 00000101 fb0e0d00  0...........[4;4H10 01010101 00000001 0000012f 7573722f  .........../usr/[5;4H20 6c69622f 6763632f 7838365f 36342d6c  lib/gcc/x86_64-l[6;4H30 696e7578 2d676e75 2f382f69 6e636c75  inux-gnu/8/inclu[7;4H40 6465002f 7573722f 696e636c 7564652f  de./usr/include/[8;4H50 7838365f 36342d6c 696e7578 2d676e75  x86_64-linux-gnu[9;4H60 2f626974 73002f75 73722f69 6e636c75  /bits./usr/inclu[10;4H70 64652f78 38365f36 342d6c69 6e75782d  de/x86_64-linux-[11;4H80 676e752f 62697473 2f747970 6573002f  gnu/bits/types./[12;3H090 7573722f 696e636c 75646500 0068656c  usr/include..hel[13;3H0a0 6c6f2e63 00000000 73746464 65662e68  lo.c....stddef.h[14;3H0b0 00010000 74797065 732e6800 02000073  ....types.h....s[15;3H0c0 74727563 745f4649 4c452e68 00030000  truct_FILE.h....[16;3H0d0 46494c45 2e680003 00007374 64696f2e  FILE.h....stdio[17;3H0e0 68000400 00000501 00090245 11000000  h..........E....[18;3H0f0 00000018 0503f305 0108ad42 0506e505  ...........B.[19;4H00 05670222 13050ca0 05037405 17000204  .g."......t[20;4H10 032f0505 00020403 083c051e 00020403  ./.......<......[21;4H20 08490503 00020401 4a050a85 05015902  .I......J.....Y[22;4H30 02000101                             ....[K
+Contents of section .debug_str:[K[24;3H000 5f494f5f 6275665f 656e6400 5f6f6c64  _IO_buf_end._old[25;3H010 5f6f6666 73657400 5f494f5f 73617665  _offset._IO_save[26;3H020 5f656e64 0073686f 72742069 6e740073  _end.short int.s[27;3H030 697a655f 74005f49 4f5f7772 6974655f  ize_t._IO_write_[28;3H040 70747200 5f666c61 6773005f 494f5f62  ptr._flags._IO_b[29;3H050 75665f62 61736500 5f6d6172 6b657273  uf_base._markers[30;3H060 005f494f 5f726561 645f656e 64005f66  ._IO_read_end._f[31;3H070 72656572 65735f62 75660068 656c6c6f  reeres_buf.hello[32;3H080 005f6375 725f636f 6c756d6e 00737464  ._cur_column.std[33;3H090 65727200 6c6f6e67 206c6f6e 6720696e  err.long long in[34;3H0a0 74005f6c 6f636b00 2f686f6d 652f6265  t._lock./home/be[35;3H0b0 73747573 312f6932 3230612f 7375626d  stus1/i220a/subm[36;3H0c0 69742f6c 6162372f 65786572 63697365  it/lab7/exercise[37;3H0d0 73006172 6776005f 494f5f46 494c4500  s.argv._IO_FILE[38;3H0e0 474e5520 43313120 382e332e 30202d6d  GNU C11 8.3.0 -m[39;3H0f0 74756e65 3d67656e 65726963 202d6d61  tune=generic -ma[40;3H100 7263683d 7838362d 3634202d 67202d73  rch=x86-64 -g -s[41;3H110 74643d63 31310075 6e736967 6e656420  td=c11.unsigned[K[42;3H120 63686172 00617267 63005f49 4f5f6d61  char.argc._IO_ma[43;3H130 726b6572 005f7368 6f727462 7566005f  rker._shortbuf._[44;3H140 494f5f77 72697465 5f626173 65005f75  IO_write_base._u[45;3H150 6e757365 6432005f 494f5f72 6561645f  nused2._IO_read_[46;3H160 70747200 73686f72 7420756e 7369676e  ptr.short unsign[47;3H170 65642069 6e74006d 61696e00 5f667265  ed int.main._fre[48;3H180 65726573 5f6c6973 74005f5f 70616435  eres_list.__pad5[49;3H190 005f494f 5f636f64 65637674 006c6f6e  ._IO_codecvt.lon
+ 01a0 6720756e 7369676e 65642069 6e74005f  g unsigned int._[51;3H1b0 494f5f77 72697465 5f656e64 005f5f6f  IO_write_end.__o[52;3H1c0 66663634 5f74005f 5f6f6666 5f74005f  ff64_t.__off_t._[53;3H1d0 63686169 6e005f49 4f5f7769 64655f64  chain._IO_wide_d[54;3H1e0 61746100 5f494f5f 6261636b 75705f62  ata._IO_backup_b[55;3H1f0 61736500 73746469 6e005f66 6c616773  ase.stdin._flags[56;3H200 32005f6d 6f646500 5f494f5f 72656164  2._mode._IO_read[57;3H210 5f626173 65005f76 7461626c 655f6f66  _base._vtable_of[58;3H220 66736574 005f494f 5f736176 655f6261  fset._IO_save_ba[59;3H230 7365005f 66696c65 6e6f0068 656c6c6f  se._fileno.hello[60;3H240 2e630073 74646f75 74005f49 4f5f6c6f  .c.stdout._IO_lo[61;3H250 636b5f74 00                          ck_t.[K
+[K
+Disassembly of section .init:[K
+[K
+0000000000001000 <_init>:[K
+[C   1000:       48 83 ec 08             sub    $0x8,%rsp[K
+[C   1004:       48 8b 05 dd 2f 00 00    mov    0x2fdd(%rip),%rax        # 3fe8 <__gmon_start__>
+[C   100b:       48 85 c0                test   %rax,%rax[K
+    100e:       74 02                   je     1012 <_init+0x12>
+[C   1010:       ff d0                   callq  *%rax[K[71;30H[30m[48;5;250m68% L470[39;49m[H
+[?12l[?25h[?12;25h[?25l    100e:       74 02                   je     1012 <_init+0x12>
+[C   1010:       ff d0                   callq  *%rax[K
+[C   1012:       48 83 c4 08             add    $0x8,%rsp[K
+[C   1016:       c3                      retq[K
+[K
+Disassembly of section .plt:[K
+[K
+0000000000001020 <.plt>:[K
+[C   1020:       ff 35 e2 2f 00 00       pushq  0x2fe2(%rip)        # 4008 <_GLOBAL_OFFSET_TABLE_+0x8>
+[C   1026:       ff 25 e4 2f 00 00       jmpq   *0x2fe4(%rip)        # 4010 <_GLOBAL_OFFSET_TABLE_+0x10>
+[C   102c:       0f 1f 40 00             nopl   0x0(%rax)[K
+[K
+0000000000001030 <fprintf@plt>:[K
+[C   1030:       ff 25 e2 2f 00 00       jmpq   *0x2fe2(%rip)        # 4018 <fprintf@GLIBC_2.2.5>
+[C   1036:       68 00 00 00 00          pushq  $0x0[K
+[C   103b:       e9 e0 ff ff ff          jmpq   1020 <.plt>[K
+[K
+0000000000001040 <exit@plt>:[K
+[C   1040:       ff 25 da 2f 00 00       jmpq   *0x2fda(%rip)        # 4020 <exit@GLIBC_2.2.5>
+[C   1046:       68 01 00 00 00          pushq  $0x1[K
+[C   104b:       e9 d0 ff ff ff          jmpq   1020 <.plt>
+[K
+Disassembly of section .plt.got:[K
+[K
+0000000000001050 <__cxa_finalize@plt>:[K
+[C   1050:       ff 25 a2 2f 00 00       jmpq   *0x2fa2(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>
+[C   1056:       66 90                   xchg   %ax,%ax[K
+[K
+Disassembly of section .text:[K
+[K
+0000000000001060 <_start>:[K
+[C   1060:       31 ed                   xor    %ebp,%ebp[K
+[C   1062:       49 89 d1                mov    %rdx,%r9[K
+[C   1065:       5e                      pop    %rsi[K
+[C   1066:       48 89 e2                mov    %rsp,%rdx[K
+[C   1069:       48 83 e4 f0             and    $0xfffffffffffffff0,%rsp
+[C   106d:       50                      push   %rax[K
+[C   106e:       54                      push   %rsp[K
+[C   106f:       4c 8d 05 ea 01 00 00    lea    0x1ea(%rip),%r8        # 1260 <__libc_csu_fini>
+[C   1076:       48 8d 0d 83 01 00 00    lea    0x183(%rip),%rcx        # 1200 <__libc_csu_init>
+[C   107d:       48 8d 3d f0 00 00 00    lea    0xf0(%rip),%rdi        # 1174 <main>
+[C   1084:       ff 15 56 2f 00 00       callq  *0x2f56(%rip)        # 3fe0 <__libc_start_main@GLIBC_2.2.5>
+[C   108a:       f4                      hlt[K
+[C   108b:       0f 1f 44 00 00          nopl   0x0(%rax,%rax,1)
+[K
+0000000000001090 <deregister_tm_clones>:[K
+[C   1090:       48 8d 3d a1 2f 00 00    lea    0x2fa1(%rip),%rdi        # 4038 <__TMC_END__>
+[C   1097:       48 8d 05 9a 2f 00 00    lea    0x2f9a(%rip),%rax        # 4038 <__TMC_END__>
+[C   109e:       48 39 f8                cmp    %rdi,%rax[K
+[C   10a1:       74 15                   je     10b8 <deregister_tm_clones+0x28>
+[C   10a3:       48 8b 05 2e 2f 00 00    mov    0x2f2e(%rip),%rax        # 3fd8 <_ITM_deregisterTMCloneTable>
+[C   10aa:       48 85 c0                test   %rax,%rax[K
+[C   10ad:       74 09                   je     10b8 <deregister_tm_clones+0x28>
+[C   10af:       ff e0                   jmpq   *%rax[K
+[C   10b1:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[K
+[C   10b8:       c3                      retq[K
+[C   10b9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[K
+[K
+00000000000010c0 <register_tm_clones>:[K
+[C   10c0:       48 8d 3d 71 2f 00 00    lea    0x2f71(%rip),%rdi        # 4038 <__TMC_END__>[62;5H10c7:       48 8d 35 6a 2f 00 00    lea    0x2f6a(%rip),%rsi        # 4038 <__TMC_END__>
+    10ce:       48 29 fe                sub    %rdi,%rsi[64;5H10d1:       48 c1 fe 03             sar    $0x3,%rsi
+    10d5:       48 89 f0                mov    %rsi,%rax[66;7Hd8:       48 c1 e8 3f             shr    $0x3f,%rax[67;7Hdc:       48 01 c6                add    %rax,%rsi[K[68;7Hdf:       48 d1 fe                sar    %rsi[K[69;7He2:       74 14                   je     10f8 <register_tm_clones+0x38>[70;7He4:       48 8b 05 05 2f 00 00    mov    0x2f05(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable>[71;30H[30m[48;5;250m77% L537[39;49m[H
+[?12l[?25h[?12;25h	[?25le2:       74 14                   je     10f8 <register_tm_clones+0x38>[3;7He4:       48 8b 05 05 2f 00 00    mov    0x2f05(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable>[4;7Heb:       48 85 c0                test   %rax,%rax[5;7Hee:       74 08                   je     10f8 <register_tm_clones+0x38>[6;5H10f0:       ff e0                   jmpq   *%rax
+    10f2:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)[8;5H10f8:       c3                      retq
+    10f9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+[K
+0000000000001100 <__do_global_dtors_aux>:[K[12;6H100:       80 3d 61 2f 00 00 00    cmpb   $0x0,0x2f61(%rip)        # 4068 <completed.7325>[13;5H1107:       75 2f                   jne    1138 <__do_global_dtors_aux+0x38>
+    1109:       55                      push   %rbp[15;6H10a:       48 83 3d e6 2e 00 00    cmpq   $0x0,0x2ee6(%rip)        # 3ff8 <__c[11@xa_finalize[16;6H111:       00[K[17;6H112:       48 89 e5                mov    %rsp,%rbp[K[18;5H1115:       74 0c                   je     1123 <__do_global_dtors_aux+0x23>
+    1117:       48 8b 3d 12 2f 00 00    mov    0x2f12(%rip),%rdi        # 4030 <__dso_handle>[20;6H11e:       e8 2d ff ff ff          callq  1050 <__cxa_finalize@plt>[K[21;6H123:       e8 68 ff ff ff          callq  1090 <deregister_tm_clones>[22;6H128:       c6 05 39 2f 00 00 01    movb   $0x1,0x2f39(%rip)        # 4068 <completed.7325>[23;5H112f:       5d                      pop    %rbp
+    1130:       c3                      retq[25;5H1131:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+    1138:       c3                      retq[27;6H139:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[K
+[K
+0000000000001140 <frame_dummy>:
+    1140:       e9 7b ff ff ff          jmpq   10c0 <register_tm_clones>[32;14H145 <hello>:[K[33;6H145:       55                      push   %rbp[K[34;6H146:       48 89 e5                mov    %rsp,%rbp[35;6H149:       48 83 ec 10             sub    $0x10,%rsp[36;6H14d:       48 89 7d f8             mov    %rdi,-0x8(%rbp)[37;6H151:       48 89 75 f0             mov    %rsi,-0x10(%rbp)[K[38;6H155:       48 8b 55 f0             mov    -0x10(%rbp),%rdx[39;6H159:       48 8b 45 f8             mov    -0x8(%rbp),%rax[40;6H15d:       48 8d 35 a0 0e 00 00    lea    0xea0(%rip),%rsi        # 2004 <_IO_stdin_used+0x4>[41;6H164:       48 89 c7                mov    %rax,%rdi[K[42;6H167:       b8 00 00 00 00          mov    $0x0,%eax[K[43;6H16c:       e8 bf fe ff ff          callq  1030 <fprintf@plt>[K[44;6H171:       90                      nop[45;6H172:       c9                      leaveq[K[46;5H1173:       c3                      retq
+[K
+0000000000001174 <main>:[K[49;6H174:       55                      push   %rbp[K[50;6H175:       48 89 e5                mov    %rsp,%rbp[51;6H178:       48 83 ec 20             sub    $0x20,%rsp[K[52;6H17c:       89 7d ec                mov    %edi,-0x14(%rbp)[K[53;6H17f:       48 89 75 e0             mov    %rsi,-0x20(%rbp)[54;6H183:       83 7d ec 01             cmpl   $0x1,-0x14(%rbp)[K[55;6H187:       75 2c                   jne    11b5 <main+0x41>[56;6H189:       48 8b 45 e0             mov    -0x20(%rbp),%rax[57;6H18d:       48 8b 10                mov    (%rax),%rdx[58;6H190:       48 8b 05 c9 2e 00 00    mov    0x2ec9(%rip),%rax        # 4060 <stderr@@GLIBC_2.2.5>[59;5H1197:       48 8d 35 70 0e 00 00    lea    0xe70(%rip),%rsi        # 200e <_IO_stdin_used+0xe>
+    119e:       48 89 c7                mov    %rax,%rdi[61;6H1a1:       b8 00 00 00 00          mov    $0x0,%eax[K[62;6H1a6:       e8 85 fe ff ff          callq  1030 <fprintf@plt>[K[63;6H1ab:       bf ef be ad de          mov    $0xdeadbeef,%edi[64;6H1b0:       e8 8b fe ff ff          callq  1040 <exit@plt>[65;6H1b5:       c7 45 fc 01 00 00 00    movl   $0x1,-0x4(%rbp)[66;6H1bc:       eb 2d                   jmp    11eb <main+0x77>[67;6H1be:       8b 45 fc                mov    -0x4(%rbp),%eax[68;6H1c1:       48 98                   cltq[K[69;6H1c3:       48 8d 14 c5 00 00 00    lea    0x0(,%rax,8),%rdx[K[70;6H1ca:       00[K[71;30H[30m[48;5;250m85% L604[39;49m[H
+[?12l[?25h[?12;25h[2;6H[?25l1c3:       48 8d 14 c5 00 00 00    lea    0x0(,%rax,8),%rdx[K[3;6H1ca:       00[K[4;6H1cb:       48 8b 45 e0             mov    -0x20(%rbp),%rax[5;6H1cf:       48 01 d0                add    %rdx,%rax[K[6;6H1d2:       48 8b 10                mov    (%rax),%rdx[7;6H1d5:       48 8b 05 64 2e 00 00    mov    0x2e64(%rip),%rax        # 4040 <stdout@@GLIBC_2.2.5>[8;6H1dc:       48 89 d6                mov    %rdx,%rsi[9;6H1df:       48 89 c7                mov    %rax,%rdi[10;5H11e2:       e8 5e ff ff ff          callq  1145 <hello>
+    11e7:       83 45 fc 01             addl   $0x1,-0x4(%rbp)[12;7Heb:       8b 45 fc                mov    -0x4(%rbp),%eax[K[13;7Hee:       3b 45 ec                cmp    -0x14(%rbp),%eax[K[14;7Hf1:       7c cb                   jl     11be <main+0x4a>[15;7Hf3:       b8 00 00 00 00          mov    $0x0,%eax[K[16;7Hf8:       c9                      leaveq[17;7Hf9:       c3                      retq[K[18;7Hfa:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)[K
+[K
+0000000000001200 <__libc_csu_init>:[K[21;6H200:       41 57                   push   %r15[K[22;6H202:       49 89 d7                mov    %rdx,%r15[K[23;6H205:       41 56                   push   %r14[24;6H207:       49 89 f6                mov    %rsi,%r14[25;6H20a:       41 55                   push   %r13[K[26;6H20c:       41 89 fd                mov    %edi,%r13d[27;6H20f:       41 54                   push   %r12[K[28;5H1211:       4c 8d 25 d0 2b 00 00    lea    0x2bd0(%rip),%r12        # 3de8 <__frame_dummy_init_array_entry>
+    1218:       55                      push   %rbp[30;6H219:       48 8d 2d d0 2b 00 00    lea    0x2bd0(%rip),%rbp        # 3df0 <__init_array_end>[31;5H1220:       53                      push   %rbx
+    1221:       4c 29 e5                sub    %r12,%rbp[33;6H224:       48 83 ec 08             sub    $0x8,%rsp[34;6H228:       e8 d3 fd ff ff          callq  1000 <_init>[35;6H22d:       48 c1 fd 03             sar    $0x3,%rbp[K[36;6H231:       74 1b                   je     124e <__libc_csu_init+0x4e>[37;6H233:       31 db                   xor    %ebx,%ebx[K[38;6H235:       0f 1f 00                nopl   (%rax)[K[39;6H238:       4c 89 fa                mov    %r15,%rdx[K[40;6H23b:       4c 89 f6                mov    %r14,%rsi[K[41;6H23e:       44 89 ef                mov    %r13d,%edi[42;6H241:       41 ff 14 dc             callq  *(%r12,%rbx,8)[43;6H245:       48 83 c3 01             add    $0x1,%rbx[K[44;6H249:       48 39 dd                cmp    %rbx,%rbp[45;6H24c:       75 ea                   jne    1238 <__libc_csu_init+0x38>[46;6H24e:       48 83 c4 08             add    $0x8,%rsp[47;5H1252:       5b                      pop    %rbx
+    1253:       5d                      pop    %rbp[49;6H254:       41 5c                   pop    %r12[50;6H256:       41 5d                   pop    %r13[K[51;6H258:       41 5e                   pop    %r14[K[52;6H25a:       41 5f                   pop    %r15[K[53;6H25c:       c3                      retq[K[54;6H25d:       0f 1f 00                nopl   (%rax)[K
+[K
+0000000000001260 <__libc_csu_fini>:[K[57;6H260:       c3                      retq[K
+[K
+Disassembly of section .fini:[K
+[K
+0000000000001264 <_fini>:[K[62;6H264:       48 83 ec 08             sub    $0x8,%rsp[K[63;6H268:       48 83 c4 08             add    $0x8,%rsp[K[64;6H26c:       c3                      retq[K
+[K
+[K
+[K
+[K
+[K
+[K[71;30H[30m[48;5;250mBot L671[39;49m[H
+[?12l[?25h[?12;25h[72d[?25lEnd of buffer[H
+[?12l[?25h[?12;25h[72d[K[2;6H[?25l0e2:       74 14                   je     10f8 <register_tm_clones+0x38>[3;6H0e4:       48 8b 05 05 2f 00 00    mov    0x2f05(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable>[4;6H0eb:       48 85 c0                test   %rax,%rax[K[5;6H0ee:       74 08                   je     10f8 <register_tm_clones+0x38>[6;6H0f0:       ff e0                   jmpq   *%rax[K[7;6H0f2:       66 0f 1f 44 00 00       nopw   0x0(%rax,%rax,1)[K[8;6H0f8:       c3                      retq[K[9;6H0f9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+[K
+0000000000001100 <__do_global_dtors_aux>:[K[12;7H00:       80 3d 61 2f 00 00 00    cmpb   $0x0,0x2f61(%rip)        # 4068 <completed.7325>[13;7H07:       75 2f                   jne    1138 <__do_global_dtors_aux+0x38>[14;7H09:       55                      push   %rbp[K[15;7H0a:       48 83 3d e6 2e 00 00    cmpq   $0x0,0x2ee6(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>[16;7H11:       00[K[17;7H12:       48 89 e5                mov    %rsp,%rbp[18;7H15:       74 0c                   je     1123 <__do_global_dtors_aux+0x23>[19;5H1117:       48 8b 3d 12 2f 00 00    mov    0x2f12(%rip),%rdi        # 4030 <__dso_handle>
+    111e:       e8 2d ff ff ff          callq  1050 <__cxa_finalize@plt>[21;6H123:       e8 68 ff ff ff          callq  1090 <deregister_tm_clones>[22;6H128:       c6 05 39 2f 00 00 01    movb   $0x1,0x2f39(%rip)        # 4068 <completed.7325>[23;6H12f:       5d                      pop    %rbp[24;6H130:       c3                      retq[K[25;6H131:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[26;6H138:       c3                      retq[K[27;6H139:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)
+[K
+0000000000001140 <frame_dummy>:[K[30;6H140:       e9 7b ff ff ff          jmpq   10c0 <register_tm_clones>[K
+[K
+0000000000001145 <hello>:[K[33;6H145:       55                      push   %rbp[K[34;6H146:       48 89 e5                mov    %rsp,%rbp[K[35;6H149:       48 83 ec 10             sub    $0x10,%rsp[36;6H14d:       48 89 7d f8             mov    %rdi,-0x8(%rbp)[K[37;6H151:       48 89 75 f0             mov    %rsi,-0x10(%rbp)[38;6H155:       48 8b 55 f0             mov    -0x10(%rbp),%rdx[39;6H159:       48 8b 45 f8             mov    -0x8(%rbp),%rax[40;6H15d:       48 8d 35 a0 0e 00 00    lea    0xea0(%rip),%rsi        # 2004 <_IO_stdin_used+0x4>[41;6H164:       48 89 c7                mov    %rax,%rdi[K[42;6H167:       b8 00 00 00 00          mov    $0x0,%eax[K[43;6H16c:       e8 bf fe ff ff          callq  1030 <fprintf@plt>[44;6H171:       90                      nop[K[45;6H172:       c9                      leaveq[K[46;6H173:       c3                      retq[K
+[K
+0000000000001174 <main>:[K[49;6H174:       55                      push   %rbp[50;6H175:       48 89 e5                mov    %rsp,%rbp[51;6H178:       48 83 ec 20             sub    $0x20,%rsp[52;6H17c:       89 7d ec                mov    %edi,-0x14(%rbp)[53;6H17f:       48 89 75 e0             mov    %rsi,-0x20(%rbp)[54;6H183:       83 7d ec 01             cmpl   $0x1,-0x14(%rbp)[55;5H1187:       75 2c                   jne    11b5 <main+0x41>
+    1189:       48 8b 45 e0             mov    -0x20(%rbp),%rax[57;6H18d:       48 8b 10                mov    (%rax),%rdx[58;5H1190:       48 8b 05 c9 2e 00 00    mov    0x2ec9(%rip),%rax        # 4060 <stderr@@GLIBC_2.2.5>
+    1197:       48 8d 35 70 0e 00 00    lea    0xe70(%rip),%rsi        # 200e <_IO_stdin_used+0xe>[60;5H119e:       48 89 c7                mov    %rax,%rdi
+    11a1:       b8 00 00 00 00          mov    $0x0,%eax[62;6H1a6:       e8 85 fe ff ff          callq  1030 <fprintf@plt>[63;6H1ab:       bf ef be ad de          mov    $0xdeadbeef,%edi[64;6H1b0:       e8 8b fe ff ff          callq  1040 <exit@plt>[65;5H11b5:       c7 45 fc 01 00 00 00    movl   $0x1,-0x4(%rbp)[66;5H11bc:       eb 2d                   jmp    11eb <main+0x77>[67;5H11be:       8b 45 fc                mov    -0x4(%rbp),%eax[68;5H11c1:       48 98                   cltq[69;5H11c3:       48 8d 14 c5 00 00 00    lea    0x0(,%rax,8),%rdx[70;5H11ca:       00[71;30H[30m[48;5;250m85%[39;49m[69;1H[?12l[?25h[?12;25h[2;7H[?25l0e:       74 02                   je     1012 <_init+0x12>[K[3;7H10:       ff d0                   callq  *%rax[K[4;7H12:       48 83 c4 08             add    $0x8,%rsp[5;7H16:       c3                      retq[K
+[K
+Disassembly of section .plt:[K
+[K
+0000000000001020 <.plt>:[K[10;5H1020:       ff 35 e2 2f 00 00       pushq  0x2fe2(%rip)        # 4008 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:       ff 25 e4 2f 00 00       jmpq   *0x2fe4(%rip)        # 4010 <_GLOBAL_OFFSET_TABLE_+0x10>[12;6H02c:       0f 1f 40 00             nopl   0x0(%rax)[K
+[K
+0000000000001030 <fprintf@plt>:[K[15;6H030:       ff 25 e2 2f 00 00       jmpq   *0x2fe2(%rip)        # 4018 <fprintf[11P[16;6H036:       68 00 00 00 00          pushq  $0x0[17;6H03b:       e9 e0 ff ff ff          jmpq   1020 <.plt>
+[K
+0000000000001040 <exit@plt>:[K[20;6H040:       ff 25 da 2f 00 00       jmpq   *0x2fda(%rip)        # 4020 <exit@GLIBC_2.2.5>[21;6H046:       68 01 00 00 00          pushq  $0x1[K[22;6H04b:       e9 d0 ff ff ff          jmpq   1020 <.plt>[K
+[K
+Disassembly of section .plt.got:[K
+[K
+0000000000001050 <__cxa_finalize@plt>:[K[27;6H050:       ff 25 a2 2f 00 00       jmpq   *0x2fa2(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>[28;5H1056:       66 90                   xchg   %ax,%ax
+[K
+Disassembly of section .text:[K[32;14H060 <_start>:[33;6H060:       31 ed                   xor    %ebp,%ebp[34;6H062:       49 89 d1                mov    %rdx,%r9[K[35;6H065:       5e                      pop    %rsi[K[36;6H066:       48 89 e2                mov    %rsp,%rdx[K[37;6H069:       48 83 e4 f0             and    $0xfffffffffffffff0,%rsp[38;6H06d:       50                      push   %rax[K[39;6H06e:       54                      push   %rsp[K[40;6H06f:       4c 8d 05 ea 01 00 00    lea    0x1ea(%rip),%r8        # 1260 <__libc_csu_fini>[K[41;6H076:       48 8d 0d 83 01 00 00    lea    0x183(%rip),%rcx        # 1200 <__libc_csu_init>[42;6H07d:       48 8d 3d f0 00 00 00    lea    0xf0(%rip),%rdi        # 1174 <main>[43;6H084:       ff 15 56 2f 00 00       callq  *0x2f56(%rip)        # 3fe0 <__libc_start_main@GLIBC_2.2.5>[44;6H08a:       f4                      hlt[45;6H08b:       0f 1f 44 00 00          nopl   0x0(%rax,%rax,1)
+[K
+0000000000001090 <deregister_tm_clones>:
+    1090:       48 8d 3d a1 2f 00 00    lea    0x2fa1(%rip),%rdi        # 4038 <__TMC_END__>[49;6H097:       48 8d 05 9a 2f 00 00    lea    0x2f9a(%rip),%rax        # 4038 <__TMC_END__>[50;6H09e:       48 39 f8                cmp    %rdi,%rax[51;6H0a1:       74 15                   je     10b8 <deregister_tm_clones+0x28>[52;6H0a3:       48 8b 05 2e 2f 00 00    mov    0x2f2e(%rip),%rax        # 3fd8 <_ITM_deregisterTMCloneTable>[53;6H0aa:       48 85 c0                test   %rax,%rax[K[54;6H0ad:       74 09                   je     10b8 <deregister_tm_clones+0x28>[55;6H0af:       ff e0                   jmpq   *%rax[K[56;6H0b1:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[K[57;6H0b8:       c3                      retq[K[58;6H0b9:       0f 1f 80 00 00 00 00    nopl   0x0(%rax)[K
+[K
+00000000000010c0 <register_tm_clones>:[K[61;6H0c0:       48 8d 3d 71 2f 00 00    lea    0x2f71(%rip),%rdi        # 4038 <__TMC_END__>[62;6H0c7:       48 8d 35 6a 2f 00 00    lea    0x2f6a(%rip),%rsi        # 4038 <__TMC_END__>[63;6H0ce:       48 29 fe                sub    %rdi,%rsi[K[64;6H0d1:       48 c1 fe 03             sar    $0x3,%rsi[K[65;6H0d5:       48 89 f0                mov    %rsi,%rax[K[66;6H0d8:       48 c1 e8 3f             shr    $0x3f,%rax[K[67;6H0dc:       48 01 c6                add    %rax,%rsi[K[68;6H0df:       48 d1 fe                sar    %rsi[69;6H0e2:       74 14                   je     10f8 <register_tm_clones+0x38>[70;6H0e4:       48 8b 05 05 2f 00 00    mov    0x2f05(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable>[71;30H[30m[48;5;250m77% L605[39;49m[A[?12l[?25h[?12;25h[2d[?25lContents of section .debug_line:[K
+[C0000 30010000 0200dc00 00000101 fb0e0d00  0...............
+[C0010 01010101 00000001 0000012f 7573722f  .........../usr/
+[C0020 6c69622f 6763632f 7838365f 36342d6c  lib/gcc/x86_64-l
+[C0030 696e7578 2d676e75 2f382f69 6e636c75  inux-gnu/8/inclu
+ 0040 6465002f 7573722f 696e636c 7564652f  de./usr/include/
+[C0050 7838365f 36342d6c 696e7578 2d676e75  x86_64-linux-gnu
+ 0060 2f626974 73002f75 73722f69 6e636c75  /bits./usr/inclu
+[C0070 64652f78 38365f36 342d6c69 6e75782d  de/x86_64-linux-[K
+[C0080 676e752f 62697473 2f747970 6573002f  gnu/bits/types./[K
+[C0090 7573722f 696e636c 75646500 0068656c  usr/include..hel
+[C00a0 6c6f2e63 00000000 73746464 65662e68  lo.c....stddef.h
+ 00b0 00010000 74797065 732e6800 02000073  ....types.h....s
+[C00c0 74727563 745f4649 4c452e68 00030000  truct_FILE.h....[K
+[C00d0 46494c45 2e680003 00007374 64696f2e  FILE.h....stdio.
+[C00e0 68000400 00000501 00090245 11000000  h..........E....
+[C00f0 00000018 0503f305 0108ad42 0506e505  ...........B....
+ 0100 05670222 13050ca0 05037405 17000204  .g."......t.....
+[C0110 032f0505 00020403 083c051e 00020403  ./.......<......[K
+[C0120 08490503 00020401 4a050a85 05015902  .I......J.....Y.
+[C0130 02000101                             ....[K
+Contents of section .debug_str:
+ 0000 5f494f5f 6275665f 656e6400 5f6f6c64  _IO_buf_end._old
+[C0010 5f6f6666 73657400 5f494f5f 73617665  _offset._IO_save
+ 0020 5f656e64 0073686f 72742069 6e740073  _end.short int.s
+[C0030 697a655f 74005f49 4f5f7772 6974655f  ize_t._IO_write_[K
+[C0040 70747200 5f666c61 6773005f 494f5f62  ptr._flags._IO_b
+[C0050 75665f62 61736500 5f6d6172 6b657273  uf_base._markers
+ 0060 005f494f 5f726561 645f656e 64005f66  ._IO_read_end._f
+[C0070 72656572 65735f62 75660068 656c6c6f  reeres_buf.hello
+ 0080 005f6375 725f636f 6c756d6e 00737464  ._cur_column.std
+[C0090 65727200 6c6f6e67 206c6f6e 6720696e  err.long long in
+[C00a0 74005f6c 6f636b00 2f686f6d 652f6265  t._lock./home/be
+[C00b0 73747573 312f6932 3230612f 7375626d  stus1/i220a/subm
+[C00c0 69742f6c 6162372f 65786572 63697365  it/lab7/exercise
+[C00d0 73006172 6776005f 494f5f46 494c4500  s.argv._IO_FILE.[K
+[C00e0 474e5520 43313120 382e332e 30202d6d  GNU C11 8.3.0 -m
+[C00f0 74756e65 3d67656e 65726963 202d6d61  tune=generic -ma
+[C0100 7263683d 7838362d 3634202d 67202d73  rch=x86-64 -g -s[K
+[C0110 74643d63 31310075 6e736967 6e656420  td=c11.unsigned[K
+[C0120 63686172 00617267 63005f49 4f5f6d61  char.argc._IO_ma[K
+[C0130 726b6572 005f7368 6f727462 7566005f  rker._shortbuf._[K
+[C0140 494f5f77 72697465 5f626173 65005f75  IO_write_base._u
+[C0150 6e757365 6432005f 494f5f72 6561645f  nused2._IO_read_[K
+[C0160 70747200 73686f72 7420756e 7369676e  ptr.short unsign
+ 0170 65642069 6e74006d 61696e00 5f667265  ed int.main._fre
+[C0180 65726573 5f6c6973 74005f5f 70616435  eres_list.__pad5[K
+[C0190 005f494f 5f636f64 65637674 006c6f6e  ._IO_codecvt.lon[K
+[C01a0 6720756e 7369676e 65642069 6e74005f  g unsigned int._
+[C01b0 494f5f77 72697465 5f656e64 005f5f6f  IO_write_end.__o[K
+[C01c0 66663634 5f74005f 5f6f6666 5f74005f  ff64_t.__off_t._[K
+[C01d0 63686169 6e005f49 4f5f7769 64655f64  chain._IO_wide_d
+[C01e0 61746100 5f494f5f 6261636b 75705f62  ata._IO_backup_b[K
+[C01f0 61736500 73746469 6e005f66 6c616773  ase.stdin._flags
+[C0200 32005f6d 6f646500 5f494f5f 72656164  2._mode._IO_read
+[C0210 5f626173 65005f76 7461626c 655f6f66  _base._vtable_of
+[C0220 66736574 005f494f 5f736176 655f6261  fset._IO_save_ba
+[C0230 7365005f 66696c65 6e6f0068 656c6c6f  se._fileno.hello
+ 0240 2e630073 74646f75 74005f49 4f5f6c6f  .c.stdout._IO_lo
+[C0250 636b5f74 00                          ck_t.[K
+[K
+Disassembly of section .init:[K
+[K
+0000000000001000 <_init>:[K[66;7H00:       48 83 ec 08             sub    $0x8,%rsp[K[67;7H04:       48 8b 05 dd 2f 00 00    mov    0x2fdd(%rip),%rax        # 3fe8 <__gmon_start__>[68;7H0b:       48 85 c0                test   %rax,%rax[69;7H0e:       74 02                   je     1012 <_init+0x12>[K[70;7H10:       ff d0                   callq  *%rax[K[71;30H[30m[48;5;250m68% L538[39;49m[A[?12l[?25h[?12;25h[2d[?25l 0060 05250000 00050405 696e7400 03080599  .%......int.....[3;4H70 00000002 c7010000 0396196c 00000002  ...........l[4;4H80 bd010000 03971b6c 00000006 08910000  .......l........[5;4H90 00030106 20010000 07910000 0008d700  .... ...........[6;4Ha0 0000d804 31082402 00000944 00000004  ....1.$....D....[7;4Hb0 33076500 00000009 57010000 0436098b  3.e.....W....6..[8;4Hc0 00000008 09610000 00043709 8b000000  .....a....7.....[9;4Hd0 10090802 00000438 098b0000 0018093f  .......8.......?[10;4He0 01000004 39098b00 00002009 36000000  ....9..... .6...[11;4Hf0 043a098b 00000028 09af0100 00043b09  .:.....(......;.[12;3H100 8b000000 30094b00 0000043c 098b0000  ....0.K....<....[13;3H110 00380900 00000004 3d098b00 00004009  .8......=.....@.[14;3H120 25020000 0440098b 00000048 09e40100  %....@.....H....[15;3H130 00044109 8b000000 50091800 00000442  ..A.....P......B[16;3H140 098b0000 00580958 00000004 44163d02  .....X.X....D.=[17;3H150 00006009 cf010000 04461443 02000068  ..`......F.C...h[18;3H160 09330200 00044807 65000000 7009fa01  .3....H.e...p[19;4H70 00000449 07650000 0074090c 00000004  ...I.e...t.[20;4H80 4a0b7300 00007809 81000000 044d1250  J.s...x......M.P[21;4H90 00000080 09160200 00044e0f 57000000  ..........N.W..[22;4Ha0 82093501 0000044f 08490200 008309a2  ..5....O.I......
+ 01b0 00000004 510f5902 00008809 10000000  ....Q.Y.........[24;3H1c0 04590d7f 00000090 09940100 00045b17  .Y............[.[25;3H1d0 64020000 9809d901 0000045c 196f0200  d..........\.o..[26;3H1e0 00a0097c 01000004 5d144302 0000a809  ...|....].C.....[27;3H1f0 6e000000 045e0947 000000b0 098a0100  n....^.G........[28;3H200 00045f0a 2d000000 b8090202 00000460  .._.-..........`[29;3H210 07650000 00c0094e 01000004 62087502  .e.....N....b.u.[30;3H220 0000c400 02db0000 00050719 9d000000  ................[31;3H230 0a4a0200 00042b0e 0b2a0100 00060838  .J....+..*.....8[32;3H240 02000006 089d0000 000c9100 00005902  ..............Y.[33;3H250 00000d39 00000000 00060830 0200000b  ...9.......0....[34;3H260 91010000 06085f02 00000bd6 01000006  ......_.........[35;3H270 086a0200 000c9100 00008502 00000d39  .j.............9[36;3H280 00000013 000ef401 00000689 0e910200  ................[37;3H290 00060824 0200000e 43020000 068a0e91  ...$....C......[38;3H2a0 0200000e 8d000000 068b0e91 02000003  ................[39;3H2b0 08059400 00000f77 01000001 0e016500  .......w......e.[40;3H2c0 00007411 00000000 00008600 00000000  ..t.............[41;3H2d0 0000019c 16030000 10250100 00010e0a  .........%......[42;3H2e0 65000000 02915c10 d2000000 010e1c16  e.....\.........[43;3H2f0 03000002 915011b5 11000000 0000003e  .....P.........>[44;3H300 00000000 00000012 69000114 0c650000  ........i....e..[45;3H310 0002916c 00000608 1c030000 06089800  ...l............[46;3H320 0000137b 00000001 06014511 00000000  ...{......E.....[47;3H330 00002f00 00000000 0000019c 146f7574  ../..........out[48;3H340 0001060d 91020000 02916814 77686f00  ..........h.who.[49;3H350 01061e1c 03000002 91600000           .........`..[K
+Contents of section .debug_abbrev:[K[51;3H000 01110125 0e130b03 0e1b0e11 01120710  ...%............[52;3H010 17000002 1600030e 3a0b3b0b 390b4913  ........:.;.9.I.[53;3H020 00000324 000b0b3e 0b030e00 00040f00  ...$...>........[54;3H030 0b0b0000 0524000b 0b3e0b03 08000006  .....$...>......[55;3H040 0f000b0b 49130000 07260049 13000008  ....I....&.I....[56;3H050 1301030e 0b0b3a0b 3b0b390b 01130000  ......:.;.9.....[57;3H060 090d0003 0e3a0b3b 0b390b49 13380b00  .....:.;.9.I.8..[58;3H070 000a1600 030e3a0b 3b0b390b 00000b13  ......:.;.9.....[59;3H080 00030e3c 1900000c 01014913 01130000  ...<......I.....[60;3H090 0d210049 132f0b00 000e3400 030e3a0b  .!.I./....4...:.[61;3H0a0 3b0b390b 49133f19 3c190000 0f2e013f  ;.9.I.?.<......?
+[C00b0 19030e3a 0b3b0b39 0b271949 13110112  ...:.;.9.'.I....
+ 00c0 07401896 42190113 00001005 00030e3a  .@..B..........:
+[C00d0 0b3b0b39 0b491302 18000011 0b011101  .;.9.I..........
+ 00e0 12070000 12340003 083a0b3b 0b390b49  .....4...:.;.9.I
+[C00f0 13021800 00132e01 030e3a0b 3b0b390b  ..........:.;.9.
+[C0100 27191101 12074018 96421900 00140500  '.....@..B......[K
+[C0110 03083a0b 3b0b390b 49130218 000000    ..:.;.9.I......
+Contents of section .debug_line:[K
+[C0000 30010000 0200dc00 00000101 fb0e0d00  0...............[71;30H[30m[48;5;250m59% L471[39;49m[A[?12l[?25h[?12;25h[2;2H[?25l2118 5cf0ffff 86000000 00410e10 8602430d  \........A....C
+[C2128 0602810c 07080000 44000000 9c000000  ........D...
+[C2138 c8f0ffff 5d000000 00420e10 8f02450e  ....]....B....E
+[C2148 188e0345 0e208d04 450e288c 05480e30  ...E. ..E.(..H.0
+[C2158 8606480e 38830747 0e406a0e 38410e30  ..H.8..G.@j.8A.0
+[C2168 410e2842 0e20420e 18420e10 420e0800  A.(B. B..B..B.
+[C2178 10000000 e4000000 e0f0ffff 01000000  ...........
+[C2188 00000000 00000000                    ........[K
+Contents of section .init_array:[K
+[C3de8 40110000 00000000                    @.......[K
+Contents of section .fini_array:[K
+[C3df0 00110000 00000000                    ........[K
+Contents of section .dynamic:[K
+[C3df8 01000000 00000000 01000000 00000000  ................
+[C3e08 0c000000 00000000 00100000 00000000  ...............
+[C3e18 0d000000 00000000 64120000 00000000  ........d.......
+[C3e28 19000000 00000000 e83d0000 00000000  .........=...
+[C3e38 1b000000 00000000 08000000 00000000  ..........
+[C3e48 1a000000 00000000 f03d0000 00000000  .........=......
+[C3e58 1c000000 00000000 08000000 00000000  .............
+[C3e68 f5feff6f 00000000 08030000 00000000  ...o......
+[C3e78 05000000 00000000 28040000 00000000  ........(
+[C3e88 06000000 00000000 38030000 00000000  ........8......
+[C3e98 0a000000 00000000 98000000 00000000  ..............
+[C3ea8 0b000000 00000000 18000000 00000000  ...........
+[C3eb8 15000000 00000000 00000000 00000000  ........
+[C3ec8 03000000 00000000 00400000 00000000  .........@......
+[C3ed8 02000000 00000000 30000000 00000000  ........0......
+[C3ee8 14000000 00000000 07000000 00
+[C3ef8 17000000 00000000 e8050000 00000000  ................
+[C3f08 07000000 00000000 f8040000 00000000  ...............
+[C3f18 08000000 00000000 f0000000 00000000  ............
+[C3f28 09000000 00000000 18000000 00000000  .......
+[C3f38 fbffff6f 00000000 00000008 00000000  ...o............
+[C3f48 feffff6f 00000000 d8040000 00000000  ...o
+[C3f58 ffffff6f 00000000 01000000 00000000  ...o.....
+[C3f68 f0ffff6f 00000000 c0040000 00000000  ...o
+[C3f78 f9ffff6f 00000000 03000000 00000000  ...o...........
+[C3f88 00000000 00000000 00000000 00000000  ...
+[C3f98 00000000 00000000 00000000 00000000  ..........
+[C3fa8 00000000 00000000 00000000 00000000  .......
+[C3fb8 00000000 00000000 00000000 00000000  ................
+[C3fc8 00000000 00000000 00000000 00000000  ..............
+Contents of section .got:[K
+[C3fd8 00000000 00000000 00000000 00000000  ...........
+[C3fe8 00000000 00000000 00000000 00000000  ................
+[C3ff8 00000000 00000000                    ........[K
+Contents of section .got.plt:[K
+ 4000 f83d0000 00000000 00000000 00000000  .=..............
+[C4010 00000000 00000000 36100000 00000000  ........6
+[C4020 46100000 00000000                    F.......[K
+Contents of section .data:[K
+[C4028 00000000 00000000 30400000 00000000  ........0@
+Contents of section .comment:[K[56;4H00 4743433a 20284465 6269616e 20382e33  GCC: (Debian 8.3[57;4H10 2e302d36 2920382e 332e3000           .0-6) 8.3.0.[K
+Contents of section .debug_aranges:[K[59;4H00 2c000000 02000000 00000800 00000000  ,..........[60;4H10 45110000 00000000 b5000000 00000000  E..............[61;4H20 00000000 00000000 00000000 00000000  ................
+Contents of section .debug_info:[K[63;4H00 58030000 04000000 00000801 e0000000  X...............[64;4H10 0c3b0200 00a80000 00451100 00000000  .;.......E[65;4H20 00b50000 00000000 00000000 00022f00  ............../.[66;4H30 000002d8 17390000 00030807 9d010000  .....9.........[67;3H040 030407a2 01000004 08030108 17010000  ..........[68;3H050 03020764 01000003 01061901 00000302  ...d............
+ 0060 05250000 00050405 696e7400 03080599  .%......int.....[70;4H70 00000002 c7010000 0396196c 00000002  ...........l[71;30H[30m[48;5;250m49% L404[39;49m[A[?12l[?25h[?12;25h[2d[?25lContents of section .init:[K
+[C1000 4883ec08 488b05dd 2f000048 85c07402  H...H.../..H..t
+[C1010 ffd04883 c408c3                      ..H....[K
+Contents of section .plt:[K
+[C1020 ff35e22f 0000ff25 e42f0000 0f1f4000  .5./...%./....@.
+[C1030 ff25e22f 00006800 000000e9 e0ffffff  .%./..h......
+[C1040 ff25da2f 00006801 000000e9 d0ffffff  .%./..h
+Contents of section .plt.got:[K
+ 1050 ff25a22f 00006690                    .%./..f.
+Contents of section .text:[K
+ 1060 31ed4989 d15e4889 e24883e4 f050544c  1.I..^H..H...PTL
+[C1070 8d05ea01 0000488d 0d830100 00488d3d  ......H......H.=
+ 1080 f0000000 ff15562f 0000f40f 1f440000  ......V/.....D..
+[C1090 488d3da1 2f000048 8d059a2f 00004839  H.=./..H.../..H9
+[C10a0 f8741548 8b052e2f 00004885 c07409ff  .t.H.../..H..t
+[C10b0 e00f1f80 00000000 c30f1f80 00000000  .........
+[C10c0 488d3d71 2f000048 8d356a2f 00004829  H.=q/..H.5j/..H)
+[C10d0 fe48c1fe 034889f0 48c1e83f 4801c648  .H...H..H..?H..H
+[C10e0 d1fe7414 488b0505 2f000048 85c07408  ..t.H.../..H..t
+[C10f0 ffe0660f 1f440000 c30f1f80 00000000  ..f..D
+[C1100 803d612f 00000075 2f554883 3de62e00  .=a/...u/UH.=
+[C1110 00004889 e5740c48 8b3d122f 0000e82d  ..H..t.H.=./...-
+[C1120 ffffffe8 68ffffff c605392f 0000015d  ....h.....9/...]
+[C1130 c30f1f80 00000000 c30f1f8
+[C1140 e97bffff ff554889 e54883ec 1048897d  .{...UH..H...H.}
+[C1150 f8488975 f0488b55 f0488b45 f8488d35  .H.u.H.U.H.E.H.5
+[C1160 a00e0000 4889c7b8 00000000 e8bffeff  ....H.....
+[C1170 ff90c9c3 554889e5 4883ec20 897dec48  ....UH..H.. .}.H
+[C1180 8975e083 7dec0175 2c488b45 e0488b10  .u..}..u,H.E.H
+[C1190 488b05c9 2e000048 8d35700e 00004889  H......H.5p...H
+[C11a0 c7b80000 0000e885 feffffbf efbeadde
+[C11b0 e88bfeff ffc745fc 01000000 eb2d8b45  ......E......-.E
+[C11c0 fc489848 8d14c500 00000048 8b45e048  .H.H.......H.E.H
+[C11d0 01d0488b 10488b05 642e0000 4889d648  ..H..H..d...H..H
+[C11e0 89c7e85e ffffff83 45fc018b 45fc3b45  ...^....E...E.;E
+[C11f0 ec7ccbb8 00000000 c9c3660f 1f440000  .|........f..D
+[C1200 41574989 d7415649 89f64155 4189fd41  AWI..AVI..AUA..A
+[C1210 544c8d25 d02b0000 55488d2d d02b0000  TL.%.+..UH.-.+
+[C1220 534c29e5 4883ec08 e8d3fdff ff48c1fd  SL).H........H
+[C1230 03741b31 db0f1f00 4c89fa4c 89f64489  .t.1....L..L..D
+[C1240 ef41ff14 dc4883c3 014839dd 75ea4883  .A...H...H9.u.H
+[C1250 c4085b5d 415c415d 415e415f c30f1f00  ..[]A\A]A^A_
+[C1260 c3                                   .[K[45;22Hfini:
+[C1264 4883ec08 4883c408 c3                 H...H....[K
+Contents of section .rodata:[K
+[C2000 01000200 68656c6c 6f202573 0a007573  ....hello %s..us
+ 2010 6167653a 20257320 4e414d45 2e2e2e0a  age: %s NAME....
+[C2020 00                                   .[K
+Contents of section .eh_frame_hdr:[K
+[C2024 011b033b 40000000 07000000 fcefffff  ...;@...........
+ 2034 8c000000 2cf0ffff b4000000 3cf0ffff  ....,.......<...
+[C2044 5c000000 21f1ffff cc000000 50f1ffff  \...!.......P
+ 2054 ec000000 dcf1ffff 0c010000 3cf2ffff  ............<...
+[C2064 54010000                             T...[K
+Contents of section .eh_frame:[K
+ 2068 14000000 00000000 017a5200 01781001  .........zR..x..
+[C2078 1b0c0708 90010710 14000000 1c000000  .
+[C2088 d8efffff 2b000000 00000000 00000000  ....+
+[C2098 14000000 00000000 017a5200 01781001  .........zR..x
+ 20a8 1b0c0708 90010000 24000000 1c000000  ........$.......
+[C20b8 68efffff 30000000 000e1046 0e184a0f  h...0......F..J
+[C20c8 0b770880 003f1a3b 2a332422 00000000  .w...?.;*3$"
+[C20d8 14000000 44000000 70efffff 08000000  ....D...p......
+[C20e8 00000000 00000000 1c000000 5c000000  ............\
+[C20f8 4df0ffff 2f000000 00410e10 8602430d  M.../....A....C
+[C2108 066a0c07 08000000 1c000000 7c000000  .j..........|
+[C2118 5cf0ffff 86000000 00410e10 8602430d  \........A....C
+[C2128 0602810c 07080000 44000000 9c000000  ........D...[71;31H[30m[48;5;250m0% L337[39;49m[A[?12l[?25h[?12;25h[2;24H[?25lterp:
+[C02a8 2f6c6962 36342f6c 642d6c69 6e75782d  /lib64/ld-linux-
+[C02b8 7838362d 36342e73 6f2e3200           x86-64.so.2.[5;22Hnote.ABI-tag:
+[C02c4 04000000 10000000 01000000 474e5500  ............GNU
+[C02d4 00000000 03000000 02000000 00000000  .......
+Contents of section .note.gnu.build-id:[K
+ 02e4 04000000 14000000 03000000 474e5500  ............GNU.
+[C02f4 0d3bbc9c 2a550958 be82d2e0 df215202  .;..*U.X.....!R.
+ 0304 ae5bd791                             .[..
+Contents of section .gnu.hash:[K
+[C0308 03000000 07000000 01000000 06000000  ................
+[C0318 00018100 00011002 07000000 09000000  ..............
+[C0328 00000000 281d8c1c d165ce6d 39f28b1c  ....(....e.m9...
+Contents of section .dynsym:[K
+[C0338 00000000 00000000 0000000
+[C0348 00000000 00000000 53000000 20000000  ........S... ...
+[C0358 00000000 00000000 00000000 00000000  ................
+[C0368 35000000 12000000 00000000 00000000  5..............
+[C0378 00000000 00000000 1e000000 12000000  ......
+[C0388 00000000 00000000 00000000 00000000  .............
+[C0398 6f000000 20000000 00000000 00000000  o... ...........
+[C03a8 00000000 00000000 0b000000 12000000  ................
+[C03b8 00000000 00000000 0000000
+[C03c8 7e000000 20000000 00000000 00000000  ~... ...........
+[C03d8 00000000 00000000 10000000 11001900  ................
+[C03e8 40400000 00000000 08000000 00000000  @@...
+[C03f8 26000000 22000000 00000000 00000000  &..."...........
+[C0408 00000000 00000000 17000000 11001900  ..............
+[C0418 60400000 00000000 08000000 00000000  `@.............
+Contents of section .dynstr:[K
+[C0428 006c6962 632e736f 2e360065 78697400  .libc.so.6.exit.
+[C0438 7374646f 75740073 74646572 72006670  stdout.stderr.fp
+[C0448 72696e74 66005f5f 6378615f 66696e61  rintf.__cxa_fina
+[C0458 6c697a65 005f5f6c 6962635f 73746172  lize.__libc_star
+[C0468 745f6d61 696e0047 4c494243 5f322e32  t_main.GLIBC_2.2
+[C0478 2e35005f 49544d5f 64657265 67697374  .5._ITM_deregist
+[C0488 6572544d 436c6f6e 65546162 6c65005f  erTMCloneTable._
+[C0498 5f676d6f 6e5f7374 6172745f 5f005f49  _gmon_start__._I
+[C04a8 544d5f72 65676973 74657254 4d436c6f  TM_registerTMClo
+[C04b8 6e655461 626c6500                    neTable.[K
+Contents of section .gnu.version:[K
+[C04c0 00000000 02000200 00000200 00000200  ................
+ 04d0 02000200                             ....
+Contents of section .gnu.version_r:[K
+ 04d8 01000100 01000000 10000000 00000000  ................
+[C04e8 751a6909 00000200 47000000 00000000  u.i.....G.......
+Contents of section .rela.dyn:[K
+[C04f8 e83d0000 00000000 08000000 00000000  .=..............
+ 0508 40110000 00000000 f03d0000 00000000  @........=......
+[C0518 08000000 00000000 00110000 00000000  .....
+[C0528 30400000 00000000 08000000 00000000  0@...........
+[C0538 30400000 00000000 d83f0000 00000000  0@.......?...
+[C0548 06000000 01000000 00000000 00000000  .............
+[C0558 e03f0000 00000000 06000000 02000000  .?..............
+ 0568 00000000 00000000 e83f0000 00000000  .........?......
+[C0578 06000000 04000000 00000000 00000000  ..............
+[C0588 f03f0000 00000000 06000000 06000000  .?
+[C0598 00000000 00000000 f83f0000 00000000  .........?
+[C05a8 06000000 08000000 00000000 00000000  ..............
+[C05b8 40400000 00000000 05000000 07000000  @@.......
+[C05c8 00000000 00000000 60400000 00000000  ........`@.....
+[C05d8 05000000 09000000 00000000 00000000  ............
+Contents of section .rela.plt:[K
+[C05e8 18400000 00000000 07000000 03000000  .@...........
+[C05f8 00000000 00000000 20400000 00000000  ........ @.....
+[C0608 07000000 05000000 00000000 00000000  .............
+Contents of section .init:[K
+[C1000 4883ec08 488b05dd 2f000048 85c07402  H...H.../..H..t[71;30H[30m[48;5;250m31% L270[39;49m[A[?12l[?25h[?12;25h[2d[?25l00000000000004d8 l    d  .gnu.version_r 0000000000000000              .gnu.version_r
+00000000000004f8 l    d  .rela.dyn      0000000000000000              .rela.dyn
+00000000000005e8 l    d  .rela.plt      0000000000000000              .rela.plt
+0000000000001000 l    d  .init  0000000000000000              .init
+0000000000001020 l    d  .plt   0000000000000000              .plt
+0000000000001050 l    d  .plt.got       0000000000000000              .plt.got
+0000000000001060 l    d  .text  0000000000000000              .text
+0000000000001264 l    d  .fini  0000000000000000              .fini
+0000000000002000 l    d  .rodata        0000000000000000              .rodata
+0000000000002024 l    d  .eh_frame_hdr  0000000000000000              .eh_frame_hdr
+0000000000002068 l    d  .eh_frame      0000000000000000              .eh_frame
+0000000000003de8 l    d  .init_array    0000000000000000              .init_array
+0000000000003df0 l    d  .fini_array    0000000000000000              .fini_array
+0000000000003df8 l    d  .dynamic       0000000000000000              .dynamic
+0000000000003fd8 l    d  .got   0000000000000000              .got
+0000000000004000 l    d  .got.plt       0000000000000000              .got.plt
+0000000000004028 l    d  .data  0000000000000000              .data
+0000000000004040 l    d  .bss   0000000000000000              .bss
+0000000000000000 l    d  .comment       0000000000000000              .comment
+0000000000000000 l    d  .debug_aranges 0000000000000000              .debug_aranges
+0000000000000000 l    d  .debug_info    0000000000000000              .debug_info
+0000000000000000 l    d  .debug_abbrev  0000000000000000              .debug_abbrev
+0000000000000000 l    d  .debug_line    0000000000000000              .debug_line
+0000000000000000 l    d  .debug_str     0000000000000000              .debug_str
+0000000000000000 l    df *ABS*  0000000000000000              crtstuff.c
+0000000000001090 l     F .text  0000000000000000              deregister_tm_clones
+00000000000010c0 l     F .text  0000000000000000              register_tm_clones
+0000000000001100 l     F .text  0000000000000000              __do_global_dtors_aux
+0000000000004068 l     O .bss   0000000000000001              completed.7325
+0000000000003df0 l     O .fini_array    0000000000000000              __do_global_dtors_aux_fini_array_entry
+0000000000001140 l     F .text  0000000000000000              frame_dummy
+0000000000003de8 l     O .init_array    0000000000000000              __frame_dummy_init_array_entry
+0000000000000000 l    df *ABS*  0000000000000000              hello.c
+0000000000001145 l     F .text  000000000000002f              hello
+0000000000000000 l    df *ABS*  0000000000000000              crtstuff.c
+000000000000218c l     O .eh_frame      0000000000000000              __FRAME_END__
+0000000000000000 l    df *ABS*  0000000000000000[K
+0000000000003df0 l       .init_array    0000000000000000              __init_array_end
+0000000000003df8 l     O .dynamic       0000000000000000              _DYNAMIC
+0000000000003de8 l       .init_array    0000000000000000              __init_array_start
+0000000000002024 l       .eh_frame_hdr  0000000000000000              __GNU_EH_FRAME_HDR
+0000000000004000 l     O .got.plt       0000000000000000              _GLOBAL_OFFSET_TABLE_
+0000000000001000 l     F .init  0000000000000000              _init
+0000000000001260 g     F .text  0000000000000001              __libc_csu_fini
+0000000000000000  w      *UND*  0000000000000000              _ITM_deregisterTMCloneTable
+0000000000004040 g     O .bss   0000000000000008              stdout@@GLIBC_2.2.5
+0000000000004028  w      .data  0000000000000000              data_start
+0000000000004038 g       .data  0000000000000000              _edata
+0000000000001264 g     F .fini  0000000000000000              .hidden _fini
+0000000000000000       F *UND*  0000000000000000              __libc_start_main@@GLIBC_2.2.5
+0000000000004028 g       .data  0000000000000000              __data_start
+0000000000000000       F *UND*  0000000000000000              fprintf@@GLIBC_2.2.5
+0000000000000000  w      *UND*  0000000000000000              __gmon_start__
+0000000000004030 g     O .data  0000000000000000              .hidden __dso_handle
+0000000000002000 g     O .rodata        0000000000000004              _IO_stdin_used
+0000000000001200 g     F .text  000000000000005d              __libc_csu_init
+0000000000004070 g       .bss   0000000000000000              _end
+0000000000001060 g     F .text  000000000000002b              _start
+0000000000004038 g       .bss   0000000000000000              __bss_start
+0000000000001174 g     F .text  0000000000000086              main
+0000000000000000       F *UND*  0000000000000000              exit@@GLIBC_2.2.5
+0000000000004038 g     O .data  0000000000000000              .hidden __TMC_END__
+0000000000000000  w      *UND*  0000000000000000              _ITM_registerTMCloneTable
+0000000000000000  w    F *UND*  0000000000000000              __cxa_finalize@@GLIBC_2.2.5
+0000000000004060 g     O .bss   0000000000000008              stderr@@GLIBC_2.2.5
+[K
+[K
+			terp:
+[C02a8 2f6c6962 36342f6c 642d6c69 6e75782d  /lib64/ld-linux-[71;30H[30m[48;5;250m19% L203[39;49m[A[?12l[?25h[?12;25h[2d[?25l                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  2 .note.gnu.build-id 00000024  00000000000002e4  00000000000002e4  000002e4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  3 .gnu.hash     00000030  0000000000000308  0000000000000308  00000308  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  4 .dynsym       000000f0  0000000000000338  0000000000000338  00000338  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  5 .dynstr       00000098  0000000000000428  0000000000000428  00000428  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  6 .gnu.version  00000014  00000000000004c0  00000000000004c0  000004c0  2**1[K
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  7 .gnu.version_r 00000020  00000000000004d8  00000000000004d8  000004d8  2**3[K
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  8 .rela.dyn     000000f0  00000000000004f8  00000000000004f8  000004f8  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  9 .rela.plt     00000030  00000000000005e8  00000000000005e8  000005e8  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+ 10 .init         00000017  0000000000001000  0000000000001000  00001000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+ 11 .plt          00000030  0000000000001020  0000000000001020  00001020  2**4[K
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+ 12 .plt.got      00000008  0000000000001050  0000000000001050  00001050  2**3[K
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+ 13 .text         00000201  0000000000001060  0000000000001060  00001060  2**4[K
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+ 14 .fini         00000009  0000000000001264  0000000000001264  00001264  2**2[K
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+ 15 .rodata       00000021  0000000000002000  0000000000002000  00002000  2**2[K
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+ 16 .eh_frame_hdr 00000044  0000000000002024  0000000000002024  00002024  2**2[K
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+ 17 .eh_frame     00000128  0000000000002068  0000000000002068  00002068  2**3[K
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+ 18 .init_array   00000008  0000000000003de8  0000000000003de8  00002de8  2**3
+                  CONTENTS, ALLOC, LOAD, DATA[K
+ 19 .fini_array   00000008  0000000000003df0  0000000000003df0  00002df0  2**3[K
+                  CONTENTS, ALLOC, LOAD, DATA[K
+ 20 .dynamic      000001e0  0000000000003df8  0000000000003df8  00002df8  2**3[K
+                  CONTENTS, ALLOC, LOAD, DATA[K
+ 21 .got          00000028  0000000000003fd8  0000000000003fd8  00002fd8  2**3[K
+                  CONTENTS, ALLOC, LOAD, DATA[K
+ 22 .got.plt      00000028  0000000000004000  0000000000004000  00003000  2**3[K
+                  CONTENTS, ALLOC, LOAD, DATA[K
+ 23 .data         00000010  0000000000004028  0000000000004028  00003028  2**3
+                  CONTENTS, ALLOC, LOAD, DATA[K
+ 24 .bss          00000030  0000000000004040  0000000000004040  00003038  2**5[K
+                  ALLOC[K
+ 25 .comment      0000001c  0000000000000000  0000000000000000  00003038  2**0
+                  CONTENTS, READONLY[K
+ 26 .debug_aranges 00000030  0000000000000000  0000000000000000  00003054  2**0[K
+                  CONTENTS, READONLY, DEBUGGING[K
+ 27 .debug_info   0000035c  0000000000000000  0000000000000000  00003084  2**0[K
+                  CONTENTS, READONLY, DEBUGGING[K
+ 28 .debug_abbrev 0000011f  0000000000000000  0000000000000000  000033e0  2**0[K
+                  CONTENTS, READONLY, DEBUGGING[K
+ 29 .debug_line   00000134  0000000000000000  0000000000000000  000034ff  2**0
+                  CONTENTS, READONLY, DEBUGGING[K
+ 30 .debug_str    00000255  0000000000000000  0000000000000000  00003633  2**0
+                  CONTENTS, READONLY, DEBUGGING[K
+SYMBOL TABLE:[K
+2a8 l    d  .interp        0000000000000000              .interp[K[63;13H02c4 l    d  .note.ABI-tag  0000000000000000              .note.ABI-tag[64;14H2e4 l    d  .note.gnu.build-id     0000000000000000              .note.gnu.build-id[65;14H308 l    d  .gnu.hash      0000000000000000              .gnu.hash[K[66;13H0338 l    d  .dynsym        0000000000000000              .dynsym[K
+0000000000000428 l    d  .dynstr        0000000000000000              .dynstr
+00000000000004c0 l    d  .gnu.version   0000000000000000              .gnu.version
+00000000000004d8 l    d  .gnu.version_r 0000000000000000              .gnu.version_r
+00000000000004f8 l    d  .rela.dyn      0000000000000000              .rela.dyn[71;30H[30m[48;5;250m 9% L136[39;49m[A[?12l[?25h[?12;25h[2d[K
+[?25lhello:     file format elf64-x86-64[K
+hello[K
+architecture: i386:x86-64, flags 0x00000150:[K
+HAS_SYMS, DYNAMIC, D_PAGED[K
+start address 0x0000000000001060[K
+[K
+Program Header:[K[10;5HPHDR off    0x0000000000000040 vaddr 0x0000000000000040 paddr 0x0000000000000040 align 2**3[11;3H       filesz 0x0000000000000268 memsz 0x0000000000000268 flags r--[K[12;3HINTERP off    0x00000000000002a8 vaddr 0x00000000000002a8 paddr 0x00000000000002a8 align 2**0[13;3H       filesz 0x000000000000001c memsz 0x000000000000001c flags r--[K[14;5HLOAD off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**12[15;3H       filesz 0x0000000000000618 memsz 0x0000000000000618 flags r--[K[16;5HLOAD off    0x0000000000001000 vaddr 0x0000000000001000 paddr 0x0000000000001000 align 2**12[17;3H       filesz 0x000000000000026d memsz 0x000000000000026d flags r-x[K[18;5HLOAD off    0x0000000000002000 vaddr 0x0000000000002000 paddr 0x0000000000002000 align 2**12
+[C        filesz 0x0000000000000190 memsz 0x0000000000000190 flags r--[K[20;5HLOAD off    0x0000000000002de8 vaddr 0x0000000000003de8 paddr 0x0000000000003de8 align 2**12
+[C        filesz 0x0000000000000250 memsz 0x0000000000000288 flags rw-[K
+[CDYNAMIC off    0x0000000000002df8 vaddr 0x0000000000003df8 paddr 0x0000000000003df8 align 2**3
+[C        filesz 0x00000000000001e0 memsz 0x00000000000001e0 flags rw-[K[24;5HNOTE off    0x00000000000002c4 vaddr 0x00000000000002c4 paddr 0x00000000000002c4 align 2**2
+[C        filesz 0x0000000000000044 memsz 0x0000000000000044 flags r--[K
+EH_FRAME off    0x0000000000002024 vaddr 0x0000000000002024 paddr 0x0000000000002024 align 2**2
+[C        filesz 0x0000000000000044 memsz 0x0000000000000044 flags r--[K[28;4HSTACK off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**4
+[C        filesz 0x0000000000000000 memsz 0x0000000000000000 flags rw-[K[30;4HRELRO off    0x0000000000002de8 vaddr 0x0000000000003de8 paddr 0x0000000000003de8 align 2**0
+[C        filesz 0x0000000000000218 memsz 0x0000000000000218 flags r--[K
+[K
+Dynamic Section:[K[34;3HNEEDED               libc.so.6[K
+[C INIT                 0x0000000000001000[K[36;3HFINI                 0x0000000000001264[K
+[C INIT_ARRAY           0x0000000000003de8[K[38;3HINIT_ARRAYSZ         0x0000000000000008[K
+[C FINI_ARRAY           0x0000000000003df0[K[40;3HFINI_ARRAYSZ         0x0000000000000008[K
+[C GNU_HASH             0x0000000000000308[K[42;3HSTRTAB               0x0000000000000428[K
+[C SYMTAB               0x0000000000000338[K[44;3HSTRSZ                0x0000000000000098[K
+[C SYMENT               0x0000000000000018[K[46;3HDEBUG                0x0000000000000000[K
+[C PLTGOT               0x0000000000004000[K[48;3HPLTRELSZ             0x0000000000000030
+[C PLTREL               0x0000000000000007[K[50;3HJMPREL               0x00000000000005e8
+[C RELA                 0x00000000000004f8[K[52;3HRELASZ               0x00000000000000f0[K
+[C RELAENT              0x0000000000000018[K[54;3HFLAGS_1              0x0000000008000000[K
+[C VERNEED              0x00000000000004d8[K[56;3HVERNEEDNUM           0x0000000000000001[K
+[C VERSYM               0x00000000000004c0[K[58;3HRELACOUNT            0x0000000000000003[K
+[K
+Version References:[K
+  required from libc.so.6:
+    0x09691a75 0x00 02 GLIBC_2.2.5[K
+[K
+Sections:[K
+Idx Name          Size      VMA               LMA               File off  Algn[K
+  0 .interp       0000001c  00000000000002a8  00000000000002a8  000002a8  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  1 .note.ABI-tag 00000020  00000000000002c4  00000000000002c4  000002c4  2**2[K
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  2 .note.gnu.build-id 00000024  00000000000002e4  00000000000002e4  000002e4  2**2[71;30H[30m[48;5;250mTop L69 [39;49m[A[?12l[?25h[?12;25h
+
+[?25lBeginning of buffer[70;1H[?12l[?25h[?12;25h
+
+[K[2;19H[?25lCONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .note.gnu.build-id 00000024  00000000000002e4  00000000000002e4  000002e4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .gnu.hash     00000030  0000000000000308  0000000000000308  00000308  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .dynsym       000000f0  0000000000000338  0000000000000338  00000338  2**3[8;19HCONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .dynstr       00000098  0000000000000428  0000000000000428  00000428  2**0[10;5H              CONTENTS, ALLOC, LOAD, READONLY, DATA[K[11;3H6 .gnu.version  00000014  00000000000004c0  00000000000004c0  000004c0  2**1[12;3H                CONTENTS, ALLOC, LOAD, READONLY, DATA[K[13;3H7 .gnu.version_r 00000020  00000000000004d8  00000000000004d8  000004d8  2**3[14;5H              CONTENTS, ALLOC, LOAD, READONLY, DATA[K[15;3H8 .rela.dyn     000000f0  00000000000004f8  00000000000004f8  000004f8  2**3[16;5H              CONTENTS, ALLOC, LOAD, READONLY, DATA[K[17;3H9 .rela.plt     00000030  00000000000005e8  00000000000005e8  000005e8  2**3[18;5H              CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+[C10 .init         00000017  0000000000001000  0000000000001000  00001000  2**2[20;5H              CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+[C11 .plt          00000030  0000000000001020  0000000000001020  00001020  2**4
+[C                 CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+[C12 .plt.got      00000008  0000000000001050  0000000000001050  00001050  2**3[24;5H              CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+[C13 .text         00000201  0000000000001060  0000000000001060  00001060  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+[C14 .fini         00000009  0000000000001264  0000000000001264  00001264  2**2[28;4H               CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+[C15 .rodata       00000021  0000000000002000  0000000000002000  00002000  2**2[30;4H               CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+[C16 .eh_frame_hdr 00000044  0000000000002024  0000000000002024  00002024  2**2[32;19HCONTENTS, ALLOC, LOAD, READONLY, DATA
+ 17 .eh_frame     00000128  0000000000002068  0000000000002068  00002068  2**3[34;3H                CONTENTS, ALLOC, LOAD, READONLY, DATA
+[C18 .init_array   00000008  0000000000003de8  0000000000003de8  00002de8  2**3[36;3H                CONTENTS, ALLOC, LOAD, DATA
+[C19 .fini_array   00000008  0000000000003df0  0000000000003df0  00002df0  2**3[38;3H                CONTENTS, ALLOC, LOAD, DATA
+[C20 .dynamic      000001e0  0000000000003df8  0000000000003df8  00002df8  2**3[40;3H                CONTENTS, ALLOC, LOAD, DATA
+[C21 .got          00000028  0000000000003fd8  0000000000003fd8  00002fd8  2**3[42;3H                CONTENTS, ALLOC, LOAD, DATA
+[C22 .got.plt      00000028  0000000000004000  0000000000004000  00003000  2**3[44;3H                CONTENTS, ALLOC, LOAD, DATA
+[C23 .data         00000010  0000000000004028  0000000000004028  00003028  2**3[46;3H                CONTENTS, ALLOC, LOAD, DATA
+[C24 .bss          00000030  0000000000004040  0000000000004040  00003038  2**5[48;3H                ALLOC[K
+[C25 .comment      0000001c  0000000000000000  0000000000000000  00003038  2**0[50;3H                CONTENTS, READONLY[K
+[C26 .debug_aranges 00000030  0000000000000000  0000000000000000  00003054  2**0[52;3H                CONTENTS, READONLY, DEBUGGING
+[C27 .debug_info   0000035c  0000000000000000  0000000000000000  00003084  2**0[54;3H                CONTENTS, READONLY, DEBUGGING
+[C28 .debug_abbrev 0000011f  0000000000000000  0000000000000000  000033e0  2**0[56;3H                CONTENTS, READONLY, DEBUGGING
+[C29 .debug_line   00000134  0000000000000000  0000000000000000  000034ff  2**0[58;3H                CONTENTS, READONLY, DEBUGGING
+[C30 .debug_str    00000255  0000000000000000  0000000000000000  00003633  2**0
+                  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:[K
+00000000000002a8 l    d  .interp        0000000000000000              .interp
+00000000000002c4 l    d  .note.ABI-tag  0000000000000000              .note.ABI-tag
+00000000000002e4 l    d  .note.gnu.build-id     0000000000000000              .note.gnu.build-id
+0000000000000308 l    d  .gnu.hash      0000000000000000              .gnu.hash
+0000000000000338 l    d  .dynsym        0000000000000000              .dynsym[K
+0000000000000428 l    d  .dynstr        0000000000000000              .dynstr
+00000000000004c0 l    d  .gnu.version   0000000000000000              .gnu.version
+00000000000004d8 l    d  .gnu.version_r 0000000000000000              .gnu.version_r
+00000000000004f8 l    d  .rela.dyn      0000000000000000              .rela.dyn[K[71;30H[30m[48;5;250m 9%[39;49m[H
+
+[?12l[?25h[?12;25h[A[K
+[?25lhello:     file format elf64-x86-64[K
+hello[K
+architecture: i386:x86-64, flags 0x00000150:[K
+HAS_SYMS, DYNAMIC, D_PAGED[K
+start address 0x0000000000001060[K
+[K
+Program Header:[K[10;5HPHDR off    0x0000000000000040 vaddr 0x0000000000000040 paddr 0x0000000000000040 align 2**3[11;3H       filesz 0x0000000000000268 memsz 0x0000000000000268 flags r--[K[12;3HINTERP off    0x00000000000002a8 vaddr 0x00000000000002a8 paddr 0x00000000000002a8 align 2**0[13;3H       filesz 0x000000000000001c memsz 0x000000000000001c flags r--[K[14;5HLOAD off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**12[15;3H       filesz 0x0000000000000618 memsz 0x0000000000000618 flags r--[K[16;5HLOAD off    0x0000000000001000 vaddr 0x0000000000001000 paddr 0x0000000000001000 align 2**12[17;3H       filesz 0x000000000000026d memsz 0x000000000000026d flags r-x[K[18;5HLOAD off    0x0000000000002000 vaddr 0x0000000000002000 paddr 0x0000000000002000 align 2**12
+[C        filesz 0x0000000000000190 memsz 0x0000000000000190 flags r--[K[20;5HLOAD off    0x0000000000002de8 vaddr 0x0000000000003de8 paddr 0x0000000000003de8 align 2**12
+[C        filesz 0x0000000000000250 memsz 0x0000000000000288 flags rw-[K
+[CDYNAMIC off    0x0000000000002df8 vaddr 0x0000000000003df8 paddr 0x0000000000003df8 align 2**3
+[C        filesz 0x00000000000001e0 memsz 0x00000000000001e0 flags rw-[K[24;5HNOTE off    0x00000000000002c4 vaddr 0x00000000000002c4 paddr 0x00000000000002c4 align 2**2
+[C        filesz 0x0000000000000044 memsz 0x0000000000000044 flags r--[K
+EH_FRAME off    0x0000000000002024 vaddr 0x0000000000002024 paddr 0x0000000000002024 align 2**2
+[C        filesz 0x0000000000000044 memsz 0x0000000000000044 flags r--[K[28;4HSTACK off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**4
+[C        filesz 0x0000000000000000 memsz 0x0000000000000000 flags rw-[K[30;4HRELRO off    0x0000000000002de8 vaddr 0x0000000000003de8 paddr 0x0000000000003de8 align 2**0
+[C        filesz 0x0000000000000218 memsz 0x0000000000000218 flags r--[K
+[K
+Dynamic Section:[K[34;3HNEEDED               libc.so.6[K
+[C INIT                 0x0000000000001000[K[36;3HFINI                 0x0000000000001264[K
+[C INIT_ARRAY           0x0000000000003de8[K[38;3HINIT_ARRAYSZ         0x0000000000000008[K
+[C FINI_ARRAY           0x0000000000003df0[K[40;3HFINI_ARRAYSZ         0x0000000000000008[K
+[C GNU_HASH             0x0000000000000308[K[42;3HSTRTAB               0x0000000000000428[K
+[C SYMTAB               0x0000000000000338[K[44;3HSTRSZ                0x0000000000000098[K
+[C SYMENT               0x0000000000000018[K[46;3HDEBUG                0x0000000000000000[K
+[C PLTGOT               0x0000000000004000[K[48;3HPLTRELSZ             0x0000000000000030
+[C PLTREL               0x0000000000000007[K[50;3HJMPREL               0x00000000000005e8
+[C RELA                 0x00000000000004f8[K[52;3HRELASZ               0x00000000000000f0[K
+[C RELAENT              0x0000000000000018[K[54;3HFLAGS_1              0x0000000008000000[K
+[C VERNEED              0x00000000000004d8[K[56;3HVERNEEDNUM           0x0000000000000001[K
+[C VERSYM               0x00000000000004c0[K[58;3HRELACOUNT            0x0000000000000003[K
+[K
+Version References:[K
+  required from libc.so.6:
+    0x09691a75 0x00 02 GLIBC_2.2.5[K
+[K
+Sections:[K
+Idx Name          Size      VMA               LMA               File off  Algn[K
+  0 .interp       0000001c  00000000000002a8  00000000000002a8  000002a8  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  1 .note.ABI-tag 00000020  00000000000002c4  00000000000002c4  000002c4  2**2[K
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA[K
+  2 .note.gnu.build-id 00000024  00000000000002e4  00000000000002e4  000002e4  2**2[71;30H[30m[48;5;250mTop[39;49m[A[?12l[?25h[?12;25h
+
+[?25lBeginning of buffer[70;1H[?12l[?25h[?12;25h[71;58H[?25l[30m[48;5;250m2PM 0.54[39;49m[A[?12l[?25h[?12;25h
+
+[K[70d
+
+[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab7/exercises$ objdump -d hello | grep -A40.main.:
+grep: 40.main.:: invalid context length argument
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump -d hello | grep -A40.main.:[K
+grep: 40.main.: invalid context length argument
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump -d hello | grep -A40.main.[K
+grep: 40.main: invalid context length argument
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump -d hello | grep -A40.main.;[K:[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C [K -A40.main.:
+grep: 40.main.:: invalid context length argument
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump -d hello | grep  -A40.main.:[C[1P0.main.:20.main.:
+grep: 20.main.:: invalid context length argument
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump -d hello | grep  -A20.main.:40.main.:[3P-A40.main[C.[C:[C[C[1Pmain.: main.:
+0000000000001174 <main>:
+    1174:	55                   	push   %rbp
+    1175:	48 89 e5             	mov    %rsp,%rbp
+    1178:	48 83 ec 20          	sub    $0x20,%rsp
+    117c:	89 7d ec             	mov    %edi,-0x14(%rbp)
+    117f:	48 89 75 e0          	mov    %rsi,-0x20(%rbp)
+    1183:	83 7d ec 01          	cmpl   $0x1,-0x14(%rbp)
+    1187:	75 2c                	jne    11b5 <main+0x41>
+    1189:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    118d:	48 8b 10             	mov    (%rax),%rdx
+    1190:	48 8b 05 c9 2e 00 00 	mov    0x2ec9(%rip),%rax        # 4060 <stderr@@GLIBC_2.2.5>
+    1197:	48 8d 35 70 0e 00 00 	lea    0xe70(%rip),%rsi        # 200e <_IO_stdin_used+0xe>
+    119e:	48 89 c7             	mov    %rax,%rdi
+    11a1:	b8 00 00 00 00       	mov    $0x0,%eax
+    11a6:	e8 85 fe ff ff       	callq  1030 <fprintf@plt>
+    11ab:	bf ef be ad de       	mov    $0xdeadbeef,%edi
+    11b0:	e8 8b fe ff ff       	callq  1040 <exit@plt>
+    11b5:	c7 45 fc 01 00 00 00 	movl   $0x1,-0x4(%rbp)
+    11bc:	eb 2d                	jmp    11eb <main+0x77>
+    11be:	8b 45 fc             	mov    -0x4(%rbp),%eax
+    11c1:	48 98                	cltq   
+    11c3:	48 8d 14 c5 00 00 00 	lea    0x0(,%rax,8),%rdx
+    11ca:	00 
+    11cb:	48 8b 45 e0          	mov    -0x20(%rbp),%rax
+    11cf:	48 01 d0             	add    %rdx,%rax
+    11d2:	48 8b 10             	mov    (%rax),%rdx
+    11d5:	48 8b 05 64 2e 00 00 	mov    0x2e64(%rip),%rax        # 4040 <stdout@@GLIBC_2.2.5>
+    11dc:	48 89 d6             	mov    %rdx,%rsi
+    11df:	48 89 c7             	mov    %rax,%rdi
+    11e2:	e8 5e ff ff ff       	callq  1145 <hello>
+    11e7:	83 45 fc 01          	addl   $0x1,-0x4(%rbp)
+    11eb:	8b 45 fc             	mov    -0x4(%rbp),%eax
+    11ee:	3b 45 ec             	cmp    -0x14(%rbp),%eax
+    11f1:	7c cb                	jl     11be <main+0x4a>
+    11f3:	b8 00 00 00 00       	mov    $0x0,%eax
+    11f8:	c9                   	leaveq 
+    11f9:	c3                   	retq   
+    11fa:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+0000000000001200 <__libc_csu_init>:
+    1200:	41 57                	push   %r15
+bestus1@remote01:~/i220a/submit/lab7/exercises$ echo "i'm j[Kkinda dumb sometimes, eh?"
+i'm kinda dumb sometimes, eh?
+bestus1@remote01:~/i220a/submit/lab7/exercises$ ls -l hello
+-rwxr-x--- 1 bestus1 bestus1 19376 Oct 18 14:28 hello
+bestus1@remote01:~/i220a/submit/lab7/exercises$ strip hello
+bestus1@remote01:~/i220a/submit/lab7/exercises$ ;s -;[K[K[K[K[Kls -l hello
+-rwxr-x--- 1 bestus1 bestus1 14416 Oct 18 14:44 hello
+bestus1@remote01:~/i220a/submit/lab7/exercises$ make clean
+rm -f hello hello.s *.objdump *~
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump -d mystery > myset[K[K[Ktery[K[K[K[K[Kystery.objdump
+objdump: 'mystery': No such file
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump > [K[K[K mystery > myster.y[K[Ky.obju[Kdump
+Usage: objdump <option(s)> <file(s)>
+ Display information from object <file(s)>.
+ At least one of the following switches must be given:
+  -a, --archive-headers    Display archive header information
+  -f, --file-headers       Display the contents of the overall file header
+  -p, --private-headers    Display object format specific file header contents
+  -P, --private=OPT,OPT... Display object format specific contents
+  -h, --[section-]headers  Display the contents of the section headers
+  -x, --all-headers        Display the contents of all headers
+  -d, --disassemble        Display assembler contents of executable sections
+  -D, --disassemble-all    Display assembler contents of all sections
+  -S, --source             Intermix source code with disassembly
+  -s, --full-contents      Display the full contents of all sections requested
+  -g, --debugging          Display debug information in object file
+  -e, --debugging-tags     Display debug information using ctags style
+  -G, --stabs              Display (in raw form) any STABS info in the file
+  -W[lLiaprmfFsoRtUuTgAckK] or
+  --dwarf[=rawline,=decodedline,=info,=abbrev,=pubnames,=aranges,=macro,=frames,
+          =frames-interp,=str,=loc,=Ranges,=pubtypes,
+          =gdb_index,=trace_info,=trace_abbrev,=trace_aranges,
+          =addr,=cu_index,=links,=follow-links]
+                           Display DWARF info in the file
+  -t, --syms               Display the contents of the symbol table(s)
+  -T, --dynamic-syms       Display the contents of the dynamic symbol table
+  -r, --reloc              Display the relocation entries in the file
+  -R, --dynamic-reloc      Display the dynamic relocation entries in the file
+  @<file>                  Read options from <file>
+  -v, --version            Display this program's version number
+  -i, --info               List object formats and architectures supported
+  -H, --help               Display this information
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump mystery > mystery.objdump[1@-[1@d[1@ [1P[1P[1P[1P[1P[1P[1P[1P[1P[1P mystery.objdump[1Pmystery.objdump[1Pystery.objdump[1Pstery.objdump[1Ptery.objdump[1Pery.objdump[1Pry.objdump[1Py.objdump[1P.objdump[1Pobjdump[1Pbjdump[1Pjdump[1Pdump[1Pump[1Pmp[1Pp[K[K[K[K[K[K[K[K[K[K[Ksize mystery
+size: 'mystery': No such file
+bestus1@remote01:~/i220a/submit/lab7/exercises$ size mysteryobjdump mystery > mystery.objdump[C[1@-[1@d[1@ [C[C[C[C[C[C[C[1@.[1@o
+bestus1@remote01:~/i220a/submit/lab7/exercises$ emacs mystery.o[K[K[Ky.objdump
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 2:49PM 0.42 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                                                                                    [0m[39;49m[27m
+[A
+[K
+mystery.o:     file format elf64-x86-64[K
+[K
+[K
+Disassembly of section .text:[K
+[K
+0000000000000000 <mystery>:[K
+   0:   55                      push   %rbp[K
+   1:   48 89 e5                mov    %rsp,%rbp[K
+   4:   89 7d fc                mov    %edi,-0x4(%rbp)[K
+   7:   8b 45 fc                mov    -0x4(%rbp),%eax[K
+   a:   25 ff ff 7f 00          and    $0x7fffff,%eax[K
+   f:   c9                      leaveq[K
+  10:   c3                      retq[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mmystery.objdump[0m[39;49m[30m[48;5;250m   All L1     (Fundamental) 2:49PM 0.42 --------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[71;59H[?25l[30m[48;5;250m50PM 0.43[39;49m[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab7/exercises$ objdump -d -s -x mystery.o > ,m[K[Kmystery.objdump
+bestus1@remote01:~/i220a/submit/lab7/exercises$ objdump -d -s -x mystery.o > mystery.objdump[23Pemacs[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 2:51PM 0.32 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                                                                                    [0m[39;49m[27m
+[A
+[K
+mystery.o:     file format elf64-x86-64[K
+mystery.o[K
+architecture: i386:x86-64, flags 0x00000011:[K
+HAS_RELOC, HAS_SYMS[K
+start address 0x0000000000000000[K
+[K
+Sections:[K
+Idx Name          Size      VMA               LMA               File off  Algn[K
+  0 .text         00000011  0000000000000000  0000000000000000  00000040  2**2[K
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE[K
+  1 .data         00000000  0000000000000000  0000000000000000  00000054  2**2[K
+                  CONTENTS, ALLOC, LOAD, DATA[K
+  2 .bss          00000000  0000000000000000  0000000000000000  00000054  2**2[K
+                  ALLOC[K
+  3 .debug_abbrev 00000047  0000000000000000  0000000000000000  00000054  2**0[K
+                  CONTENTS, READONLY, DEBUGGING[K
+  4 .debug_info   00000067  0000000000000000  0000000000000000  0000009b  2**0[K
+                  CONTENTS, RELOC, READONLY, DEBUGGING[K
+  5 .debug_line   0000003d  0000000000000000  0000000000000000  00000102  2**0[K
+                  CONTENTS, RELOC, READONLY, DEBUGGING[K
+  6 .debug_loc    00000060  0000000000000000  0000000000000000  0000013f  2**0[K
+                  CONTENTS, READONLY, DEBUGGING[K
+  7 .debug_pubnames 0000001e  0000000000000000  0000000000000000  0000019f  2**0[K
+                  CONTENTS, RELOC, READONLY, DEBUGGING[K
+  8 .debug_aranges 00000030  0000000000000000  0000000000000000  000001bd  2**0[K
+                  CONTENTS, RELOC, READONLY, DEBUGGING[K
+  9 .debug_str    00000054  0000000000000000  0000000000000000  000001ed  2**0[K
+                  CONTENTS, READONLY, DEBUGGING[K
+ 10 .comment      0000002b  0000000000000000  0000000000000000  00000241  2**0[K
+                  CONTENTS, READONLY[K
+ 11 .note.GNU-stack 00000000  0000000000000000  0000000000000000  0000026c  2**0[K
+                  CONTENTS, READONLY[K
+ 12 .eh_frame     00000038  0000000000000000  0000000000000000  00000270  2**3[K
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA[K
+SYMBOL TABLE:[K
+0000000000000000 l    df *ABS*  0000000000000000 mystery.c[K
+0000000000000000 l    d  .text  0000000000000000 .text[K
+0000000000000000 l    d  .data  0000000000000000 .data[K
+0000000000000000 l    d  .bss   0000000000000000 .bss[K
+0000000000000000 l    d  .debug_abbrev  0000000000000000 .debug_abbrev[K
+0000000000000000 l    d  .debug_info    0000000000000000 .debug_info[K
+0000000000000000 l    d  .debug_line    0000000000000000 .debug_line[K
+0000000000000000 l    d  .debug_loc     0000000000000000 .debug_loc[K
+0000000000000000 l    d  .debug_pubnames        0000000000000000 .debug_pubnames[K
+0000000000000000 l    d  .debug_aranges 0000000000000000 .debug_aranges[K
+0000000000000000 l    d  .debug_str     0000000000000000 .debug_str[K
+0000000000000000 l    d  .note.GNU-stack        0000000000000000 .note.GNU-stack[K
+0000000000000000 l    d  .eh_frame      0000000000000000 .eh_frame[K
+0000000000000000 l    d  .comment       0000000000000000 .comment[K
+0000000000000000 g     F .text  0000000000000011 mystery[K
+[K
+[K
+Contents of section .text:[K
+ 0000 554889e5 897dfc8b 45fc25ff ff7f00c9  UH...}..E.%.....[K
+ 0010 c3                                   .[K
+Contents of section .debug_abbrev:[K
+ 0000 01110125 0e130b03 0e1b0e11 01120110  ...%............[K
+ 0010 06000002 2e013f0c 030e3a0b 3b0b270c  ......?...:.;.'.[K
+ 0020 49131101 12014006 01130000 03050003  I.....@.........[K
+ 0030 083a0b3b 0b491302 0a000004 24000b0b  .:.;.I......$...[K
+ 0040 3e0b030e 000000                      >......[K
+Contents of section .debug_info:[K
+ 0000 63000000 02000000 00000801 00000000  c...............[K
+ 0010 01000000 00000000 00000000 00000000  ................[K
+ 0020 00000000 00000000 00000000 00020100  ................[K
+ 0030 00000001 04015f00 00000000 00000000  ......_.........[K
+ 0040 00000000 00000000 00000000 00005f00  .............._.[K
+ 0050 00000376 0001045f 00000002 916c0004  ...v..._.....l..[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mmystery.objdump[0m[39;49m[30m[48;5;250m   Top L1     (Fundamental) 2:51PM 0.32 --------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2;2H[?25l0040 00000000 00000000 00000000 00005f00  .............._.
+ 0050 00000376 0001045f 00000002 916c0004  ...v..._.....l..
+ 0060 04070000 000000                      .......
+Contents of section .debug_line:[K
+ 0000 39000000 02002000 00000101 fb0e0d00  9..... .........
+ 0010 01010101 00000001 00000100 6d797374  ............myst
+[C0020 6572792e 63000000 00000009 02000000  ery.c...........
+ 0030 00000000 00157583 02020001 01        ......u......
+Contents of section .debug_loc:[K
+[C0000 00000000 00000000 01000000 00000000  ................[K
+[C0010 02007708 01000000 00000000 04000000  ..w.............
+[C0020 00000000 02007710 04000000 00000000  ......w.........[K
+[C0030 10000000 00000000 02007610 10000000  ..........v.....
+[C0040 00000000 11000000 00000000 02007708  ..............w.[K
+[C0050 00000000 00000000 00000000 00000000  ................
+Contents of section .debug_pubnames:[K
+[C0000 1a000000 02000000 00006700 00002d00  ..........g...-.
+[C0010 00006d79 73746572 79000000 0000      ..mystery.....[K
+Contents of section .debug_aranges:[K
+[C0000 2c000000 02000000 00000800 00000000  ,...............[K
+[C0010 00000000 00000000 11000000 00000000  ................
+[C0020 00000000 00000000 00000000 00000000  ................[K
+Contents of section .debug_str:[K
+[C0000 6d797374 65727900 756e7369 676e6564  mystery.unsigned[K
+[C0010 20696e74 006d7973 74657279 2e630047   int.mystery.c.G
+[C0020 4e552043 20342e35 2e32002f 686f6d65  NU C 4.5.2./home[K
+[C0030 2f756d72 69676172 2f707562 6c69635f  /umrigar/public_
+[C0040 68746d6c 2f6c6162 342f6669 6c65732f  html/lab4/files/[K
+[C0050 65783300                             ex3.
+Contents of section .comment:[K
+[C0000 00474343 3a202855 62756e74 752f4c69  .GCC: (Ubuntu/Li
+[C0010 6e61726f 20342e35 2e322d38 7562756e  naro 4.5.2-8ubun[K
+[C0020 74753429 20342e35 2e3200             tu4) 4.5.2.
+Contents of section .eh_frame:[K
+[C0000 14000000 00000000 017a5200 01781001  .........zR..x..[K
+ 0010 1b0c0708 90010000 1c000000 1c000000  ................
+ 0020 00000000 11000000 00410e10 4386020d  .........A..C...
+ 0030 064c0c07 08000000                    .L......[K
+[K
+Disassembly of section .text:[K
+[K[43;18H<mystery>:[K
+   0:   55                      push   %rbp[K
+   1:   48 89 e5                mov    %rsp,%rbp[K
+   4:   89 7d fc                mov    %edi,-0x4(%rbp)[K
+   7:   8b 45 fc                mov    -0x4(%rbp),%eax[K
+   a:   25 ff ff 7f 00          and    $0x7fffff,%eax[K
+   f:   c9                      leaveq[K
+  10:   c3                      retq[K
+[K
+[K
+
+
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+				[30m[48;5;250mBot L68[39;49m[H
+[?12l[?25h[?12;25h[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab7/exercises$ make clean
+rm -f hello hello.s *.objdump *~
+bestus1@remote01:~/i220a/submit/lab7/exercises$ make [K
+cc -g -Wall  -std=c11    hello.c   -o hello
+cc -g -Wall  -std=c11 -S hello.c
+bestus1@remote01:~/i220a/submit/lab7/exercises$ gdb hello
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) b main
+Breakpoint 1 at 0x1183: file hello.c, line 16.
+(gdb) r
+Starting program: /import/linux/home1/bestus1/projects/i220a/submit/lab7/exercises/hello 
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffe878) at hello.c:16
+16	  if (argc == 1) {
+(gdb) did[Ksad[Ks /m
+Dump of assembler code for function main:
+15	{
+   0x0000555555555174 <+0>:	push   %rbp
+   0x0000555555555175 <+1>:	mov    %rsp,%rbp
+   0x0000555555555178 <+4>:	sub    $0x20,%rsp
+   0x000055555555517c <+8>:	mov    %edi,-0x14(%rbp)
+   0x000055555555517f <+11>:	mov    %rsi,-0x20(%rbp)
+
+16	  if (argc == 1) {
+=> 0x0000555555555183 <+15>:	cmpl   $0x1,-0x14(%rbp)
+   0x0000555555555187 <+19>:	jne    0x5555555551b5 <main+65>
+
+17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+   0x0000555555555189 <+21>:	mov    -0x20(%rbp),%rax
+   0x000055555555518d <+25>:	mov    (%rax),%rdx
+   0x0000555555555190 <+28>:	mov    0x2ec9(%rip),%rax        # 0x555555558060 <stderr@@GLIBC_2.2.5>
+   0x0000555555555197 <+35>:	lea    0xe70(%rip),%rsi        # 0x55555555600e
+   0x000055555555519e <+42>:	mov    %rax,%rdi
+   0x00005555555551a1 <+45>:	mov    $0x0,%eax
+   0x00005555555551a6 <+50>:	callq  0x555555555030 <fprintf@plt>
+
+18	    exit(0xdeadbeef);
+   0x00005555555551ab <+55>:	mov    $0xdeadbeef,%edi
+   0x00005555555551b0 <+60>:	callq  0x555555555040 <exit@plt>
+
+19	  }
+20	  for (int i = 1; i < argc; i++) {
+   0x00005555555551b5 <+65>:	movl   $0x1,-0x4(%rbp)
+   0x00005555555551bc <+72>:	jmp    0x5555555551eb <main+119>
+   0x00005555555551e7 <+115>:	addl   $0x1,-0x4(%rbp)
+   0x00005555555551eb <+119>:	mov    -0x4(%rbp),%eax
+   0x00005555555551ee <+122>:	cmp    -0x14(%rbp),%eax
+   0x00005555555551f1 <+125>:	jl     0x5555555551be <main+74>
+
+21	    hello(stdout, argv[i]);
+   0x00005555555551be <+74>:	mov    -0x4(%rbp),%eax
+   0x00005555555551c1 <+77>:	cltq   
+   0x00005555555551c3 <+79>:	lea    0x0(,%rax,8),%rdx
+   0x00005555555551cb <+87>:	mov    -0x20(%rbp),%rax
+   0x00005555555551cf <+91>:	add    %rdx,%rax
+   0x00005555555551d2 <+94>:	mov    (%rax),%rdx
+   0x00005555555551d5 <+97>:	mov    0x2e64(%rip),%rax        # 0x555555558040 <stdout@@GLIBC_2.2.5>
+   0x00005555555551dc <+104>:	mov    %rdx,%rsi
+   0x00005555555551df <+107>:	mov    %rax,%rdi
+   0x00005555555551e2 <+110>:	callq  0x555555555145 <hello>
+
+22	  }
+23	  return 0;
+   0x00005555555551f3 <+127>:	mov    $0x0,%eax
+
+24	}
+   0x00005555555551f8 <+132>:	leaveq 
+   0x00005555555551f9 <+133>:	retq   
+
+End of assembler dump.
+(gdb) ir[K reg
+rax            0x555555555174      93824992235892
+rbx            0x0                 0
+rcx            0x7ffff7f8d718      140737353668376
+rdx            0x7fffffffe888      140737488349320
+rsi            0x7fffffffe878      140737488349304
+rdi            0x1                 1
+rbp            0x7fffffffe790      0x7fffffffe790
+rsp            0x7fffffffe770      0x7fffffffe770
+r8             0x7ffff7f8ed80      140737353674112
+r9             0x7ffff7f8ed80      140737353674112
+r10            0x3                 3
+r11            0x0                 0
+r12            0x555555555060      93824992235616
+r13            0x7fffffffe870      140737488349296
+r14            0x0                 0
+r15            0x0                 0
+rip            0x555555555183      0x555555555183 <main+15>
+eflags         0x202               [ IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+(gdb) ~p ar[K[K[K[K[Kp argc
+$1 = 1
+(gdb) p *($rbp - 20)
+Attempt to dereference a generic pointer.
+(gdb) p *c[K(const char ***) [K($rbp -32)[K[K[K20)[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@i[1@n[1@t[1@ [1@ [1@*
+$2 = 1
+(gdb) p argv
+$3 = (const char **) 0x7fffffffe878
+(gdb) p argv[0]
+$4 = 0x7fffffffead2 "/import/linux/home1/bestus1/projects/i220a/submit/lab7/exercises/hello"
+(gdb) p (*(cojs[K[Knst char ***)($rbp - 0x0[K20))[0]
+$5 = 0x7fffffffead2 "/import/linux/home1/bestus1/projects/i220a/submit/lab7/exercises/hello"
+(gdb) p (*(const char ***)($rbp - 0x20))[0][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[0]
+Attempt to dereference a generic pointer.
+(gdb) p *(const char ***)($rbp - 0x20)[0])[0][C[C[C[1@(
+$6 = 0x7fffffffead2 "/import/linux/home1/bestus1/projects/i220a/submit/lab7/exercises/hello"
+(gdb) /i *$pc
+Undefined command: "".  Try "help".
+(gdb) /i *$pc[1@d[1@i[1@s[1@a[1@p[1@l[1P[1P[1P[1@p[1P[1@p[1@l[1@a[1@y[1@ 
+1: x/i *$pc
+=> 0x555555555183 <main+15>:	cmpl   $0x1,-0x14(%rbp)
+(gdb) ni
+0x0000555555555187	16	  if (argc == 1) {
+1: x/i *$pc
+=> 0x555555555187 <main+19>:	jne    0x5555555551b5 <main+65>
+(gdb) p $eflags
+$7 = [ PF ZF IF ]
+(gdb) fprintf[K[K[K[K[K[K[Kni
+17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x555555555189 <main+21>:	mov    -0x20(%rbp),%rax
+(gdb) ni
+0x000055555555518d	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x55555555518d <main+25>:	mov    (%rax),%rdx
+(gdb) ni
+0x0000555555555190	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x555555555190 <main+28>:	mov    0x2ec9(%rip),%rax        # 0x555555558060 <stderr@@GLIBC_2.2.5>
+(gdb) ni
+0x0000555555555197	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x555555555197 <main+35>:	lea    0xe70(%rip),%rsi        # 0x55555555600e
+(gdb) ni
+0x000055555555519e	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x55555555519e <main+42>:	mov    %rax,%rdi
+(gdb) ni
+0x00005555555551a1	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x5555555551a1 <main+45>:	mov    $0x0,%eax
+(gdb) ni
+0x00005555555551a6	17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+1: x/i *$pc
+=> 0x5555555551a6 <main+50>:	callq  0x555555555030 <fprintf@plt>
+(gdb) p $rsi
+$8 = 93824992239630
+(gdb) p (*const[K[K[K[K[K[K[K*(const char * **[K[K[K&[K**)($rsi)
+$9 = (const char **) 0x25203a6567617375
+(gdb) p *(const char ***)($rsi)[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kchar**)($rsi)
+$10 = 0x25203a6567617375 <error: Cannot access memory at address 0x25203a6567617375>
+(gdb) p *(char**)($rsi)[C[C[C[C[C[C[C[C[C[C[C[1Pi)di)
+$11 = 0xfbad2086 <error: Cannot access memory at address 0xfbad2086>
+(gdb) p *(char**)($rdi)[C[C[C[C[C[C[Kp *(char**)($rdi)[1P$rdi)[C[C[C[C[C[K
+$12 = 0xfbad2086 <error: Cannot access memory at address 0xfbad2086>
+(gdb) p *(char**)$rdi[C[C[C[C[C[C*)$rdi
+$13 = (char **) 0xfbad2086
+(gdb) p *(char***)$rdi[C[C[C[C[C[C[Kp *(char***)$rdi[C[1Pisi
+$14 = (char **) 0x25203a6567617375
+(gdb) ni
+usage: /import/linux/home1/bestus1/projects/i220a/submit/lab7/exercises/hello NAME...
+18	    exit(0xdeadbeef);
+1: x/i *$pc
+=> 0x5555555551ab <main+55>:	mov    $0xdeadbeef,%edi
+(gdb) ni
+0x00005555555551b0	18	    exit(0xdeadbeef);
+1: x/i *$pc
+=> 0x5555555551b0 <main+60>:	callq  0x555555555040 <exit@plt>
+(gdb) ni
+[Inferior 1 (process 3735940) exited with code 0357]
+(gdb) ni
+The program is not being run.
+(gdb) g[Kq
+bestus1@remote01:~/i220a/submit/lab7/exercises$ gdb hello
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) /b hello
+Undefined command: "".  Try "help".
+(gdb) /b hello[1P
+Breakpoint 1 at 0x1155: file hello.c, line 8.
+(gdb) r joes
+Starting program: /import/linux/home1/bestus1/projects/i220a/submit/lab7/exercises/hello joes
+
+Breakpoint 1, hello (out=0x7ffff7f8e760 <_IO_2_1_stdout_>, who=0x7fffffffeb14 "joes") at hello.c:8
+8	  fprintf(out, "hello %s\n", who);
+(gdb) p arg v[K[K[K[K[Kargv
+No symbol "argv" in current context.
+(gdb) p argv[K[K[K[K[K[Kni
+0x0000555555555159	8	  fprintf(out, "hello %s\n", who);
+(gdb) ni[K[Kp who
+$1 = 0x7fffffffeb14 "joes"
+(gdb) p argv[K[K[K[K[K (([K*(const char ***)($rbp - 0x0[K20))[0]
+Cannot access memory at address 0x1
+(gdb) p (*(const char ***)($rbp - 0x20))[0][C[C[C[C[C[C[C[Cwho[K(*(const char ***)($rbp - 0x20))[0][K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kni
+0x000055555555515d	8	  fprintf(out, "hello %s\n", who);
+(gdb) ni
+0x0000555555555164	8	  fprintf(out, "hello %s\n", who);
+(gdb) ni
+0x0000555555555167	8	  fprintf(out, "hello %s\n", who);
+(gdb) ni
+0x000055555555516c	8	  fprintf(out, "hello %s\n", who);
+(gdb) ni
+hello joes
+9	}
+(gdb) ni
+0x0000555555555172	9	}
+(gdb) ni
+0x0000555555555173	9	}
+(gdb) i[K
+main (argc=2, argv=0x7fffffffe858) at hello.c:20
+20	  for (int i = 1; i < argc; i++) {
+(gdb) ni[Ki
+0x00005555555551eb	20	  for (int i = 1; i < argc; i++) {
+(gdb) ni
+0x00005555555551ee	20	  for (int i = 1; i < argc; i++) {
+(gdb) ni
+0x00005555555551f1	20	  for (int i = 1; i < argc; i++) {
+(gdb) ni
+23	  return 0;
+(gdb) ni
+24	}
+(gdb) ni
+0x00005555555551f9	24	}
+(gdb) ni[K[Kp ([K$rsi
+$2 = 93824992252512
+(gdb) p $rdi
+$3 = 0
+(gdb) p $rdx
+$4 = 140737353676992
+(gdb) p[Kp ([K(char[K[K[K[K[K*(char **[K[K[K**)$rdx
+$5 = 0x0
+(gdb) p *(char**)$rdx[Ki
+Cannot access memory at address 0x0
+(gdb) p *(char**)$rdi[Kp
+Invalid cast.
+(gdb) p *(char**)$rdp[K[K[Kesp
+Cannot access memory at address 0xffffffffffffe778
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 3752779] will be killed.
+
+Quit anyway? (y or n) y
+bestus1@remote01:~/i220a/submit/lab7/exercises$ gdb hello
+GNU gdb (Debian 8.2.1-2+b3) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) start joe
+Temporary breakpoint 1 at 0x1183: file hello.c, line 16.
+Starting program: /import/linux/home1/bestus1/projects/i220a/submit/lab7/exercises/hello joe
+
+Temporary breakpoint 1, main (argc=2, argv=0x7fffffffe858) at hello.c:16
+16	  if (argc == 1) {
+(gdb) disass /m
+Dump of assembler code for function main:
+15	{
+   0x0000555555555174 <+0>:	push   %rbp
+   0x0000555555555175 <+1>:	mov    %rsp,%rbp
+   0x0000555555555178 <+4>:	sub    $0x20,%rsp
+   0x000055555555517c <+8>:	mov    %edi,-0x14(%rbp)
+   0x000055555555517f <+11>:	mov    %rsi,-0x20(%rbp)
+
+16	  if (argc == 1) {
+=> 0x0000555555555183 <+15>:	cmpl   $0x1,-0x14(%rbp)
+   0x0000555555555187 <+19>:	jne    0x5555555551b5 <main+65>
+
+17	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+   0x0000555555555189 <+21>:	mov    -0x20(%rbp),%rax
+   0x000055555555518d <+25>:	mov    (%rax),%rdx
+   0x0000555555555190 <+28>:	mov    0x2ec9(%rip),%rax        # 0x555555558060 <stderr@@GLIBC_2.2.5>
+   0x0000555555555197 <+35>:	lea    0xe70(%rip),%rsi        # 0x55555555600e
+   0x000055555555519e <+42>:	mov    %rax,%rdi
+   0x00005555555551a1 <+45>:	mov    $0x0,%eax
+   0x00005555555551a6 <+50>:	callq  0x555555555030 <fprintf@plt>
+
+18	    exit(0xdeadbeef);
+   0x00005555555551ab <+55>:	mov    $0xdeadbeef,%edi
+   0x00005555555551b0 <+60>:	callq  0x555555555040 <exit@plt>
+
+19	  }
+20	  for (int i = 1; i < argc; i++) {
+   0x00005555555551b5 <+65>:	movl   $0x1,-0x4(%rbp)
+   0x00005555555551bc <+72>:	jmp    0x5555555551eb <main+119>
+   0x00005555555551e7 <+115>:	addl   $0x1,-0x4(%rbp)
+   0x00005555555551eb <+119>:	mov    -0x4(%rbp),%eax
+   0x00005555555551ee <+122>:	cmp    -0x14(%rbp),%eax
+   0x00005555555551f1 <+125>:	jl     0x5555555551be <main+74>
+
+21	    hello(stdout, argv[i]);
+   0x00005555555551be <+74>:	mov    -0x4(%rbp),%eax
+   0x00005555555551c1 <+77>:	cltq   
+   0x00005555555551c3 <+79>:	lea    0x0(,%rax,8),%rdx
+   0x00005555555551cb <+87>:	mov    -0x20(%rbp),%rax
+   0x00005555555551cf <+91>:	add    %rdx,%rax
+   0x00005555555551d2 <+94>:	mov    (%rax),%rdx
+   0x00005555555551d5 <+97>:	mov    0x2e64(%rip),%rax        # 0x555555558040 <stdout@@GLIBC_2.2.5>
+   0x00005555555551dc <+104>:	mov    %rdx,%rsi
+   0x00005555555551df <+107>:	mov    %rax,%rdi
+   0x00005555555551e2 <+110>:	callq  0x555555555145 <hello>
+
+22	  }
+23	  return 0;
+   0x00005555555551f3 <+127>:	mov    $0x0,%eax
+
+24	}
+   0x00005555555551f8 <+132>:	leaveq 
+   0x00005555555551f9 <+133>:	retq   
+
+End of assembler dump.
+(gdb) b @20[K[K[K*20
+Breakpoint 2 at 0x14
+(gdb) clean[Kr 0x14
+Function "0x14" not defined.
+(gdb) clear 0x14[K[K[K[K2[K[K[K[K[K[K[Kinfo break
+Num     Type           Disp Enb Address            What
+2       breakpoint     keep y   0x0000000000000014 
+(gdb) del 2
+(gdb) info break
+No breakpoints or watchpoints.
+(gdb) b 0x20
+Function "0x20" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) b *0x00[K[K=[K20
+Breakpoint 3 at 0x20
+(gdb) info break
+Num     Type           Disp Enb Address            What
+3       breakpoint     keep y   0x0000000000000020 
+(gdb) del 3
+(gdb) b *0x00005555555551be
+Breakpoint 4 at 0x5555555551be: file hello.c, line 21.
+(gdb) c
+Continuing.
+
+Breakpoint 4, main (argc=2, argv=0x7fffffffe858) at hello.c:21
+21	    hello(stdout, argv[i]);
+(gdb) p i
+$1 = 1
+(gdb) c
+Continuing.
+hello joe
+[Inferior 1 (process 3757284) exited normally]
+(gdb)  [Kp i
+No symbol "i" in current context.
+(gdb) start joe
+Temporary breakpoint 5 at 0x555555555183: file hello.c, line 16.
+Starting program: /import/linux/home1/bestus1/projects/i220a/submit/lab7/exercises/hello joe
+
+Temporary breakpoint 5, main (argc=2, argv=0x7fffffffe858) at hello.c:16
+16	  if (argc == 1) {
+(gdb) b 0x00005555555551b5[C[C*0x00005555555551b5[C[C[C[C[C[C[C[C[C
+Breakpoint 6 at 0x5555555551b5: file hello.c, line 20.
+(gdb) c
+Continuing.
+
+Breakpoint 6, main (argc=2, argv=0x7fffffffe858) at hello.c:20
+20	  for (int i = 1; i < argc; i++) {
+(gdb) p i
+$2 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 4, main (argc=2, argv=0x7fffffffe858) at hello.c:21
+21	    hello(stdout, argv[i]);
+(gdb) p i
+$3 = 1
+(gdb) c
+Continuing.
+hello joe
+[Inferior 1 (process 3759975) exited normally]
+(gdb) c[Kcp i[2Pcp i[2Pcb *0x00005555555551b5[C[C[C[C[C[C[12Pstart joe[C[C[C[C[C[C[6Pp istart joe
+Temporary breakpoint 7 at 0x555555555183: file hello.c, line 16.
+Starting program: /import/linux/home1/bestus1/projects/i220a/submit/lab7/exercises/hello joe
+
+Temporary breakpoint 7, main (argc=2, argv=0x7fffffffe858) at hello.c:16
+16	  if (argc == 1) {
+(gdb) b *0x00005555555551b5
+Note: breakpoint 6 also set at pc 0x5555555551b5.
+Breakpoint 8 at 0x5555555551b5: file hello.c, line 20.
+(gdb) 
+Note: breakpoints 6 and 8 also set at pc 0x5555555551b5.
+Breakpoint 9 at 0x5555555551b5: file hello.c, line 20.
+(gdb) c
+Continuing.
+
+Breakpoint 6, main (argc=2, argv=0x7fffffffe858) at hello.c:20
+20	  for (int i = 1; i < argc; i++) {
+(gdb) p i
+$4 = 0
+(gdb) p[Kc[Kni
+20	  for (int i = 1; i < argc; i++) {
+(gdb) ni
+0x00005555555551eb	20	  for (int i = 1; i < argc; i++) {
+(gdb) ni
+0x00005555555551ee	20	  for (int i = 1; i < argc; i++) {
+(gdb) ni
+0x00005555555551f1	20	  for (int i = 1; i < argc; i++) {
+(gdb) ni
+
+Breakpoint 4, main (argc=2, argv=0x7fffffffe858) at hello.c:21
+21	    hello(stdout, argv[i]);
+(gdb) ni[K[Kp i
+$5 = 1
+(gdb) p $eax
+$6 = 1
+(gdb) $ea[K[K[Kset $eax = $eax-1
+(gdb) c
+Continuing.
+hello joe
+[Inferior 1 (process 3760575) exited normally]
+(gdb) q
+bestus1@remote01:~/i220a/submit/lab7/exercises$ exit
+
+Script done on 2020-10-18 15:48:12-04:00 [COMMAND_EXIT_CODE="0"]
