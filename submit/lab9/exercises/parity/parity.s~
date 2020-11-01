@@ -1,0 +1,11 @@
+	.text
+	.globl get_parity
+#edi contains n	
+get_parity:
+	testl	%edi, 1
+	jpo	ODD_PARITY
+	movl	%eax, 1
+	ODD_PARITY:	
+	#@TODO: add code here to set eax to 1 iff edi has even parity
+	ret
+	
