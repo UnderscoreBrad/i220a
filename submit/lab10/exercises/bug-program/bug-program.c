@@ -18,20 +18,19 @@ static struct KeyValue *
 add_key_value(struct KeyValue *keyValues, const char *k, int v)
 {
   //allocate storage for new KeyValue struct
-  struct KeyValue *kv = malloc(sizeof(*kv)*2);
+  struct KeyValue *kv = malloc(sizeof(struct KeyValue));
 
   //allocate storage for string pointed to by k
-  char *s = malloc(sizeof(k)*2);
+  //char *s = malloc(sizeof(k)+2);
 
-  if (kv == NULL || s == NULL) { //check if allocations succeeded
-    fprintf(stderr, "malloc failure: %s\n", strerror(errno));
-    exit(1);
-  }
-  strcpy(s, k);  //copy string k into newly allocated memory pointed to by s
-
+  //if (kv == NULL || s == NULL) { //check if allocations succeeded
+  //  fprintf(stderr, "malloc failure: %s\n", strerror(errno));
+   // exit(1);
+  //}
+  //strcpy(s, k);  //copy string k into newly allocated memory pointed to by s
+	
   //initialize fields of *kv.
-  kv->key = s; kv->value = v; kv->succ = keyValues;
-
+  kv->key = k; kv->value = v; kv->succ = keyValues;
   return kv;
 }
 
@@ -54,8 +53,7 @@ make_key_values(void) {
     "twas", "brillig", "and", "the", "slithy", "toves",
     "did", "gyre", "and", "gimble", "in", "the", "wabe",
     "all", "mimsy", "were", "the", "borogoves",
-    "and", "the", "mome", "raths", "outgrabe",
-  };
+    "and", "the", "mome", "raths", "outgrabe"};
   struct KeyValue *p = NULL;
   for (int i = 0; i < sizeof(keys)/sizeof(keys[0]); i++) {
     p = add_key_value(p, keys[i], i);
