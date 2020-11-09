@@ -19,17 +19,6 @@ add_key_value(struct KeyValue *keyValues, const char *k, int v)
 {
   //allocate storage for new KeyValue struct
   struct KeyValue *kv = malloc(sizeof(struct KeyValue));
-
-  //allocate storage for string pointed to by k
-  //char *s = malloc(sizeof(k)+2);
-
-  //if (kv == NULL || s == NULL) { //check if allocations succeeded
-  //  fprintf(stderr, "malloc failure: %s\n", strerror(errno));
-   // exit(1);
-  //}
-  //strcpy(s, k);  //copy string k into newly allocated memory pointed to by s
-	
-  //initialize fields of *kv.
   kv->key = k; kv->value = v; kv->succ = keyValues;
   return kv;
 }
@@ -38,10 +27,10 @@ add_key_value(struct KeyValue *keyValues, const char *k, int v)
 static void
 free_key_values(struct KeyValue *keyValues)
 {
-  //go thru chain of keyValues
-  for (struct KeyValue *p = keyValues; p != NULL; p = p->succ) {
-    free(p); //free KeyValue struct
-  }
+  if(keyValues->succ!=NULL){
+	free_key_values(keyValues->succ);
+	}
+	free(keyValues);
 }
 
 /** Make key-values for all the words in the first verse of Carroll's
