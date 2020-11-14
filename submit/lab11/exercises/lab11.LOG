@@ -1,0 +1,4205 @@
+Script started on 2020-11-14 17:14:18-05:00 [TERM="xterm-256color" TTY="/dev/pts/10" COLUMNS="136" LINES="72"]
+bestus1@remote01:~/i220a/submit/lab11/exercises$ time ls ~/cs220/n[Klabs/lab11/exercises
+coverage  int-search  matmul-cache  parity
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises$ time sp[Kleep 5
+
+real	0m5.004s
+user	0m0.002s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises$ time wc -l 'find /etc -type f 2>/dev/null\[K' 2/dev/null | tail
+wc: 'find /etc -type f 2>/dev/null': No such file or directory
+wc: 2/dev/null: No such file or directory
+0 total
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+bestus1@remote01:~/i220a/submit/lab11/exercises$ time wc -l 'find /etc -type f 2>/dev/null' 2/dev/null | tail[1@>
+
+real	0m0.003s
+user	0m0.003s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises$ cd par[Kityrity[C[C[C
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ ls parity
+ls: cannot access 'parity': No such file or directory
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ ls parity[K[K[K[K[K[K[K
+main.c	Makefile  parity-c.c  parity-s.c
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ emacs main.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:16PM 1.37 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<string.h>[39;49m[K
+[K
+[38;5;60m#define[39;49m [38;5;130mDEBUG_OPT[39;49m  [38;5;89m"-d"[39;49m[K
+[K
+[38;5;28mint[39;49m [38;5;21mparity_tests[39;49m([38;5;28mint[39;49m [38;5;130mnTests[39;49m, [38;5;28mint[39;49m [38;5;130mdoDebug[39;49m);[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;28mint[39;49m [38;5;130mnTests[39;49m = -1;[K
+  [38;5;129mif[39;49m (argc == 1 || argc > 3 ||[K
+      (argc == 3 && strcmp(argv[1], DEBUG_OPT) != 0) ||[K
+      ((nTests = atoi(argv[argc - 1])) <= 0)) {[K
+    fprintf(stderr, [38;5;89m"usage: %s [%s] NUM_TESTS\n"[39;49m, argv[0], DEBUG_OPT);[K
+    exit(1);[K
+  }[K
+  printf([38;5;89m"%d\n"[39;49m, parity_tests(nTests, argc == 3));[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mmain.c      [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:16PM 1.37 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/parity$ emacs parity-c.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:16PM 1.15 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mparity_tests[39;49m([38;5;28mint[39;49m [38;5;130mnTests[39;49m, [38;5;28mint[39;49m [38;5;130mdoDebug[39;49m)[K
+{[K
+  [38;5;28mint[39;49m [38;5;130msum[39;49m = 0;[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nTests; i++) {[K
+    [38;5;28mint[39;49m [38;5;130mvalue[39;49m = rand() & (doDebug ? 0xFF : ~0);[K
+    [38;5;124m//open code count-1s routine                                                                                                        [39;49m
+[A
+    [38;5;28mint[39;49m [38;5;130mv[39;49m = value;[K
+    [38;5;28mint[39;49m [38;5;130mnOnes[39;49m = 0;[K
+    [38;5;129mwhile[39;49m (v != 0) {[K
+      v &= (v - 1);[K
+      nOnes++;[K
+    }[K
+    [38;5;28mint[39;49m [38;5;130misEvenParity[39;49m = (nOnes & 1) == 0;[K
+    [38;5;129mif[39;49m (doDebug) {[K
+      fprintf(stderr, [38;5;89m"%x: %d\n"[39;49m, value, isEvenParity);[K
+    }[K
+    sum += isEvenParity;[K
+  }[K
+  [38;5;129mreturn[39;49m sum;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mparity-c.c  [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:16PM 1.15 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/parity$ emacs parity-s.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:17PM 0.98 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mparity_tests[39;49m([38;5;28mint[39;49m [38;5;130mnTests[39;49m, [38;5;28mint[39;49m [38;5;130mdoDebug[39;49m)[K
+{[K
+  [38;5;28mint[39;49m [38;5;130msum[39;49m = 0;[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nTests; i++) {[K
+    [38;5;28mint[39;49m [38;5;130mvalue[39;49m = rand() & (doDebug ? 0xFF : ~0);[K
+    [38;5;28mint[39;49m [38;5;130misEvenParity[39;49m = 0;[K
+    [38;5;129m__asm__[39;49m([38;5;89m"testl %1, %1; jpo 1f; movl $1, %0; 1:"[39;49m:[K
+            [38;5;89m"=r"[39;49m(isEvenParity):[38;5;89m"r"[39;49m(value),[38;5;89m"0"[39;49m(isEvenParity));[K
+    [38;5;129mif[39;49m (doDebug) {[K
+      fprintf(stderr, [38;5;89m"%x: %d\n"[39;49m, value, isEvenParity);[K
+    }[K
+    sum += isEvenParity;[K
+  }[K
+  [38;5;129mreturn[39;49m sum;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mparity-s.c  [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:17PM 0.98 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/parity$ make
+cc -g -Wall -std=c11 -O1   -c -o parity-c.o parity-c.c
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc   parity-c.o main.o   -o parity-c
+cc -g -Wall -std=c11 -O1   -c -o parity-s.o parity-s.c
+cc   parity-s.o main.o   -o parity-s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ ./parity-c -d 10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ ./parity-c -d 10[1P[1@s
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity.c[K[K-c
+usage: ./parity-c [-d] NUM_TESTS
+
+real	0m0.004s
+user	0m0.002s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-c[C[Ks
+usage: ./parity-s [-d] NUM_TESTS
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-sc
+usage: ./parity-c [-d] NUM_TESTS
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-cs
+usage: ./parity-s [-d] NUM_TESTS
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-scsc 100
+38
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-c 100s[Kcs 100
+41
+
+real	0m0.002s
+user	0m0.002s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-s 100c[C[C[C[Cs[Kc 1000
+492
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-c 1000[1Ps 10000
+5044
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-s 10000[1Pc 10000
+4982
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-c 1000000000
+^C
+
+real	0m9.711s
+user	0m9.709s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-c 1000000000[K[K
+5000346
+
+real	0m0.351s
+user	0m0.341s
+sys	0m0.008s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ time ./parity-c 10000000[C[C[1P 10000000s 10000000
+5000131
+
+real	0m0.169s
+user	0m0.164s
+sys	0m0.004s
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ ehco[K[K[Kcho "yeah its[K's fac[Kster but that don[Kesnt mean I like assembly"[1P
+yeah its faster but that doesnt mean I like assembly
+bestus1@remote01:~/i220a/submit/lab11/exercises/parity$ cd -
+/home/bestus1/i220a/submit/lab11/exercises
+bestus1@remote01:~/i220a/submit/lab11/exercises$ e[Kcd mata[Kmul-cache
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ ls
+main.c	Makefile  matmul.h  simple-matmul.c  transpose-matmul.c
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ emacs main.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:23PM 0.80 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#define[39;49m [38;5;130m_XOPEN_SOURCE[39;49m 1[K
+[K
+[38;5;60m#include[39;49m [38;5;89m<errno.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<string.h>[39;49m[K
+[K
+[38;5;60m#include[39;49m [38;5;89m"matmul.h"[39;49m[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21minitMatrix[39;49m([38;5;28mint[39;49m [38;5;130mn[39;49m, [38;5;28mdouble[39;49m [38;5;130mmatrix[39;49m[][n])[K
+{[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; j++) {[K
+      matrix[i][j] = lrand48();[K
+    }[K
+  }[K
+}[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21mout_matrix[39;49m([38;5;28mint[39;49m [38;5;130mn[39;49m, [38;5;28mdouble[39;49m [38;5;130ma[39;49m[][n])[K
+{[K
+  [38;5;28mFILE[39;49m *[38;5;130mout[39;49m = stdout;[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; j++) {[K
+      fprintf(out, [38;5;89m"%8g "[39;49m, a[i][j]);[K
+    }[K
+    fprintf(out, [38;5;89m"\n"[39;49m);[K
+  }[K
+}[K
+[K
+[38;5;129menum[39;49m { [38;5;130mMAX_TEST_MATRIX_SIZE[39;49m = 6 };[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;28mint[39;49m [38;5;130mmatrixSize[39;49m = -1;[K
+  [38;5;28mint[39;49m [38;5;130mnumTests[39;49m = -1;[K
+  [38;5;129mif[39;49m (argc != 3 || (matrixSize = atoi(argv[1])) <= 0 ||[K
+      (numTests = atoi(argv[2])) <= 0) {[K
+    fprintf(stderr, [38;5;89m"usage: %s MATRIX_SIZE N_TRIALS\n"[39;49m, argv[0]);[K
+    exit(1);[K
+  }[K
+  [38;5;28mint[39;49m [38;5;130mn[39;49m = matrixSize;[K
+  [38;5;28mdouble[39;49m (*[38;5;130ma[39;49m)[n] = malloc([38;5;129msizeof[39;49m([38;5;28mdouble[39;49m[n][n]));[K
+  [38;5;28mdouble[39;49m (*[38;5;130mb[39;49m)[n] = malloc([38;5;129msizeof[39;49m([38;5;28mdouble[39;49m[n][n]));[K
+  [38;5;28mdouble[39;49m (*[38;5;130mc[39;49m)[n] = malloc([38;5;129msizeof[39;49m([38;5;28mdouble[39;49m[n][n]));[K
+  [38;5;129mif[39;49m (!a || !b || !c) {[K
+    fprintf(stderr, [38;5;89m"could not malloc matrices: %s\n"[39;49m, strerror(errno));[K
+    exit(1);[K
+  }[K
+  initMatrix(n, a); initMatrix(n, b);[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mt[39;49m = 0; t < numTests; t++) {[K
+    matrix_multiply(n, a, b, c);[K
+  }[K
+  [38;5;129mif[39;49m (matrixSize <= MAX_TEST_MATRIX_SIZE) out_matrix(n, c);[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mmain.c      [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:23PM 0.80 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[?25lC-x[H
+[?12l[?25h[?12;25h[72;4H[?25l-[H
+[?12l[?25h[?12;25h[72;4H[?25l C-c[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ emacs matmul[K[K[K[K[K[K[K[K[K[K[K[Kemacs simple.[K-matmul.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:23PM 0.88 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m"matmul.h"[39;49m[K
+[K
+[38;5;28mvoid[39;49m[K
+[38;5;21mmatrix_multiply[39;49m([38;5;28mint[39;49m [38;5;130mn[39;49m, [38;5;28mdouble[39;49m [38;5;130ma[39;49m[][n], [38;5;28mdouble[39;49m [38;5;130mb[39;49m[][n], [38;5;28mdouble[39;49m [38;5;130mc[39;49m[][n])[K
+{[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; j++) {[K
+      c[i][j] = 0;[K
+      [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mk[39;49m = 0; k < n; k++) {[K
+        c[i][j] += a[i][k]*b[k][j];[K
+      }[K
+    }[K
+  }[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250msimple-matmul.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:23PM 0.88 --------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ emacs transpose-matmul.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:24PM 0.91 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m"matmul.h"[39;49m[K
+[K
+[38;5;60m#include[39;49m [38;5;89m<errno.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<string.h>[39;49m[K
+[K
+[38;5;124m/** Fill in matrix t[n][n] as the transpose of matrix a[n][n].  That is,                                                                [39;49m
+[A
+[38;5;124m *  for all i, j set t[i][j] to a[j][i].                                                                                                [39;49m
+[A
+[38;5;124m */[39;49m[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21mmatrix_transpose[39;49m([38;5;28mint[39;49m [38;5;130mn[39;49m, [38;5;28mdouble[39;49m [38;5;130ma[39;49m[][n], [38;5;28mdouble[39;49m [38;5;130mt[39;49m[][n])[K
+{[K
+  [38;5;124m//@TODO add your code here                                                                                                            [39;49m
+[A
+}[K
+[K
+[K
+[38;5;28mvoid[39;49m[K
+[38;5;21mmatrix_multiply[39;49m([38;5;28mint[39;49m [38;5;130mn[39;49m, [38;5;28mdouble[39;49m [38;5;130ma[39;49m[][n], [38;5;28mdouble[39;49m [38;5;130mb[39;49m[][n], [38;5;28mdouble[39;49m [38;5;130mc[39;49m[][n])[K
+{[K
+  [38;5;28mdouble[39;49m (*[38;5;130mtmp[39;49m)[n] = malloc([38;5;129msizeof[39;49m([38;5;28mdouble[39;49m[n][n]));[K
+  [38;5;129mif[39;49m (!tmp) {[K
+    fprintf(stderr, [38;5;89m"could not malloc transpose matrix: %s\n"[39;49m,[K
+            strerror(errno));[K
+    exit(1);[K
+  }[K
+  matrix_transpose(n, b, tmp);[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++) {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; j++) {[K
+      c[i][j] = 0;[K
+      [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mk[39;49m = 0; k < n; k++) {[K
+        c[i][j] += a[i][k]*tmp[j][k];[K
+      }[K
+    }[K
+  }[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mtranspose-matmul.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:24PM 0.91 -----------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[71;63H[?25l[30m[48;5;250m5PM 0.8[39;49m[H
+[?12l[?25h[?12;25h[71;63H[?25l[30m[48;5;250m6PM 0.30[39;49m[H
+[?12l[?25h[?12;25h[72d[K[71;40H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[71;40H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[71;40H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[71;40H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[71;40H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[71;40H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[71;40H[?25l[30m[48;5;250m8[39;49m[9;1H[?12l[?25h[?12;25h[71;40H[?25l[30m[48;5;250m9[39;49m[10;1H[?12l[?25h[?12;25h[71;40H[?25l[30m[48;5;250m10[39;49m[11;1H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m1[39;49m[12;1H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m2[39;49m[13;1H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m3[39;49m[14;1H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m4[39;49m[15;1H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m4[39;49m[15;1H[?12l[?25h[?12;25h[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[71;41H[?25l[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[C[71;41H[?25l[30m[48;5;250m4[39;49m[15;29H[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[71;6H[30m[48;5;250m**[39;49m[15;28H[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l/[K[?12l[?25h[?12;25h[K[C[C[?25lf[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[?25l[38;5;129mfor[39;49m[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l[38;5;28mint[39;49m[?12l[?25h[?12;25h[C[?25l[38;5;130mi[39;49m[?12l[?25h[?12;25h[C[?25l=[?12l[?25h[?12;25h[C[?25l0[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[C[?25li[?12l[?25h[?12;25h[C[?25l<[?12l[?25h[?12;25h[C[?25ln[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h	[?25li[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h[15;6H[?25l[48;5;80m([39;49m[38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++)[?12l[?25h[?12;25h[15;6H[?25l([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < n; i++){[?12l[?25h[?12;25h[1;38r[16;1H[1L[1;72r[16;1H[K[71;41H[?25l[30m[48;5;250m5[39;49m[16;5H[?12l[?25h[?12;25h[?25lf[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[?25l[38;5;129mfor[39;49m[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l[38;5;28mint[39;49m[?12l[?25h[?12;25h[C[?25l[38;5;130mj[39;49m[?12l[?25h[?12;25h[C[?25l=[?12l[?25h[?12;25h	[?25l0[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[71;63H[?25l[30m[48;5;250m7PM 0.11[39;49m[16;19H[?12l[?25h[?12;25h[C[?25lj[?12l[?25h[?12;25h[C[?25l<[?12l[?25h[?12;25h	[?25ln[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[C[?25li[?12l[?25h[?12;25h[K[C[?25lj[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h	[?25l[48;5;80m([39;49m[38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; j++)[?12l[?25h[?12;25h	[?25l([38;5;28mint[39;49m [38;5;130mj[39;49m = 0; j < n; j++){[?12l[?25h[?12;25h[1;39r[17;1H[1L[1;72r[17;1H[K[71;41H[?25l[30m[48;5;250m6[39;49m[17;7H[?12l[?25h[?12;25h[16;31H[?25l[48;5;80m{[39;49m[17;5H}[?12l[?25h[?12;25h[16;31H[?25l{[71;41H[30m[48;5;250m7[39;49m[18;2H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m6[39;49m[17;6H[?12l[?25h[?12;25h[1;40r[18;1H[1L[1;72r[18;1H[K[71;41H[?25l[30m[48;5;250m7[39;49m[18;5H[?12l[?25h[?12;25h[15;29H[?25l[48;5;80m{[39;49m[18;3H}[?12l[?25h[?12;25h[15;29H[?25l{[18;4H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m8[39;49m[19;1H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m7[39;49m[18;1H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m6[39;49m[17;1H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m5[39;49m[16;1H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m6[39;49m[17;1H[?12l[?25h[?12;25h[1;41r[17;1H[1L[1;72r[17;1H[K[71;41H[?25l[30m[48;5;250m7[39;49m[18;5H[?12l[?25h[?12;25h[71;41H[?25l[30m[48;5;250m6[39;49m[17;1H[?12l[?25h[?12;25h	[?25lt[?12l[?25h[?12;25h[?25l[[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mi][?12l[?25h[?12;25h[?25l[i][[?12l[?25h[?12;25h[?25lj[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mj][?12l[?25h[?12;25h[?25l[	[?12l[?25h[?12;25h[?25l=[?12l[?25h[?12;25h	[?25la[?12l[?25h[?12;25h[?25l[[?12l[?25h[?12;25h[?25lj[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mj][?12l[?25h[?12;25h[?25l[j][[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mi][?12l[?25h[?12;25h[?25l[	[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[72;1H[?25l[38;5;20mSave file /home/bestus1/i220a/submit/lab11/exercises/matmul-cache/transpose-matmul.c? (y, n, !, ., q, C-r, d or C-h) [39;49m[?12l[?25h[?12;25h[?25lSave file /home/bestus1/i220a/submit/lab11/exercises/matmul-cache/transpose-matmul.c? (y, n, !, ., q, C-r, d or C-h) y[?12l[?25h[?12;25h[72;4H[?25ling file /home/bestus1/i220a/submit/lab11/exercises/matmul-cache/transpose-matmul.c...[K[17;25H[?12l[?25h[?12;25h[72;1H[?25lWrote /home/bestus1/i220a/submit/lab11/exercises/matmul-cache/transpose-matmul.c[K[17;25H[?12l[?25h[?12;25h[72;1H[K[17;25H[72;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ ./simple-[K[K[K[K[K[K[K[K[Ka[Kmake
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o simple-matmul.o simple-matmul.c
+cc main.o simple-matmul.o  -o simple-matmul
+cc -g -Wall -std=c11 -O1   -c -o transpose-matmul.o transpose-matmul.c
+cc main.o transpose-matmul.o  -o transpose-matmul
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ ,.simple[K[K[K[K[K[K[K[K./simple-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ ./simple-matmul 4 1[C[C[1P[1P[1P[1P[1P[1P[1@t[1@r[1@a[1@n[1@s[1@p[1@o[1@s[1@e
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ time ./simple-matmul 1500 1
+
+real	0m15.581s
+user	0m15.559s
+sys	0m0.016s
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ ./s[Ktranspose-matmul 1500 1
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ each[K[K[Kcho "uh[Km WHAT"
+um WHAT
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ time ./t[K[Ks[K/simple-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+
+real	0m0.004s
+user	0m0.001s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ time ./simple-matmul 4 1[C[1P[1P[1P[1P[1P[1P[1@t[1@r[1@a[1@n[1@s[1@p[1@o[1@s[1@e
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ time ./transpose-matmul 4 1[1P 11 15 10 1
+
+real	0m0.014s
+user	0m0.013s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ time ./transpose-matmul 150 1[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@s[1@i[1@m[1@p[1@l[1@e
+
+real	0m0.014s
+user	0m0.013s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ time ./simple-matmul 150 1[3@transpos[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P 1[1P 10 10 10 1[3P4[C[C[3Psimpl[C[C[C[C[C[C[C[C[C[C[C[C0 10 1
+
+real	0m0.242s
+user	0m0.241s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ time ./simple-matmul 400 1[1P[1P[1P[1P[1P[1P[1@t[1@r[1@a[1@n[1@s[1@p[1@o[1@s[1@e
+
+real	0m0.240s
+user	0m0.238s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ for s in 'seq 1000 500 2500' [K; \
+> do\
+> echo -n "*** Size $s: simple"; time ./simple-matmul $s 1 ; echo ;\
+bash: syntax error near unexpected token `doecho'
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ $ for s in `seq 1000 500 2500`; \[C[1@][1P[1P[C[1P
+> do \
+> echo -n "*** Size $s: simple"; time ./simple-matmul $s 1 ; echo ; \
+> echo -n "*** Size $s: transpose"; time ./transpose-matmul $s 1 ; echo ; \
+> done
+*** Size 1000: simple
+
+real	0m3.844s
+user	0m3.819s
+sys	0m0.024s
+
+*** Size 1000: transpose
+
+real	0m3.743s
+user	0m3.741s
+sys	0m0.000s
+
+*** Size 1500: simple
+
+
+real	0m15.507s
+user	0m15.479s
+sys	0m0.024s
+
+*** Size 1500: transpose
+
+
+real	0m12.730s
+user	0m12.694s
+sys	0m0.032s
+
+*** Size 2000: simple
+
+
+real	0m41.278s
+user	0m41.222s
+sys	0m0.048s
+
+*** Size 2000: transpose^[[A^[[B        
+
+real	0m30.419s
+user	0m30.368s
+sys	0m0.044s
+
+*** Size 2500: simple
+
+
+real	1m20.962s
+user	1m20.816s
+sys	0m0.116s
+
+*** Size 2500: transpose
+
+real	0m59.269s
+user	0m59.194s
+sys	0m0.064s
+
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ echo "whoops thats a lot of extra lines"
+whoops thats a lot of extra lines
+bestus1@remote01:~/i220a/submit/lab11/exercises/matmul-cache$ cd -
+/home/bestus1/i220a/submit/lab11/exercises
+bestus1@remote01:~/i220a/submit/lab11/exercises$ cd int-search
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ ls
+binary-search.c  int_compare.c	int_compare.h  linear-search.c	main.c	Makefile
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ emacs main.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:38PM 0.70 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m"int_compare.h"[39;49m[K
+[K
+[38;5;60m#include[39;49m [38;5;89m<assert.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[K
+[38;5;124m/** Return index of element in a[nElements]; < 0 if not found. */[39;49m[K
+[38;5;28mint[39;49m [38;5;21msearch_for_element[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m[], [38;5;28mint[39;49m [38;5;130mnElements[39;49m, [38;5;28mint[39;49m [38;5;130melement[39;49m);[K
+[K
+[K
+[38;5;124m/** Perform nTests searches for all elements in a[].                                                                                    [39;49m
+[A
+[38;5;124m */[39;49m[K
+[38;5;129mstatic[39;49m [38;5;28mvoid[39;49m[K
+[38;5;21mdo_search[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m[], [38;5;28mint[39;49m [38;5;130mnElements[39;49m, [38;5;28mint[39;49m [38;5;130mnTests[39;49m)[K
+{[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mt[39;49m = 0; t < nTests; t++) {[K
+    [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nElements; i++) {[K
+      [38;5;28mint[39;49m [38;5;130mfoundIndex[39;49m = search_for_element(a, nElements, a[i]);[K
+      assert(foundIndex == i);[K
+      [38;5;28mint[39;49m [38;5;130mfoundIndex1[39;49m = search_for_element(a, nElements, a[i] + 1);[K
+      assert(foundIndex1 < 0 || foundIndex1 == i + 1);[K
+    }[K
+  }[K
+}[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m([38;5;28mint[39;49m [38;5;130margc[39;49m, [38;5;129mconst[39;49m [38;5;28mchar[39;49m *[38;5;130margv[39;49m[])[K
+{[K
+  [38;5;28mint[39;49m [38;5;130mnTests[39;49m = -1;[K
+  [38;5;28mint[39;49m [38;5;130mnElements[39;49m = -1;[K
+  [38;5;129mif[39;49m (argc != 3 || (nElements = atoi(argv[1])) <= 0 ||[K
+      (nTests = atoi(argv[2])) <= 0) {[K
+    fprintf(stderr, [38;5;89m"usage: %s NUM_ELEMENTS NUM_TESTS\n"[39;49m, argv[0]);[K
+    exit(1);[K
+  }[K
+  [38;5;28mint[39;49m [38;5;130ma[39;49m[nElements];[K
+  [38;5;129mfor[39;49m ([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nElements; i++) {[K
+    a[i] = rand();[K
+  }[K
+  qsort(a, nElements, [38;5;129msizeof[39;49m([38;5;28mint[39;49m), int_compare);[K
+  do_search(a, nElements, nTests);[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mmain.c      [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:38PM 0.70 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ emacs linear-search.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:38PM 0.55 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;124m/** Return index of element in a[nElements]; < 0 if not found. */[39;49m[K
+[38;5;28mint[39;49m[K
+[38;5;21msearch_for_element[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m[], [38;5;28mint[39;49m [38;5;130mnElements[39;49m, [38;5;28mint[39;49m [38;5;130melement[39;49m)[K
+{[K
+  [38;5;124m//@TODO add your code here to meet above spec.                                                                                        [39;49m
+[A
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mlinear-search.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:38PM 0.55 --------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[?25lC-x[H
+[?12l[?25h[?12;25h[72;4H[?25l-[H
+[?12l[?25h[?12;25h[72;4H[?25l C-c[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ emacs linear[K[K[K[K[K[K[K int-cmpare.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:38PM 0.68 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[72d[?25l(New file)[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250mint-cmpare.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:38PM 0.68 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ emacs int-compare.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:38PM 0.70 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25l(New file)[K[H
+[?12l[?25h[?12;25h[72d[?25l(New file)[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250mint-compare.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:38PM 0.70 ----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[71;58H[?25l[30m[48;5;250m9PM 0.73[39;49m[H
+[?12l[?25h[?12;25h[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ emacs int-compare.c^C
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ emacs int-compare.c[1Pcompare.c_compare.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:39PM 0.72 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;124m/** Return < 0, 0, > 0 when int pointed to by p1 is <, ==, > int pointed                                                                [39;49m
+[A
+[38;5;124m *  to by p2.                                                                                                                           [39;49m
+[A
+[38;5;124m */[39;49m[K
+[38;5;28mint[39;49m[K
+[38;5;21mint_compare[39;49m([38;5;129mconst[39;49m [38;5;28mvoid[39;49m *[38;5;130mp1[39;49m, [38;5;129mconst[39;49m [38;5;28mvoid[39;49m *[38;5;130mp2[39;49m) {[K
+  [38;5;129mreturn[39;49m *([38;5;28mint[39;49m*)p1 - *([38;5;28mint[39;49m*)p2;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mint_compare.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:39PM 0.72 ----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[?25lC-x[H
+[?12l[?25h[?12;25h[72;4H[?25l-[H
+[?12l[?25h[?12;25h[72;4H[?25l C-c[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ emacs binary-search.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:39PM 0.84 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m"int_compare.h"[39;49m[K
+[K
+[38;5;60m#include[39;49m [38;5;89m<stdlib.h>[39;49m[K
+[K
+[K
+[38;5;124m/** Return index of element in a[nElements]; < 0 if not found. */[39;49m[K
+[38;5;28mint[39;49m[K
+[38;5;21msearch_for_element[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m[], [38;5;28mint[39;49m [38;5;130mnElements[39;49m, [38;5;28mint[39;49m [38;5;130melement[39;49m)[K
+{[K
+  [38;5;28mint[39;49m *[38;5;130mp[39;49m = bsearch(&element, a, nElements, [38;5;129msizeof[39;49m(a[0]), int_compare);[K
+  [38;5;129mreturn[39;49m (p) ? p - a : -1;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mbinary-search.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:39PM 0.84 --------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[?25lC-x C-y is undefined[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ emacs int-[K[K[K[Klinear-searche[K.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:39PM 0.84 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;124m/** Return index of element in a[nElements]; < 0 if not found. */[39;49m[K
+[38;5;28mint[39;49m[K
+[38;5;21msearch_for_element[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m[], [38;5;28mint[39;49m [38;5;130mnElements[39;49m, [38;5;28mint[39;49m [38;5;130melement[39;49m)[K
+{[K
+  [38;5;124m//@TODO add your code here to meet above spec.                                                                                        [39;49m
+[A
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mlinear-search.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:39PM 0.84 --------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[71;59H[?25l[30m[48;5;250m40PM 0.85[39;49m[H
+[?12l[?25h[?12;25h[72d[K[71;37H[?25l[30m[48;5;250m2[39;49m[H
+
+[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m3[39;49m[4;1H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m4[39;49m[5;1H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m5[39;49m[6;1H[?12l[?25h[?12;25h[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[C[C[C[C[C[C		[?25l[38;5;124m [39;49m[71;6H[30m[48;5;250m**[39;49m[6;48H[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l[38;5;124m [39;49m[?12l[?25h[?12;25h[?25l/[K[?12l[?25h[?12;25h[K[6;3H[?25lf[?12l[?25h[?12;25h[?25lo[?12l[?25h[?12;25h[?25l[38;5;129mfor[39;49m[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25l[38;5;28mint[39;49m[?12l[?25h[?12;25h[C[?25l[38;5;130mi[39;49m[?12l[?25h[?12;25h[C[?25l=[?12l[?25h[?12;25h[C[?25l0[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[C[?25li[?12l[?25h[?12;25h[C[?25l<[?12l[?25h[?12;25h[C[?25ln[?12l[?25h[?12;25h[?25lE[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lm[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25ls[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h	[?25li[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h[?25l+[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[K[6;6H[?25l[48;5;80m([39;49m[38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nElements; i++)[?12l[?25h[?12;25h[6;6H[?25l([6;37H[?12l[?25h[?12;25h[?25l{[?12l[?25h[?12;25h
+[K
+[?25l}[71;37H[30m[48;5;250m6[39;49m[7;5H[?12l[?25h[?12;25h[6;37H[?25l[48;5;80m{[39;49m[7;3H}[?12l[?25h[?12;25h[6;37H[?25l{
+
+[K
+}[71;37H[30m[48;5;250m7[39;49m[8;3H[?12l[?25h[?12;25h[?25l}
+[K[71;37H[30m[48;5;250m6[39;49m[7;4H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m5[39;49m[6;4H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m6[39;49m[7;3H[?12l[?25h[?12;25h[K
+[2@
+[?25l}[71;37H[30m[48;5;250m7[39;49m[8;3H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m6[39;49m[7;1H[?12l[?25h[?12;25h[7;5H[71;60H[?25l[30m[48;5;250m1PM 0.57[39;49m[7;5H[?12l[?25h[?12;25h[72;1H[?25lAuto-saving...[7;5H[?12l[?25h[?12;25h[72;15H[?25ldone[7;5H[?12l[?25h[?12;25h[72;1H[K[7;5H[?25li[?12l[?25h[?12;25h[?25l[38;5;129mif[39;49m[?12l[?25h[?12;25h[?25l([?12l[?25h[?12;25h[?25la[?12l[?25h[?12;25h[?25l[[?12l[?25h[?12;25h[?25li[?12l[?25h[?12;25h[?25l[48;5;80m[[39;49mi][?12l[?25h[?12;25h	[?25l[[C[C[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m7[39;49m[8;1H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m6[39;49m[7;12H[?12l[?25h[?12;25h[C[?25l=[?12l[?25h[?12;25h[C[?25le[?12l[?25h[?12;25h[?25ll[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lm[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h
+[K
+[2@
+[?25l}[71;37H[30m[48;5;250m7[39;49m[8;8H[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25ln[?12l[?25h[?12;25h[K[K[K[K[K[K	[?25lr[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h	[?25l[38;5;129mreturn[39;49m[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m6[39;49m[7;14H[?12l[?25h[?12;25h[C		[C[C[C[C[C[C[K[7;7H[?25l[48;5;80m([39;49ma[i] = element)[?12l[?25h[?12;25h[7;7H[?25l([71;37H[30m[48;5;250m7[39;49m[8;14H[?12l[?25h[?12;25h[C[?25li[?12l[?25h[?12;25h[8;7H[?25l[38;5;129mreturn[39;49m i;[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m8[39;49m[9;4H[?12l[?25h[?12;25h
+[K
+[?25l}[71;37H[30m[48;5;250m9[39;49m[10;3H[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25le[?12l[?25h[?12;25h[?25lt[?12l[?25h[?12;25h[?25lu[?12l[?25h[?12;25h[?25lr[?12l[?25h[?12;25h[?25l[38;5;129mreturn[39;49m[?12l[?25h[?12;25h[71;60H[?25l[30m[48;5;250m2PM 0.36[39;49m[10;9H[?12l[?25h[?12;25h[C[?25l-[?12l[?25h[?12;25h[?25l1[?12l[?25h[?12;25h[?25l;[?12l[?25h[?12;25h[72;1H[?25l[38;5;20mSave file /home/bestus1/i220a/submit/lab11/exercises/int-search/linear-search.c? (y, n, !, ., q, C-r, d or C-h) [39;49m[?12l[?25h[?12;25h[?25lSave file /home/bestus1/i220a/submit/lab11/exercises/int-search/linear-search.c? (y, n, !, ., q, C-r, d or C-h) y[?12l[?25h[?12;25h[72;4H[?25ling file /home/bestus1/i220a/submit/lab11/exercises/int-search/linear-search.c...[K[10;13H[?12l[?25h[?12;25h[72;1H[?25lWrote /home/bestus1/i220a/submit/lab11/exercises/int-search/linear-search.c[K[10;13H[?12l[?25h[?12;25h[72;1H[K[10;13H[72;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ make
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+[01m[Klinear-search.c:[m[K In function ‘[01m[Ksearch_for_element[m[K’:
+[01m[Klinear-search.c:6:8:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around assignment used as truth value [[01;35m[K-Wparentheses[m[K]
+     if([01;35m[Ka[m[K[i] = element)
+        [01;35m[K^[m[K
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o int_compare.o int_compare.c
+cc   linear-search.o main.o int_compare.o   -o linear-search
+cc -g -Wall -std=c11 -O1   -c -o binary-search.o binary-search.c
+cc   binary-search.o main.o int_compare.o   -o binary-search
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ emacs int-[K[K[K[Klinear-search.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:42PM 0.47 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;124m/** Return index of element in a[nElements]; < 0 if not found. */[39;49m[K
+[38;5;28mint[39;49m[K
+[38;5;21msearch_for_element[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m[], [38;5;28mint[39;49m [38;5;130mnElements[39;49m, [38;5;28mint[39;49m [38;5;130melement[39;49m)[K
+{[K
+  [38;5;129mfor[39;49m([38;5;28mint[39;49m [38;5;130mi[39;49m = 0; i < nElements; i++){[K
+    [38;5;129mif[39;49m(a[i] = element)[K
+      [38;5;129mreturn[39;49m i;[K
+  }[K
+  [38;5;129mreturn[39;49m -1;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mlinear-search.c[0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:42PM 0.47 --------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2;2H[71;37H[?25l[30m[48;5;250m2[39;49m[3;2H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m3[39;49m[4;2H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m4[39;49m[5;2H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m5[39;49m[6;2H[?12l[?25h[?12;25h[71;37H[?25l[30m[48;5;250m6[39;49m[7;2H[?12l[?25h[?12;25h[C[C[C[C[C		[C[C[C[C[C[?25l[1@=[71;6H[30m[48;5;250m**[39;49m[7;15H[?12l[?25h[?12;25h[72;1H[?25l[38;5;20mSave file /home/bestus1/i220a/submit/lab11/exercises/int-search/linear-search.c? (y, n, !, ., q, C-r, d or C-h) [39;49m[?12l[?25h[?12;25h[?25lSave file /home/bestus1/i220a/submit/lab11/exercises/int-search/linear-search.c? (y, n, !, ., q, C-r, d or C-h) y[?12l[?25h[?12;25h[72;4H[?25ling file /home/bestus1/i220a/submit/lab11/exercises/int-search/linear-search.c...[K[7;15H[?12l[?25h[?12;25h[72;1H[?25lWrote /home/bestus1/i220a/submit/lab11/exercises/int-search/linear-search.c[K[7;15H[?12l[?25h[?12;25h[72;1H[K[7;15H[72;1H[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ emacs linear-search.cmake[Kemacs linear-search.cmake[K
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+cc   linear-search.o main.o int_compare.o   -o linear-search
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ make[K./lina[Ke[K[K[K[K[K[Ktime[K[K[K[K./linear-search 100 1
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ ./linear-search 100 1[C[1P[1P[1P[1P[1P[1P[1@b[1@i[1@n[1@a[1@r[1@y
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ time line[K[K[K[K./linear se[K[K[K-ea[K[Ksearch 2000 2000
+
+real	0m7.711s
+user	0m7.701s
+sys	0m0.008s
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ time ./linear-search 2000 2000[1P[1P[1P[1P[1P[1P[1@b[1@i[1@n[1@a[1@r[1@y
+
+real	0m0.468s
+user	0m0.467s
+sys	0m0.000s
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ echo "lol"
+lol
+bestus1@remote01:~/i220a/submit/lab11/exercises/int-search$ cd -
+/home/bestus1/i220a/submit/lab11/exercises
+bestus1@remote01:~/i220a/submit/lab11/exercises$ ls[K[Kcd coverage
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ emacs coverage.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:44PM 0.39 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mint[39;49m [38;5;130mv[39;49m[] = {[K
+  211,  333, 319, 411, 911, 1001,[K
+};[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mint[39;49m [38;5;21mcompute[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m, [38;5;28mint[39;49m [38;5;130mb[39;49m, [38;5;28mint[39;49m [38;5;130mc[39;49m) {[K
+  [38;5;28mint[39;49m [38;5;130ms[39;49m = v[2];[K
+  [38;5;129mif[39;49m (v[0] < a && a < v[1]) {[K
+    [38;5;129mif[39;49m (b < v[2]) {[K
+      s += v[2];[K
+      [38;5;129mif[39;49m (c < v[3]) {[K
+        s += v[4];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[3];[K
+      }[K
+    }[K
+    [38;5;129melse[39;49m {[K
+      s += v[1];[K
+      [38;5;129mif[39;49m (c < v[1]) {[K
+        s += v[4];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[2];[K
+      }[K
+    }[K
+  }[K
+  [38;5;129melse[39;49m {[K
+    [38;5;129mif[39;49m (b < v[3]) {[K
+      [38;5;129mif[39;49m (c < v[4]) {[K
+        s += v[5];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[1];[K
+      }[K
+    }[K
+    [38;5;129melse[39;49m {[K
+      [38;5;129mif[39;49m (c < v[2]) {[K
+        s += v[1];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[3];[K
+      }[K
+    }[K
+  }[K
+  [38;5;129mreturn[39;49m s;[K
+}[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m()[K
+{[K
+  [38;5;28mint[39;49m [38;5;130ma[39;49m, [38;5;130mb[39;49m, [38;5;130mc[39;49m;[K
+  [38;5;129mwhile[39;49m (scanf([38;5;89m"%d %d %d"[39;49m, &a, &b, &c) == 3) {[K
+    printf([38;5;89m"compute(%d, %d, %d) = %d\n"[39;49m, a, b, c, compute(a, b, c));[K
+  }[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mcoverage.c  [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:44PM 0.39 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ emacs m[KMakefile
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:44PM 0.24 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Makefile Help                                                                                           [0m[39;49m[27m
+[A
+[38;5;130mCFLAGS[39;49m = -g -Wall -std=c11 -fprofile-arcs -ftest-coverage[K
+[K
+[38;5;130mTARGETS[39;49m =       coverage[K
+[K
+[38;5;21mcoverage[39;49m:       coverage.c[K
+[K
+[38;5;21m.PHONY[39;49m:         clean[K
+[38;5;21mclean[39;49m:[K
+                rm -f $([38;5;130mTARGETS[39;49m) *.o *~ *.gcda *.gcno[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mMakefile    [0m[39;49m[30m[48;5;250m   All L1     (GNUmakefile) 5:44PM 0.24 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ a[Kmake
+cc -g -Wall -std=c11 -fprofile-arcs -ftest-coverage    coverage.c   -o coverage
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ emacs coverage.gcno
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:52PM 0.31 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                                                                                    [0m[39;49m[27m
+[A
+oncg*38A[38;5;124m\275[39;49m6[38;5;124m\365\310^A^@^@^@^@^@^@^A^N^@^@^@\353[39;49mrp[38;5;124m^F\301[39;49m 3`[38;5;124m^Y[39;49mMpy[38;5;124m^B^@^@^@[39;49mmain[38;5;124m^@^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m3[38;5;124m^@^@^@^A^@^@^@[39;49m:[38;5;124m^@^@[39;49m\
+[A
+[38;5;124m^@^@^@[39;49mA[38;5;124m^A^A^@^@^@[39;49m        [38;5;124m^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^@^@^@^@^B^@^@^@^D^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^B^@^@^@^E^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^C^@^@^@^D^[39;49m\
+[A
+[38;5;124m@^@^@^D^@^@^@^A^@^@^@^C^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^D^@^@^@^E^@^@^@^D^@^@^@^A^@^@^@^C^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^E^@^@^@^F^@^@^@^D^@^@^@^A^@^@^@^C^@[39;49m\
+[A
+[38;5;124m^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^F^@^@^@^C^@^@^@^A^@^@^@^G^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^G^@^@^@^H^@^@^@^D^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^H^@^@^@^A^@^@^@^A^@^@[39;49m\
+[A
+[38;5;124m^@^@^@[39;49mE[38;5;124m^A[39;49m[K
+[38;5;124m^@^@^@^B^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m3[38;5;124m^@^@^@[39;49m6[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m       [38;5;124m^@^@^@^C^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m7[38;5;124m^@[39;49m\
+[A
+[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m      [38;5;124m^@^@^@^D^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m7[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m      [38;5;124m^@^@^@^E^@^@^@^@^@^@^@[39;49m\
+[A
+[38;5;124m^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m6[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m      [38;5;124m^@^@^@^F^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m6[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m   \
+[A
+   [38;5;124m^@^@^@^G^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m9[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^N^@^@^@[39;49m%[38;5;124m\203[39;49mXv[38;5;124m\274[39;49m}[38;5;124m\236\367\370[39;49mg6[38;5;124m\302^B^@^@^@[39;49mcompute[38;5;124m^@^@[39;49m\
+[A
+[38;5;124m^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@^G^@^@^@^L^@^@^@[39;49m0[38;5;124m^@^@^@^@^@[39;49mA[38;5;124m^A^A^@^@^@^W^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^@^@^@^@^B^@^@^@^D^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^B^@^@^[39;49m\
+[A
+[38;5;124m@^C^@^@^@^D^@^@^@^M^@^@^@^A^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^C^@^@^@^D^@^@^@^D^@^@^@^M^@^@^@^A^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^D^@^@^@^E^@^@^@^D^@^@^@[39;49m      [38;5;124m^@[39;49m\
+[A
+[38;5;124m^@^@^A^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^E^@^@^@^F^@^@^@^D^@^@^@^G^@^@^@^A^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^F^@^@^@^H^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^G^@^@^@^H^@^@[39;49m\
+[A
+[38;5;124m^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^H^@^@^@^L^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@[39;49m       [38;5;124m^@^@^@[39;49m[K
+[38;5;124m^@^@^@^D^@^@^@^K^@^@^@^A^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@[39;49m[K
+[38;5;124m^@^@^@^L^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^K^@^@^@^L^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^L^@^@^@^U^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^M^@^@^@^N^@^@^@^D^@[39;49m\
+[A
+[38;5;124m^@^@^R^@^@^@^A^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^N^@^@^@^O^@^@^@^D^@^@^@^P^@^@^@^A^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^O^@^@^@^Q^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^P^@^@[39;49m\
+[A
+[38;5;124m^@^Q^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^Q^@^@^@^U^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^E^@^@^@^R^@^@^@^S^@^@^@^D^@^@^@^T^@^@^@^A^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^S^@^@^@[39;49m\
+[A
+[38;5;124m^U^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^T^@^@^@^U^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^U^@^@^@^V^@^@^@^E^@^@^@^@^@[39;49mC[38;5;124m^A^C^@^@^@^V^@^@^@^A^@^@^@^A^@^@^@^@[39;49m\
+[A
+[38;5;124m^@[39;49mE[38;5;124m^A^K^@^@^@^B^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@^G^@^@^@^H^@^@^@[39;49m [38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m   [38;5;124m^@^@^@^C^@^@^@^@^@^@^@^C^@^@^@[39;49mcover\
+[A
+age.c[38;5;124m^@^@[39;49m    [38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m   [38;5;124m^@^@^@^D^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m[K
+[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m[K
+[38;5;124m^@^@^@^E^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@^K^@^@^@^L^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m     [38;5;124m^@^@^@^F^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@^M^[39;49m\
+[A
+[38;5;124m@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m     [38;5;124m^@^@^@^G^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@^P^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m[K
+[38;5;124m^@^@^@[39;49m  [38;5;124m^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@^T^@^@^@^U^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m     [38;5;124m^@^@^@[39;49m[K
+[38;5;124m^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@^V^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m     [38;5;124m^@^@^@^K^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@^Y^@^@^@^@^@^@^@^@^[39;49m\
+[A
+[38;5;124m@^@^@^@^@[39;49mE[38;5;124m^A[39;49m     [38;5;124m^@^@^@^L^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m[K
+[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m   [38;5;124m^@^@^@^M^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@^^^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m     [38;5;124m^@^@^@^N^@^@^@^@^@^@^@^[39;49m\
+[A
+[38;5;124mC^@^@^@[39;49mcoverage.c[38;5;124m^@^@^_^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m     [38;5;124m^@^@^@^O^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m [38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m    \
+[A
+  [38;5;124m^@^@^@^P^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m#[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m      [38;5;124m^@^@^@^R^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m'[38;5;124m^@^@^@^@[39;49m\
+[A
+[38;5;124m^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m      [38;5;124m^@^@^@^S^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m([38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m      [38;5;124m^@^@^@^T^@^@^@^@^@^@^@^C^@^@[39;49m\
+[A
+[38;5;124m^@[39;49mcoverage.c[38;5;124m^@^@[39;49m+[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m      [38;5;124m^@^@^@^U^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m/[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49mE[38;5;124m^A[39;49m      [38;5;124m^@^[39;49m\
+[A
+[38;5;124m@^@^V^@^@^@^@^@^@^@^C^@^@^@[39;49mcoverage.c[38;5;124m^@^@[39;49m/[38;5;124m^@^@^@^@^@^@^@^@^@^@^@[39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU=:----F1  [39;49m[1m[30m[48;5;250mcoverage.gcno[0m[39;49m[30m[48;5;250m   All L1     (Fundamental) 5:52PM 0.31 ----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./[K[K
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 200 2000 2999
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ls
+coverage  coverage.c  coverage.gcda  coverage.gcno  Makefile
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ emaacs[K[K[Kcs coverage.gcda
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:53PM 0.43 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools Help                                                                                                    [0m[39;49m[27m
+[A
+adcg*38A[38;5;124m\275[39;49m6[38;5;124m\365\310^@^@^@\243^[^@^@^@\304[39;49m<[38;5;124m\377\352^N^@^@^@^A^@^@^@^C^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^C^@^@^@^@^@^@^@^@^[39;49m\
+[A
+[38;5;124m@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^@^@^A^@^@^@^@^@^@^@^C^@^@^@^@^@^@^@^@^@^@^A^C[39;49m\
+[A
+[38;5;124m^@^@^@\353[39;49mrp[38;5;124m^F\301[39;49m 3`[38;5;124m^Y[39;49mMpy[38;5;124m^@^@\241^A[39;49m[K
+[38;5;124m^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^A^C^@^@^@[39;49m%[38;5;124m\203[39;49mXv[38;5;124m\274[39;49m}[38;5;124m\236\367\370[39;49mg6[38;5;124m\302^@^[39;49m\
+[A
+[38;5;124m@\241^A^R^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49m\
+[A
+[38;5;124m^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@[39;49m[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU=:----F1  [39;49m[1m[30m[48;5;250mcoverage.gcda[0m[39;49m[30m[48;5;250m   All L1     (Fundamental) 5:53PM 0.43 ----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ gcov coverage.[Kgcda[K[K[K[K.gcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ emacs coverage.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 5:54PM 0.15 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mint[39;49m [38;5;130mv[39;49m[] = {[K
+  211,  333, 319, 411, 911, 1001,[K
+};[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mint[39;49m [38;5;21mcompute[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m, [38;5;28mint[39;49m [38;5;130mb[39;49m, [38;5;28mint[39;49m [38;5;130mc[39;49m) {[K
+  [38;5;28mint[39;49m [38;5;130ms[39;49m = v[2];[K
+  [38;5;129mif[39;49m (v[0] < a && a < v[1]) {[K
+    [38;5;129mif[39;49m (b < v[2]) {[K
+      s += v[2];[K
+      [38;5;129mif[39;49m (c < v[3]) {[K
+        s += v[4];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[3];[K
+      }[K
+    }[K
+    [38;5;129melse[39;49m {[K
+      s += v[1];[K
+      [38;5;129mif[39;49m (c < v[1]) {[K
+        s += v[4];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[2];[K
+      }[K
+    }[K
+  }[K
+  [38;5;129melse[39;49m {[K
+    [38;5;129mif[39;49m (b < v[3]) {[K
+      [38;5;129mif[39;49m (c < v[4]) {[K
+        s += v[5];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[1];[K
+      }[K
+    }[K
+    [38;5;129melse[39;49m {[K
+      [38;5;129mif[39;49m (c < v[2]) {[K
+        s += v[1];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[3];[K
+      }[K
+    }[K
+  }[K
+  [38;5;129mreturn[39;49m s;[K
+}[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m()[K
+{[K
+  [38;5;28mint[39;49m [38;5;130ma[39;49m, [38;5;130mb[39;49m, [38;5;130mc[39;49m;[K
+  [38;5;129mwhile[39;49m (scanf([38;5;89m"%d %d %d"[39;49m, &a, &b, &c) == 3) {[K
+    printf([38;5;89m"compute(%d, %d, %d) = %d\n"[39;49m, a, b, c, compute(a, b, c));[K
+  }[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mcoverage.c  [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 5:54PM 0.15 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[K[2d[72d[?25lC-x[H
+[?12l[?25h[?12;25h[72;4H[?25l-[H
+[?12l[?25h[?12;25h[72;4H[?25l C-c[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ 
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 299[K[K00 2000 2999
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ emacs vo[K[Kc[Kcoverage.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgcov coverage.gcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 211 333 319
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 211 333 319[4Pgcov coverage.gcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ gcov coverage.gcda[K[K[K[K[K[K[K[K[K[K[K[K[K./coverage 211 333 319[K[K[K[K[K[K[K[K[K[K[K411 911 1001
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 411 911 1001gcov [Kcoverage.c[Kgcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage [K[K[K[K[K[K[K[K[K[K[Kemacs coverage.c
+[?1049h[22;0;0t[?12;25h[?1h=[H[2J[72d[K[?1l>[?12l[?25h[?1049l[23;0;0t[39;49m[?1049h[22;0;0t[?12;25h[?1h=[H[2J[71d[?25l[30m[47m-UUU:----F1  [39;49m[1m[30m[47m*scratch*   [0m[39;49m[30m[47m   All L1     (Fundamental) -----------------------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[72d[?25lLoading /etc/emacs/site-start.d/00debian.el (source)...done[K[H
+[?12l[?25h[?12;25h[72;33H[?25l50a2ps.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lsymptote.el (source)...[H
+[?12l[?25h[?12;25h[72;59H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lutoconf.el (source)...[K[H
+[?12l[?25h[?12;25h[72;58H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lcmake-data.el (source)...[K[H
+[?12l[?25h[?12;25h[72;60H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ldevhelp.el (source)...[K[H
+[?12l[?25h[?12;25h[72;57H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lictionaries-common.el (source)...[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-default.el (source)...[H
+[?12l[?25h[?12;25h[72;77H[?25ldone[H
+[?12l[?25h[?12;25h[72;9H[?25ldebian-ispell...done[K[H
+[?12l[?25h[?12;25h[72;9H[?25l/var/cache/dictionaries-common/emacsen-ispell-dicts.el (source)...[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50dictionaries-common[6P[H
+[?12l[?25h[?12;25h[72;35H[?25lerlang-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;61H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lhaskell-mode.el (source)...[K[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/elpa/haskel[34@l-mode-16.1/haskell-mode-autoloads[H
+[?12l[?25h[?12;25h[72;96H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50haskell-mode[34P[H
+[?12l[?25h[?12;25h[72;35H[?25llatex-cjk-common.el (source)...[H
+[?12l[?25h[?12;25h[72;10H[?25lusr/share/emacs/site-lisp/latex-cjk-commo[9@n/cjk-enc[H
+[?12l[?25h[?12;25h[72;75H[?25ldone[H
+[?12l[?25h[?12;25h[72;10H[?25letc/emacs/site-start.d/50latex-cjk-common[9P[H
+[?12l[?25h[?12;25h[72;45H[?25lthai.el (source)...[K[H
+[?12l[?25h[?12;25h[72;64H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25lpsvn.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lython-docutils.el (source)...[H
+[?12l[?25h[?12;25h[72;65H[?25ldone[H
+[?12l[?25h[?12;25h[72;35H[?25ltcsh.el (source)...[K[H
+[?12l[?25h[?12;25h[72;54H[?25ldone[H
+[?12l[?25h[?12;25h[72;36H[?25lexlive-lang-english.el (source)...[H
+[?12l[?25h[?12;25h[72;70H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[72d[?25lLoading /etc/emacs/site-start.d/50texlive-lang-english.el (source)...done[K[H[7mFile Edit Options Buffers Tools Lisp-Interaction Help                                                                                   [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UUU:----F1  [39;49m[1m[30m[48;5;250m*scratch*   [0m[39;49m[30m[48;5;250m   All L1     (Lisp Interaction ElDoc) 6:05PM 0.75 ------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[?2004h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H
+[?12l[?25h[?12;25h[72d[?25lFor information about GNU Emacs and the GNU system, type C-h C-a.[K[H[7mFile Edit Options Buffers Tools C Help                                                                                                  [0m[39;49m[27m
+[A
+[38;5;60m#include[39;49m [38;5;89m<stdio.h>[39;49m[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mint[39;49m [38;5;130mv[39;49m[] = {[K
+  211,  333, 319, 411, 911, 1001,[K
+};[K
+[K
+[38;5;129mstatic[39;49m [38;5;28mint[39;49m [38;5;21mcompute[39;49m([38;5;28mint[39;49m [38;5;130ma[39;49m, [38;5;28mint[39;49m [38;5;130mb[39;49m, [38;5;28mint[39;49m [38;5;130mc[39;49m) {[K
+  [38;5;28mint[39;49m [38;5;130ms[39;49m = v[2];[K
+  [38;5;129mif[39;49m (v[0] < a && a < v[1]) {[K
+    [38;5;129mif[39;49m (b < v[2]) {[K
+      s += v[2];[K
+      [38;5;129mif[39;49m (c < v[3]) {[K
+        s += v[4];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[3];[K
+      }[K
+    }[K
+    [38;5;129melse[39;49m {[K
+      s += v[1];[K
+      [38;5;129mif[39;49m (c < v[1]) {[K
+        s += v[4];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[2];[K
+      }[K
+    }[K
+  }[K
+  [38;5;129melse[39;49m {[K
+    [38;5;129mif[39;49m (b < v[3]) {[K
+      [38;5;129mif[39;49m (c < v[4]) {[K
+        s += v[5];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[1];[K
+      }[K
+    }[K
+    [38;5;129melse[39;49m {[K
+      [38;5;129mif[39;49m (c < v[2]) {[K
+        s += v[1];[K
+      }[K
+      [38;5;129melse[39;49m {[K
+        s += v[3];[K
+      }[K
+    }[K
+  }[K
+  [38;5;129mreturn[39;49m s;[K
+}[K
+[K
+[38;5;28mint[39;49m[K
+[38;5;21mmain[39;49m()[K
+{[K
+  [38;5;28mint[39;49m [38;5;130ma[39;49m, [38;5;130mb[39;49m, [38;5;130mc[39;49m;[K
+  [38;5;129mwhile[39;49m (scanf([38;5;89m"%d %d %d"[39;49m, &a, &b, &c) == 3) {[K
+    printf([38;5;89m"compute(%d, %d, %d) = %d\n"[39;49m, a, b, c, compute(a, b, c));[K
+  }[K
+  [38;5;129mreturn[39;49m 0;[K
+}[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[30m[48;5;250m-UU-:----F1  [39;49m[1m[30m[48;5;250mcoverage.c  [0m[39;49m[30m[48;5;250m   All L1     (C/*l Abbrev) 6:05PM 0.75 -----------------------------------------------------------------------[39;49m
+[A[2d[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m6PM 0.6[39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m7PM 0.34[39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m8PM 0.12[39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m9PM -----[39;49m[H
+[?12l[?25h[?12;25h[71;56H[?25l[30m[48;5;250m10[39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m1PM 0.53 [39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m2PM 0.30[39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m3PM 0.11[39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m4PM -----[39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m5[39;49m[H
+[?12l[?25h[?12;25h[71;57H[?25l[30m[48;5;250m6PM 0.54 [39;49m[H
+[?12l[?25h[?12;25h[72d[K[2d[72d[K[?2004l[?1l>[?12l[?25h[?1049l[23;0;0t[39;49mbestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 300 300 00[K[K300
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 300 300 300[K[K[K[K[K[K[K33[K00 0[K3003[K 300 300 500 300 400 300 300 3[K400 3[K400 400 400 900 400 400  1000 400 500 300 400 500 400
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ gcov coverage.c[Kgcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ gcov coverage.gcda./coverage 300 300 300 300 300 500 300 400 300 300 400 400 400 400 900 400 400 1000 400 500 300 400 500 400
+^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B                                    
+^[[A^[[A        
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 300 300 300 300 300 500 300 400 300 300 400 400 400 400 900 400 400 1000 400 500 300 400 500 400[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgcov coverage.gcda[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 300 300 300
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 300 300 300[K[K[K[K[K[K[K300 500
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 300 300 500[K[K[K[K[K[K[K400 300
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 300 400 300[K[K[K400
+^[[A    bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 300 400 400[K[K[K[K[K[K[K[K[K[K[K400 400 900
+^X^[[A      ^C
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 400 00[K[K400 1000
+^[[A    bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 400 400 1000[K[K[K[K[K[K[K[K500 300
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage 400 500 300[K[K[K400
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ gcov  [Kcoverage.cd[K[Kgcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ ./coverage
+300 300 300
+compute(300, 300, 300) = 1549
+300 300 500
+compute(300, 300, 500) = 1049
+300 400 300
+compute(300, 400, 300) = 1563
+300 400 900   400
+compute(300, 400, 400) = 971
+400 400 900
+compute(400, 400, 900) = 1320
+400 400 1000
+compute(400, 400, 1000) = 652
+400 500 300  
+compute(400, 500, 300) = 652
+400 500 400
+compute(400, 500, 400) = 730
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ go[Kcov ./coveragegcov coverage.gcda./coverage 400 500 400[4Pgcov coverage.gcda
+File 'coverage.c'
+Lines executed:100.00% of 24
+Creating 'coverage.c.gcov'
+
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ echo "lol I was an idiot[K[K[K[K[K[K[K[K[K[K[K[K[K [Km kinda dub[Kmb"
+lol Im kinda dumb
+bestus1@remote01:~/i220a/submit/lab11/exercises/coverage$ exit
+exit
+
+Script done on 2020-11-14 18:27:19-05:00 [COMMAND_EXIT_CODE="0"]
