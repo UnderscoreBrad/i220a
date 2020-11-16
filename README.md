@@ -2,12 +2,8 @@ Name:		Bradley Estus
 B-Number:	B0780491
 Email:		bestus1@binghamton.edu
 
-*Last Update*
+*Last Update* - 2020/11/16
 
-Project 2 Complete with 100% Success
+Some labs appear to be updated past the submission date.
+They were not, the content of each lab is untouched, the date change is due to re-syncing the master branch.
 
-100% Check-0.tst
-100% Check-1.tst
-100% Check-2.tst
-100% Check-3.tst
-100% Check-4.tst
