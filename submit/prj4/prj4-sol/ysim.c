@@ -98,6 +98,7 @@ set_add_arith_cc(Y86 *y86, Word opA, Word opB, Word result)
     cc = set_cc_flags(get_zf(cc),get_sf(cc),1);
   }
   write_cc_y86(y86, cc);
+  return;
 }
 
 /** Set condition codes for subtraction operation with operands opA, opB
@@ -117,6 +118,7 @@ set_sub_arith_cc(Y86 *y86, Word opA, Word opB, Word result)
     cc = set_cc_flags(get_zf(cc),get_sf(cc),1);
   }
   write_cc_y86(y86, cc);
+  return;
 }
 
 static void
@@ -130,6 +132,7 @@ set_logic_op_cc(Y86 *y86, Word result)
   }
   cc = set_cc_flags(get_zf(cc),get_sf(cc),0);
   write_cc_y86(y86, cc);
+  return;
 }
 
 /**************************** Operations *******************************/
@@ -162,6 +165,7 @@ op1(Y86 *y86, Byte op, Register regA, Register regB)
     break;
   }
   write_register_y86(y86, regB, result);
+  return;
 }
 
 static void
@@ -171,6 +175,7 @@ Jxx(Y86 *y86, Byte op, Word dest){
   }else{
   write_pc_y86(y86, read_pc_y86(y86)+sizeof(Byte)+sizeof(Word));
   }
+  return;
 }
 
 static void
@@ -179,9 +184,10 @@ CMOVxx(Y86 *y86, Byte op){
     Byte registers = read_memory_byte_y86(y86, read_pc_y86(y86)+sizeof(Byte));
     Register regA = get_nybble(registers, 1);
     Register regB = get_nybble(registers, 0);
-    Word valB = read_register_y86(y86, regB);
-    write_register_y86(y86, regA, valB);
+    Word val = read_register_y86(y86, regA);
+    write_register_y86(y86, regB, val);
   }
+  return;
 }
 
 /*********************** Single Instruction Step ***********************/
@@ -237,8 +243,8 @@ step_ysim(Y86 *y86)
     write_pc_y86(y86, pc+2*sizeof(Byte)+sizeof(Word));
     break;
   case MRMOVQ_CODE: ;//OP 5
-    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
-    regB = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),0);
+    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),0);
+    regB = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
     displacement = read_memory_word_y86(y86, pc+(2*sizeof(Byte)));
     valA = read_register_y86(y86, regA)+displacement;
     Word value = read_memory_word_y86(y86, valA);
@@ -256,11 +262,16 @@ step_ysim(Y86 *y86)
     Jxx(y86, op, read_memory_word_y86(y86, pc+sizeof(Byte)));
     //Jxx writes to pc, no updating needed here.
     break;
-  case CALL_CODE: //OP 8
-    //stack shit
+  case CALL_CODE: ;//OP 8
+    Address rspAddr = read_register_y86(y86, REG_RSP);
+    write_memory_word_y86(y86, rspAddr, pc+sizeof(Byte)+sizeof(Word));
+    write_pc_y86(y86, read_memory_word_y86(y86, pc+sizeof(Byte)));
     break;
-  case RET_CODE: //OP 9
-    //Stack shit
+  case RET_CODE: ;//OP 9
+    printf("ret problem\n");
+    Address rspVal = read_register_y86(y86, REG_RSP);
+    Address retAddr = read_memory_word_y86(y86, rspVal);
+    write_pc_y86(y86, retAddr);
     break;
   case PUSHQ_CODE: //OP A
     //stack shit
@@ -272,4 +283,5 @@ step_ysim(Y86 *y86)
     write_status_y86(y86, STATUS_INS);
     break;
   }
+return;
 }
