@@ -198,10 +198,15 @@ typedef enum {
 void
 step_ysim(Y86 *y86)
 {
+  //TODO: Check all register calls to make sure rB is the destination and rA is the source.
   Byte pc = read_pc_y86(y86);
   Byte op = read_memory_byte_y86(y86, pc);//IF THAT FRICKING WORKS I'LL SHITE IN ME PANTALOON
   Byte baseOp = get_nybble(op, 1);
-  
+  Register regA = 0xF;
+  Register regB = 0xF;
+  Word valA = 0;
+	Word valB = 0;
+	Word displacement = 0;
   if(read_status_y86(y86)!= STATUS_AOK){
     return;
   }
@@ -222,16 +227,28 @@ step_ysim(Y86 *y86)
     write_register_y86(y86, reg, val); 
     write_pc_y86(y86, pc+2*sizeof(Byte)+sizeof(Word));
     break;
-  case RMMOVQ_CODE: //OP 4
-    
+  case RMMOVQ_CODE: ;//OP 4
+    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
+    regB = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),0);
+    displacement = read_memory_word_y86(y86, pc+(2*sizeof(Byte)));
+    valA = read_register_y86(y86, regA);
+    valB = read_register_y86(y86, regB)+displacement;
+    write_memory_word_y86(y86, valB, valA);
+    write_pc_y86(y86, pc+2*sizeof(Byte)+sizeof(Word));
     break;
-  case MRMOVQ_CODE: //OP 5
-  
+  case MRMOVQ_CODE: ;//OP 5
+    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
+    regB = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),0);
+    displacement = read_memory_word_y86(y86, pc+(2*sizeof(Byte)));
+    valA = read_register_y86(y86, regA)+displacement;
+    Word value = read_memory_word_y86(y86, valA);
+    write_register_y86(y86, regB, value);
+    write_pc_y86(y86, pc+2*sizeof(Byte)+sizeof(Word));
     break;
   case OP1_CODE: ;//OP 6 - dummy line to allow declarations
-    Byte fn = get_nybble(op, 0);                       //Get function code (when necessary)
-    Register regA = get_nybble(read_memory_byte_y86(y86, pc+1),1);  //get registers (when applicable)
-    Register regB = get_nybble(read_memory_byte_y86(y86, pc+1),0);  //Can't be nested in a case.
+    Byte fn = get_nybble(op, 0);         
+    regA = get_nybble(read_memory_byte_y86(y86, pc+1),1); 
+    regB = get_nybble(read_memory_byte_y86(y86, pc+1),0);  
     op1(y86, fn, regA, regB);
     write_pc_y86(y86, pc + (2*sizeof(Byte)));
     break;
