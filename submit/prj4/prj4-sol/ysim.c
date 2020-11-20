@@ -50,7 +50,6 @@ check_cc(const Y86 *y86, Byte op)
     break;
   case LE_COND:
     ret = (get_sf(cc) ^ get_of(cc)) | get_zf(cc);
-    printf("LE_COND with ret %d\n", ret);
     break;
   case LT_COND:
     ret = get_sf(cc) ^ get_of(cc);
@@ -59,7 +58,7 @@ check_cc(const Y86 *y86, Byte op)
     ret = get_zf(cc); 
     break;
   case NE_COND:
-    ret = (!get_zf(cc));
+    ret = (get_zf(cc)==0);
     break;
   case GE_COND:
     ret = (get_sf(cc) == get_of(cc)) ^ (get_zf(cc));
@@ -152,13 +151,12 @@ op1(Y86 *y86, Byte op, Register regA, Register regB)
     set_add_arith_cc(y86, valA, valB, result);  
     break;
   case SUBL_FN:
-    result = valA - valB; //Might be wrong order
+    result = valA - valB;
     set_sub_arith_cc(y86, valA, valB, result);
     break;
   case ANDL_FN:
     result = valA & valB;
     set_logic_op_cc(y86, result);  
-    regA = result;
     break;
   case XORL_FN:
     result = valA ^ valB;
@@ -207,6 +205,7 @@ step_ysim(Y86 *y86)
 {
   //TODO: Check all register calls to make sure rB is the destination and rA is the source.
   Byte pc = read_pc_y86(y86);
+  printf("pc: %x\n",pc);
   Byte op = read_memory_byte_y86(y86, pc);//IF THAT FRICKING WORKS I'LL SHITE IN ME PANTALOON
   Byte baseOp = get_nybble(op, 1);
   Register regA = 0xF;
@@ -215,7 +214,7 @@ step_ysim(Y86 *y86)
 	Word valB = 0;
   Address stackPtr = 0x200;
 	Word displacement = 0;
-  if(read_status_y86(y86)!= STATUS_AOK){
+  if(read_status_y86(y86)!=STATUS_AOK){
     return;
   }
   switch(baseOp){
@@ -251,12 +250,12 @@ step_ysim(Y86 *y86)
     break;
   case MRMOVQ_CODE: ;//OP 5
     printf("MRMOVQ\n");
-    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),0);
-    regB = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
+    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
+    regB = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),0);
     displacement = read_memory_word_y86(y86, pc+(2*sizeof(Byte)));
-    valA = read_register_y86(y86, regA)+displacement;
+    valA = read_register_y86(y86, regB)+displacement;
     Word value = read_memory_word_y86(y86, valA);
-    write_register_y86(y86, regB, value);
+    write_register_y86(y86, regA, value);
     write_pc_y86(y86, pc+(2*sizeof(Byte))+(sizeof(Word)));
     break;
   case OP1_CODE: ;//OP 6 - dummy line to allow declarations
@@ -275,16 +274,18 @@ step_ysim(Y86 *y86)
   case CALL_CODE: ;//OP 8
     printf("CALL\n");
     stackPtr = read_register_y86(y86, REG_RSP);
-    write_register_y86(y86, REG_RSP, stackPtr+sizeof(Word));
-    write_memory_word_y86(y86, stackPtr+sizeof(Word), pc+sizeof(Byte)+sizeof(Word));
-    write_pc_y86(y86, read_memory_word_y86(y86, pc+sizeof(Byte)));
+    Address rt = pc+sizeof(Byte)+sizeof(Word);
+    Address go = read_memory_word_y86(y86, pc+sizeof(Byte));
+    write_memory_word_y86(y86, stackPtr, rt);
+    write_register_y86(y86, REG_RSP, stackPtr-sizeof(Word));
+    write_pc_y86(y86, go);
     break;
   case RET_CODE: ;//OP 9
     printf("RET\n");
     stackPtr = read_register_y86(y86, REG_RSP);
-    Address retAddr = read_memory_word_y86(y86, stackPtr);
-    write_register_y86(y86, REG_RSP, stackPtr-sizeof(Word));
-    write_pc_y86(y86, retAddr);
+    Address r = read_memory_word_y86(y86, stackPtr+sizeof(Word));
+    write_register_y86(y86, REG_RSP, stackPtr+sizeof(Word));
+    write_pc_y86(y86, r);
     break;
   case PUSHQ_CODE: //OP A
     printf("PUSHQ\n");
@@ -292,17 +293,17 @@ step_ysim(Y86 *y86)
     valA = read_register_y86(y86, regA);
     stackPtr = read_register_y86(y86, REG_RSP);
     write_memory_word_y86(y86, stackPtr, valA);
-    write_register_y86(y86, REG_RSP, stackPtr+sizeof(Word));
-    write_pc_y86(y86, pc+2*sizeof(Byte));
+    write_register_y86(y86, REG_RSP, stackPtr-sizeof(Word));
+    write_pc_y86(y86, pc+(2*sizeof(Byte)));
   break;
   case POPQ_CODE: //OP B
     printf("POPQ\n");
     regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
     stackPtr = read_register_y86(y86, REG_RSP);
-    valA = read_memory_word_y86(y86, stackPtr);
-    write_register_y86(y86, REG_RSP, stackPtr-sizeof(Word));
+    valA = read_memory_word_y86(y86, stackPtr+sizeof(Word));
+    write_register_y86(y86, REG_RSP, stackPtr+sizeof(Word));
     write_register_y86(y86, regA, valA); 
-    write_pc_y86(y86, pc+2*sizeof(Byte));
+    write_pc_y86(y86, pc+(2*sizeof(Byte)));
     break;
   default:
     write_status_y86(y86, STATUS_INS);
