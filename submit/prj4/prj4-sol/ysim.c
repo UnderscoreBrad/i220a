@@ -50,6 +50,7 @@ check_cc(const Y86 *y86, Byte op)
     break;
   case LE_COND:
     ret = (get_sf(cc) ^ get_of(cc)) | get_zf(cc);
+    printf("LE_COND with ret %d\n", ret);
     break;
   case LT_COND:
     ret = get_sf(cc) ^ get_of(cc);
@@ -61,10 +62,10 @@ check_cc(const Y86 *y86, Byte op)
     ret = (!get_zf(cc));
     break;
   case GE_COND:
-    ret = get_sf(cc) & get_of(cc);
+    ret = (get_sf(cc) == get_of(cc)) ^ (get_zf(cc));
     break;
   case GT_COND:
-    ret = (get_of(cc)&get_sf(cc)) | !get_zf(cc);
+    ret = (get_of(cc)==get_sf(cc)) && (get_zf(cc)==0);
     break;
   default: {
     Address pc = read_pc_y86(y86);
@@ -114,7 +115,7 @@ set_sub_arith_cc(Y86 *y86, Word opA, Word opB, Word result)
   if(result == 0){
     cc = set_cc_flags(1,get_sf(cc),0);
   }
-  if((opA>0&&opB<0&&result>0)||(opA<0&&opB>0&&result<0)){
+  if((opA>0&&opB<0&&result<0)||(opA<0&&opB>0&&result>0)){
     cc = set_cc_flags(get_zf(cc),get_sf(cc),1);
   }
   write_cc_y86(y86, cc);
@@ -151,8 +152,8 @@ op1(Y86 *y86, Byte op, Register regA, Register regB)
     set_add_arith_cc(y86, valA, valB, result);  
     break;
   case SUBL_FN:
-    result = valB - valA; //Might be wrong order
-    set_sub_arith_cc(y86, valA, valB, result); //Sign bit setting may need to be reworked.  A<-->B
+    result = valA - valB; //Might be wrong order
+    set_sub_arith_cc(y86, valA, valB, result);
     break;
   case ANDL_FN:
     result = valA & valB;
@@ -212,28 +213,34 @@ step_ysim(Y86 *y86)
   Register regB = 0xF;
   Word valA = 0;
 	Word valB = 0;
+  Address stackPtr = 0x200;
 	Word displacement = 0;
   if(read_status_y86(y86)!= STATUS_AOK){
     return;
   }
   switch(baseOp){
   case HALT_CODE: //OP 0
+    printf("HALT\n");
     write_status_y86(y86, STATUS_HLT);
     break;
   case NOP_CODE: //OP 1
+    printf("NOP\n");
     write_pc_y86(y86, pc+sizeof(Byte));
     break;
   case CMOVxx_CODE: //OP 2
+    printf("CMOV\n");
     CMOVxx(y86, op);
     write_pc_y86(y86, pc + 2*sizeof(Byte));
     break;
   case IRMOVQ_CODE: ;//OP 3 - dummy line to allow declarations
+    printf("IRMOVQ\n");
     Byte reg = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),0);
     Word val = read_memory_word_y86(y86, pc+(2*sizeof(Byte)));
     write_register_y86(y86, reg, val); 
     write_pc_y86(y86, pc+2*sizeof(Byte)+sizeof(Word));
     break;
   case RMMOVQ_CODE: ;//OP 4
+    printf("RMMOVQ\n");
     regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
     regB = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),0);
     displacement = read_memory_word_y86(y86, pc+(2*sizeof(Byte)));
@@ -243,15 +250,17 @@ step_ysim(Y86 *y86)
     write_pc_y86(y86, pc+2*sizeof(Byte)+sizeof(Word));
     break;
   case MRMOVQ_CODE: ;//OP 5
+    printf("MRMOVQ\n");
     regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),0);
     regB = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
     displacement = read_memory_word_y86(y86, pc+(2*sizeof(Byte)));
     valA = read_register_y86(y86, regA)+displacement;
     Word value = read_memory_word_y86(y86, valA);
     write_register_y86(y86, regB, value);
-    write_pc_y86(y86, pc+2*sizeof(Byte)+sizeof(Word));
+    write_pc_y86(y86, pc+(2*sizeof(Byte))+(sizeof(Word)));
     break;
   case OP1_CODE: ;//OP 6 - dummy line to allow declarations
+    printf("OP1\n");
     Byte fn = get_nybble(op, 0);         
     regA = get_nybble(read_memory_byte_y86(y86, pc+1),1); 
     regB = get_nybble(read_memory_byte_y86(y86, pc+1),0);  
@@ -259,25 +268,41 @@ step_ysim(Y86 *y86)
     write_pc_y86(y86, pc + (2*sizeof(Byte)));
     break;
   case Jxx_CODE: //OP 7
+    printf("Jxx\n");
     Jxx(y86, op, read_memory_word_y86(y86, pc+sizeof(Byte)));
     //Jxx writes to pc, no updating needed here.
     break;
   case CALL_CODE: ;//OP 8
-    Address rspAddr = read_register_y86(y86, REG_RSP);
-    write_memory_word_y86(y86, rspAddr, pc+sizeof(Byte)+sizeof(Word));
+    printf("CALL\n");
+    stackPtr = read_register_y86(y86, REG_RSP);
+    write_register_y86(y86, REG_RSP, stackPtr+sizeof(Word));
+    write_memory_word_y86(y86, stackPtr+sizeof(Word), pc+sizeof(Byte)+sizeof(Word));
     write_pc_y86(y86, read_memory_word_y86(y86, pc+sizeof(Byte)));
     break;
   case RET_CODE: ;//OP 9
-    printf("ret problem\n");
-    Address rspVal = read_register_y86(y86, REG_RSP);
-    Address retAddr = read_memory_word_y86(y86, rspVal);
+    printf("RET\n");
+    stackPtr = read_register_y86(y86, REG_RSP);
+    Address retAddr = read_memory_word_y86(y86, stackPtr);
+    write_register_y86(y86, REG_RSP, stackPtr-sizeof(Word));
     write_pc_y86(y86, retAddr);
     break;
   case PUSHQ_CODE: //OP A
-    //stack shit
+    printf("PUSHQ\n");
+    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
+    valA = read_register_y86(y86, regA);
+    stackPtr = read_register_y86(y86, REG_RSP);
+    write_memory_word_y86(y86, stackPtr, valA);
+    write_register_y86(y86, REG_RSP, stackPtr+sizeof(Word));
+    write_pc_y86(y86, pc+2*sizeof(Byte));
   break;
   case POPQ_CODE: //OP B
-    //stack shit
+    printf("POPQ\n");
+    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
+    stackPtr = read_register_y86(y86, REG_RSP);
+    valA = read_memory_word_y86(y86, stackPtr);
+    write_register_y86(y86, REG_RSP, stackPtr-sizeof(Word));
+    write_register_y86(y86, regA, valA); 
+    write_pc_y86(y86, pc+2*sizeof(Byte));
     break;
   default:
     write_status_y86(y86, STATUS_INS);
