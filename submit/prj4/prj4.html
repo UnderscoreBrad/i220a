@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../assets/styles/article.css" rel="stylesheet" type="text/css" /> 
+    <title>CS 220: Project 4</title>
+    <link href="prj4/hl-fine_blue.css" rel="stylesheet"/><link href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" 
+       rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" async=""></script>    
+
+  </head>
+  <body>
+    <nav>
+      <ul>
+	<li><a href="../../index.html" class="material-icons">house</a></li>
+	<li><a href="../../docs/index.html">Docs</a></li>
+	<li><a href="../../exercises/index.html">Exercises</a></li>
+	<li><a href="../../hws/index.html">Homeworks</a></li>
+	<li><a href="../../labs/index.html">Labs</a></li>
+	<li><a href="../../misc/index.html">Misc</a></li>
+	<li><a href="../../projects/index.html">Projects</a></li>
+	<li><a href="../../slides/index.html">Slides</a></li>
+	<li><a id="loginAction"></a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <section data-coord="prj4.umt:1:0"><h1 data-coord="prj4.umt:1:0">Project 4</h1><p data-coord="prj4.umt:3:0"><strong data-coord="prj4.umt:3:0">Due</strong>: Nov 19, before midnight.
+</p><p data-coord="prj4.umt:5:0">This document first provides the aims of this project, followed by a
+discussion of its background.  It then lists the requirements as explicitly
+as possible.  It then hints at how these requirements can be met.  Finally,
+it describes exactly what needs to be submitted.
+</p><section data-coord="prj4.umt:11:0"><h2 data-coord="prj4.umt:11:0">Aims</h2><p data-coord="prj4.umt:14:0">The aims of this project are as follows:
+</p><ul data-coord="prj4.umt:16:0"><li data-coord="prj4.umt:16:0"><p data-coord="prj4.umt:16:4">To expose you to machine-language.
+</p></li><li data-coord="prj4.umt:18:0"><p data-coord="prj4.umt:18:4">To make you write a <samp data-coord="prj4.umt:18:24">Makefile</samp> which supports linking with
+non-standard external libraries.
+</p></li><li data-coord="prj4.umt:21:0"><p data-coord="prj4.umt:21:4">To give you further experience with writing non-trivial C programs.
+</p></li></ul></section><section data-coord="prj4.umt:24:0"><h2 data-coord="prj4.umt:24:0">Background</h2><p data-coord="prj4.umt:27:0">This project requires to write a simple simulator for the <samp data-coord="prj4.umt:27:58">y86</samp> ISA
+described in section 4.1 of the text.  Though the authors of the text
+provide source code for such a simulator, the constraints provided for
+this project do not make it easy to reuse that source code easily.  In
+any case, writing such a simulator is a useful exercise.
+</p></section><section data-coord="prj4.umt:33:0"><h2 data-coord="prj4.umt:33:0">Requirements</h2><p data-coord="prj4.umt:36:0">Update the <samp data-coord="prj4.umt:36:11">master</samp> branch of your github repository with a directory
+<samp data-coord="prj4.umt:36:70">submit/prj4-sol</samp> such that that typing <samp data-coord="prj4.umt:36:110">make</samp> within that directory
+will build an executable <samp data-coord="prj4.umt:36:164">y86-sim</samp> which is a simulator for the
+Y86 machine described in Section 4.1 of the text:
+</p><p data-coord="prj4.umt:41:0">The <samp data-coord="prj4.umt:41:4">y86-sim</samp> program can be invoked with the following arguments:
+</p><ul data-coord="prj4.umt:43:0"><li data-coord="prj4.umt:43:0"><p data-coord="prj4.umt:43:4">An option <samp data-coord="prj4.umt:43:14">-i</samp>.  If specified, it should force the simulator is to
+run interactively, pausing after each simulation step.
+</p></li><li data-coord="prj4.umt:46:0"><p data-coord="prj4.umt:46:4">An option <samp data-coord="prj4.umt:46:14">-l</samp>.  If specified, then the simulator is not run;
+instead an assembly listing is produced on standard output.
+</p></li><li data-coord="prj4.umt:49:0"><p data-coord="prj4.umt:49:4">An option <samp data-coord="prj4.umt:49:14">-v</samp>.  If specified, it should force the simulator to
+output (on stdout) all y86 state changes since the last simulation
+step.
+</p></li><li data-coord="prj4.umt:53:0"><p data-coord="prj4.umt:53:4">An option <samp data-coord="prj4.umt:53:14">-V</samp>.  If specified, it should force the simulator to
+output (on stdout) all CPU registers and state changes since the
+last simulation step.  If both <samp data-coord="prj4.umt:53:172">-v</samp> and <samp data-coord="prj4.umt:53:181">-V</samp> are specified, then
+<samp data-coord="prj4.umt:53:210">-V</samp> overrides <samp data-coord="prj4.umt:53:225">-v</samp>.
+</p></li><li data-coord="prj4.umt:58:0"><p data-coord="prj4.umt:58:4">The names of one or more <samp data-coord="prj4.umt:58:29">.ys</samp> files containing y86 assembly language
+code.  
+</p></li><li data-coord="prj4.umt:61:0"><p data-coord="prj4.umt:61:4">Zero or more integer parameters. If specified, those parameters
+will be loaded into the high memory of the simulated Y86 machine
+The simulation is started with register <samp data-coord="prj4.umt:61:181">rdi</samp> pointing to the
+parameters and register <samp data-coord="prj4.umt:61:231">rsi</samp> set to the number of parameters
+provided.
+</p></li></ul><p data-coord="prj4.umt:67:0">You are being provided with a library which supports the components of
+a Y86 machine as well as a Y86 assembler.  You are also being provided
+with a C <samp data-coord="prj4.umt:67:151">main()</samp> function which handles all the command-line parsing
+and sets up a properly initialized instance of a simulated <samp data-coord="prj4.umt:67:271">y86</samp>
+computer with all the <samp data-coord="prj4.umt:67:299">.ys</samp> programs specified on the command line
+assembled and loaded into memory.  All that you really need to do is
+fully implement the following function (specified in
+<a href="./prj4-sol/ysim.h" data-coord="prj4.umt:67:487">ysim.h</a> with a skeleton implementation in
+<a href="./prj4-sol/ysim.c" data-coord="prj4.umt:67:549">ysim.c</a>
+</p><pre><span class="hl com">/** Execute the next instruction of y86. Must change status of</span>
+<span class="hl com"> *  y86 to STATUS_HLT on halt, STATUS_ADR or STATUS_INS on</span>
+<span class="hl com"> *  bad address or instruction.</span>
+<span class="hl com"> */</span>
+<span class="hl kwb">void</span> <span class="hl kwd">step_ysim</span><span class="hl opt">(</span>Y86 <span class="hl opt">*</span>y86<span class="hl opt">);</span></pre></section><section data-coord="prj4.umt:85:0"><h2 data-coord="prj4.umt:85:0">Provided Libraries</h2><p data-coord="prj4.umt:88:0">You have been provided with <samp data-coord="prj4.umt:88:28">libcs220</samp> and <samp data-coord="prj4.umt:88:43">liby86</samp> libraries in the
+course <a href="../../lib" data-coord="prj4.umt:88:89">lib</a> directory.  The specification headers for the
+modules provided by these libraries are in the course <a href="../../include" data-coord="prj4.umt:88:210">include</a> directory and the source code in the course <a href="../../src" data-coord="prj4.umt:88:275">src</a>
+directory.
+</p><p data-coord="prj4.umt:94:0">You may assume that the environment in which your program will be
+compiled and run will have these libraries available within a
+<samp data-coord="prj4.umt:94:128">$HOME/cs220</samp> directory.
+</p><section data-coord="prj4.umt:100:0"><h3 data-coord="prj4.umt:100:0">libcs220</h3><p data-coord="prj4.umt:103:0">This is a trivial library which provides help with memory allocation and
+error reporting:
+</p><ul data-coord="prj4.umt:106:0"><li data-coord="prj4.umt:106:0"><p data-coord="prj4.umt:106:4">Provides checked versions <samp data-coord="prj4.umt:106:30">mallocChk()</samp>, <samp data-coord="prj4.umt:106:45">reallocChk()</samp>, and
+<samp data-coord="prj4.umt:106:69">callocChk()</samp> of the memory allocation routines which wrap the
+standard memory allocation routines with the program exiting on
+failure.  The specification file is in <a href="../../include/memalloc.h" data-coord="prj4.umt:106:275">memalloc.h.</a>
+</p></li><li data-coord="prj4.umt:112:0"><p data-coord="prj4.umt:112:4">Provides routines for reporting errors using <samp data-coord="prj4.umt:112:49">printf()</samp>-style
+format strings with one modification: if the format string ends
+with <samp data-coord="prj4.umt:112:143">:</samp>, then <samp data-coord="prj4.umt:112:153">strerror(errno)</samp> is appended to the error-message.
+The specification file is in <a href="../../include/errors.h" data-coord="prj4.umt:112:264">errors.h.</a>
+</p></li></ul></section><section data-coord="prj4.umt:118:0"><h3 data-coord="prj4.umt:118:0">liby86</h3><p data-coord="prj4.umt:121:0">This library provides a <samp data-coord="prj4.umt:121:24">y86</samp> module which supports the components of
+a Y86 machine and a <samp data-coord="prj4.umt:121:90">yas</samp> module which is an assembler for Y86 code.
+</p><p data-coord="prj4.umt:124:0"><strong data-coord="prj4.umt:124:0">The y86 Module</strong>
+</p><p data-coord="prj4.umt:126:0">The specification for this module is in the <a href="../../include/y86.h" data-coord="prj4.umt:126:67">y86.h</a> header file and implementation in <a href="../../src/liby86/y86.c" data-coord="prj4.umt:126:133">y86.c.</a> This module defines the state of a y86 computer.
+</p><ul data-coord="prj4.umt:130:0"><li data-coord="prj4.umt:130:0"><p data-coord="prj4.umt:130:4">It contains 14 registers with numbers given by the <samp data-coord="prj4.umt:130:55">Register</samp> <code><span class="hl kwb">enum</span></code>
+<samp data-coord="prj4.umt:130:78">REG_RAX</samp>, <samp data-coord="prj4.umt:130:89">REG_RCX</samp>, \(\ldots\), <samp data-coord="prj4.umt:130:111">REG_R14</samp>.
+</p></li><li data-coord="prj4.umt:133:0"><p data-coord="prj4.umt:133:4">It contains a condition code with 3 condition bits corresponding
+to the overflow flag, sign flag and zero flag at bit positions
+<samp data-coord="prj4.umt:133:140">OF_CC</samp>, <samp data-coord="prj4.umt:133:149">SF_CC</samp> and <samp data-coord="prj4.umt:133:161">ZF_CC</samp> respectively.
+</p></li><li data-coord="prj4.umt:137:0"><p data-coord="prj4.umt:137:4">It contains a machine status which determines whether the machine
+is running or stopped intentionally or because of an error.
+</p></li><li data-coord="prj4.umt:140:0"><p data-coord="prj4.umt:140:4">It contains a memory with size specified at initialization time.
+</p></li></ul><p data-coord="prj4.umt:143:0">The machine is accessed as an ADT using operations which allow
+reading/writing registers, memory, the PC, status and condition codes.
+Note that any operation involving an address can set the machine
+status to <samp data-coord="prj4.umt:143:209">STATUS_ADR</samp> if the address is invalid; it is a good idea to
+check the status after any such operation.
+</p><p data-coord="prj4.umt:149:0"><strong data-coord="prj4.umt:149:0">The yas Assembler Module</strong>
+</p><p data-coord="prj4.umt:151:0">The specification for this module is in the <a href="../../include/yas.h" data-coord="prj4.umt:151:67">yas.h</a> header file and implementation in <a href="../../src/liby86/yas.c" data-coord="prj4.umt:151:133">yas.c.</a>
+</p><p data-coord="prj4.umt:155:0">This module provides an assembler for the y86 ISA.  It provides
+load-and-go functionality to directly assemble code into the memory of
+a simulated y86 computer.  It also provides functionality to provide
+an assembly listing.
+</p><p data-coord="prj4.umt:166:0">This module is accessed by the code you are being provided with and
+you should not need to even look at these files (except out of general
+curiosity).
+</p></section></section><section data-coord="prj4.umt:171:0"><h2 data-coord="prj4.umt:171:0">Provided Project Files</h2><p data-coord="prj4.umt:174:0">The files <a href="./prj4-sol" data-coord="prj4.umt:174:24">prj4-sol</a> directory contains the following files:
+</p><dl data-coord="prj4.umt:177:0"><dt data-coord="prj4.umt:177:2"> ysim Module </dt><dd data-coord="prj4.umt:178:0"><p data-coord="prj4.umt:178:4">Specification in <a href="./prj4-sol/ysim.h" data-coord="prj4.umt:178:42">ysim.h</a> and
+skeleton implementation in <a href="./prj4-sol/ysim.c" data-coord="prj4.umt:178:105">ysim.c.</a>
+You will need to add code to <samp data-coord="prj4.umt:178:146">ysim.c</samp> to implement your
+project..
+</p></dd><dt data-coord="prj4.umt:183:2"> <a href="./prj4-sol/main.c" data-coord="prj4.umt:183:22">main.c</a></dt><dd data-coord="prj4.umt:184:0"><p data-coord="prj4.umt:184:4">This contains a <samp data-coord="prj4.umt:184:20">main()</samp> function for your program which handles
+all the details of processing the command-line arguments.
+</p><ol data-coord="prj4.umt:187:0"><li data-coord="prj4.umt:187:0"><p data-coord="prj4.umt:187:8">It creates a new instance of a y86 computer: 
+</p></li><li data-coord="prj4.umt:189:0"><p data-coord="prj4.umt:189:8">It assembles the <samp data-coord="prj4.umt:189:25">.ys</samp> assembly files specified on the command
+line.  If the command line parameters specified the <samp data-coord="prj4.umt:189:131">-l</samp>
+option requesting a listing, then it outputs an assembly
+listing on standard output and exits.  Otherwise it loads the
+machine code corresponding to the <samp data-coord="prj4.umt:189:313">.ys</samp> files into the memory
+of the y86 instance.
+</p></li><li data-coord="prj4.umt:196:0"><p data-coord="prj4.umt:196:8">If the command line arguments include any integer parameters,
+then those parameters are loaded into high memory with the
+<samp data-coord="prj4.umt:196:145">rdi</samp> register set up as an <samp data-coord="prj4.umt:196:173">Word argc</samp> count and the <samp data-coord="prj4.umt:196:199">rsi</samp>
+register set up as a <samp data-coord="prj4.umt:196:234">Word argv[]</samp> pointer.
+</p><p data-coord="prj4.umt:201:8">Note that the code in <samp data-coord="prj4.umt:201:30">main.c</samp> does not check whether loading
+the integer parameters into high memory will overwrite any of
+the code loaded from the <samp data-coord="prj4.umt:201:173">.ys</samp> files.  This should not be a
+problem for the small programs being run by this project.
+</p></li><li data-coord="prj4.umt:206:0"><p data-coord="prj4.umt:206:8">Starts simulating the loaded code by stepping the simulator by
+repeatedly calling the <samp data-coord="prj4.umt:206:102">step_ysim()</samp> function you are required
+to write until the machine <samp data-coord="prj4.umt:206:177">status</samp> changes to something other
+than <samp data-coord="prj4.umt:206:226">STATUS_AOK</samp>.  Between each simulation step it dumps
+machine state if the <samp data-coord="prj4.umt:206:308">-v</samp> or <samp data-coord="prj4.umt:206:316">-V</samp> command-line options were
+specified, or pauses if the <samp data-coord="prj4.umt:206:383">-i</samp> command-line option was specified.
+</p></li><li data-coord="prj4.umt:213:0"><p data-coord="prj4.umt:213:8">Dumps the state of the machine and changes on standard output
+and terminates.
+</p></li></ol></dd><dt data-coord="prj4.umt:216:2"> <a href="./prj4-sol/README" data-coord="prj4.umt:216:22">README</a></dt><dd data-coord="prj4.umt:217:0"><p data-coord="prj4.umt:217:4">A README file which must be submitted along with your project.  It
+contains an initial header which you must complete (replace the
+dummy entries with your name, B-number and email address at which
+you would like to receive project-related email).  After the
+header you may include any content which you would like read
+during the grading of your project.  If your project is
+not complete, document what is not working in the <samp data-coord="prj4.umt:217:453">README</samp>.
+</p></dd><dt data-coord="prj4.umt:225:2"> Example <samp data-coord="prj4.umt:225:9">.ys</samp> files in directory <a href="./extras" data-coord="prj4.umt:225:46">extras</a> </dt><dd data-coord="prj4.umt:226:0"><p data-coord="prj4.umt:226:4">These example files show complete y86 programs which should
+be runnable by your simulator.  Gold outputs for running
+each file through your simulator without any options are shown
+in the corresponding <samp data-coord="prj4.umt:226:217">.out</samp> files. (The <a href="extras/main-sum.out" data-coord="prj4.umt:226:263">main-sum.out</a> gold output was produced using the additional
+argument produced using <samp data-coord="prj4.umt:226:350">$(seq 1 10)</samp>).
+</p></dd><dt data-coord="prj4.umt:233:2"> Test shell script <a href="extras/test.sh" data-coord="prj4.umt:233:37">test.sh</a></dt><dd data-coord="prj4.umt:234:0"><p data-coord="prj4.umt:234:4">This shell script compares the output of running your simulator
+on one or more <samp data-coord="prj4.umt:234:87">.y86</samp> files with the corresponding <samp data-coord="prj4.umt:234:123">.out</samp> gold
+output.  It is simply invoked with the paths to one-or-more
+<samp data-coord="prj4.umt:234:203">y86</samp> files.  Examples:
+</p><pre data-coord="prj4.umt:240:0">    $ D=$HOME/cs220/projects/prj4/extras
+    $ $D/test.sh $D/halt.ys
+    $ $D/test.sh $D/*.ys
+</pre></dd></dl></section><section data-coord="prj4.umt:245:0"><h2 data-coord="prj4.umt:245:0">Hints</h2><p data-coord="prj4.umt:248:0">The following points are worth noting:
+</p><ul data-coord="prj4.umt:250:0"><li data-coord="prj4.umt:250:0"><p data-coord="prj4.umt:250:4">Y86 is actually Y86-64, a 64-bit machine.  This is reflected
+in the <code><span class="hl kwc">typedef</span></code>'s used for <samp data-coord="prj4.umt:250:98">Word</samp> and <samp data-coord="prj4.umt:250:109">Address</samp> in
+<a href="../../include/y86.h" data-coord="prj4.umt:250:149">y86.h.</a>  You should strive to write
+your code in a manner which does not depend on these
+sizes.  For example, your code should not assume that
+the length of a <samp data-coord="prj4.umt:250:319">irmovq</samp> is 10; instead it should use
+an expression like <samp data-coord="prj4.umt:250:380">1 + sizeof(Byte) + sizeof(Word)</samp>
+for the length.  That enables retargeting of the simulator
+to say a Y86-32.
+</p></li><li data-coord="prj4.umt:261:0"><p data-coord="prj4.umt:261:4">Your simulator will need to simulate a basic instruction cycle:
+</p><ol data-coord="prj4.umt:263:0"><li data-coord="prj4.umt:263:0"><p data-coord="prj4.umt:263:8">Fetch instruction specified by program counter <samp data-coord="prj4.umt:263:55">pc</samp> from memory.
+</p></li><li data-coord="prj4.umt:265:0"><p data-coord="prj4.umt:265:8">Execute the instruction just fetched, updating CPU and memory
+as required by the semantics of the instruction.
+</p></li><li data-coord="prj4.umt:268:0"><p data-coord="prj4.umt:268:8">Set the program counter <samp data-coord="prj4.umt:268:32">pc</samp> to the address of the next
+instruction to be executed.  Except for control transfers,
+this will be the address of the next sequential instruction
+</p></li></ol></li><li data-coord="prj4.umt:272:0"><p data-coord="prj4.umt:272:4">While developing your project in your <samp data-coord="prj4.umt:272:42">submit/prj4-sol</samp> directory,
+you will frequently be using the test files in the <a href="extras" data-coord="prj4.umt:272:140">extras</a> directory located at path <samp data-coord="prj4.umt:272:173">~/cs220/projects/prj4/extras</samp>.
+Instead of typing that path repeatedly, it may be useful to setup
+a shell variable <samp data-coord="prj4.umt:272:296">D=$HOME/cs220/projects/prj4/extras</samp> and then use
+<samp data-coord="prj4.umt:272:350">$D</samp> in your commands to refer to the <samp data-coord="prj4.umt:272:388">extras</samp> directory.
+</p></li></ul><p data-coord="prj4.umt:279:0">The following points are not prescriptive in that you may choose to ignore
+them as long as you meet all the project requirements.
+</p><ol data-coord="prj4.umt:282:0"><li data-coord="prj4.umt:282:0"><p data-coord="prj4.umt:282:4">Read the Y86 description given in section 4.1 of the textbook.
+Also understand the <a href="../../include/y86.h" data-coord="prj4.umt:282:114">y86</a> ADT you have been
+provided with (note that you should not need to use the
+<samp data-coord="prj4.umt:282:200">get_memory_pointer_y86()</samp> or <samp data-coord="prj4.umt:282:230">dump_changes_y86()</samp> operations.
+</p></li><li data-coord="prj4.umt:287:0"><p data-coord="prj4.umt:287:4">Start your project in a manner similar to how you start a lab.
+Set up a <samp data-coord="prj4.umt:287:80">prj4</samp> branch and copy the provided <a href="prj4-sol" data-coord="prj4.umt:287:128">prj4-sol</a>
+directory into your <samp data-coord="prj4.umt:287:161">i220?/submit</samp> directory in that branch.
+</p></li><li data-coord="prj4.umt:291:0"><p data-coord="prj4.umt:291:4">Create a <samp data-coord="prj4.umt:291:13">Makefile</samp> for your project.  The <samp data-coord="prj4.umt:291:47">Makefile</samp> should be
+set up to build <samp data-coord="prj4.umt:291:88">main.o</samp> and ysim.o` and link them along with
+the <samp data-coord="prj4.umt:291:142">cs220</samp> and <samp data-coord="prj4.umt:291:154">y86</samp> libraries into the executable <samp data-coord="prj4.umt:291:190">y86-sim</samp>.
+</p><ul data-coord="prj4.umt:295:0"><li data-coord="prj4.umt:295:0"><p data-coord="prj4.umt:295:8">The interface to the libraries in the <a href="../../include" data-coord="prj4.umt:295:63">include</a>
+directory will be needed to compile the source code.  The <samp data-coord="prj4.umt:295:137">-I</samp>
+option to gcc can be used to specify the directory those
+interfaces.  You can set that up in your <samp data-coord="prj4.umt:295:256">Makefile</samp> by
+defining the make variable <samp data-coord="prj4.umt:295:305">CPPFLAGS</samp> as follows (the
+following assumes that make variable <samp data-coord="prj4.umt:295:377">COURSE</samp> is set to
+<samp data-coord="prj4.umt:295:404">cs220</samp>):
+</p><pre data-coord="prj4.umt:304:0">         CPPFLAGS = -I $$HOME/$(COURSE)/include
+</pre><p data-coord="prj4.umt:307:8">This variable is understood by the implicit compilation
+commands built into make.
+</p></li><li data-coord="prj4.umt:310:0"><p data-coord="prj4.umt:310:8">The link command will need to tell gcc which libraries
+to use.  You can ensure that by having the link command
+use the <samp data-coord="prj4.umt:310:143">LDFLAGS</samp> make variable defined as follows:
+</p><pre data-coord="prj4.umt:315:0">         LDFLAGS = -L $$HOME/$(COURSE)/lib -l cs220 -l y86
+</pre><p data-coord="prj4.umt:318:9">Note that the library specification <strong data-coord="prj4.umt:318:45">must</strong> follow the names
+of any object files which use those libraries.
+</p></li></ul><p data-coord="prj4.umt:321:4">If you have problems setting up the <samp data-coord="prj4.umt:321:40">Makefile</samp>, review
+<em data-coord="prj4.umt:321:92"><a href="../../labs/lab1/lab1.html" data-coord="prj4.umt:321:92">Lab 1</a></em> or any <samp data-coord="prj4.umt:321:107">make</samp> documentation
+on the web
+</p><p data-coord="prj4.umt:325:4">Once you have set up your <samp data-coord="prj4.umt:325:30">Makefile</samp> correctly, you should be able
+to build the project.  Running the executable without any arguments
+should produce a usage message:
+</p><pre data-coord="prj4.umt:330:0">    $ ./y86-sim
+    usage: ./y86-sim [-s] [-v] [-V] YAS_FILE_NAMES... INT_INPUTS...
+              -l:  produce assembler listing only
+              -s:  single-step program
+              -v:  verbose: dump changes
+                     after each instruction
+              -V:  very verbose: dump all registers
+                     after each instruction
+</pre><p data-coord="prj4.umt:340:4">If you get an error about missing libraries, your
+<samp data-coord="prj4.umt:340:58">LD_LIBRARY_PATH</samp> is not set up correctly (it should be set up if
+you followed the directions provided at the start of the
+semester).  Try
+</p><pre data-coord="prj4.umt:346:0">    $ export LD_LIBRARY_PATH=$HOME/cs220/lib
+    $ ./y86-sim
+
+</pre><p data-coord="prj4.umt:351:4">to solve the problem.
+</p><p data-coord="prj4.umt:353:4">You should also be able to get assembly listings:
+</p><pre data-coord="prj4.umt:356:0">    $ ./y86-sim ~/cs220/projects/prj4/extras/asum.ys -l
+</pre></li><li data-coord="prj4.umt:359:0"><p data-coord="prj4.umt:359:4">Get started on your <samp data-coord="prj4.umt:359:24">step_ysim()</samp> function.  Read the pc and then
+fetch the opcode byte addressed by it; whenever you read/write
+memory, you need to check for an address error using something
+like:
+</p><pre>    <span class="hl kwa">if</span> <span class="hl opt">(</span><span class="hl kwd">read_status_y86</span><span class="hl opt">(</span>y86<span class="hl opt">) !=</span> STATUS_AOK<span class="hl opt">)</span> <span class="hl kwa">return</span><span class="hl opt">;</span></pre><p data-coord="prj4.umt:368:4">Extract the base opcode from the fetched byte by extracting its
+high nybble.  Do a switch on this base opcode.  For now, simply
+add a <samp data-coord="prj4.umt:368:146">default</samp> case for unhandled instructions.  Have this
+default case simply set the machine status to <samp data-coord="prj4.umt:368:250">STATUS_INS</samp> to
+indicate a bad instruction.
+</p><p data-coord="prj4.umt:374:4">Run your simulator on any <samp data-coord="prj4.umt:374:30">ys</samp> file.  For example,
+</p><pre data-coord="prj4.umt:377:0">    $ ./y86-sim ~/cs220/projects/prj4/extras/halt.ys
+</pre><p data-coord="prj4.umt:380:4">The machine should stop with status printed as <samp data-coord="prj4.umt:380:51">BAD_INS</samp>.
+</p></li><li data-coord="prj4.umt:382:0"><p data-coord="prj4.umt:382:4">Add a case for the <samp data-coord="prj4.umt:382:23">halt</samp> instruction which simply sets
+the machine's status to <samp data-coord="prj4.umt:382:88">STATUS_HLT</samp>.  Run the above
+command again.  You should see that the machine stops
+with status set to <samp data-coord="prj4.umt:382:198">HLT</samp>.
+</p></li><li data-coord="prj4.umt:387:0"><p data-coord="prj4.umt:387:4">Add a case for a <samp data-coord="prj4.umt:387:21">nop</samp> instruction which simply advances
+the pc.  Verify your output by running your simulator
+on the <samp data-coord="prj4.umt:387:130">nops-halt.ys</samp> file.
+</p><p data-coord="prj4.umt:391:4">You can verify that your output matches the provided
+gold outputs by using the provided <a href="extras/test.sh" data-coord="prj4.umt:391:118">test.sh</a> script.
+</p><pre data-coord="prj4.umt:396:0">    $ D=$HOME/cs220/projects/prj4/extras
+    $ $D/test.sh $D/halt.ys $D/nops-halt.ys
+</pre><p data-coord="prj4.umt:400:4">The script should succeed silently if your output matches
+the gold output.
+</p></li><li data-coord="prj4.umt:403:0"><p data-coord="prj4.umt:403:4">Implement the <samp data-coord="prj4.umt:403:18">irmovq</samp> instruction by adding a <samp data-coord="prj4.umt:403:51">case</samp> in
+the <samp data-coord="prj4.umt:403:69">switch</samp>.  You will need to read the next byte following
+the opcode byte to get the register specifier.  Extract the
+register from the low nybble of the fetched register specifier.
+Then fetch the next word from memory as the immediate operand.
+Finally set the register to the fetched immediate operand and
+update the pc to point to the next instruction.
+</p><p data-coord="prj4.umt:411:4">Add a test program to verify that your implementation is correct.
+Start out with the <samp data-coord="prj4.umt:411:93">halt.ys</samp> program and add a <samp data-coord="prj4.umt:411:121">irmovq</samp>
+instruction before the <samp data-coord="prj4.umt:411:157">halt</samp> to move some distinctive value into
+a register, say <samp data-coord="prj4.umt:411:220">rax</samp>.  Verify that the register has that
+distinctive value when the program simulation stops.
+</p></li><li data-coord="prj4.umt:417:0"><p data-coord="prj4.umt:417:4">Add support for <samp data-coord="prj4.umt:417:20">call</samp> and <samp data-coord="prj4.umt:417:31">ret</samp> instructions.  The former
+will need to get the address of the function being called
+from the word following the opcode byte.  The return address
+will need to be pushed on to the stack before the pc is
+updated to transfer control to the called function.
+</p><p data-coord="prj4.umt:423:4">Implement <samp data-coord="prj4.umt:423:14">ret</samp> to transfer control to the address
+popped from the stack.
+</p><p data-coord="prj4.umt:426:4">You should now be able to run the <a href="extras/basic.ys" data-coord="prj4.umt:426:57">basic.ys</a>
+test.
+</p></li><li data-coord="prj4.umt:429:0"><p data-coord="prj4.umt:429:4">Add code to implement the memory move instructions
+<samp data-coord="prj4.umt:429:59">mrmovq</samp> and <samp data-coord="prj4.umt:429:72">rmmovq</samp>.  You should now be able to
+run the <a href="extras/mem-mov.ys" data-coord="prj4.umt:429:142">mem-mov.ys</a> test.
+</p></li><li data-coord="prj4.umt:433:0"><p data-coord="prj4.umt:433:4">Complete the <samp data-coord="prj4.umt:433:17">check_cc()</samp> function in the provided <samp data-coord="prj4.umt:433:55">ysim.c</samp>.
+This will allow you to implement the <samp data-coord="prj4.umt:433:106">cmovXX</samp> (which
+includes <samp data-coord="prj4.umt:433:135">rrmovq</samp>) instructions.  You should now be able
+to run the <a href="extras/mov.ys" data-coord="prj4.umt:433:215">mov.ys</a> test.
+</p></li><li data-coord="prj4.umt:438:0"><p data-coord="prj4.umt:438:4">Add support for the <samp data-coord="prj4.umt:438:24">OP1</samp> instructions by completing
+the provided <samp data-coord="prj4.umt:438:74">op1()</samp> function and its support functions
+<samp data-coord="prj4.umt:438:121">set_add_arith_cc()</samp>, <samp data-coord="prj4.umt:438:143">set_sub_arith_cc()</samp>, <samp data-coord="prj4.umt:438:165">set_logic_op_cc()</samp>.
+The code for the condition codes for the different <samp data-coord="prj4.umt:438:241">OP1</samp> instructions
+follows from the meaning of the condition codes.
+</p><dl data-coord="prj4.umt:444:0"><dt data-coord="prj4.umt:444:6"> <strong data-coord="prj4.umt:444:1">Addition</strong> </dt><dd data-coord="prj4.umt:445:0"><p data-coord="prj4.umt:445:8">Zero flag set if the result is zero, sign flag set if the result
+is negative, overflow flag set if the operands have the same
+sign and the sign of the result is different from the sign
+of the operands.
+</p></dd><dt data-coord="prj4.umt:450:6"> <strong data-coord="prj4.umt:450:1">Subtraction</strong> </dt><dd data-coord="prj4.umt:451:0"><p data-coord="prj4.umt:451:8">Zero flag set if the result is zero, sign flag set if the result
+is negative, overflow flag set if the operands have the opposite
+sign and the sign of the result is different from the sign
+of the first operand.
+</p></dd><dt data-coord="prj4.umt:456:6"> <strong data-coord="prj4.umt:456:1">Logical Operations</strong> <samp data-coord="prj4.umt:456:22">andq</samp> and <samp data-coord="prj4.umt:456:33">xorq</samp> </dt><dd data-coord="prj4.umt:457:0"><p data-coord="prj4.umt:457:8">Zero flag set if the result is zero, sign flag set if the result
+is negative, overflow flag always reset.
+</p></dd></dl><p data-coord="prj4.umt:460:4">You should now be able to run the <a href="extras/abs-diff.ys" data-coord="prj4.umt:460:64">abs-diff.ys</a> test.
+</p></li><li data-coord="prj4.umt:463:0"><p data-coord="prj4.umt:463:4">Implement the <samp data-coord="prj4.umt:463:18">pushq</samp> and <samp data-coord="prj4.umt:463:30">popq</samp> instructions.  Be sure to
+implement the correct behavior when the operand for those
+instructions is <samp data-coord="prj4.umt:463:145">rsp</samp> as specified in problems 4.7 and 4.8 of the
+text. You should now be able to run the <a href="extras/pushq-rsp.ys" data-coord="prj4.umt:463:266">pushq-rsp.ys</a> and <a href="extras/popq-rsp.ys" data-coord="prj4.umt:463:305">popq-rsp.ys</a> tests.
+</p></li><li data-coord="prj4.umt:469:0"><p data-coord="prj4.umt:469:4">Implement the remaining instructions.  Use the existing
+tests or add in your own tests to verify.
+</p></li><li data-coord="prj4.umt:472:0"><p data-coord="prj4.umt:472:4">Iterate the previous steps until all requirements are met.
+</p></li></ol></section><section data-coord="prj4.umt:475:0"><h2 data-coord="prj4.umt:475:0">Submission</h2><p data-coord="prj4.umt:478:0">Submit as per previous projects.
+</p></section></section>
+    </div> <!-- #content -->
+    <script src="../../assets/scripts/loginAction.js"></script>
+  </body>
+</html>
