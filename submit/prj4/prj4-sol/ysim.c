@@ -25,9 +25,9 @@ typedef enum{
 
 /** accessing condition code flags */
 static inline bool get_cc_flag(Byte cc, unsigned flagBitIndex) {
-  return !!(cc & (1 << flagBitIndex)); //wtf is with the !! bro
+  return (cc & (1 << flagBitIndex)); //wtf is with the !! bro
 }
-static Byte set_cc_flags(unsigned zf_val, unsigned sf_val, unsigned of_val){
+static inline Byte set_cc_flags(unsigned zf_val, unsigned sf_val, unsigned of_val){
   return ((zf_val<<ZF_CC) + (sf_val <<SF_CC) + (of_val<<OF_CC));
 }
 static inline bool get_zf(Byte cc) { return get_cc_flag(cc, ZF_CC); }
@@ -58,13 +58,13 @@ check_cc(const Y86 *y86, Byte op)
     ret = get_zf(cc); 
     break;
   case NE_COND:
-    ret = (get_zf(cc)==0);
+    ret = !get_zf(cc);
     break;
   case GE_COND:
-    ret = (get_sf(cc) == get_of(cc)) ^ (get_zf(cc));
+    ret = (get_sf(cc) == get_of(cc)) & (get_zf(cc));
     break;
   case GT_COND:
-    ret = (get_of(cc)==get_sf(cc)) && (get_zf(cc));
+    ret = (get_of(cc) == get_sf(cc)) & !(get_zf(cc));
     break;
   default: {
     Address pc = read_pc_y86(y86);
@@ -108,7 +108,7 @@ static void
 set_sub_arith_cc(Y86 *y86, Word opA, Word opB, Word result)
 {
   Byte cc = 0; //SF if result < 0, ZF if result == 0, OF if overflow
-  if(result<0){
+  if(opA>opB){
    cc = set_cc_flags(0,1,0);
   }
   if(result == 0){
@@ -152,8 +152,8 @@ op1(Y86 *y86, Byte op, Register regA, Register regB)
     break;
   case SUBL_FN:
     result = valB - valA;   //OKAY SO THIS FRICKING LINE HERE
-    set_sub_arith_cc(y86, valB, valA, result); // ^  THAT LINE CAUSED THREE HOURS OF PROBLEMS
-    break;                    //It still doesn't work right for abs-diff.ys
+    set_sub_arith_cc(y86, valA, valB, result); // ^  THAT LINE CAUSED THREE HOURS OF PROBLEMS
+    break;                    
   case ANDL_FN:
     result = valA & valB;
     set_logic_op_cc(y86, result);  
@@ -171,7 +171,7 @@ static void
 Jxx(Y86 *y86, Byte op, Word dest){
   if(check_cc(y86, op)){ //is it really that simple tho?
     write_pc_y86(y86, (Address) dest); //Yeah. Yeah it is.
-  }else{
+  }else{  //If no jump, increment PC and move on.
   write_pc_y86(y86, read_pc_y86(y86)+sizeof(Byte)+sizeof(Word));
   }
   return;
@@ -206,13 +206,13 @@ step_ysim(Y86 *y86)
   //WELCOME TO THE WORLD'S UGLIEST SWITCH CASE
   //Most of these aren't long enough to warrant segregating into different functions.
   Byte pc = read_pc_y86(y86);
-  Byte op = read_memory_byte_y86(y86, pc);//IF THAT FRICKING WORKS I'LL SHITE IN ME PANTALOON
-  Byte baseOp = get_nybble(op, 1);
-  Register regA = 0xF;
-  Register regB = 0xF;
+  Byte op = read_memory_byte_y86(y86, pc);//There used to be a funny comment here
+  Byte baseOp = get_nybble(op, 1);        //Instead, you get this.
+  Register regA = 0xF;                    //Some boiler-plate declarations
+  Register regB = 0xF;                    //Used in multiple instructions
   Word valA = 0;
 	Word valB = 0;
-  Address stackPtr = 0x200;
+  Address stackPtr = 0x200;               //stackptr should be redeclared when used.
 	Word displacement = 0;
   if(read_status_y86(y86)!=STATUS_AOK){
     return;
