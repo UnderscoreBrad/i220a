@@ -20,19 +20,22 @@ typedef enum {
 } Condition;
 
 typedef enum{
-  JMP, JLE, JL, JE, JNE, JGE, JG
+  JMP, JLE, JL, JE, JNE, JGE, JG  //Enum for jump types
 } JumpType;
 
 /** accessing condition code flags */
 static inline bool get_cc_flag(Byte cc, unsigned flagBitIndex) {
   return (cc & (1 << flagBitIndex)); //wtf is with the !! bro
 }
-static inline Byte set_cc_flags(unsigned zf_val, unsigned sf_val, unsigned of_val){
-  return ((zf_val<<ZF_CC) + (sf_val <<SF_CC) + (of_val<<OF_CC));
-}
+
 static inline bool get_zf(Byte cc) { return get_cc_flag(cc, ZF_CC); }
 static inline bool get_sf(Byte cc) { return get_cc_flag(cc, SF_CC); }
 static inline bool get_of(Byte cc) { return get_cc_flag(cc, OF_CC); }
+
+/** setting condition code flags */
+static inline Byte set_cc_flags(unsigned zf_val, unsigned sf_val, unsigned of_val){
+  return ((zf_val<<ZF_CC) + (sf_val <<SF_CC) + (of_val<<OF_CC));
+}
 
 /** Return true iff the condition specified in the least-significant
  *  nybble of op holds in y86.  Encoding of Figure 3.15 of Bryant's
