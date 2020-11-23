@@ -87,8 +87,12 @@ isLt0(Word word) {
 static void
 set_add_arith_cc(Y86 *y86, Word opA, Word opB, Word result)
 {
+  signed long long sResult = (signed)result; //This is a HORRIBLE SOLUTION
+                                             //But it works
+                                             //And I'm tired.
+                                             //Good. Night.
   Byte cc = 0;  //SF if result < 0, ZF if result == 0, OF if overflow
-  if(result<0){
+  if(sResult<0){
     cc = set_cc_flags(0,1,0);
   }
   if(result == 0){
@@ -107,8 +111,9 @@ set_add_arith_cc(Y86 *y86, Word opA, Word opB, Word result)
 static void
 set_sub_arith_cc(Y86 *y86, Word opA, Word opB, Word result)
 {
+  signed long long sResult = (signed)result;
   Byte cc = 0; //SF if result < 0, ZF if result == 0, OF if overflow
-  if(opA>opB){
+  if(opA>opB||sResult<0){  //For some reason, setting SF based on result does not work.
    cc = set_cc_flags(0,1,0);
   }
   if(result == 0){
@@ -124,8 +129,9 @@ set_sub_arith_cc(Y86 *y86, Word opA, Word opB, Word result)
 static void
 set_logic_op_cc(Y86 *y86, Word result)
 {
+  signed long long sResult = (signed)result;
   Byte cc = 0; //SF if result < 0, ZF if result == 0, OF reset
-  if(result<0){
+  if(sResult<0){
     cc = set_cc_flags(0,1,0);
   }if(result == 0){
     cc = set_cc_flags(1,get_sf(cc),0);
@@ -145,14 +151,14 @@ op1(Y86 *y86, Byte op, Register regA, Register regB)
   Word result = 0;
   Word valA = read_register_y86(y86, regA);
   Word valB = read_register_y86(y86, regB);
-  switch(op){
+  switch(op){             //Switch case finds result, sets cc
   case ADDL_FN:
     result = valA + valB;
     set_add_arith_cc(y86, valA, valB, result);  
     break;
   case SUBL_FN:
-    result = valB - valA;   //OKAY SO THIS FRICKING LINE HERE
-    set_sub_arith_cc(y86, valA, valB, result); // ^  THAT LINE CAUSED THREE HOURS OF PROBLEMS
+    result = valB - valA; 
+    set_sub_arith_cc(y86, valA, valB, result); 
     break;                    
   case ANDL_FN:
     result = valA & valB;
@@ -163,7 +169,7 @@ op1(Y86 *y86, Byte op, Register regA, Register regB)
     set_logic_op_cc(y86, result); 
     break;
   }
-  write_register_y86(y86, regB, result);
+  write_register_y86(y86, regB, result);  //sets dest register to result
   return;
 }
 
@@ -183,8 +189,8 @@ CMOVxx(Y86 *y86, Byte op){
     Byte registers = read_memory_byte_y86(y86, read_pc_y86(y86)+sizeof(Byte));
     Register regA = get_nybble(registers, 1);
     Register regB = get_nybble(registers, 0);
-    Word val = read_register_y86(y86, regA);
-    write_register_y86(y86, regB, val);
+    Word val = read_register_y86(y86, regA);  //Move value from A
+    write_register_y86(y86, regB, val);       //Into B
   }
   return;
 }
@@ -266,21 +272,21 @@ step_ysim(Y86 *y86)
     //Jxx writes to pc, no updating needed here.
     break;
   case CALL_CODE: ;//OP 8
-    stackPtr = read_register_y86(y86, REG_RSP);
-    Address rt = pc+sizeof(Byte)+sizeof(Word);
-    Address go = read_memory_word_y86(y86, pc+sizeof(Byte));
-    write_memory_word_y86(y86, stackPtr-sizeof(Word), rt);
-    write_register_y86(y86, REG_RSP, stackPtr-sizeof(Word));
-    write_pc_y86(y86, go);
+    stackPtr = read_register_y86(y86, REG_RSP); //get Stack
+    Address rt = pc+sizeof(Byte)+sizeof(Word);  //get return address
+    Address go = read_memory_word_y86(y86, pc+sizeof(Byte)); //get address to call
+    write_memory_word_y86(y86, stackPtr-sizeof(Word), rt);   //write return to stack
+    write_register_y86(y86, REG_RSP, stackPtr-sizeof(Word));  //increment stack size
+    write_pc_y86(y86, go);  //jump to fn
     break;
   case RET_CODE: ;//OP 9
-    stackPtr = read_register_y86(y86, REG_RSP);
-    Address r = read_memory_word_y86(y86, stackPtr);
-    write_register_y86(y86, REG_RSP, stackPtr+sizeof(Word));
+    stackPtr = read_register_y86(y86, REG_RSP); 
+    Address r = read_memory_word_y86(y86, stackPtr);  //Jump to address in stack
+    write_register_y86(y86, REG_RSP, stackPtr+sizeof(Word)); //decrement stack size
     write_pc_y86(y86, r);
     break;
   case PUSHQ_CODE: //OP A
-    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
+    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1); //similar to CALL
     valA = read_register_y86(y86, regA);
     stackPtr = read_register_y86(y86, REG_RSP);
     write_memory_word_y86(y86, stackPtr-sizeof(Word), valA);
@@ -288,9 +294,9 @@ step_ysim(Y86 *y86)
     write_pc_y86(y86, pc+(2*sizeof(Byte)));
   break;
   case POPQ_CODE: //OP B
-    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1);
+    regA = get_nybble(read_memory_byte_y86(y86, pc+sizeof(Byte)),1); //similar to RET
     stackPtr = read_register_y86(y86, REG_RSP);
-    valA = read_memory_word_y86(y86, stackPtr);//+sizeof(Word)
+    valA = read_memory_word_y86(y86, stackPtr);
     write_register_y86(y86, REG_RSP, stackPtr+sizeof(Word));
     write_register_y86(y86, regA, valA); 
     write_pc_y86(y86, pc+(2*sizeof(Byte)));
