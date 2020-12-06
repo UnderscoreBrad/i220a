@@ -1,0 +1,138 @@
+Script started on 2020-12-05 18:05:56-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ [Kbestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13$ cd exercises
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ dosbox &
+[1] 162763
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ DOSBox version 0.74-2
+Copyright 2002-2018 DOSBox Team, published under GNU GPL.
+---
+CONFIG:Loading primary settings from config file /home/bestus1/.dosbox/dosbox-0.74-2.conf
+MIXER:Got different values from SDL: freq 44100, blocksize 512
+ALSA:Can't subscribe to MIDI port (65:0) nor (17:0)
+MIDI:Opened device:none
+Diskcaching reset for normal mounted drives.
+
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ make block.com
+as --32 -a=block.lst block.s -o block.o
+objcopy -O binary block.o block.bin
+rm block.o
+dd if=block.bin of=block.com bs=256 skip=1
+0+1 records in
+0+1 records out
+81 bytes copied, 0.00152442 s, 53.1 kB/s
+rm block.bin
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ od -x block.com
+0000000 01eb e800 0018 02a0 3c01 7471 b90e 0032
+0000020 15e8 e800 0023 7549 ebf7 e8e8 0015 b450
+0000040 cd08 a221 0102 c358 b450 8a02 0216 cd01
+0000060 5821 b4c3 b04c cd00 5021 5153 02bb b900
+0000100 0000 a0b8 f6f0 49e9 f875 754b 59f2 585b
+0000120 00c3
+0000121
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ emacs block.lst
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ emacs block.s
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ make block.com
+as --32 -a=block.lst block.s -o block.o
+objcopy -O binary block.o block.bin
+rm block.o
+dd if=block.bin of=block.com bs=256 skip=1
+0+1 records in
+0+1 records out
+81 bytes copied, 0.00143166 s, 56.6 kB/s
+rm block.bin
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ emacs block.s
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ make block.com
+as --32 -a=block.lst block.s -o block.o
+objcopy -O binary block.o block.bin
+rm block.o
+dd if=block.bin of=block.com bs=256 skip=1
+0+1 records in
+0+1 records out
+81 bytes copied, 0.00157703 s, 51.4 kB/s
+rm block.bin
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ emacs poll.s
+make poll.com
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ make poll.com
+as --32 -a=poll.lst poll.s -o poll.o
+objcopy -O binary poll.o poll.bin
+rm poll.o
+dd if=poll.bin of=poll.com bs=256 skip=1
+0+1 records in
+0+1 records out
+110 bytes copied, 0.00150187 s, 73.2 kB/s
+rm poll.bin
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ emacs poll.s
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ make poll.com
+as --32 -a=poll.lst poll.s -o poll.o
+objcopy -O binary poll.o poll.bin
+rm poll.o
+dd if=poll.bin of=poll.com bs=256 skip=1
+0+1 records in
+0+1 records out
+114 bytes copied, 0.00126045 s, 90.4 kB/s
+rm poll.bin
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ ameac[K[K[K[K[Kemacs poll.s
+[1]+  Done                    dosbox
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ make
+as --32 -a=key-int.lst key-int.s -o key-int.o
+objcopy -O binary key-int.o key-int.bin
+rm key-int.o
+dd if=key-int.bin of=key-int.com bs=256 skip=1
+0+1 records in
+0+1 records out
+209 bytes copied, 0.0013228 s, 158 kB/s
+rm key-int.bin
+as --32 -a=poll.lst poll.s -o poll.o
+objcopy -O binary poll.o poll.bin
+rm poll.o
+dd if=poll.bin of=poll.com bs=256 skip=1
+0+1 records in
+0+1 records out
+114 bytes copied, 0.00151766 s, 75.1 kB/s
+rm poll.bin
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ dosbox &
+[1] 170375
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ DOSBox version 0.74-2
+Copyright 2002-2018 DOSBox Team, published under GNU GPL.
+---
+CONFIG:Loading primary settings from config file /home/bestus1/.dosbox/dosbox-0.74-2.conf
+MIXER:Got different values from SDL: freq 44100, blocksize 512
+ALSA:Can't subscribe to MIDI port (65:0) nor (17:0)
+MIDI:Opened device:none
+
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ ema[K[K[Kemacs poll.s
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ make
+as --32 -a=poll.lst poll.s -o poll.o
+objcopy -O binary poll.o poll.bin
+rm poll.o
+dd if=poll.bin of=poll.com bs=256 skip=1
+0+1 records in
+0+1 records out
+114 bytes copied, 0.00148459 s, 76.8 kB/s
+rm poll.bin
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ makeemacs poll.s[8Pmake[Kmake
+as --32 -a=poll.lst poll.s -o poll.o
+objcopy -O binary poll.o poll.bin
+rm poll.o
+dd if=poll.bin of=poll.com bs=256 skip=1
+0+1 records in
+0+1 records out
+114 bytes copied, 0.00201233 s, 56.7 kB/s
+rm poll.bin
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ make
+as --32 -a=poll.lst poll.s -o poll.o
+objcopy -O binary poll.o poll.bin
+rm poll.o
+dd if=poll.bin of=poll.com bs=256 skip=1
+0+1 records in
+0+1 records out
+118 bytes copied, 0.00168084 s, 70.2 kB/s
+rm poll.bin
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ make  key-[K[K[K[K[K[K[K[K[K[Kemacs key-int.s
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ echo 'oh dear'
+oh dear
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ make key-int.com
+make: 'key-int.com' is up to date.
+bestus1@remote07:/import/linux/home1/bestus1/projects/i220a/submit/lab13/exercises$ exit
+exit
+
+Script done on 2020-12-05 19:18:19-05:00 [COMMAND_EXIT_CODE="0"]
